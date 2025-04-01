@@ -150,7 +150,9 @@
           "Position": "-320.4931,365.358,-1721.465",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
-          "__PrefabVariables": {}
+          "__PrefabVariables": {
+            "Selling Goal": true
+          }
         },
         {
           "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
@@ -159,7 +161,9 @@
           "Position": "975.856,417.2682,-1721.465",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
-          "__PrefabVariables": {}
+          "__PrefabVariables": {
+            "Selling Goal": true
+          }
         },
         {
           "__guid": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
@@ -168,7 +172,9 @@
           "Position": "1263.856,1601.268,-1721.465",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
-          "__PrefabVariables": {}
+          "__PrefabVariables": {
+            "Selling Goal": true
+          }
         },
         {
           "__guid": "c8c76d27-4d8c-4522-adb5-7f7d34d90b68",
@@ -269,6 +275,7 @@
       "Flags": 0,
       "Name": "Zombie",
       "Position": "12.04198,-366.3513,0.00000001490116",
+      "Tags": "zombie",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
       "__PrefabVariables": {}

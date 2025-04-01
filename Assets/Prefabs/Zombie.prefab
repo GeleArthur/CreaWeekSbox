@@ -14,7 +14,7 @@
         "CreateAttachments": false,
         "MaterialGroup": null,
         "MaterialOverride": null,
-        "Model": "models/citizen/skin/skeleton/models/skeleton_skin.vmdl",
+        "Model": "models/zombie.vmdl",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -35,7 +35,7 @@
         "__guid": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
         "alertRadius": 200,
         "chaseRadius": 150,
-        "model": "models/citizen/citizen.vmdl",
+        "model": "models/zombie.vmdl",
         "Name": null,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -84,7 +84,7 @@
         "CreateBoneObjects": true,
         "MaterialGroup": null,
         "MaterialOverride": null,
-        "Model": "models/citizen/heads/head_zombie_01/models/head_zombie_01.vmdl",
+        "Model": "models/zombie.vmdl",
         "Morphs": {},
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -850,6 +850,14 @@
             ]
           }
         ]
+      },
+      {
+        "__guid": "7c01ec1e-d9bc-4eee-a711-7292c003e0fe",
+        "Flags": 4,
+        "Name": "neck_clothing",
+        "Position": "1.176033,-0.0001484909,52.03646",
+        "Rotation": "0.4900887,0.5097177,0.5097224,-0.4900858",
+        "Enabled": true
       }
     ],
     "__variables": [],
