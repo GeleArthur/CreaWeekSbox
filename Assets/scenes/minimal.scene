@@ -183,86 +183,11 @@
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "-1824,-896,6.025749",
+      "Position": "-217.0349,2614.628,538.2938",
       "Tags": "player",
       "Enabled": true,
       "__Prefab": "prefabs/player controller.prefab",
       "__PrefabVariables": {}
-    },
-    {
-      "__guid": "1c1cfa5d-6400-40a0-a6b0-2eed6e8342e3",
-      "Flags": 0,
-      "Name": "Map",
-      "Position": "0,0,11150",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.MapInstance",
-          "__guid": "c377cf82-9d8b-4ff3-84f8-d6145ee01020",
-          "__version": 1,
-          "EnableCollision": true,
-          "MapName": "softsplit.gm_bigcity",
-          "NoOrigin": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OnMapLoaded": null,
-          "OnMapUnloaded": null,
-          "UseMapFromLaunch": false
-        },
-        {
-          "__type": "Sandbox.NavMeshArea",
-          "__guid": "da98b09d-1113-4540-a599-384f48ec5eda",
-          "IsBlocker": true,
-          "LinkedCollider": {
-            "_type": "component",
-            "component_id": "bbe13e86-3219-4fc4-a734-0603601c39c2",
-            "go": "43f60455-cd16-4a6f-a255-a409e7d0eff1",
-            "component_type": "BoxCollider"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "43f60455-cd16-4a6f-a255-a409e7d0eff1",
-          "Flags": 0,
-          "Name": "NavMeshCollider",
-          "Position": "-455.6361,-580.5172,-11149.36",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "bbe13e86-3219-4fc4-a734-0603601c39c2",
-              "Center": "0,0,0",
-              "Friction": null,
-              "IsTrigger": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Scale": "50,50,50",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ]
-        }
-      ]
     },
     {
       "__guid": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
@@ -276,7 +201,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "5e872a30-c961-40e1-bd06-27bcbe1053d8",
+            "component_id": "b62969ba-2c9e-4ee6-a05c-a5b50381523d",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -418,7 +343,7 @@
       "__guid": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "-1591.048,-554.9458,31.21223",
+      "Position": "-162.025,2459.515,557.3248",
       "Tags": "car",
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
@@ -428,10 +353,36 @@
       "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
       "Flags": 0,
       "Name": "Zombie",
-      "Position": "-1080.945,-627.9072,17.13128",
+      "Position": "-354.17,1678.934,543.538",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "cd1df188-b29e-4018-9c3a-7d9d9d4449d5",
+      "Flags": 0,
+      "Name": "Map",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "8bf0f408-60be-49b2-8edb-1aeb9b086474",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "workshop.rockford_v1",
+          "NoOrigin": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
