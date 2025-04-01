@@ -556,23 +556,6 @@
           "OnMapLoaded": null,
           "OnMapUnloaded": null,
           "UseMapFromLaunch": false
-        },
-        {
-          "__type": "Sandbox.NavMeshArea",
-          "__guid": "da98b09d-1113-4540-a599-384f48ec5eda",
-          "IsBlocker": true,
-          "LinkedCollider": {
-            "_type": "component",
-            "component_id": "bbe13e86-3219-4fc4-a734-0603601c39c2",
-            "go": "43f60455-cd16-4a6f-a255-a409e7d0eff1",
-            "component_type": "BoxCollider"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
         }
       ],
       "Children": [
@@ -581,30 +564,7 @@
           "Flags": 0,
           "Name": "NavMeshCollider",
           "Position": "-455.6361,-580.5172,-11149.36",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "bbe13e86-3219-4fc4-a734-0603601c39c2",
-              "Center": "0,0,0",
-              "Friction": null,
-              "IsTrigger": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Scale": "50,50,50",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ]
+          "Enabled": true
         }
       ]
     },
@@ -778,7 +738,7 @@
       "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
       "Flags": 0,
       "Name": "Zombie",
-      "Position": "-1080.945,-627.9072,17.13128",
+      "Position": "-1080.945,-627.9072,32.70622",
       "Tags": "zombie",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
@@ -793,51 +753,14 @@
         {
           "__type": "ZombieSpawnComponent",
           "__guid": "28d51581-72db-4400-8203-40c20994ca30",
-          "ColliderComp": [],
-          "MaxAmountOfZombies": 10,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "Player": {
-            "_type": "component",
-            "component_id": "8d0b91b4-2700-483d-9bf0-8d7ffc34c2d1",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "PlayerController"
-          },
-          "SpawnArea": [
-            {
-              "_type": "gameobject",
-              "go": "1506a96c-85c3-4b59-a009-bf5b07131d8f"
-            },
-            {
-              "_type": "gameobject",
-              "go": "4a9640a7-c10e-487b-8323-02ef5dd3b54f"
-            },
-            {
-              "_type": "gameobject",
-              "go": "65504811-8e0e-4d2a-96cb-c82744fc3d6c"
-            },
-            {
-              "_type": "gameobject",
-              "go": "07587eb6-6c0b-4152-a3ec-411d478e0578"
-            },
-            {
-              "_type": "gameobject",
-              "go": "03a3baa9-18df-479a-9e57-4b738904bd38"
-            },
-            {
-              "_type": "gameobject",
-              "go": "94c43508-a433-49ba-898b-14a8565f62c6"
-            }
-          ],
-          "SpawnTimer": 3,
-          "Zombie": {
-            "_type": "gameobject",
-            "go": "055b01fd-cdb9-42b5-a547-91d9250d61cb"
-          }
+          "SpawnArea": [],
+          "Zombie": null
         }
       ],
       "Children": [
@@ -905,7 +828,7 @@
       "Title": "minimal"
     },
     "NavMesh": {
-      "Enabled": false,
+      "Enabled": true,
       "IncludeStaticBodies": true,
       "IncludeKeyframedBodies": true,
       "EditorAutoUpdate": true,

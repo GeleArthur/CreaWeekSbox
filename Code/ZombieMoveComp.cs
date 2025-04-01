@@ -3,9 +3,6 @@ using System;
 
 public sealed class ZombieMoveComp : Component, Component.ICollisionListener
 {
-	[Property]
-	public string Name { get; set; }
-
 	private GameObject target;
 	[Property]
 	private float chaseRadius;
@@ -15,6 +12,7 @@ public sealed class ZombieMoveComp : Component, Component.ICollisionListener
 	private float wanderSize;
 	[Property]
 	private Model model;
+	
 	private HealthComponent health;
 	private float timeTillDelete = 7f;
 	private SphereCollider chaseRange;

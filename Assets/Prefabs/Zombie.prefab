@@ -7,36 +7,11 @@
     "Enabled": true,
     "Components": [
       {
-        "__type": "Sandbox.ModelRenderer",
-        "__guid": "23148709-e8f5-470a-b2eb-b572d777cb07",
-        "__enabled": false,
-        "BodyGroups": 18446744073709551615,
-        "CreateAttachments": false,
-        "MaterialGroup": null,
-        "MaterialOverride": null,
-        "Model": "models/zombie.vmdl",
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "RenderOptions": {
-          "GameLayer": true,
-          "OverlayLayer": false,
-          "BloomLayer": false,
-          "AfterUILayer": false
-        },
-        "RenderType": "On",
-        "Tint": "1,1,1,1"
-      },
-      {
         "__type": "ZombieMoveComp",
         "__guid": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
         "alertRadius": 200,
         "chaseRadius": 150,
         "model": "models/zombie.vmdl",
-        "Name": null,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -44,6 +19,17 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "wanderSize": 150
+      },
+      {
+        "__type": "HealthComponent",
+        "__guid": "dde7b65c-5ea6-49c0-9b7a-6389a1c99db2",
+        "_maxHealth": 100,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
       },
       {
         "__type": "Sandbox.NavMeshAgent",
@@ -62,17 +48,6 @@
         "Separation": 0.25,
         "UpdatePosition": true,
         "UpdateRotation": true
-      },
-      {
-        "__type": "HealthComponent",
-        "__guid": "dde7b65c-5ea6-49c0-9b7a-6389a1c99db2",
-        "_maxHealth": 100,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null
       },
       {
         "__type": "Sandbox.SkinnedModelRenderer",
