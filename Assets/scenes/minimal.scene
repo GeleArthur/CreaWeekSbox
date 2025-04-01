@@ -400,6 +400,7 @@
           "__guid": "e80901d8-292a-4f55-bb8e-6231d83d5317",
           "Flags": 0,
           "Name": "Body",
+          "Position": "0,0,34.8104",
           "Enabled": true,
           "Components": [
             {
