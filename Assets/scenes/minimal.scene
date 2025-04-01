@@ -742,11 +742,7 @@
       "Tags": "zombie",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
-      "__PrefabVariables": {
-        "Chase Radius": 150,
-        "Alert Radius": 200,
-        "Wander Size": 150
-      }
+      "__PrefabVariables": {}
     },
     {
       "__guid": "ac1f5c1c-d5f7-42bd-8ab2-ee95d8113bf1",
@@ -822,7 +818,7 @@
       "__guid": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
       "Flags": 0,
       "Name": "zombie",
-      "Position": "-1630.217,-871.4426,14.03511",
+      "Position": "-1396.771,-528.7292,14.03494",
       "Enabled": true,
       "Components": [
         {
@@ -890,6 +886,16 @@
             "component_type": "SkinnedModelRenderer"
           },
           "RigidbodyFlags": 0
+        },
+        {
+          "__type": "OnCollideRagDoll",
+          "__guid": "351b835d-b251-46b7-80d1-fdaa88173ec5",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     }
