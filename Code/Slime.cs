@@ -124,6 +124,8 @@ public sealed class Slime : Component
 			DamageAnimation( remmappedDamage );
 		}
 
+		
+
 
 		if ( Health <= 0f )
 		{
