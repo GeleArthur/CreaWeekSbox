@@ -3,6 +3,7 @@
     "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
     "Flags": 0,
     "Name": "zombie",
+    "Tags": "zombie",
     "Enabled": true,
     "Components": [
       {
@@ -109,6 +110,28 @@
         },
         "Tint": "1,1,1,1",
         "UseAnimGraph": true
+      },
+      {
+        "__type": "Sandbox.CapsuleCollider",
+        "__guid": "aadd558b-4866-4212-ab7a-d90123507ec2",
+        "End": "0,0,55",
+        "Friction": null,
+        "IsTrigger": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Radius": 16,
+        "Start": "0,0,15",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
       }
     ],
     "Children": [],
