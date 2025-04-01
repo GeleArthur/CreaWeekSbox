@@ -24,10 +24,9 @@ public sealed class TurretUpgrade : Component
 	{
 		ColliderComp.OnTriggerEnter = ( Collider other ) =>
 		{
-			if ( other.Tags.Has( "player" ) && !Targets.Contains(other.GameObject))
+			if ( other.Tags.Has( "zombie" ) && !Targets.Contains(other.GameObject))
 			{
 				Targets.Add( other.GameObject );
-				Log.Info( Targets.Count );
 			}
 		};
 
