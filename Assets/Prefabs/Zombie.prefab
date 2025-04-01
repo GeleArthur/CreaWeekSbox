@@ -3,6 +3,7 @@
     "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
     "Flags": 0,
     "Name": "zombie",
+    "Tags": "zombie",
     "Enabled": true,
     "Components": [
       {

@@ -2,7 +2,7 @@
   "RootObject": {
     "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
     "Flags": 0,
-    "Name": "Goal1",
+    "Name": "goal",
     "Enabled": true,
     "Components": [
       {
@@ -29,12 +29,6 @@
       {
         "__type": "Goal",
         "__guid": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
-        "GoalManager": {
-          "_type": "component",
-          "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-          "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
-          "component_type": "GoalManager"
-        },
         "Model": {
           "_type": "component",
           "component_id": "0b14fa07-7126-4e21-ba21-409a05856b92",
@@ -46,7 +40,8 @@
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
-        "OnComponentUpdate": null
+        "OnComponentUpdate": null,
+        "SellingGoal": true
       }
     ],
     "Children": [
@@ -83,7 +78,45 @@
           }
         ]
       }
-    ]
+    ],
+    "__variables": [
+      {
+        "Id": "Selling Goal",
+        "Title": "Selling Goal",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
+            "Property": "SellingGoal"
+          }
+        ]
+      }
+    ],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
   },
   "ShowInMenu": false,
   "MenuPath": null,

@@ -1,0 +1,104 @@
+{
+  "RootObject": {
+    "__guid": "8d9bb976-9e9a-41f4-8c60-1981ee83817e",
+    "Flags": 0,
+    "Name": "Turret",
+    "Position": "-883.7476,83.5421,0",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "93f4b20c-59bb-487a-bf46-81c8134868d6",
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/untitled_1.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "TurretUpgrade",
+        "__guid": "7f68f291-9f44-48ee-99b9-2aca062b5ec8",
+        "Bullet": {
+          "_type": "gameobject",
+          "prefab": "prefabs/bullet.prefab"
+        },
+        "ColliderComp": {
+          "_type": "component",
+          "component_id": "dacf5e22-4d0d-4e73-992d-174576c4b3ec",
+          "go": "8d9bb976-9e9a-41f4-8c60-1981ee83817e",
+          "component_type": "HullCollider"
+        },
+        "FireRate": 10,
+        "Nuzzle": {
+          "_type": "gameobject",
+          "go": "f81b568c-ccf9-44d5-9c1d-ed91f6870ad0"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
+        "__type": "Sandbox.HullCollider",
+        "__guid": "dacf5e22-4d0d-4e73-992d-174576c4b3ec",
+        "BoxSize": "50,50,50",
+        "Center": "0,0,0",
+        "Friction": null,
+        "Height": 125,
+        "IsTrigger": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Points": [],
+        "Radius": 250,
+        "Radius2": 0,
+        "Slices": 16,
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0",
+        "Type": "Cylinder"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "f81b568c-ccf9-44d5-9c1d-ed91f6870ad0",
+        "Flags": 0,
+        "Name": "Nuzzle",
+        "Position": "17.39693,0,28.84121",
+        "Enabled": true
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "debelizmik.sentry_turret#33214"
+  ],
+  "__version": 1
+}

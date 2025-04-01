@@ -5,7 +5,7 @@ public sealed class Goal : Component
 	[Property]
 	public ModelRenderer Model;
 	[Property]
-	public bool SellingGoal = true;
+	public bool SellingGoal;
 
 	private Collider _collider;
 	public Collider Collider
@@ -13,7 +13,6 @@ public sealed class Goal : Component
 		get { return _collider; } 
 		set { _collider = value; }
 	}
-
 
 	private GoalManager _goalManager;
 	public GoalManager GoalManager
@@ -32,6 +31,8 @@ public sealed class Goal : Component
 				GoalManager.Notify( this.GameObject , SellingGoal);
 			}
 		};
+
+		Log.Info(SellingGoal);
 	}
 
 	public void EnableModel(bool enable)
