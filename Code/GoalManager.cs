@@ -6,6 +6,8 @@ public sealed class GoalManager : Component
 
 	[Property]
 	public GameObject[] Goals { get; set; }
+	[Property]
+	public Economy EconomyComp { get; set; }
 
 	GameObject _currentGoal;
 
@@ -20,15 +22,29 @@ public sealed class GoalManager : Component
 	protected override void OnStart()
 	{
 		SetNewGoal();
-		Log.Info( "started" );
+
+		foreach( GameObject goal in Goals)
+		{
+			goal.GetComponent<Goal>().GoalManager = this;
+		}
+
 	}
 	
-	public void Notify(GameObject goal)
+	public void Notify(GameObject goal, bool isSellingGoal)
 	{
 		if (goal == CurrentGoal)
 		{
 			Log.Info( "reached goal" );
 			_goalReached = true;
+			if(isSellingGoal)
+			{
+				EconomyComp.SellMedicine();
+			}
+			else
+			{
+				EconomyComp.AddMedicine(10);
+			}
+			
 			CurrentGoal.GetComponent<Goal>().EnableModel( false );
 			SetNewGoal();
 		}
