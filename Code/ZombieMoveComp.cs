@@ -29,7 +29,7 @@ public sealed class ZombieMoveComp : Component
 		chaseRange.IsTrigger = true;
 		chaseRange.OnTriggerExit += ( other ) =>
 		{
-			if ( other.Tags.Contains("player"))
+			if ( other.Tags.Contains( "player" ) )
 			{
 				target = null;
 				isChasing = false;
@@ -47,15 +47,17 @@ public sealed class ZombieMoveComp : Component
 			}
 		};
 		wanderRange = GameObject.AddComponent<BoxCollider>();
-		wanderRange.Scale =  new Vector3(  wanderSize, wanderSize, 20 );
+		wanderRange.Scale = new Vector3( wanderSize, wanderSize, 20 );
 		wanderRange.LocalTransform = LocalTransform;
 		wanderRange.IsTrigger = true;
 		agent = GameObject.GetComponent<NavMeshAgent>();
+
 	}
 	protected override void OnUpdate()
 	{
 		if ( isChasing )
 		{
+			Ragdoll();
 			agent.MoveTo( target.WorldPosition );
 		}
 		else
@@ -76,5 +78,16 @@ public sealed class ZombieMoveComp : Component
 		{
 			wanderTimer -= Time.Delta;
 		}
+	}
+
+	private void Ragdoll()
+	{
+		SkinnedModelRenderer renderer = GameObject.GetComponent<SkinnedModelRenderer>();
+		if ( !renderer.IsValid ) return;
+		var ragdoll = AddComponent<ModelPhysics>();
+		ragdoll.Renderer = renderer;
+		ragdoll.Model = renderer.Model;
+
+		//isChasing = false;
 	}
 }
