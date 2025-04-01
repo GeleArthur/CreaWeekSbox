@@ -274,12 +274,7 @@
         {
           "__type": "GoalManager",
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-          "EconomyComp": {
-            "_type": "component",
-            "component_id": "201d28ac-4d3e-4924-b839-5d30aa6a3c76",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "Economy"
-          },
+          "EconomyComp": null,
           "Goals": [
             {
               "_type": "gameobject",

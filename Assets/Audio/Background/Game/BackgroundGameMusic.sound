@@ -4,7 +4,12 @@
   "Pitch": "1",
   "Decibels": 70,
   "SelectionMode": "Random",
-  "Sounds": null,
+  "Sounds": [
+    "audio/background/game/yeah-18130.vsnd",
+    "audio/background/game/rock-music-6211.vsnd",
+    "audio/background/game/hard-rock-logo-108960.vsnd",
+    "audio/background/game/fast-rocky-loop-275535.vsnd"
+  ],
   "Occlusion": true,
   "AirAbsorption": true,
   "Transmission": true,
