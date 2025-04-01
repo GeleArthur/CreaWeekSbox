@@ -189,6 +189,7 @@
         {
           "__type": "Slime",
           "__guid": "d56bdbc5-5773-4bed-b657-d38b1df10923",
+          "HealthRegenration": 5,
           "MaxHealth": 100,
           "ModelRenderer": {
             "_type": "component",
@@ -464,16 +465,11 @@
                 "go": "e80901d8-292a-4f55-bb8e-6231d83d5317",
                 "component_type": "SkinnedModelRenderer"
               },
-              "Sound": {
-                "_type": "component",
-                "component_id": "f1dc27d1-41bf-4534-a6ea-3cd12f51b049",
-                "go": "7b9e80fa-504c-410a-b22a-c8cdbe091ed8",
-                "component_type": "SoundPointComponent"
-              }
+              "Sound": null
             },
             {
               "__type": "Sandbox.SoundPointComponent",
-              "__guid": "f1dc27d1-41bf-4534-a6ea-3cd12f51b049",
+              "__guid": "d32b0fca-73b9-4404-a7cc-13c4829724b1",
               "Distance": 512,
               "DistanceAttenuation": false,
               "DistanceAttenuationOverride": false,
@@ -510,12 +506,12 @@
               "ReflectionOverride": false,
               "Reflections": false,
               "Repeat": true,
-              "SoundEvent": "audio/zombies/zombieaudio.sound",
+              "SoundEvent": "audio/background/game/backgroundgamemusic.sound",
               "SoundOverride": false,
               "StopOnNew": false,
               "TargetMixer": {
-                "Name": "game",
-                "Id": "256f8e6d-e08e-4860-97a7-7aee3d6ae1af"
+                "Name": "music",
+                "Id": "2c5bfae9-a7e8-462e-a15b-f46ef883e27b"
               },
               "Volume": 1
             }
