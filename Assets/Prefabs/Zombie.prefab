@@ -7,30 +7,6 @@
     "Enabled": true,
     "Components": [
       {
-        "__type": "Sandbox.ModelRenderer",
-        "__guid": "23148709-e8f5-470a-b2eb-b572d777cb07",
-        "__enabled": false,
-        "BodyGroups": 18446744073709551615,
-        "CreateAttachments": false,
-        "MaterialGroup": null,
-        "MaterialOverride": null,
-        "Model": "models/citizen/skin/skeleton/models/skeleton_skin.vmdl",
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "RenderOptions": {
-          "GameLayer": true,
-          "OverlayLayer": false,
-          "BloomLayer": false,
-          "AfterUILayer": false
-        },
-        "RenderType": "On",
-        "Tint": "1,1,1,1"
-      },
-      {
         "__type": "ZombieMoveComp",
         "__guid": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
         "alertRadius": 200,
@@ -114,31 +90,25 @@
         "UseAnimGraph": true
       },
       {
-        "__type": "Sandbox.Rigidbody",
-        "__guid": "bb8c66e0-199e-484a-9a73-6fa2888ada2a",
-        "AngularDamping": 0,
-        "Gravity": true,
-        "LinearDamping": 0,
-        "Locking": {
-          "X": false,
-          "Y": false,
-          "Z": false,
-          "Pitch": false,
-          "Yaw": false,
-          "Roll": false
-        },
-        "MassCenterOverride": "0,0,0",
-        "MassOverride": 0,
-        "MotionEnabled": true,
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "87b5e3fe-a4b5-4af2-9b26-df4dc90860f4",
+        "Center": "0,0,40",
+        "Friction": null,
+        "IsTrigger": false,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
-        "StartAsleep": false
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "30,30,80",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
       }
     ],
     "Children": [
