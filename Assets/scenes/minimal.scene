@@ -11,7 +11,7 @@
           "__type": "Sandbox.SceneInformation",
           "__guid": "f043074d-5587-438c-b9bc-9bb35c6e511f",
           "Author": null,
-          "Changes": null,
+          "Changes": "",
           "Description": "",
           "Group": null,
           "OnComponentDestroy": null,
@@ -183,7 +183,8 @@
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "-126.4293,-1.892899,6.025604",
+      "Position": "-1824,-896,6.025749",
+      "Tags": "player",
       "Enabled": true,
       "Components": [
         {
@@ -465,16 +466,11 @@
                 "go": "e80901d8-292a-4f55-bb8e-6231d83d5317",
                 "component_type": "SkinnedModelRenderer"
               },
-              "Sound": {
-                "_type": "component",
-                "component_id": "f1dc27d1-41bf-4534-a6ea-3cd12f51b049",
-                "go": "7b9e80fa-504c-410a-b22a-c8cdbe091ed8",
-                "component_type": "SoundPointComponent"
-              }
+              "Sound": null
             },
             {
               "__type": "Sandbox.SoundPointComponent",
-              "__guid": "f1dc27d1-41bf-4534-a6ea-3cd12f51b049",
+              "__guid": "d32b0fca-73b9-4404-a7cc-13c4829724b1",
               "Distance": 512,
               "DistanceAttenuation": false,
               "DistanceAttenuationOverride": false,
@@ -511,12 +507,12 @@
               "ReflectionOverride": false,
               "Reflections": false,
               "Repeat": true,
-              "SoundEvent": "audio/zombies/zombieaudio.sound",
+              "SoundEvent": "audio/background/game/backgroundgamemusic.sound",
               "SoundOverride": false,
               "StopOnNew": false,
               "TargetMixer": {
-                "Name": "game",
-                "Id": "256f8e6d-e08e-4860-97a7-7aee3d6ae1af"
+                "Name": "music",
+                "Id": "2c5bfae9-a7e8-462e-a15b-f46ef883e27b"
               },
               "Volume": 1
             }
@@ -552,10 +548,306 @@
       "Children": []
     },
     {
-      "__guid": "bf1fcf12-29bc-4c49-98d5-9a333ca76d3a",
+      "__guid": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
+      "Flags": 0,
+      "Name": "GoalManager",
+      "Position": "-1007.856,-961.2682,1817.465",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "GoalManager",
+          "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
+          "Goals": [
+            {
+              "_type": "gameobject",
+              "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71"
+            },
+            {
+              "_type": "gameobject",
+              "go": "e2684175-5106-4fbc-861a-1604bddc824e"
+            },
+            {
+              "_type": "gameobject",
+              "go": "aa906eca-075a-4528-99ce-a7ff12bbb55d"
+            }
+          ],
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
+          "Flags": 0,
+          "Name": "Goal1",
+          "Position": "-320.4931,365.358,-1721.465",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "53295f08-998d-49f4-b0be-8d310c5674a3",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "200,200,200",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Goal",
+              "__guid": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
+              "GoalManager": {
+                "_type": "component",
+                "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
+                "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
+                "component_type": "GoalManager"
+              },
+              "Model": {
+                "_type": "component",
+                "component_id": "0b14fa07-7126-4e21-ba21-409a05856b92",
+                "go": "6537200a-1c69-4d15-b50c-787d414a0bed",
+                "component_type": "ModelRenderer"
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "6537200a-1c69-4d15-b50c-787d414a0bed",
+              "Flags": 0,
+              "Name": "Model",
+              "Scale": "4,4,4",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0b14fa07-7126-4e21-ba21-409a05856b92",
+                  "__enabled": false,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/dev/primary_white.vmat",
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.92093,0.91308,0.44976,0.43"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "e2684175-5106-4fbc-861a-1604bddc824e",
+          "Flags": 0,
+          "Name": "Goal2",
+          "Position": "-368.1445,-350.7318,-1721.465",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "1f17f88d-8365-4fe8-aee0-c6ff74144e97",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "200,200,200",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Goal",
+              "__guid": "2f82a9b7-69d9-4e9e-834e-b26e7460b969",
+              "GoalManager": {
+                "_type": "component",
+                "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
+                "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
+                "component_type": "GoalManager"
+              },
+              "Model": {
+                "_type": "component",
+                "component_id": "6690d695-aec5-4bc2-aa88-54c8e46b2fe2",
+                "go": "7d08a369-4c53-418d-acab-a8e217a1285c",
+                "component_type": "ModelRenderer"
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "7d08a369-4c53-418d-acab-a8e217a1285c",
+              "Flags": 0,
+              "Name": "Model",
+              "Scale": "4,4,4",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "6690d695-aec5-4bc2-aa88-54c8e46b2fe2",
+                  "__enabled": false,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/dev/primary_white.vmat",
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.92093,0.91308,0.44976,0.43"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "aa906eca-075a-4528-99ce-a7ff12bbb55d",
+          "Flags": 0,
+          "Name": "Goal3",
+          "Position": "-1072.145,-414.7318,-1721.465",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "8d22f6c2-86dd-4cbc-b51d-6d4e616ce1a2",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "200,200,200",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            },
+            {
+              "__type": "Goal",
+              "__guid": "a0a91dc0-a7c7-4f26-83b9-4bddc100a183",
+              "GoalManager": {
+                "_type": "component",
+                "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
+                "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
+                "component_type": "GoalManager"
+              },
+              "Model": {
+                "_type": "component",
+                "component_id": "fad44529-00f9-4012-9ff1-9555e1093ca6",
+                "go": "235dba48-9524-4fbc-936f-64634fb89533",
+                "component_type": "ModelRenderer"
+              },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "235dba48-9524-4fbc-936f-64634fb89533",
+              "Flags": 0,
+              "Name": "Model",
+              "Scale": "4,4,4",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "fad44529-00f9-4012-9ff1-9555e1093ca6",
+                  "__enabled": false,
+                  "BodyGroups": 18446744073709551615,
+                  "CreateAttachments": false,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/dev/primary_white.vmat",
+                  "Model": "models/dev/box.vmdl",
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
+                  "RenderType": "On",
+                  "Tint": "0.92093,0.91308,0.44976,0.43"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "-322.9486,7.857849,31.21265",
+      "Position": "-1591.048,-554.9458,31.21223",
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
       "__PrefabVariables": {}
