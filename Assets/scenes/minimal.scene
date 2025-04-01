@@ -342,6 +342,19 @@
           "OnComponentUpdate": null,
           "Priority": 5,
           "Speed": 1
+        },
+        {
+          "__type": "Economy",
+          "__guid": "365c1196-254b-426b-9bab-f80cae45f813",
+          "ConversionRate": 2,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "StartMedicine": 0,
+          "StartMoney": 0
         }
       ],
       "Children": [
