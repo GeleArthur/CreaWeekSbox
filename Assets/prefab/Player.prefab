@@ -254,32 +254,6 @@
             "ScaleStrategy": "ConsistentHeight",
             "TargetCamera": null,
             "ZIndex": 100
-          },
-          {
-            "__type": "Sandbox.PlayerHud",
-            "__guid": "08a9f95e-903b-4d54-a67b-d382531868bc",
-            "contoller": {
-              "_type": "component",
-              "component_id": "9df1f909-9983-4b51-a8fe-80c1b59ff299",
-              "go": "9df4e86b-dcf7-4e0b-a623-a869861a4160",
-              "component_type": "PlayerController"
-            },
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "SpawnableCars": [
-              {
-                "_type": "gameobject",
-                "prefab": "prefab/cars/s13/nissan silvia s13.prefab"
-              },
-              {
-                "_type": "gameobject",
-                "prefab": "prefab/cars/silverado1987/chevrolet silverado 1987.prefab"
-              }
-            ]
           }
         ]
       },
@@ -321,6 +295,85 @@
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null
+          }
+        ]
+      },
+      {
+        "__guid": "4fd737d2-37a1-4274-81e2-76d52279f925",
+        "Flags": 0,
+        "Name": "Camera",
+        "Position": "-267.452,-379.653,297.7903",
+        "Rotation": "-0.1448582,0.2860239,0.4279631,0.8450171",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.CameraComponent",
+            "__guid": "f43b056c-54f3-4c41-8cfa-c6f6336d638c",
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 60,
+            "FovAxis": "Horizontal",
+            "IsMainCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "Priority": 1,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "Viewport": "0,0,1,1",
+            "ZFar": 10000,
+            "ZNear": 10
+          },
+          {
+            "__type": "Sandbox.Bloom",
+            "__guid": "685e009f-b3bb-45fc-a2e1-a4779f077118",
+            "__version": 1,
+            "Gamma": 2.2,
+            "Mode": "Additive",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Strength": 0.5,
+            "Threshold": 1.25,
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.Tonemapping",
+            "__guid": "9106b0cb-a299-4eb2-9310-a3cec6055248",
+            "__version": 3,
+            "AutoExposureEnabled": true,
+            "ExposureCompensation": 0,
+            "ExposureMethod": "RGB",
+            "MaximumExposure": 2,
+            "MinimumExposure": 1,
+            "Mode": "HableFilmic",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Rate": 1
+          },
+          {
+            "__type": "Sandbox.Sharpen",
+            "__guid": "04d6c291-0023-4f6d-9899-dcc9cbdee7d2",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Scale": 0.2
           }
         ]
       }
