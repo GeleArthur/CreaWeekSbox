@@ -2,8 +2,7 @@
   "RootObject": {
     "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
     "Flags": 0,
-    "Name": "Player Controller",
-    "Position": "-1824,-896,6.025749",
+    "Name": "player controller",
     "Tags": "player",
     "Enabled": true,
     "Components": [
@@ -175,6 +174,17 @@
         "OnComponentUpdate": null,
         "StartMedicine": 100,
         "StartMoney": 0
+      },
+      {
+        "__type": "Sandbox.AudioListener",
+        "__guid": "a1b02017-3b01-406d-a640-01131271201f",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "UseCameraDirection": true
       }
     ],
     "Children": [
@@ -351,7 +361,31 @@
           }
         ]
       }
-    ]
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
   },
   "ShowInMenu": false,
   "MenuPath": null,
