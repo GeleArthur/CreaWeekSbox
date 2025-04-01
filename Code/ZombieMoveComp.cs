@@ -13,6 +13,10 @@ public sealed class ZombieMoveComp : Component
 	private float alertRadius;
 	[Property]
 	private float wanderSize;
+	[Property]
+	private Model model;
+	private HealthComponent health;
+	private float timeTillDelete = 7f;
 	private SphereCollider chaseRange;
 	private SphereCollider alertRange;
 	private BoxCollider wanderRange;
@@ -24,6 +28,9 @@ public sealed class ZombieMoveComp : Component
 	private Random random = new Random();
 	protected override void OnStart()
 	{
+		health = GameObject.GetComponent<HealthComponent>();
+		health.Heal(100);
+		health.OnDeath += OnDeathRagdoll;
 		chaseRange = GameObject.AddComponent<SphereCollider>();
 		chaseRange.Radius = chaseRadius;
 		chaseRange.IsTrigger = true;
@@ -53,11 +60,22 @@ public sealed class ZombieMoveComp : Component
 		agent = GameObject.GetComponent<NavMeshAgent>();
 
 	}
+	
 	protected override void OnUpdate()
 	{
+		if( health.Health <= 0 )
+		{
+			timeTillDelete -= Time.Delta;
+			if( timeTillDelete <= 0 )
+			{
+				GameObject.Destroy();
+			}
+			return;
+		}
+
+
 		if ( isChasing )
 		{
-			Ragdoll();
 			agent.MoveTo( target.WorldPosition );
 		}
 		else
@@ -86,8 +104,10 @@ public sealed class ZombieMoveComp : Component
 		if ( !renderer.IsValid ) return;
 		var ragdoll = AddComponent<ModelPhysics>();
 		ragdoll.Renderer = renderer;
-		ragdoll.Model = renderer.Model;
-
-		//isChasing = false;
+		ragdoll.Model = model;
+	}
+	private void OnDeathRagdoll()
+	{
+		Ragdoll();
 	}
 }
