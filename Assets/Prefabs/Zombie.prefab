@@ -89,25 +89,31 @@
         "UseAnimGraph": true
       },
       {
-        "__type": "Sandbox.BoxCollider",
-        "__guid": "87b5e3fe-a4b5-4af2-9b26-df4dc90860f4",
-        "Center": "0,0,40",
-        "Friction": null,
-        "IsTrigger": false,
+        "__type": "Sandbox.ModelPhysics",
+        "__guid": "3b65285f-ca96-4ef1-802d-2311e5a3c9fb",
+        "Locking": {
+          "X": false,
+          "Y": false,
+          "Z": false,
+          "Pitch": false,
+          "Yaw": false,
+          "Roll": false
+        },
+        "Model": "models/zombie.vmdl",
+        "MotionEnabled": false,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "OnObjectTriggerEnter": null,
-        "OnObjectTriggerExit": null,
-        "OnTriggerEnter": null,
-        "OnTriggerExit": null,
-        "Scale": "30,30,80",
-        "Static": false,
-        "Surface": null,
-        "SurfaceVelocity": "0,0,0"
+        "Renderer": {
+          "_type": "component",
+          "component_id": "ffb7fcd8-7348-44b6-b0e0-63e4bbc195b7",
+          "go": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "RigidbodyFlags": 0
       }
     ],
     "Children": [
@@ -822,14 +828,54 @@
       },
       {
         "__guid": "7c01ec1e-d9bc-4eee-a711-7292c003e0fe",
-        "Flags": 4,
+        "Flags": 0,
         "Name": "neck_clothing",
         "Position": "1.176033,-0.0001484909,52.03646",
         "Rotation": "0.4900887,0.5097177,0.5097224,-0.4900858",
         "Enabled": true
       }
     ],
-    "__variables": [],
+    "__variables": [
+      {
+        "Id": "Chase Radius",
+        "Title": "Chase Radius",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
+            "Property": "chaseRadius"
+          }
+        ]
+      },
+      {
+        "Id": "Alert Radius",
+        "Title": "Alert Radius",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
+            "Property": "alertRadius"
+          }
+        ]
+      },
+      {
+        "Id": "Wander Size",
+        "Title": "Wander Size",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
+            "Property": "wanderSize"
+          }
+        ]
+      }
+    ],
     "__properties": {
       "FixedUpdateFrequency": 50,
       "MaxFixedUpdates": 5,

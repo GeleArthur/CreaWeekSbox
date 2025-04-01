@@ -738,11 +738,15 @@
       "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
       "Flags": 0,
       "Name": "Zombie",
-      "Position": "-1080.945,-627.9072,32.70622",
+      "Position": "-1023.938,-617.2294,14.44102",
       "Tags": "zombie",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
-      "__PrefabVariables": {}
+      "__PrefabVariables": {
+        "Chase Radius": 150,
+        "Alert Radius": 200,
+        "Wander Size": 150
+      }
     },
     {
       "__guid": "ac1f5c1c-d5f7-42bd-8ab2-ee95d8113bf1",
@@ -811,6 +815,81 @@
           "Position": "-1508.622,1125.36,16.07067",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
+        }
+      ]
+    },
+    {
+      "__guid": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
+      "Flags": 0,
+      "Name": "zombie",
+      "Position": "-1630.217,-871.4426,14.03511",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "0779b871-6515-451d-8af1-7821c6d3f74d",
+          "AnimationGraph": null,
+          "BodyGroups": 18446744073709551615,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/zombie.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "PlaybackRate": 1,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": null
+          },
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "ce59ad1d-6019-44a6-a6b4-0344e3baef15",
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "Model": "models/zombie.vmdl",
+          "MotionEnabled": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "0779b871-6515-451d-8af1-7821c6d3f74d",
+            "go": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
         }
       ]
     }

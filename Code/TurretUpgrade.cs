@@ -12,33 +12,28 @@ public sealed class TurretUpgrade : Component
 	[Property]
 	private Collider ColliderComp;
 
-	private List<GameObject> _targets = new List<GameObject>();
-	public List<GameObject> Targets
-	{ 
-		get { return _targets; }
-		set { _targets = value; }
-	}
+	private readonly List<GameObject> _targets = [];
 
 	private float _elapsedSec = 0f;
 	protected override void OnAwake()
 	{
 		ColliderComp.OnTriggerEnter = ( Collider other ) =>
 		{
-			if ( other.Tags.Has( "zombie" ) && !Targets.Contains(other.GameObject))
+			if ( other.Tags.Has( "zombie" ) && !_targets.Contains(other.GameObject))
 			{
-				Targets.Add( other.GameObject );
+				_targets.Add( other.GameObject );
 			}
 		};
 
 		ColliderComp.OnTriggerExit = ( Collider other ) =>
 		{
-			Targets.Remove( other.GameObject );
+			_targets.Remove( other.GameObject );
 		};
 	}
 	protected override void OnUpdate()
 	{
-		if ( Targets.Count < 1) return;
-		if ( Targets[0].IsDestroyed ) Targets.RemoveAt( 0 );
+		if ( _targets.Count < 1) return;
+		if ( _targets[0].IsDestroyed ) _targets.RemoveAt( 0 );
 
 		// facing target
 		var direction = _targets[0].WorldPosition - WorldPosition;

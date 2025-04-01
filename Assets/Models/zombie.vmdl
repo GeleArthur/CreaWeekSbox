@@ -458,7 +458,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "pelvis"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 2.673346
 						point0 = [ 9.961487, 0.0, 0.0 ]
@@ -467,7 +467,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "leg_upper_L"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 9.18871
 						point0 = [ 36.754841, 0.0, 0.0 ]
@@ -476,7 +476,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "leg_lower_L"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 7.94739
 						point0 = [ 31.789537, 0.0, 0.0 ]
@@ -485,32 +485,16 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "ankle_L"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 2.812499
 						point0 = [ 11.249996, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
 					},
 					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "leg_lower_L_twist"
-						surface_prop = "default"
-						collision_tags = "solid"
-						radius = 1.0
-						center = [ 0.0, 0.0, 0.0 ]
-					},
-					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "leg_upper_L_twist"
-						surface_prop = "default"
-						collision_tags = "solid"
-						radius = 1.0
-						center = [ 0.0, 0.0, 0.0 ]
-					},
-					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "leg_upper_R"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 9.188714
 						point0 = [ 36.754848, 0.0, 0.0 ]
@@ -519,7 +503,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "leg_lower_R"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 7.947382
 						point0 = [ 31.789524, 0.0, 0.0 ]
@@ -528,24 +512,16 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "ankle_R"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 2.812501
 						point0 = [ 11.250004, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
 					},
 					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "leg_upper_R_twist"
-						surface_prop = "default"
-						collision_tags = "solid"
-						radius = 1.0
-						center = [ 0.0, 0.0, 0.0 ]
-					},
-					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "spine_0"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 3.562635
 						point0 = [ 14.250542, 0.0, 0.0 ]
@@ -554,7 +530,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "spine_1"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 3.562637
 						point0 = [ 14.250549, 0.0, 0.0 ]
@@ -563,7 +539,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "spine_2"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 3.695721
 						point0 = [ 14.782883, 0.0, 0.0 ]
@@ -572,7 +548,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "clavicle_L"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 3.948647
 						point0 = [ 15.79459, 0.0, 0.0 ]
@@ -581,7 +557,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "arm_upper_L"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 6.378715
 						point0 = [ 25.514858, 0.0, 0.0 ]
@@ -590,7 +566,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "arm_lower_L"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 4.893758
 						point0 = [ 19.575008, 0.0, 0.0 ]
@@ -599,7 +575,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "clavicle_R"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 3.948643
 						point0 = [ 15.794572, 0.0, 0.0 ]
@@ -608,7 +584,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "arm_upper_R"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 6.378713
 						point0 = [ 25.514851, 0.0, 0.0 ]
@@ -617,7 +593,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "arm_lower_R"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 4.893749
 						point0 = [ 19.574986, 0.0, 0.0 ]
@@ -626,7 +602,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "neck_0"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 2.864384
 						point0 = [ 11.457535, 0.0, 0.0 ]
@@ -635,25 +611,17 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "head"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_tags = "solid"
 						radius = 4.387154
 						point0 = [ 17.548615, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
 					},
-					{
-						_class = "PhysicsShapeSphere"
-						parent_bone = "neck_clothing"
-						surface_prop = "default"
-						collision_tags = "solid"
-						radius = 1.0
-						center = [ 0.0, 0.0, 0.0 ]
-					},
 				]
 			},
 		]
-		model_archetype = ""
-		primary_associated_entity = ""
+		model_archetype = "animated_model"
+		primary_associated_entity = "prop_dynamic"
 		anim_graph_name = "models/citizen/citizen.vanmgrph"
 		base_model_name = ""
 	}
