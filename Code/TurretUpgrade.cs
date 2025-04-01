@@ -39,6 +39,7 @@ public sealed class TurretUpgrade : Component
 	protected override void OnUpdate()
 	{
 		if ( Targets.Count < 1) return;
+		if ( Targets[0].IsDestroyed ) Targets.RemoveAt( 0 );
 
 		// facing target
 		var direction = _targets[0].WorldPosition - WorldPosition;
