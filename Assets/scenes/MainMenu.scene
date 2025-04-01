@@ -79,7 +79,7 @@
         },
         {
           "__type": "Sandbox.MainMenuHUD",
-          "__guid": "ffea295a-68dd-4623-8c0f-08c1c148f383",
+          "__guid": "85c83383-72a6-4ed8-945c-2ca45ce642db",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
