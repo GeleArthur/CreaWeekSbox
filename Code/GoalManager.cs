@@ -16,9 +16,7 @@ public sealed class GoalManager : Component
 		get { return _currentGoal; }
 		set { _currentGoal = value; }
 	}
-
-	private bool _goalReached = false;
-
+	
 	protected override void OnStart()
 	{
 		SetNewGoal();
@@ -34,7 +32,6 @@ public sealed class GoalManager : Component
 	{
 		if (goal == CurrentGoal)
 		{
-			_goalReached = true;
 			if(isSellingGoal)
 			{
 				EconomyComp.SellMedicine();

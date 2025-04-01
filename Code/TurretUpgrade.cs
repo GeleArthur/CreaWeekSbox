@@ -4,13 +4,13 @@ using System;
 public sealed class TurretUpgrade : Component
 {
 	[Property]
-	public int FireRate;
+	public int FireRate { get; set; }
 	[Property]
-	public GameObject Bullet;
+	public GameObject Bullet { get; set; }
 	[Property]
-	public GameObject Nuzzle;
+	public GameObject Nuzzle { get; set; }
 	[Property]
-	private Collider ColliderComp;
+	private Collider ColliderComp { get; set; }
 
 	private readonly List<GameObject> _targets = [];
 

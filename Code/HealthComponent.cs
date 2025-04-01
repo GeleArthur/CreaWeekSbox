@@ -4,7 +4,7 @@ using Sandbox;
 public sealed class HealthComponent : Component
 {
 	[Property]
-	private int _maxHealth;
+	private int _maxHealth { get; set; }
 
 	public Action OnDeath;
 	private int _health;
