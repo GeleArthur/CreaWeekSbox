@@ -1,12 +1,11 @@
 using Sandbox;
 using System;
 
-public sealed class ZombieMoveComp : Component
+public sealed class ZombieMoveComp : Component, Component.ICollisionListener
 {
 	[Property]
 	public string Name { get; set; }
 
-	[Property]
 	private GameObject target;
 	[Property]
 	private float chaseRadius;
@@ -14,24 +13,54 @@ public sealed class ZombieMoveComp : Component
 	private float alertRadius;
 	[Property]
 	private float wanderSize;
+	[Property]
+	private Model model;
+	private HealthComponent health;
+	private float timeTillDelete = 7f;
 	private SphereCollider chaseRange;
 	private SphereCollider alertRange;
 	private BoxCollider wanderRange;
+	private BoxCollider carCollider;
 	private NavMeshAgent agent;
 	private bool isChasing = false;
 	private float wanderTimer = 0;
 	private float wanderMaxTime = 5;
 	private float wanderTimeOffset = 2;
 	private Random random = new Random();
+	private ModelPhysics modelPhysics;
+
+	public void OnCollisionStart( Collision collision )
+	{
+		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
+		{
+			HealthComponent playerHealth = collision.Other.GameObject.GetComponent<HealthComponent>();
+			playerHealth.Damage( 10 );
+		}
+		else if ( collision.Other.GameObject.Tags.Contains( "car" ) )
+		{
+			HealthComponent health = GameObject.GetComponent<HealthComponent>();
+			Ragdoll( collision.Contact.Speed );
+			health.Damage( 100 );
+			carCollider.IsTrigger = true;
+		}
+	}
+
 	protected override void OnStart()
 	{
+		modelPhysics = AddComponent<ModelPhysics>();
+		carCollider = GameObject.GetComponent<BoxCollider>();
+
+		health = GameObject.GetComponent<HealthComponent>();
+		health.Heal(100);
+		health.OnDeath += OnDeathRagdoll;
 		chaseRange = GameObject.AddComponent<SphereCollider>();
 		chaseRange.Radius = chaseRadius;
 		chaseRange.IsTrigger = true;
 		chaseRange.OnTriggerExit += ( other ) =>
 		{
-			if ( other.GameObject.Parent.Name == "Player Controller" )
+			if ( other.Tags.Contains( "player" ) )
 			{
+				target = null;
 				isChasing = false;
 			}
 		};
@@ -40,19 +69,33 @@ public sealed class ZombieMoveComp : Component
 		alertRange.IsTrigger = true;
 		alertRange.OnTriggerEnter += ( other ) =>
 		{
-			if ( other.GameObject.Parent.Name == "Player Controller" )
+			if ( other.Tags.Contains( "player" ) )
 			{
+				target = other.GameObject;
 				isChasing = true;
 			}
 		};
 		wanderRange = GameObject.AddComponent<BoxCollider>();
-		wanderRange.Scale =  new Vector3(  wanderSize, wanderSize, 20 );
+		wanderRange.Scale = new Vector3( wanderSize, wanderSize, 20 );
 		wanderRange.LocalTransform = LocalTransform;
 		wanderRange.IsTrigger = true;
 		agent = GameObject.GetComponent<NavMeshAgent>();
+
 	}
+	
 	protected override void OnUpdate()
 	{
+		if( health.Health <= 0 )
+		{
+			timeTillDelete -= Time.Delta;
+			if( timeTillDelete <= 0 )
+			{
+				GameObject.Destroy();
+			}
+			return;
+		}
+
+
 		if ( isChasing )
 		{
 			agent.MoveTo( target.WorldPosition );
@@ -75,5 +118,18 @@ public sealed class ZombieMoveComp : Component
 		{
 			wanderTimer -= Time.Delta;
 		}
+	}
+
+	private void Ragdoll( Vector3 direction )
+	{
+		SkinnedModelRenderer renderer = GameObject.GetComponent<SkinnedModelRenderer>();
+		if ( !renderer.IsValid ) return;
+		modelPhysics.Renderer = renderer;
+		modelPhysics.Model = model;
+		modelPhysics.PhysicsGroup.Velocity = direction * 1.1f;
+	}
+	private void OnDeathRagdoll()
+	{
+		//Ragdoll(new Vector3(0,0,0));
 	}
 }

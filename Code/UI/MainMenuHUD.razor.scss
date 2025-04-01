@@ -1,0 +1,48 @@
+MainMenuHUD {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: transparent;
+	pointer-events: all;
+	color: white;
+	font-family: Poppins;
+	font-size: 64px;
+	flex-direction: column;
+
+	> h2 {
+		padding: 8px;
+		border-radius: 16px;
+		padding: 64px;
+		font-size: 128px;
+		font-weight: bolder;
+		color: brown;
+	}
+
+	> .Buttons {
+		padding: 64px;
+		gap: 32px;
+		font-size: 128px;
+		flex-direction: column;
+
+		> .button {
+			background-color: white;
+			color: black;
+			padding: 8px;
+			border-radius: 16px;
+			width: 30vw;
+			height: 20vh;
+			justify-content: center;
+
+			&:hover {
+				background-color: gray;
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	> .Title {
+		top: 0;
+	}
+}

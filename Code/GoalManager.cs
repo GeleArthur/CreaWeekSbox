@@ -34,7 +34,6 @@ public sealed class GoalManager : Component
 	{
 		if (goal == CurrentGoal)
 		{
-			Log.Info( "reached goal" );
 			_goalReached = true;
 			if(isSellingGoal)
 			{

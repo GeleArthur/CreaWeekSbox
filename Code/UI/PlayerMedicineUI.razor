@@ -1,0 +1,24 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="Medicine">
+		<p>💊 @Economy.Medicine</p>
+	</div>
+	<div class="Money">
+		<p>🤑 $@Economy.Money</p>
+	</div>
+</root>
+
+@code
+{
+
+	[Property] public Economy Economy { get; set; } = null;
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( Economy.Medicine );
+}

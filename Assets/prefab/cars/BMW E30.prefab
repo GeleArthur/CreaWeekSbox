@@ -11,7 +11,20 @@
       {
         "__type": "Meteor.VehicleTool.Vehicle.VehicleController",
         "__guid": "f8656763-8ba5-4b20-a502-c8124a183f6d",
-        "AcsendingSounds": null,
+        "AcsendingSounds": {
+          "1015": "prefab/cars/s13/sound/ext 1015 rpm.vsnd",
+          "1635": "prefab/cars/s13/sound/ext 1635 rpm.vsnd",
+          "2223": "prefab/cars/s13/sound/ext 2223 rpm.vsnd",
+          "3203": "prefab/cars/s13/sound/ext 3203 rpm.vsnd",
+          "3520": "prefab/cars/s13/sound/ext 3520 rpm.vsnd",
+          "4308": "prefab/cars/s13/sound/ext 4308 rpm.vsnd",
+          "4665": "prefab/cars/s13/sound/ext 4665 rpm.vsnd",
+          "5248": "prefab/cars/s13/sound/ext 5248 rpm.vsnd",
+          "5713": "prefab/cars/s13/sound/ext 5713 rpm.vsnd",
+          "6259": "prefab/cars/s13/sound/ext 6259 rpm.vsnd",
+          "6706": "prefab/cars/s13/sound/ext 6706 rpm.vsnd",
+          "7269": "prefab/cars/s13/sound/ext 7269 rpm.vsnd"
+        },
         "AssistMultiplier": 0.8,
         "AssistStartSpeed": 5,
         "Body": {
@@ -28,7 +41,19 @@
           "go": "3e41ef38-a096-4b12-8726-8711014607ca",
           "component_type": "Clutch"
         },
-        "DecsendingSounds": null,
+        "DecsendingSounds": {
+          "1060": "prefab/cars/s13/sound/ext 1060 rpm.vsnd",
+          "1740": "prefab/cars/s13/sound/ext 1740 rpm.vsnd",
+          "2829": "prefab/cars/s13/sound/ext 2829 rpm.vsnd",
+          "3265": "prefab/cars/s13/sound/ext 3265 rpm.vsnd",
+          "3814": "prefab/cars/s13/sound/ext 3814 rpm.vsnd",
+          "4355": "prefab/cars/s13/sound/ext 4355 rpm.vsnd",
+          "4899": "prefab/cars/s13/sound/ext 4899 rpm.vsnd",
+          "5452": "prefab/cars/s13/sound/ext 5452 rpm.vsnd",
+          "5994": "prefab/cars/s13/sound/ext 5994 rpm.vsnd",
+          "6536": "prefab/cars/s13/sound/ext 6536 rpm.vsnd",
+          "7087": "prefab/cars/s13/sound/ext 7087 rpm.vsnd"
+        },
         "Differential": {
           "_type": "component",
           "component_id": "cf6193d4-93fd-4a99-8dc5-10828f8d1374",
@@ -44,8 +69,8 @@
         "EngineVolume": 1,
         "EyeDistanceFromTop": 8,
         "EyePosition": "-10,16,56",
-        "GearDownSound": null,
-        "GearUpSound": null,
+        "GearDownSound": "prefab/cars/s13/sound/sfx/shiftdown.vsnd",
+        "GearUpSound": "prefab/cars/s13/sound/sfx/shiftup.vsnd",
         "GearVolume": 1,
         "HandBrakeTorque": 50000,
         "HandBrakeWheels": [
@@ -101,7 +126,10 @@
           "Name": "game",
           "Id": "97f010aa-9120-4627-af46-5bbfe789663a"
         },
-        "SoundParent": null,
+        "SoundParent": {
+          "_type": "gameobject",
+          "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a"
+        },
         "SteeringWheels": [
           {
             "_type": "component",
@@ -909,28 +937,6 @@
             "ScaleStrategy": "ConsistentHeight",
             "TargetCamera": null,
             "ZIndex": 100
-          },
-          {
-            "__type": "Sandbox.VehicleEditor",
-            "__guid": "238e41a4-8c1b-44e2-b0e9-fa111a2c329d",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "suit": {
-              "_type": "component",
-              "component_id": "1a28cd11-d500-43c4-b24b-f5957a9c80c0",
-              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a",
-              "component_type": "SuitableVehicle"
-            },
-            "vehicleComponent": {
-              "_type": "component",
-              "component_id": "f8656763-8ba5-4b20-a502-c8124a183f6d",
-              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a",
-              "component_type": "VehicleController"
-            }
           }
         ]
       },
@@ -1401,7 +1407,7 @@
               "go": "a950ca79-9519-4673-828a-ba9f1d704405",
               "component_type": "Engine"
             },
-            "ExhaustSounds": null,
+            "ExhaustSounds": {},
             "ExhaustVolume": 1,
             "MaxSizeMultiplier": 1.2,
             "MaxSpeedMultiplier": 1.4,
