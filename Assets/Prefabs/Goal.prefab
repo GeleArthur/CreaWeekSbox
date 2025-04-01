@@ -1,0 +1,95 @@
+{
+  "RootObject": {
+    "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
+    "Flags": 0,
+    "Name": "Goal1",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "53295f08-998d-49f4-b0be-8d310c5674a3",
+        "Center": "0,0,0",
+        "Friction": null,
+        "IsTrigger": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "200,200,200",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "Goal",
+        "__guid": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
+        "GoalManager": {
+          "_type": "component",
+          "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
+          "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
+          "component_type": "GoalManager"
+        },
+        "Model": {
+          "_type": "component",
+          "component_id": "0b14fa07-7126-4e21-ba21-409a05856b92",
+          "go": "6537200a-1c69-4d15-b50c-787d414a0bed",
+          "component_type": "ModelRenderer"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "6537200a-1c69-4d15-b50c-787d414a0bed",
+        "Flags": 0,
+        "Name": "Model",
+        "Scale": "4,4,4",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "0b14fa07-7126-4e21-ba21-409a05856b92",
+            "__enabled": false,
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "MaterialGroup": null,
+            "MaterialOverride": "materials/dev/primary_white.vmat",
+            "Model": "models/dev/box.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "0.92093,0.91308,0.44976,0.43"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

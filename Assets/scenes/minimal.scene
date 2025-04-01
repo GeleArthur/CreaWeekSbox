@@ -575,14 +575,8 @@
               "_type": "gameobject",
               "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71"
             },
-            {
-              "_type": "gameobject",
-              "go": "e2684175-5106-4fbc-861a-1604bddc824e"
-            },
-            {
-              "_type": "gameobject",
-              "go": "aa906eca-075a-4528-99ce-a7ff12bbb55d"
-            }
+            null,
+            null
           ],
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -599,260 +593,26 @@
           "Name": "Goal1",
           "Position": "-320.4931,365.358,-1721.465",
           "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "53295f08-998d-49f4-b0be-8d310c5674a3",
-              "Center": "0,0,0",
-              "Friction": null,
-              "IsTrigger": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Scale": "200,200,200",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            },
-            {
-              "__type": "Goal",
-              "__guid": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
-              "GoalManager": {
-                "_type": "component",
-                "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-                "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
-                "component_type": "GoalManager"
-              },
-              "Model": {
-                "_type": "component",
-                "component_id": "0b14fa07-7126-4e21-ba21-409a05856b92",
-                "go": "6537200a-1c69-4d15-b50c-787d414a0bed",
-                "component_type": "ModelRenderer"
-              },
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "6537200a-1c69-4d15-b50c-787d414a0bed",
-              "Flags": 0,
-              "Name": "Model",
-              "Scale": "4,4,4",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "0b14fa07-7126-4e21-ba21-409a05856b92",
-                  "__enabled": false,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "MaterialGroup": null,
-                  "MaterialOverride": "materials/dev/primary_white.vmat",
-                  "Model": "models/dev/box.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.92093,0.91308,0.44976,0.43"
-                }
-              ]
-            }
-          ]
+          "__Prefab": "prefabs/goal.prefab",
+          "__PrefabVariables": {}
         },
         {
-          "__guid": "e2684175-5106-4fbc-861a-1604bddc824e",
+          "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
           "Flags": 0,
-          "Name": "Goal2",
-          "Position": "-368.1445,-350.7318,-1721.465",
+          "Name": "Goal1",
+          "Position": "975.856,417.2682,-1721.465",
           "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "1f17f88d-8365-4fe8-aee0-c6ff74144e97",
-              "Center": "0,0,0",
-              "Friction": null,
-              "IsTrigger": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Scale": "200,200,200",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            },
-            {
-              "__type": "Goal",
-              "__guid": "2f82a9b7-69d9-4e9e-834e-b26e7460b969",
-              "GoalManager": {
-                "_type": "component",
-                "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-                "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
-                "component_type": "GoalManager"
-              },
-              "Model": {
-                "_type": "component",
-                "component_id": "6690d695-aec5-4bc2-aa88-54c8e46b2fe2",
-                "go": "7d08a369-4c53-418d-acab-a8e217a1285c",
-                "component_type": "ModelRenderer"
-              },
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "7d08a369-4c53-418d-acab-a8e217a1285c",
-              "Flags": 0,
-              "Name": "Model",
-              "Scale": "4,4,4",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "6690d695-aec5-4bc2-aa88-54c8e46b2fe2",
-                  "__enabled": false,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "MaterialGroup": null,
-                  "MaterialOverride": "materials/dev/primary_white.vmat",
-                  "Model": "models/dev/box.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.92093,0.91308,0.44976,0.43"
-                }
-              ]
-            }
-          ]
+          "__Prefab": "prefabs/goal.prefab",
+          "__PrefabVariables": {}
         },
         {
-          "__guid": "aa906eca-075a-4528-99ce-a7ff12bbb55d",
+          "__guid": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
           "Flags": 0,
-          "Name": "Goal3",
-          "Position": "-1072.145,-414.7318,-1721.465",
+          "Name": "Goal1",
+          "Position": "1263.856,1601.268,-1721.465",
           "Enabled": true,
-          "Components": [
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "8d22f6c2-86dd-4cbc-b51d-6d4e616ce1a2",
-              "Center": "0,0,0",
-              "Friction": null,
-              "IsTrigger": true,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Scale": "200,200,200",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            },
-            {
-              "__type": "Goal",
-              "__guid": "a0a91dc0-a7c7-4f26-83b9-4bddc100a183",
-              "GoalManager": {
-                "_type": "component",
-                "component_id": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-                "go": "5d7787b6-a3e4-4eaa-a074-f66ef1ac2d05",
-                "component_type": "GoalManager"
-              },
-              "Model": {
-                "_type": "component",
-                "component_id": "fad44529-00f9-4012-9ff1-9555e1093ca6",
-                "go": "235dba48-9524-4fbc-936f-64634fb89533",
-                "component_type": "ModelRenderer"
-              },
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "235dba48-9524-4fbc-936f-64634fb89533",
-              "Flags": 0,
-              "Name": "Model",
-              "Scale": "4,4,4",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "fad44529-00f9-4012-9ff1-9555e1093ca6",
-                  "__enabled": false,
-                  "BodyGroups": 18446744073709551615,
-                  "CreateAttachments": false,
-                  "MaterialGroup": null,
-                  "MaterialOverride": "materials/dev/primary_white.vmat",
-                  "Model": "models/dev/box.vmdl",
-                  "OnComponentDestroy": null,
-                  "OnComponentDisabled": null,
-                  "OnComponentEnabled": null,
-                  "OnComponentFixedUpdate": null,
-                  "OnComponentStart": null,
-                  "OnComponentUpdate": null,
-                  "RenderOptions": {
-                    "GameLayer": true,
-                    "OverlayLayer": false,
-                    "BloomLayer": false,
-                    "AfterUILayer": false
-                  },
-                  "RenderType": "On",
-                  "Tint": "0.92093,0.91308,0.44976,0.43"
-                }
-              ]
-            }
-          ]
+          "__Prefab": "prefabs/goal.prefab",
+          "__PrefabVariables": {}
         }
       ]
     },
