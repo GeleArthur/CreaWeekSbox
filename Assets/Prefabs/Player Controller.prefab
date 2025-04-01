@@ -185,6 +185,43 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "UseCameraDirection": true
+      },
+      {
+        "__type": "Sandbox.ScreenPanel",
+        "__guid": "0dd4022b-d69a-49c3-b9c4-5bc6d5593283",
+        "AutoScreenScale": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Opacity": 1,
+        "Scale": 1,
+        "ScaleStrategy": "FollowDesktopScaling",
+        "TargetCamera": {
+          "_type": "component",
+          "component_id": "f8b747dd-2b2a-413a-928b-d410c544048a",
+          "go": "0921000c-e45e-442c-b4d0-9954d6118976",
+          "component_type": "CameraComponent"
+        },
+        "ZIndex": 100
+      },
+      {
+        "__type": "Sandbox.PlayerMedicineUI",
+        "__guid": "90c918ab-d06b-4c4c-aa6f-1f90b1c7c847",
+        "Economy": {
+          "_type": "component",
+          "component_id": "365c1196-254b-426b-9bab-f80cae45f813",
+          "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+          "component_type": "Economy"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
       }
     ],
     "Children": [

@@ -1,0 +1,31 @@
+PlayerMedicineUI {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: Poppins;
+	font-size: 24px;
+	align-items: center;
+	align-content: center;
+
+	> .Medicine {
+		background-color: gray;
+		width: 20vw;
+		border-radius: 8px;
+		position: absolute;
+		top: 32px;
+		left: 32px;
+		font-size: 64px;
+	}
+
+	> .Money {
+		background-color: gray;
+		width: 20vw;
+		border-radius: 8px;
+		position: absolute;
+		top: 150px;
+		left: 32px;
+		font-size: 64px;
+	}
+}
