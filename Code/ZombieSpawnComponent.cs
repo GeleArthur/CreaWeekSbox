@@ -59,22 +59,11 @@ public sealed class ZombieSpawnComponent : Component
 
 		if(MaxAmountOfZombies>AmountOfZombies)
 		{
-			for(int i =0;i<SpawnArea.Count;++i )
-			{
-				//if( SpawnArea[i].WorldPosition.Distance( Player.WorldPosition ) < 500f )
-				//{
-					_sceneTrace = Scene.Trace.Ray(Player.WorldPosition, SpawnArea[i].WorldPosition ).Run();
-					if ( _sceneTrace.Hit )
-					{
-						++AmountOfZombies;
-						Zombie.Clone( SpawnArea[i].WorldPosition );
-						break;
-					}
+			var randomSpawner= Game.Random.FromList<GameObject>(SpawnArea );
+			Zombie.Clone( randomSpawner.WorldPosition );
 
-			//	}
+			++AmountOfZombies;
 
-
-			}
 		}
 		
 	}
