@@ -314,20 +314,13 @@
           {
             "__type": "Sandbox.SoundPointComponent",
             "__guid": "d32b0fca-73b9-4404-a7cc-13c4829724b1",
-            "Distance": 512,
-            "DistanceAttenuation": false,
-            "DistanceAttenuationOverride": false,
+            "Distance": 50000,
+            "DistanceAttenuation": true,
+            "DistanceAttenuationOverride": true,
             "Falloff": [
               {
-                "x": 0,
+                "x": 0.5184049,
                 "y": 1,
-                "in": 3.1415927,
-                "out": -3.1415927,
-                "mode": "Mirrored"
-              },
-              {
-                "x": 1,
-                "y": 0,
                 "in": 0,
                 "out": 0,
                 "mode": "Mirrored"
