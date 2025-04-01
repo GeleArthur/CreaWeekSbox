@@ -1,0 +1,76 @@
+{
+  "RootObject": {
+    "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
+    "Flags": 0,
+    "Name": "Zombie",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "23148709-e8f5-470a-b2eb-b572d777cb07",
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/citizen/heads/head_zombie_01/models/head_zombie_01.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ZombieMoveComp",
+        "__guid": "512a6c23-8fed-4dbb-8845-ae90a0be00e1",
+        "alertRadius": 200,
+        "chaseRadius": 150,
+        "Name": null,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "target": {
+          "_type": "gameobject",
+          "go": "e80901d8-292a-4f55-bb8e-6231d83d5317"
+        },
+        "wanderSize": 150
+      },
+      {
+        "__type": "Sandbox.NavMeshAgent",
+        "__guid": "390f1526-1aab-4120-b571-d833283955be",
+        "Acceleration": 120,
+        "AutoTraverseLinks": true,
+        "Height": 64,
+        "MaxSpeed": 120,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Radius": 16,
+        "Separation": 0.25,
+        "UpdatePosition": true,
+        "UpdateRotation": true
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
