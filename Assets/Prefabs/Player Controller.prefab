@@ -199,12 +199,17 @@
         "Opacity": 1,
         "Scale": 1,
         "ScaleStrategy": "FollowDesktopScaling",
-        "TargetCamera": null,
+        "TargetCamera": {
+          "_type": "component",
+          "component_id": "f8b747dd-2b2a-413a-928b-d410c544048a",
+          "go": "0921000c-e45e-442c-b4d0-9954d6118976",
+          "component_type": "CameraComponent"
+        },
         "ZIndex": 100
       },
       {
         "__type": "Sandbox.PlayerMedicineUI",
-        "__guid": "e4769f69-3fe1-4bca-8af2-357784cfde1a",
+        "__guid": "90c918ab-d06b-4c4c-aa6f-1f90b1c7c847",
         "Economy": {
           "_type": "component",
           "component_id": "365c1196-254b-426b-9bab-f80cae45f813",
