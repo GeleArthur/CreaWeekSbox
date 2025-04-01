@@ -6,7 +6,6 @@ public sealed class ZombieMoveComp : Component
 	[Property]
 	public string Name { get; set; }
 
-	[Property]
 	private GameObject target;
 	[Property]
 	private float chaseRadius;
@@ -30,8 +29,9 @@ public sealed class ZombieMoveComp : Component
 		chaseRange.IsTrigger = true;
 		chaseRange.OnTriggerExit += ( other ) =>
 		{
-			if ( other.GameObject.Parent.Name == "Player Controller" )
+			if ( other.Tags.Contains("player"))
 			{
+				target = null;
 				isChasing = false;
 			}
 		};
@@ -40,8 +40,9 @@ public sealed class ZombieMoveComp : Component
 		alertRange.IsTrigger = true;
 		alertRange.OnTriggerEnter += ( other ) =>
 		{
-			if ( other.GameObject.Parent.Name == "Player Controller" )
+			if ( other.Tags.Contains( "player" ) )
 			{
+				target = other.GameObject;
 				isChasing = true;
 			}
 		};
