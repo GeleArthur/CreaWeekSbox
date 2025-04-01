@@ -1,0 +1,38 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<h2 class="Title">EARN TO DIE 3D</h2>
+	<div class="Buttons">
+		<div class="button" onclick=@OnPlay>
+			Play
+		</div>
+		<div class="button" onclick=@OnQuit>
+			Quit
+		</div>
+	</div>
+</root>
+
+@code
+{
+	protected override void OnUpdate()
+	{
+	}
+
+	protected override int BuildHash()
+	{
+		return System.HashCode.Combine( "" );
+	}
+
+	void OnPlay()
+	{
+		Scene.LoadFromFile( "scenes/minimal.scene" );
+	}
+
+	void OnQuit()
+	{
+		Game.Close();
+	}
+}
