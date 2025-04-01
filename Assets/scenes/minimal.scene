@@ -575,8 +575,14 @@
               "_type": "gameobject",
               "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71"
             },
-            null,
-            null
+            {
+              "_type": "gameobject",
+              "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1"
+            },
+            {
+              "_type": "gameobject",
+              "go": "57707bd7-a728-48a2-a6f5-0e447503f0d1"
+            }
           ],
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -621,6 +627,7 @@
       "Flags": 0,
       "Name": "bmw e30",
       "Position": "-1591.048,-554.9458,31.21223",
+      "Tags": "car",
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
       "__PrefabVariables": {}

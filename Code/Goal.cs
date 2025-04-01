@@ -20,7 +20,7 @@ public sealed class Goal : Component
 		Collider = GetComponent<Collider>();
 		Collider.OnTriggerEnter = ( Collider other ) =>
 		{
-			if ( other.Tags.Has("player"))
+			if ( other.Tags.Has("player") ||other.Tags.Has("car"))
 			{
 				GoalManager.Notify( this.GameObject );
 			}
