@@ -776,6 +776,113 @@
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "ac1f5c1c-d5f7-42bd-8ab2-ee95d8113bf1",
+      "Flags": 0,
+      "Name": "SpawnerManager",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ZombieSpawnComponent",
+          "__guid": "28d51581-72db-4400-8203-40c20994ca30",
+          "ColliderComp": [],
+          "MaxAmountOfZombies": 10,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Player": {
+            "_type": "component",
+            "component_id": "8d0b91b4-2700-483d-9bf0-8d7ffc34c2d1",
+            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+            "component_type": "PlayerController"
+          },
+          "SpawnArea": [
+            {
+              "_type": "gameobject",
+              "go": "1506a96c-85c3-4b59-a009-bf5b07131d8f"
+            },
+            {
+              "_type": "gameobject",
+              "go": "4a9640a7-c10e-487b-8323-02ef5dd3b54f"
+            },
+            {
+              "_type": "gameobject",
+              "go": "65504811-8e0e-4d2a-96cb-c82744fc3d6c"
+            },
+            {
+              "_type": "gameobject",
+              "go": "07587eb6-6c0b-4152-a3ec-411d478e0578"
+            },
+            {
+              "_type": "gameobject",
+              "go": "03a3baa9-18df-479a-9e57-4b738904bd38"
+            },
+            {
+              "_type": "gameobject",
+              "go": "94c43508-a433-49ba-898b-14a8565f62c6"
+            }
+          ],
+          "SpawnTimer": 3,
+          "Zombie": {
+            "_type": "gameobject",
+            "go": "055b01fd-cdb9-42b5-a547-91d9250d61cb"
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "1506a96c-85c3-4b59-a009-bf5b07131d8f",
+          "Flags": 0,
+          "Name": "Spawn1",
+          "Position": "-2150.849,-120.4948,16.07139",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4a9640a7-c10e-487b-8323-02ef5dd3b54f",
+          "Flags": 0,
+          "Name": "Spawn2",
+          "Position": "-646.4313,-224.3948,16.07116",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "65504811-8e0e-4d2a-96cb-c82744fc3d6c",
+          "Flags": 0,
+          "Name": "Spawn3",
+          "Position": "-2245.937,-956.7822,16.07076",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "07587eb6-6c0b-4152-a3ec-411d478e0578",
+          "Flags": 0,
+          "Name": "Spawn4",
+          "Position": "-1788.059,137.1984,16.0703",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "03a3baa9-18df-479a-9e57-4b738904bd38",
+          "Flags": 0,
+          "Name": "Spawn5",
+          "Position": "19.38324,-554.9811,16.07083",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "94c43508-a433-49ba-898b-14a8565f62c6",
+          "Flags": 0,
+          "Name": "Spawn6",
+          "Position": "-1508.622,1125.36,16.07067",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        }
+      ]
     }
   ],
   "SceneProperties": {
