@@ -440,6 +440,86 @@
               "SurfaceVelocity": "0,0,0"
             }
           ]
+        },
+        {
+          "__guid": "7b9e80fa-504c-410a-b22a-c8cdbe091ed8",
+          "Flags": 0,
+          "Name": "Audio",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.LipSync",
+              "__guid": "a838902c-cd76-4eaa-a7fc-83c01504197f",
+              "MorphScale": 1.5,
+              "MorphSmoothTime": 0.1,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Renderer": {
+                "_type": "component",
+                "component_id": "1f1bcbbe-0099-43f4-8020-0065eaf90ff6",
+                "go": "e80901d8-292a-4f55-bb8e-6231d83d5317",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "Sound": {
+                "_type": "component",
+                "component_id": "f1dc27d1-41bf-4534-a6ea-3cd12f51b049",
+                "go": "7b9e80fa-504c-410a-b22a-c8cdbe091ed8",
+                "component_type": "SoundPointComponent"
+              }
+            },
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "f1dc27d1-41bf-4534-a6ea-3cd12f51b049",
+              "Distance": 512,
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Falloff": [
+                {
+                  "x": 0,
+                  "y": 1,
+                  "in": 3.1415927,
+                  "out": -3.1415927,
+                  "mode": "Mirrored"
+                },
+                {
+                  "x": 1,
+                  "y": 0,
+                  "in": 0,
+                  "out": 0,
+                  "mode": "Mirrored"
+                }
+              ],
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "audio/zombies/zombieaudio.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "game",
+                "Id": "256f8e6d-e08e-4860-97a7-7aee3d6ae1af"
+              },
+              "Volume": 1
+            }
+          ]
         }
       ]
     },
@@ -484,7 +564,7 @@
       "Title": "minimal"
     },
     "NavMesh": {
-      "Enabled": false,
+      "Enabled": true,
       "IncludeStaticBodies": true,
       "IncludeKeyframedBodies": true,
       "EditorAutoUpdate": true,
