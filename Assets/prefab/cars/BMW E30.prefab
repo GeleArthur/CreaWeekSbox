@@ -69,8 +69,8 @@
         "EngineVolume": 1,
         "EyeDistanceFromTop": 8,
         "EyePosition": "-10,16,56",
-        "GearDownSound": null,
-        "GearUpSound": null,
+        "GearDownSound": "prefab/cars/s13/sound/sfx/shiftdown.vsnd",
+        "GearUpSound": "prefab/cars/s13/sound/sfx/shiftup.vsnd",
         "GearVolume": 1,
         "HandBrakeTorque": 50000,
         "HandBrakeWheels": [
