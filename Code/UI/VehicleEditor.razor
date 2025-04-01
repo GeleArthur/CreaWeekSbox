@@ -1,0 +1,411 @@
+@using Meteor.VehicleTool.Vehicle
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root class="@(Visible ? "" : "hidden")">
+
+	<div class="colomn">
+
+		<div class="container">
+			<title>Steering</title>
+			<SliderControl Min=@(0) Max=@(90) Value:bind="@vehicleComponent.MaxSteerAngle">Max Angle</SliderControl>
+			<SliderControl Step="@(0.1f)" Min=@(0) Max=@(1) Value:bind="@vehicleComponent.AssistMultiplier">Assist Multiplier</SliderControl>
+			<SliderControl Min=@(0) Max=@(320) Value:bind="@vehicleComponent.AssistStartSpeed">Assist Start Speed</SliderControl>
+		</div>
+		<div class="container">
+			<title>Spring</title>
+			<SliderControl Min=@(0) Max=@(32) Value:bind="@MinSuspensionLength">Min Length</SliderControl>
+			<SliderControl Min=@(0) Max=@(64) Value:bind="@MaxSuspensionLength">Max Length</SliderControl>
+			<SliderControl Min=@(0) Max=@(320000) Value:bind="@SuspensionStiffness">Stiffness</SliderControl>
+			<SliderControl Min=@(0) Max=@(320000) Value:bind="@SuspensionStiffness">Extension Speed</SliderControl>
+		</div>
+		<div class="container">
+			<title>Wheel</title>
+			<SliderControl Min=@(0) Max=@(100000) Value:bind="@LoadRating">Friction</SliderControl>
+			<SliderControl Min=@(0) Max=@(500) Value:bind="@RollingResistanceTorque">Rolling Resistance Torque</SliderControl>
+		</div>
+	</div>
+	<div class="colomn">
+
+
+		<div class="container">
+			<title>Damper</title>
+			<SliderControl Min=@(0) Max=@(50000) Value:bind="@BumpRate">Bump Rate</SliderControl>
+			<SliderControl Min=@(0) Max=@(50000) Value:bind="@ReboundRate">Rebound Rate</SliderControl>
+			<SliderControl Step=@(0.01f) Min=@(0) Max=@(3) Value:bind="@SlowBump">Slow Bump</SliderControl>
+			<SliderControl Step=@(0.01f) Min=@(0) Max=@(3) Value:bind="@FastBump">Fast Bump</SliderControl>
+			<SliderControl Step=@(0.01f) Min=@(0) Max=@(0.2f) Value:bind="@BumpDivisionVelocity">Bump Division Velocity</SliderControl>
+			<SliderControl Step=@(0.01f) Min=@(0) Max=@(3) Value:bind="@ReboundDivisionVelocity">Rebound Division Velocity</SliderControl>
+			<SliderControl Step=@(0.01f) Min=@(0) Max=@(3) Value:bind="@SlowRebound">Slow Rebound</SliderControl>
+			<SliderControl Step=@(0.01f) Min=@(0) Max=@(0.2f) Value:bind="@FastRebound">Fast Rebound</SliderControl>
+		</div>
+
+
+		<div class="container">
+			<title>Powertrain</title>
+			<SwitchControl Value:bind="@TransmissionType">Transmission Type Automatic</SwitchControl>
+		</div>
+
+
+	</div>
+</root>
+@code
+{
+
+	public bool Visible => Input.Down("Score") && suit.User.IsValid() && Network.IsOwner;
+	private float initRadius;
+	private float initWidth;
+
+	[Property] private VehicleController vehicleComponent;
+	[Property] private SuitableVehicle suit;
+
+	protected override void OnAwake()
+	{
+		suit ??= Components.Get<SuitableVehicle>(FindMode.InAncestors);
+		vehicleComponent ??= Components.Get<VehicleController>(FindMode.InAncestors);
+	}
+
+	protected override void OnStart()
+	{
+		var wheel = vehicleComponent.Wheels[0];
+		initRadius = wheel.Radius;
+		initWidth = wheel.Width;
+		minSuspensionLength = wheel.MinSuspensionLength;
+		maxSuspensionLength = wheel.MaxSuspensionLength;
+		suspensionStiffness = wheel.SuspensionStiffness;
+
+		radius = wheel.Radius;
+		width = wheel.Width;
+		mass = wheel.Mass;
+		loadRating = wheel.LoadRating;
+		rollingResistanceTorque = wheel.RollingResistanceTorque;
+		autoSetFriction = wheel.AutoSetFriction;
+
+		bumpRate = wheel.BumpRate;
+		reboundRate = wheel.ReboundRate;
+		slowBump = wheel.SlowBump;
+		fastBump = wheel.FastBump;
+		bumpDivisionVelocity = wheel.BumpDivisionVelocity;
+		reboundDivisionVelocity = wheel.ReboundDivisionVelocity;
+		slowRebound = wheel.SlowRebound;
+		fastRebound = wheel.FastRebound;
+		transmissionType = vehicleComponent.Transmission.TransmissionType == Meteor.VehicleTool.Vehicle.Powertrain.Transmission.TransmissionShiftType.Automatic ? true : false;
+	}
+
+
+	private bool transmissionType;
+	private bool TransmissionType
+	{
+		get => transmissionType; set
+		{
+			transmissionType = value;
+			vehicleComponent.Transmission.TransmissionType = value ? Meteor.VehicleTool.Vehicle.Powertrain.Transmission.TransmissionShiftType.Automatic : Meteor.VehicleTool.Vehicle.Powertrain.Transmission.TransmissionShiftType.Manual;
+			vehicleComponent.CanInputSwapping = value;
+		}
+	}
+
+	private float fastRebound;
+	private float FastRebound
+	{
+		get => fastRebound; set
+		{
+			fastRebound = value;
+			SetFastRebound(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetFastRebound(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.FastRebound = value;
+	}
+
+	private float slowRebound;
+	private float SlowRebound
+	{
+		get => slowRebound; set
+		{
+			slowRebound = value;
+			SetSlowRebound(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetSlowRebound(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.SlowRebound = value;
+	}
+
+	private float reboundDivisionVelocity;
+	private float ReboundDivisionVelocity
+	{
+		get => reboundDivisionVelocity; set
+		{
+			reboundDivisionVelocity = value;
+			SetReboundDivisionVelocity(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetReboundDivisionVelocity(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.ReboundDivisionVelocity = value;
+	}
+
+	private float bumpDivisionVelocity;
+	private float BumpDivisionVelocity
+	{
+		get => bumpDivisionVelocity; set
+		{
+			bumpDivisionVelocity = value;
+			SetBumpDivisionVelocity(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetBumpDivisionVelocity(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.BumpDivisionVelocity = value;
+	}
+
+	private float fastBump;
+	private float FastBump
+	{
+		get => fastBump; set
+		{
+			fastBump = value;
+			SetFastBump(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetFastBump(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.FastBump = value;
+	}
+
+	private float slowBump;
+	private float SlowBump
+	{
+		get => slowBump; set
+		{
+			slowBump = value;
+			SetSlowBump(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetSlowBump(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.SlowBump = value;
+	}
+
+
+	private float reboundRate;
+	private float ReboundRate
+	{
+		get => reboundRate; set
+		{
+			reboundRate = value;
+			SetReboundRate(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetReboundRate(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.ReboundRate = value;
+	}
+
+	private float bumpRate;
+	private float BumpRate
+	{
+		get => bumpRate; set
+		{
+			bumpRate = value;
+			SetBumpRate(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetBumpRate(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.BumpRate = value;
+	}
+
+
+	private float minSuspensionLength;
+	private float MinSuspensionLength
+	{
+		get => minSuspensionLength; set
+		{
+			minSuspensionLength = value;
+			SetMinSuspensionLength(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetMinSuspensionLength(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.MinSuspensionLength = value;
+	}
+
+	private float maxSuspensionLength;
+	private float MaxSuspensionLength
+	{
+		get => maxSuspensionLength; set
+		{
+			maxSuspensionLength = value;
+			SetMaxSuspensionLength(value);
+		}
+	}
+	[Rpc.Broadcast]
+	void SetMaxSuspensionLength(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.MaxSuspensionLength = value;
+	}
+
+	private float suspensionStiffness;
+	private float SuspensionStiffness
+	{
+		get => suspensionStiffness; set
+		{
+			suspensionStiffness = value;
+			SetSuspensionStiffness(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetSuspensionStiffness(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.SuspensionStiffness = value;
+	}
+
+	private float radius;
+	private float Radius
+	{
+		get => radius; set
+		{
+			radius = value;
+			SetRadius(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetRadius(float radius = 16f)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+		{
+			item.Radius = radius;
+			var scale = radius / initRadius;
+			item.LocalScale = item.LocalScale.WithX(scale).WithZ(scale);
+		}
+	}
+
+	private float width;
+	private float Width
+
+	{
+		get => width; set
+		{
+			width = value;
+			SetWidth(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetWidth(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+		{
+			item.Width = value;
+			var scale = value / initWidth;
+			item.LocalScale = item.LocalScale.WithY(scale);
+		}
+	}
+	private float mass;
+	private float Mass
+	{
+		get => mass; set
+		{
+			mass = value;
+			SetWheelMass(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetWheelMass(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.Mass = value;
+
+	}
+
+	private float loadRating;
+	private float LoadRating
+	{
+		get => loadRating; set
+		{
+			loadRating = value;
+			SetLoadRating(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetLoadRating(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.LoadRating = value;
+	}
+
+	private float rollingResistanceTorque;
+	private float RollingResistanceTorque
+	{
+		get => rollingResistanceTorque; set
+		{
+			rollingResistanceTorque = value;
+			SetRollingResistanceTorque(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetRollingResistanceTorque(float value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.RollingResistanceTorque = value;
+	}
+
+	private bool autoSetFriction;
+	private bool AutoSetFriction
+	{
+		get => autoSetFriction; set
+		{
+			autoSetFriction = value;
+			SetAutoSetFriction(value);
+		}
+	}
+
+	[Rpc.Broadcast]
+	void SetAutoSetFriction(bool value)
+	{
+		foreach (var item in vehicleComponent.Wheels)
+			item.AutoSetFriction = value;
+	}
+
+
+
+	protected override int BuildHash() => System.HashCode.Combine(Visible);
+}

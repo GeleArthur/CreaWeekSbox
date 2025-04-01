@@ -1,0 +1,90 @@
+VehicleHud {
+    &.hidden {
+        opacity: 0;
+    }
+
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease;
+    padding: 24px;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+
+    .label {
+        color: #fff;
+    }
+
+    > .speedometer {
+        position: absolute;
+        right: 32px;
+        bottom: 32px;
+        padding: 16px;
+        padding-bottom: 32px;
+        flex-direction: column;
+
+        > .speedgear {
+            gap: 16px;
+
+            > .speed {
+                > .speedchar {
+                    transition: all 0.1s ease;
+                    min-width: 80px;
+                    line-height: 78px;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-size: 128px;
+                    transform: skewX(-10deg) scaleY(1.2);
+                }
+            }
+
+            > .gear {
+
+
+                > .label {
+                    align-self: flex-end;
+                    display: flex;
+                    text-align: right;
+                    min-width: 40px;
+                    font-size: 50px;
+                    transform: skewX(-10deg) scaleY(1.2);
+                    color: #900;
+                }
+            }
+        }
+
+        > .throttle-container {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            min-height: 4px;
+            max-height: 4px;
+            max-width: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+
+            > .inner {
+                transition: all 0.2s ease;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        > .rpm-container {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            right: 16px;
+            min-height: 4px;
+            max-height: 4px;
+            max-width: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+
+            > .inner {
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}

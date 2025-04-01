@@ -189,6 +189,7 @@
         {
           "__type": "Slime",
           "__guid": "d56bdbc5-5773-4bed-b657-d38b1df10923",
+          "HealthRegenration": 5,
           "MaxHealth": 100,
           "ModelRenderer": {
             "_type": "component",
@@ -549,6 +550,15 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "bf1fcf12-29bc-4c49-98d5-9a333ca76d3a",
+      "Flags": 0,
+      "Name": "bmw e30",
+      "Position": "-322.9486,7.857849,31.21265",
+      "Enabled": true,
+      "__Prefab": "prefab/cars/bmw e30.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
