@@ -150,6 +150,56 @@
           "Static": false,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "Sandbox.NavMeshArea",
+          "__guid": "0bc9a7b6-e9d6-44a1-bab9-de836522b77f",
+          "IsBlocker": true,
+          "LinkedCollider": {
+            "_type": "component",
+            "component_id": "e078d5d6-3e1d-4388-9079-5135b89fefbe",
+            "go": "0a607cc2-3229-4b7e-82e0-c1f165b1d402",
+            "component_type": "BoxCollider"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "0a607cc2-3229-4b7e-82e0-c1f165b1d402",
+          "Flags": 0,
+          "Name": "NavMeshCollider",
+          "Position": "-25.5041,-44.59384,-0.2213893",
+          "Scale": "0.347206,0.3500275,0.131307",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "e078d5d6-3e1d-4388-9079-5135b89fefbe",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "50,50,50",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
         }
       ]
     },
@@ -816,6 +866,89 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "8ce8e7a3-c581-402a-b6ce-5a12096d0424",
+      "Flags": 0,
+      "Name": "Zombie",
+      "Position": "60.79976,-129.4756,24.79621",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "3f58a179-52b1-4141-9f99-9edfb63f2cbf",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/citizen/heads/head_zombie_01/models/head_zombie_01.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.NavMeshAgent",
+          "__guid": "dbcb93d0-4bac-47b0-b5ef-a10134e0e2ab",
+          "Acceleration": 120,
+          "AutoTraverseLinks": true,
+          "Height": 64,
+          "MaxSpeed": 120,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Radius": 16,
+          "Separation": 0.25,
+          "UpdatePosition": true,
+          "UpdateRotation": true
+        },
+        {
+          "__type": "Sandbox.CharacterController",
+          "__guid": "95aa4702-6775-4a30-a250-90ed49620d14",
+          "Acceleration": 10,
+          "Bounciness": 0.3,
+          "GroundAngle": 45,
+          "Height": 64,
+          "IgnoreLayers": "",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Radius": 16,
+          "StepHeight": 18,
+          "UseCollisionRules": false
+        },
+        {
+          "__type": "ChaseComp",
+          "__guid": "ac675456-c056-4286-89ab-7b7e049cef1b",
+          "Name": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "target": {
+            "_type": "gameobject",
+            "go": "e80901d8-292a-4f55-bb8e-6231d83d5317"
+          }
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -831,7 +964,7 @@
       "Title": "minimal"
     },
     "NavMesh": {
-      "Enabled": false,
+      "Enabled": true,
       "IncludeStaticBodies": true,
       "IncludeKeyframedBodies": true,
       "EditorAutoUpdate": true,
@@ -848,7 +981,8 @@
   "Description": null,
   "__references": [
     "facepunch.catwalk_ladder_a#48203",
-    "fish.snot#46280"
+    "fish.snot#46280",
+    "roomfield.head_zombie_01#20020"
   ],
   "__version": 2
 }
