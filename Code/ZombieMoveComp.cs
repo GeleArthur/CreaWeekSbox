@@ -1,7 +1,7 @@
 using Sandbox;
 using System;
 
-public sealed class ZombieMoveComp : Component
+public sealed class ZombieMoveComp : Component, Component.ICollisionListener
 {
 	[Property]
 	public string Name { get; set; }
@@ -20,14 +20,36 @@ public sealed class ZombieMoveComp : Component
 	private SphereCollider chaseRange;
 	private SphereCollider alertRange;
 	private BoxCollider wanderRange;
+	private BoxCollider carCollider;
 	private NavMeshAgent agent;
 	private bool isChasing = false;
 	private float wanderTimer = 0;
 	private float wanderMaxTime = 5;
 	private float wanderTimeOffset = 2;
 	private Random random = new Random();
+	private ModelPhysics modelPhysics;
+
+	public void OnCollisionStart( Collision collision )
+	{
+		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
+		{
+			HealthComponent playerHealth = collision.Other.GameObject.GetComponent<HealthComponent>();
+			playerHealth.Damage( 10 );
+		}
+		else if ( collision.Other.GameObject.Tags.Contains( "car" ) )
+		{
+			HealthComponent health = GameObject.GetComponent<HealthComponent>();
+			Ragdoll( collision.Contact.Speed );
+			health.Damage( 100 );
+			carCollider.IsTrigger = true;
+		}
+	}
+
 	protected override void OnStart()
 	{
+		modelPhysics = AddComponent<ModelPhysics>();
+		carCollider = GameObject.GetComponent<BoxCollider>();
+
 		health = GameObject.GetComponent<HealthComponent>();
 		health.Heal(100);
 		health.OnDeath += OnDeathRagdoll;
@@ -98,16 +120,16 @@ public sealed class ZombieMoveComp : Component
 		}
 	}
 
-	private void Ragdoll()
+	private void Ragdoll( Vector3 direction )
 	{
 		SkinnedModelRenderer renderer = GameObject.GetComponent<SkinnedModelRenderer>();
 		if ( !renderer.IsValid ) return;
-		var ragdoll = AddComponent<ModelPhysics>();
-		ragdoll.Renderer = renderer;
-		ragdoll.Model = model;
+		modelPhysics.Renderer = renderer;
+		modelPhysics.Model = model;
+		modelPhysics.PhysicsGroup.Velocity = direction * 1.1f;
 	}
 	private void OnDeathRagdoll()
 	{
-		Ragdoll();
+		//Ragdoll(new Vector3(0,0,0));
 	}
 }

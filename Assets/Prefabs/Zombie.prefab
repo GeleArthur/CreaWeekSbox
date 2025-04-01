@@ -114,31 +114,25 @@
         "UseAnimGraph": true
       },
       {
-        "__type": "Sandbox.Rigidbody",
-        "__guid": "bb8c66e0-199e-484a-9a73-6fa2888ada2a",
-        "AngularDamping": 0,
-        "Gravity": true,
-        "LinearDamping": 0,
-        "Locking": {
-          "X": false,
-          "Y": false,
-          "Z": false,
-          "Pitch": false,
-          "Yaw": false,
-          "Roll": false
-        },
-        "MassCenterOverride": "0,0,0",
-        "MassOverride": 0,
-        "MotionEnabled": true,
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "87b5e3fe-a4b5-4af2-9b26-df4dc90860f4",
+        "Center": "0,0,40",
+        "Friction": null,
+        "IsTrigger": false,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
-        "StartAsleep": false
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "30,30,80",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
       }
     ],
     "Children": [
