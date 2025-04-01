@@ -909,28 +909,6 @@
             "ScaleStrategy": "ConsistentHeight",
             "TargetCamera": null,
             "ZIndex": 100
-          },
-          {
-            "__type": "Sandbox.VehicleEditor",
-            "__guid": "238e41a4-8c1b-44e2-b0e9-fa111a2c329d",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "suit": {
-              "_type": "component",
-              "component_id": "1a28cd11-d500-43c4-b24b-f5957a9c80c0",
-              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a",
-              "component_type": "SuitableVehicle"
-            },
-            "vehicleComponent": {
-              "_type": "component",
-              "component_id": "f8656763-8ba5-4b20-a502-c8124a183f6d",
-              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a",
-              "component_type": "VehicleController"
-            }
           }
         ]
       },
