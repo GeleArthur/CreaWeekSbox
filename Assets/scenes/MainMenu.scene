@@ -5,7 +5,9 @@
       "__guid": "98ccac69-a8cd-4e9a-a370-9de360af1b30",
       "Flags": 0,
       "Name": "Camera",
-      "Tags": "maincamera",
+      "Position": "-767.7366,4581.469,746.8995",
+      "Rotation": "0.1133657,0.08451316,-0.7936762,0.5916787",
+      "Tags": "maincamera,skybox",
       "Enabled": true,
       "Components": [
         {
@@ -31,6 +33,19 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "e3f24f6d-0475-4ab8-bbfa-7f796752c91c",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_dark_01.vmat",
+          "Tint": "1,1,1,1"
         }
       ]
     },
@@ -41,16 +56,6 @@
       "Position": "29.33348,0,0",
       "Enabled": true,
       "Components": [
-        {
-          "__type": "Sandbox.MainMenuHUD",
-          "__guid": "24097921-5aa7-4673-a050-ba78c280262b",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
         {
           "__type": "Sandbox.ScreenPanel",
           "__guid": "14e76e1c-b008-4e3c-8054-853378e7bb4c",
@@ -71,6 +76,16 @@
             "component_type": "CameraComponent"
           },
           "ZIndex": 100
+        },
+        {
+          "__type": "Sandbox.MainMenuHUD",
+          "__guid": "ffea295a-68dd-4623-8c0f-08c1c148f383",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     },
@@ -99,6 +114,88 @@
           "SkyColor": "0,0,0,0"
         }
       ]
+    },
+    {
+      "__guid": "bd5253ee-3f4d-4b12-bdd2-2109c76f505d",
+      "Flags": 0,
+      "Name": "Sound Point",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SoundPointComponent",
+          "__guid": "2c02672e-c9b5-4eb6-bbf7-c78913f70197",
+          "Distance": 1000,
+          "DistanceAttenuation": true,
+          "DistanceAttenuationOverride": true,
+          "Falloff": [
+            {
+              "x": 0,
+              "y": 1,
+              "in": 3.1415927,
+              "out": -3.1415927,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 0,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "Force2d": false,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": false,
+          "OcclusionRadius": 32,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": false,
+          "SoundEvent": "audio/background/game/backgroundgamemusic.sound",
+          "SoundOverride": false,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "music",
+            "Id": "28320e05-c06c-4b18-b75b-6831947cca6d"
+          },
+          "Volume": 1
+        }
+      ]
+    },
+    {
+      "__guid": "26214a04-c59c-4618-ac5b-be6ae8cbda07",
+      "Flags": 0,
+      "Name": "Map",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "b3112d7b-e112-4227-bcfa-ef46462d7ef4",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "workshop.rockford_v1",
+          "NoOrigin": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {

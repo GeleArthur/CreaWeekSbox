@@ -12,9 +12,12 @@ MainMenuHUD {
 	flex-direction: column;
 
 	> h2 {
+		padding: 8px;
+		border-radius: 16px;
 		padding: 64px;
 		font-size: 128px;
 		font-weight: bolder;
+		color: brown;
 	}
 
 	> .Buttons {
@@ -25,8 +28,8 @@ MainMenuHUD {
 
 		> .button {
 			background-color: white;
-			padding: 8px;
 			color: black;
+			padding: 8px;
 			border-radius: 16px;
 			width: 30vw;
 			height: 20vh;
