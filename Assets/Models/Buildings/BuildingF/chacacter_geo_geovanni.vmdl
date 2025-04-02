@@ -15,7 +15,7 @@
 						[
 							{
 								from = "lambert2.002.vmat"
-								to = "materials/gravel.vmat"
+								to = "models/concrete.vmat"
 							},
 						]
 						use_global_default = false

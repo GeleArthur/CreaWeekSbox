@@ -1,0 +1,56 @@
+{
+  "RootObject": {
+    "__guid": "20d20adf-145c-4067-9ad7-5f90890c1fbe",
+    "Flags": 0,
+    "Name": "UpgradeUI",
+    "Position": "177.2555,-648.5038,302.335",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ScreenPanel",
+        "__guid": "3b8bb2ed-475b-44e4-91cb-01bc8120ed16",
+        "AutoScreenScale": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Opacity": 1,
+        "Scale": 1,
+        "ScaleStrategy": "FollowDesktopScaling",
+        "TargetCamera": {
+          "_type": "component",
+          "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
+          "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
+          "component_type": "CameraComponent"
+        },
+        "ZIndex": 491
+      },
+      {
+        "__type": "Sandbox.UpgradePanel",
+        "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PlayerEconomy": {
+          "_type": "component",
+          "component_id": "437c533f-14fd-41b6-be33-9421bc1e3c8f",
+          "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+          "component_type": "Economy"
+        },
+        "Upgrades": null
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
