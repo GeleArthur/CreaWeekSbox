@@ -29,6 +29,7 @@
       {
         "__type": "Goal",
         "__guid": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
+        "fuelGoal": false,
         "Model": {
           "_type": "component",
           "component_id": "0b14fa07-7126-4e21-ba21-409a05856b92",
@@ -159,6 +160,19 @@
           {
             "Id": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
             "Property": "SellingGoal"
+          }
+        ]
+      },
+      {
+        "Id": "Fuel Goal",
+        "Title": "Fuel Goal",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "e0c9a275-b6fc-4cc9-b18b-8a7e7eca8551",
+            "Property": "fuelGoal"
           }
         ]
       }

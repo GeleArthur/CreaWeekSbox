@@ -90,7 +90,19 @@
         {
           "__type": "GoalManager",
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-          "EconomyComp": null,
+          "EconomyComp": {
+            "_type": "component",
+            "component_id": "1e705e1a-1885-45e5-930d-428f2bc4ed59",
+            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+            "component_type": "Economy"
+          },
+          "FuelPerGoal": 150,
+          "FuelTankComp": {
+            "_type": "component",
+            "component_id": "799bb26d-c5b1-4631-a573-dcdcb6059f1e",
+            "go": "4eaa3d35-c58f-4ab4-9eee-e610c8298172",
+            "component_type": "FuelTank"
+          },
           "Goals": [
             {
               "_type": "gameobject",
@@ -122,7 +134,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true
+            "Selling Goal": true,
+            "Fuel Goal": false
           }
         },
         {
@@ -133,7 +146,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true
+            "Selling Goal": true,
+            "Fuel Goal": false
           }
         },
         {
@@ -144,7 +158,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true
+            "Selling Goal": true,
+            "Fuel Goal": false
           }
         }
       ]

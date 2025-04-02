@@ -8,6 +8,10 @@ public sealed class GoalManager : Component
 	public GameObject[] Goals { get; set; }
 	[Property]
 	public Economy EconomyComp { get; set; }
+	[Property]
+	public FuelTank FuelTankComp { get; set; }
+	[Property]
+	public int FuelPerGoal {  get; set; }
 
 	GameObject _currentGoal;
 
@@ -28,7 +32,7 @@ public sealed class GoalManager : Component
 
 	}
 	
-	public void Notify(GameObject goal, bool isSellingGoal)
+	public void Notify(GameObject goal, bool isSellingGoal, bool isFuelGoal)
 	{
 		if (goal == CurrentGoal)
 		{
@@ -36,9 +40,13 @@ public sealed class GoalManager : Component
 			{
 				EconomyComp.SellMedicine();
 			}
+			else if (isFuelGoal)
+			{
+				FuelTankComp.AddFual(150);
+			}
 			else
 			{
-				EconomyComp.AddMedicine(10);
+				EconomyComp.AddMedicine(FuelPerGoal);
 			}
 			
 			CurrentGoal.GetComponent<Goal>().EnableModel( false );
