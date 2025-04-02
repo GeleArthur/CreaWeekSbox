@@ -12,8 +12,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	private TimeUntil _wanderTimer;
 	private TimeUntil _damageTimer;
-
-	private bool _touchingTips = false;
+	private TimeUntil _ragdollTimer;
 
 	protected override void OnStart()
 	{
@@ -27,20 +26,9 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
-	public void OnCollisionStop( Collision collision )
-	{
-		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
-		{
-			_touchingTips = false;
-		}
-	}
 	public void OnCollisionStart( Collision collision )
 	{
-		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
-		{
-			_touchingTips = true;
-		}
-		else if ( collision.Other.GameObject.Tags.Contains( "car" ) || collision.Other.GameObject.Tags.Contains( "zombie" ) )
+		if ( collision.Other.GameObject.Tags.Contains( "car" ) || collision.Other.GameObject.Tags.Contains( "zombie" ) )
 		{
 			if ( collision.Contact.Speed.Length < 250 ) return;
 			Ragdoll();
@@ -49,9 +37,16 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	}
 	public void Ragdoll()
 	{
+		_ragdollTimer = 10;
 		_ragdollPhysics.Enabled = true;
 		_rigidbody.Enabled = false;
 		_modelCollider.Enabled = false;
+	}
+	public void UnRagdoll()
+	{
+		_ragdollPhysics.Enabled = false;
+		_rigidbody.Enabled = true;
+		_modelCollider.Enabled = true;
 	}
 	private void GotHit()
 	{
@@ -65,11 +60,23 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	protected override void OnUpdate()
 	{
 		if ( !_agent.IsValid || !_rigidbody.IsValid ) return;
-		_rigidbody.Velocity = _agent.Velocity;
+		//_rigidbody.ApplyForce(_agent.WishVelocity);
 
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
 		{
+			var direction = _player.WorldPosition - WorldPosition;
+			direction = direction / direction.Length;
+			var angle = Math.Atan2( direction.y, direction.x );
+			angle = angle / double.Pi * 180;
+
 			_agent.MoveTo( _player.WorldPosition );
+			Rotation rotation = _agent.WorldRotation;
+			var angles = rotation.Angles();
+			angles.yaw = (float)angle;
+			var delta = Time.Delta;
+			//_rigidbody.ApplyTorque( new Vector3(0, 10, 0) );
+			_rigidbody.LocalRotation = angles;
+			//_rigidbody.SmoothRotate( in rotation, 0.5f, delta );
 		}
 		else
 		{
@@ -81,9 +88,17 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 			}
 		}
-		if ( _touchingTips )
+		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 100 )
 		{
 			GotHit();
 		}
+		if ( _ragdollTimer )
+		{
+			UnRagdoll();
+		}
+	}
+	protected override void OnFixedUpdate()
+	{
+		_rigidbody.Velocity = (Vector3)_agent.TargetPosition - _rigidbody.LocalPosition;
 	}
 }
