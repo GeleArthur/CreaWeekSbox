@@ -102,13 +102,13 @@
           "OnComponentUpdate": null,
           "PlayerController": {
             "_type": "component",
-            "component_id": "7a8a5493-9796-4536-831e-ea96c51abc1d",
+            "component_id": "a57e4da9-aa88-4676-b495-a2a1dcc5d500",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "PlayerController"
           },
           "VehicleController": {
             "_type": "component",
-            "component_id": "584c2041-f285-490f-bd2f-54e9b32da114",
+            "component_id": "be85b6e9-fc84-40ba-93d0-9301f86a9572",
             "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
             "component_type": "VehicleController"
           }
@@ -172,7 +172,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "54826555-bebb-4e2f-aaf9-b615338807a2",
+            "component_id": "90488bf8-2afd-4db1-a676-2e6d83ec827d",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -252,16 +252,17 @@
       "Enabled": true,
       "Components": [
         {
-          "__type": "ZombieSpawnComponent",
-          "__guid": "7cc58dba-49cf-4aa7-904f-ade39e9bdc56",
+          "__type": "ZombieManager",
+          "__guid": "38cb65b1-1cfa-4fa8-86a2-dea713cf9940",
+          "_zombieAmount": 3,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "SpawnArea": [],
-          "Zombie": null
+          "SpawnAreas": [],
+          "Zombie": "prefabs/zombie.prefab"
         }
       ],
       "Children": [
@@ -375,7 +376,7 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "66e6f5d0-f201-442e-ae0d-65e52979fe54",
+            "component_id": "67433d97-4d36-4968-b119-7711b0b4585a",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
