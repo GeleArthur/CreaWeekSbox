@@ -9,6 +9,8 @@ namespace Meteor.VehicleTool.Vehicle;
 [Icon( "directions_car" )]
 public partial class VehicleController : Component
 {
+	[Property] public GameObject Player { get; private set; }
+
 	[Property]
 	[Hide]
 	[RequireComponent]

@@ -121,6 +121,7 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "Player": null,
         "ShowRigidbodyComponent": false,
         "SoundMixer": {
           "Name": "game",
@@ -256,6 +257,135 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null
+      },
+      {
+        "__type": "HealthComponent",
+        "__guid": "0c1ab2dd-ae6b-46e2-a448-383b045e7699",
+        "_maxHealth": 500,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnDeath": {
+          "__version": 9,
+          "__guid": "516b91e6-ff24-42ef-ad3f-abd249755ac9",
+          "__changeId": 57,
+          "UserData": {
+            "Title": "On Death",
+            "ReferencedComponentTypes": [
+              "Meteor.VehicleTool.Vehicle.VehicleController"
+            ]
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input",
+              "UserData": {
+                "Position": "852,84"
+              }
+            },
+            {
+              "Id": 2,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-48,108"
+              }
+            },
+            {
+              "Id": 3,
+              "Type": "scene.get",
+              "Properties": {
+                "T": "Meteor.VehicleTool.Vehicle.VehicleController"
+              },
+              "UserData": {
+                "Position": "84,144"
+              }
+            },
+            {
+              "Id": 4,
+              "Type": "property",
+              "Properties": {
+                "_name": "Player",
+                "_type": "Meteor.VehicleTool.Vehicle.VehicleController"
+              },
+              "UserData": {
+                "Position": "432,144"
+              }
+            },
+            {
+              "Id": 5,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "TryGet",
+                "_type": "Sandbox.IComponentLister",
+                "T": "HealthComponent"
+              },
+              "UserData": {
+                "Position": "708,120"
+              }
+            },
+            {
+              "Id": 6,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "Damage",
+                "_type": "HealthComponent"
+              },
+              "UserData": {
+                "Position": "1044,120"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 3,
+              "DstName": "_this"
+            },
+            {
+              "SrcId": 3,
+              "SrcName": "_result",
+              "DstId": 4,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 4,
+              "SrcName": "_result",
+              "DstId": 5,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 6,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 5,
+              "SrcName": "component",
+              "DstId": 6,
+              "DstName": "_target"
+            },
+            {
+              "Id": 42,
+              "Value": 10000000,
+              "DstId": 6,
+              "DstName": "damage"
+            }
+          ],
+          "Defaults": {
+            "$2.gameobject": {
+              "_type": "gameobject",
+              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a"
+            }
+          }
+        }
       }
     ],
     "Children": [
@@ -2350,7 +2480,21 @@
         ]
       }
     ],
-    "__variables": [],
+    "__variables": [
+      {
+        "Id": "Player",
+        "Title": "Player",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "f8656763-8ba5-4b20-a502-c8124a183f6d",
+            "Property": "Player"
+          }
+        ]
+      }
+    ],
     "__properties": {
       "FixedUpdateFrequency": 50,
       "MaxFixedUpdates": 5,
