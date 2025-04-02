@@ -27,80 +27,6 @@
       ]
     },
     {
-      "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
-      "Flags": 0,
-      "Name": "Sun",
-      "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
-      "Tags": "light_directional,light",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.DirectionalLight",
-          "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
-          "FogMode": "Enabled",
-          "FogStrength": 1,
-          "LightColor": "0.94419,0.97767,1,1",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Shadows": true,
-          "SkyColor": "0.2532,0.32006,0.35349,1"
-        }
-      ]
-    },
-    {
-      "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
-      "Flags": 0,
-      "Name": "2D Skybox",
-      "Tags": "skybox",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.SkyBox2D",
-          "__guid": "de79e9e0-5c37-4c54-ac67-bfcdb1d5483b",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "SkyIndirectLighting": true,
-          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.EnvmapProbe",
-          "__guid": "f3e304db-baab-4c1a-a4ec-8442585c2d62",
-          "Bounds": {
-            "Mins": "-512,-512,-512",
-            "Maxs": "512,512,512"
-          },
-          "DelayBetweenUpdates": 0.1,
-          "Feathering": 0.02,
-          "FrameInterval": 5,
-          "MaxDistance": 512,
-          "MultiBounce": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Projection": "Sphere",
-          "RenderDynamically": false,
-          "Resolution": "Small",
-          "Texture": "textures/cubemaps/default2.vtex",
-          "TintColor": "1,1,1,1",
-          "UpdateStrategy": "OnEnabled",
-          "ZFar": 4096,
-          "ZNear": 16
-        }
-      ]
-    },
-    {
       "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
       "Flags": 0,
       "Name": "Camera",
@@ -183,7 +109,7 @@
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "-1824,-896,6.025749",
+      "Position": "-1824,-896,14.35739",
       "Tags": "player",
       "Enabled": true,
       "Components": [
@@ -372,7 +298,7 @@
               "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
-              "MaterialGroup": null,
+              "MaterialGroup": "default",
               "MaterialOverride": null,
               "Model": "models/citizen/citizen.vmdl",
               "Morphs": {},
@@ -402,6 +328,284 @@
               },
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "cce73e06-6245-439b-b046-126aef501a1e",
+              "Flags": 0,
+              "Name": "aim_matrix_01",
+              "Position": "5.905499,0.000007053394,11.811",
+              "Enabled": true
+            },
+            {
+              "__guid": "0f9a6d4b-4ee7-4ca3-900f-bc71e730cb09",
+              "Flags": 0,
+              "Name": "aim_matrix_02a",
+              "Position": "5.905499,0.000007053394,9.8425",
+              "Enabled": true
+            },
+            {
+              "__guid": "b5fb3059-fc11-4a7f-b640-50760d502b66",
+              "Flags": 0,
+              "Name": "aim_matrix_02b",
+              "Position": "9.842502,0.000006571145,9.842498",
+              "Enabled": true
+            },
+            {
+              "__guid": "87a6d1ca-05f8-4483-961a-ab7755be368a",
+              "Flags": 0,
+              "Name": "ankle_R",
+              "Position": "0.3825186,-4.427244,3.807906",
+              "Rotation": "0.6508966,0.2762882,-0.2762862,0.6508951",
+              "Enabled": true
+            },
+            {
+              "__guid": "28150f64-d687-46a8-a309-5b05a133f4ac",
+              "Flags": 0,
+              "Name": "ankle_L",
+              "Position": "0.3824453,4.427549,3.80795",
+              "Rotation": "0.6508969,0.276289,-0.2762875,0.6508939",
+              "Enabled": true
+            },
+            {
+              "__guid": "1cd3b597-5cdc-4144-b645-3fab41e37440",
+              "Flags": 0,
+              "Name": "arm_lower_R",
+              "Position": "-0.1236572,-14.62097,43.90746",
+              "Rotation": "0.3300997,0.1505789,-0.5848848,0.7254447",
+              "Enabled": true
+            },
+            {
+              "__guid": "43c0391e-f8b1-4f28-8b15-65464e8684c2",
+              "Flags": 0,
+              "Name": "arm_lower_L",
+              "Position": "-0.1237296,14.62096,43.90764",
+              "Rotation": "0.7254471,0.5848832,-0.1505784,0.3300981",
+              "Enabled": true
+            },
+            {
+              "__guid": "c85bc57a-0425-4e3a-a95d-09741869fa2e",
+              "Flags": 0,
+              "Name": "hand_R",
+              "Position": "1.960815,-20.39471,39.24789",
+              "Rotation": "0.2871267,0.2142488,-0.5281321,0.769891",
+              "Enabled": true
+            },
+            {
+              "__guid": "dfe2760c-64c9-4a84-b586-a31f83f19bd0",
+              "Flags": 0,
+              "Name": "hand_L",
+              "Position": "1.960815,20.39471,39.24818",
+              "Rotation": "0.7698926,0.5281309,-0.2142484,0.2871251",
+              "Enabled": true
+            },
+            {
+              "__guid": "d9379553-89ee-4f2f-b2ad-c8e4f648e2dc",
+              "Flags": 0,
+              "Name": "hold_R",
+              "Position": "4.330933,-21.65344,33.46444",
+              "Rotation": "0.000001016794,0.7071072,-0.000002239053,0.7071063",
+              "Enabled": true
+            },
+            {
+              "__guid": "20579716-276b-470a-a017-f8f375fcb5c8",
+              "Flags": 0,
+              "Name": "hold_L",
+              "Position": "4.330811,21.6535,33.46472",
+              "Rotation": "0.000002376031,0.7071075,0.0000009324998,0.707106",
+              "Enabled": true
+            },
+            {
+              "__guid": "9f19d861-99e0-4b09-82c7-d395cf848834",
+              "Flags": 0,
+              "Name": "IK_right_hand",
+              "Position": "1.960569,-20.39471,39.24799",
+              "Rotation": "0.2871271,0.2142481,-0.5281312,0.7698917",
+              "Enabled": true
+            },
+            {
+              "__guid": "f128a503-3925-424c-8b56-23505261ceb4",
+              "Flags": 0,
+              "Name": "IK_left_hand",
+              "Position": "1.960678,20.39471,39.24793",
+              "Rotation": "0.7698929,0.5281297,-0.2142481,0.2871266",
+              "Enabled": true
+            },
+            {
+              "__guid": "153a8ec5-a514-4297-83a2-2f57c67df291",
+              "Flags": 0,
+              "Name": "leg_lower_R",
+              "Position": "0.8400744,-4.427293,16.31507",
+              "Rotation": "0.4907753,0.5090599,-0.5090557,0.4907748",
+              "Enabled": true
+            },
+            {
+              "__guid": "f01fd4d1-8923-4965-92d3-37a2184ed297",
+              "Flags": 0,
+              "Name": "leg_lower_L",
+              "Position": "0.8400415,4.427499,16.31512",
+              "Rotation": "0.4907736,0.5090613,-0.5090557,0.490775",
+              "Enabled": true
+            },
+            {
+              "__guid": "270c0150-baa0-4334-910d-9b526aff3cd4",
+              "Flags": 0,
+              "Name": "middle_of_both_hands",
+              "Position": "3.753906,0,36.00737",
+              "Rotation": "0.000002446368,0.94361,-0.00000119371,0.3310592",
+              "Enabled": true
+            },
+            {
+              "__guid": "9c5279a5-ebce-40fe-b510-bd1b72ec646e",
+              "Flags": 0,
+              "Name": "driver_arm_upper_R_twist1",
+              "Position": "-0.02453613,-10.87958,47.25685",
+              "Enabled": true
+            },
+            {
+              "__guid": "d6032140-9f60-4ff9-bc3f-c753f26f8765",
+              "Flags": 0,
+              "Name": "driver_arm_lower_R_twist1",
+              "Position": "0.9185791,-17.50781,41.57767",
+              "Enabled": true
+            },
+            {
+              "__guid": "f4947879-61c1-45d3-ba46-63cc0e360364",
+              "Flags": 0,
+              "Name": "driver_elbow_R_position",
+              "Position": "-0.1159668,-14.62469,43.90594",
+              "Rotation": "0.09355088,0.3500555,-0.9305706,0.05242028",
+              "Enabled": true
+            },
+            {
+              "__guid": "f7ec8bff-0977-441c-a4b3-7f1a81442d3b",
+              "Flags": 0,
+              "Name": "driver_elbow_L_position",
+              "Position": "-0.1159668,14.62457,43.90614",
+              "Rotation": "0.02578768,0.925451,-0.3465833,0.1508494",
+              "Enabled": true
+            },
+            {
+              "__guid": "36ec02be-94d5-4cac-8a7b-b6fca86904f0",
+              "Flags": 0,
+              "Name": "driver_arm_upper_L_twist1",
+              "Position": "-0.02453613,10.87946,47.257",
+              "Enabled": true
+            },
+            {
+              "__guid": "51c6ff0a-8a4d-4885-b69b-7e9e648403ee",
+              "Flags": 0,
+              "Name": "driver_arm_lower_L_twist1",
+              "Position": "0.9185791,17.50781,41.57791",
+              "Enabled": true
+            },
+            {
+              "__guid": "0c921151-e79b-4a8d-a02f-ff52aa5bb1b1",
+              "Flags": 0,
+              "Name": "driver_leg_upper_R_twist1",
+              "Position": "0.84021,-4.427368,23.55026",
+              "Enabled": true
+            },
+            {
+              "__guid": "2ffc5fa3-5959-4146-b562-c1000245b476",
+              "Flags": 0,
+              "Name": "driver_leg_upper_L_twist1",
+              "Position": "0.84021,4.427368,23.5503",
+              "Enabled": true
+            },
+            {
+              "__guid": "e16f7dba-cbfd-4ffe-a956-7ffe5639cf83",
+              "Flags": 0,
+              "Name": "driver_kneecap_R_position",
+              "Position": "0.894043,-4.427246,16.28995",
+              "Rotation": "0.4953896,0.5045515,-0.5045483,0.4954272",
+              "Enabled": true
+            },
+            {
+              "__guid": "6e4976dd-3846-485f-8c33-bdd7c9bd92fd",
+              "Flags": 0,
+              "Name": "driver_kneecap_L_position",
+              "Position": "0.894043,4.42749,16.29",
+              "Rotation": "0.7072473,0.006467535,-0.006464988,0.7069072",
+              "Enabled": true
+            },
+            {
+              "__guid": "65767827-a589-46cf-99b8-46bc778f456e",
+              "Flags": 0,
+              "Name": "driver_leg_lower_R_twist1",
+              "Position": "0.6113281,-4.427246,10.06149",
+              "Enabled": true
+            },
+            {
+              "__guid": "ec7f8dbd-ccdf-4221-90e5-51d88dc29411",
+              "Flags": 0,
+              "Name": "driver_leg_lower_L_twist1",
+              "Position": "0.6113281,4.427551,10.06154",
+              "Enabled": true
+            },
+            {
+              "__guid": "556158b4-c980-44b2-bc34-22004eac3e29",
+              "Flags": 0,
+              "Name": "forward_reference_modelspace",
+              "Position": "-0.04870605,-0.0001220703,43.80869",
+              "Enabled": true
+            },
+            {
+              "__guid": "f28fb54f-2c2e-4920-bb34-47b97e070791",
+              "Flags": 0,
+              "Name": "eyes",
+              "Position": "6.313199,-0.000210637,63.43349",
+              "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+              "Enabled": true
+            },
+            {
+              "__guid": "e2d65a6a-370b-4911-aebf-93c47f143272",
+              "Flags": 0,
+              "Name": "eye_R_forward",
+              "Position": "6.313175,-3.346658,63.43349",
+              "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+              "Enabled": true
+            },
+            {
+              "__guid": "36cf1f80-1c58-4407-bfc6-3d37ff74ebef",
+              "Flags": 0,
+              "Name": "eye_L_forward",
+              "Position": "6.313221,3.346237,63.43351",
+              "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+              "Enabled": true
+            },
+            {
+              "__guid": "7738cd73-442f-4385-b243-e9a1d772a4e7",
+              "Flags": 0,
+              "Name": "forward_reference",
+              "Position": "0.9982252,-0.0001634301,56.54376",
+              "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+              "Enabled": true
+            },
+            {
+              "__guid": "219edc1b-f534-41f0-97aa-2cac3e14c493",
+              "Flags": 0,
+              "Name": "foot_R",
+              "Position": "2.022254,-4.683148,0.1888112",
+              "Rotation": "0.000001937151,0.0000006098692,0.000002424704,1",
+              "Enabled": true
+            },
+            {
+              "__guid": "22ac9ce0-f05e-41ef-a83d-6d75e65017c3",
+              "Flags": 0,
+              "Name": "foot_L",
+              "Position": "2.022217,4.683472,1.054991",
+              "Rotation": "0.000001387577,-1,-0.000002264977,0.000001160307",
+              "Enabled": true
+            },
+            {
+              "__guid": "d1785f63-a041-4097-888c-6feca242ec41",
+              "Flags": 0,
+              "Name": "hat",
+              "Position": "1.293549,0.0002647697,71.70121",
+              "Rotation": "0.0000005811453,0.0000009834766,-0.000003501773,1",
+              "Enabled": true
             }
           ]
         },
@@ -537,7 +741,7 @@
       "__guid": "1c1cfa5d-6400-40a0-a6b0-2eed6e8342e3",
       "Flags": 0,
       "Name": "Map",
-      "Position": "0,0,11150",
+      "Position": "0,0,11135.81",
       "Enabled": true,
       "Components": [
         {
@@ -738,7 +942,7 @@
       "__guid": "055b01fd-cdb9-42b5-a547-91d9250d61cb",
       "Flags": 0,
       "Name": "Zombie",
-      "Position": "-1023.938,-617.2294,14.44102",
+      "Position": "-536.6632,49.53699,14.44098",
       "Tags": "zombie",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
@@ -818,20 +1022,30 @@
       "__guid": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
       "Flags": 0,
       "Name": "zombie",
-      "Position": "-1396.771,-528.7292,14.03494",
+      "Position": "-1334.354,-528.7292,14.03494",
       "Enabled": true,
       "Components": [
+        {
+          "__type": "OnCollideRagDoll",
+          "__guid": "351b835d-b251-46b7-80d1-fdaa88173ec5",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
         {
           "__type": "Sandbox.SkinnedModelRenderer",
           "__guid": "0779b871-6515-451d-8af1-7821c6d3f74d",
           "AnimationGraph": null,
-          "BodyGroups": 18446744073709551615,
+          "BodyGroups": 341,
           "BoneMergeTarget": null,
           "CreateAttachments": false,
           "CreateBoneObjects": false,
           "MaterialGroup": null,
           "MaterialOverride": null,
-          "Model": "models/zombie.vmdl",
+          "Model": "models/zombiebetter.vmdl",
           "Morphs": {},
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -871,8 +1085,8 @@
             "Yaw": false,
             "Roll": false
           },
-          "Model": "models/zombie.vmdl",
-          "MotionEnabled": false,
+          "Model": "models/zombiebetter.vmdl",
+          "MotionEnabled": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -888,14 +1102,579 @@
           "RigidbodyFlags": 0
         },
         {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "7ae3a420-7182-4f9c-8af2-47f15f0891ba",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "35f724b0-11f4-45b9-a29f-5fc131860b6f",
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/zombiebetter.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "afb5721e-b6eb-46ca-be7a-e538b32a5374",
+      "Flags": 0,
+      "Name": "zombie (1)",
+      "Position": "-1256.921,-528.7292,14.03494",
+      "Enabled": true,
+      "Components": [
+        {
           "__type": "OnCollideRagDoll",
-          "__guid": "351b835d-b251-46b7-80d1-fdaa88173ec5",
+          "__guid": "a90322b1-2632-408f-b0e7-72ab389ddf44",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "6d2e3476-9181-48b2-b1a0-ddd0246b17cb",
+          "AnimationGraph": null,
+          "BodyGroups": 341,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/zombiebetter.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "PlaybackRate": 1,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": null
+          },
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "ad69d720-79f8-42ff-a8f8-6073b8afd484",
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "Model": "models/zombiebetter.vmdl",
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "6d2e3476-9181-48b2-b1a0-ddd0246b17cb",
+            "go": "afb5721e-b6eb-46ca-be7a-e538b32a5374",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "40b3c929-16f6-4f43-89a9-9033ff3b5d91",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "31abd094-b507-4db1-bc5f-af568d30cf1a",
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/zombiebetter.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "77cc677a-0420-484e-9454-f350a57be45d",
+      "Flags": 0,
+      "Name": "zombie (2)",
+      "Position": "-1292.65,-500.2353,14.03494",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "OnCollideRagDoll",
+          "__guid": "db553221-afc6-4050-94a8-2d57c29de076",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "63515407-6a0e-46ba-b507-e357947c5d48",
+          "AnimationGraph": null,
+          "BodyGroups": 341,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/zombiebetter.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "PlaybackRate": 1,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": null
+          },
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "1d64dd36-616c-4534-9f7d-d3e3c1c84acc",
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "Model": "models/zombiebetter.vmdl",
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "63515407-6a0e-46ba-b507-e357947c5d48",
+            "go": "77cc677a-0420-484e-9454-f350a57be45d",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "27e553fa-3218-4930-b7bf-556913615085",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "92a059dd-f4f6-4ac0-931a-119102e2e514",
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/zombiebetter.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "31f09f63-99d1-47e0-a7e0-1f91fe12c848",
+      "Flags": 0,
+      "Name": "zombie (3)",
+      "Position": "-1303.271,-577.0004,14.03493",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "OnCollideRagDoll",
+          "__guid": "613d3709-a6a1-4f1f-b1c2-f80a99debf90",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "acd67a53-7b9a-4b7d-a028-2b2166633875",
+          "AnimationGraph": null,
+          "BodyGroups": 341,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/zombiebetter.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "PlaybackRate": 1,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": null
+          },
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "bc77671d-69f3-4436-86b0-a2c41fdb4a60",
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "Model": "models/zombiebetter.vmdl",
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "acd67a53-7b9a-4b7d-a028-2b2166633875",
+            "go": "31f09f63-99d1-47e0-a7e0-1f91fe12c848",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "26bf6d7e-d00b-44c0-b7a6-8bd3b33e98d4",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "d29f3d5e-7459-4037-b6b0-95543289b9f4",
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/zombiebetter.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "b96663c9-838f-49ae-92b7-2e8a4df7d5bd",
+      "Flags": 0,
+      "Name": "zombie (4)",
+      "Position": "-1331.199,-602.4999,14.03491",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "OnCollideRagDoll",
+          "__guid": "23d7a836-1872-44a3-a130-1f4a6e07bcfc",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "cee17aac-774d-466c-8849-02a49887688c",
+          "AnimationGraph": null,
+          "BodyGroups": 341,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/zombiebetter.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "PlaybackRate": 1,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": null
+          },
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "cd0f72bf-8f96-4fd4-8d2d-77b1d0578b4e",
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "Model": "models/zombiebetter.vmdl",
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "cee17aac-774d-466c-8849-02a49887688c",
+            "go": "b96663c9-838f-49ae-92b7-2e8a4df7d5bd",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "56b032b6-51c0-49ff-9f7c-3a5f4908cbea",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "f2a7102f-6de9-4c05-9e5a-73f415a2e5a0",
+          "Friction": null,
+          "IsTrigger": false,
+          "Model": "models/zombiebetter.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
         }
       ]
     }
