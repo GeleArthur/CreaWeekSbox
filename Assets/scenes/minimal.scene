@@ -90,19 +90,9 @@
         {
           "__type": "GoalManager",
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-          "EconomyComp": {
-            "_type": "component",
-            "component_id": "1e705e1a-1885-45e5-930d-428f2bc4ed59",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "Economy"
-          },
-          "FuelPerGoal": 150,
-          "FuelTankComp": {
-            "_type": "component",
-            "component_id": "799bb26d-c5b1-4631-a573-dcdcb6059f1e",
-            "go": "4eaa3d35-c58f-4ab4-9eee-e610c8298172",
-            "component_type": "FuelTank"
-          },
+          "EconomyComp": null,
+          "FuelPerGoal": 0,
+          "FuelTankComp": null,
           "Goals": [
             {
               "_type": "gameobject",
@@ -168,7 +158,7 @@
       "__guid": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "-4799.377,-5850.588,31.2123",
+      "Position": "-3047.249,-312.9556,31.2123",
       "Rotation": "0,0,0.7071067,0.7071068",
       "Tags": "car",
       "Enabled": true,
@@ -266,29 +256,6 @@
           "OnComponentUpdate": null,
           "Shadows": true,
           "SkyColor": "0,0,0,0"
-        }
-      ]
-    },
-    {
-      "__guid": "fe3c2a2b-8515-4e38-9cb1-ff2bf9c4415c",
-      "Flags": 0,
-      "Name": "2D Skybox",
-      "Position": "-778.1642,-170.1847,732.3854",
-      "Tags": "skybox",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.SkyBox2D",
-          "__guid": "6d36279f-3f57-4c4e-810a-d9ccc6ea1e84",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "SkyIndirectLighting": true,
-          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
-          "Tint": "1,1,1,1"
         }
       ]
     },
@@ -557,6 +524,57 @@
       "Enabled": true,
       "__Prefab": "prefabs/carspawnpoint.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "4f6a3ec3-23c1-4976-afa3-a0add5e9de4c",
+      "Flags": 0,
+      "Name": "Cubemap Fog",
+      "Position": "-294.1047,1088.716,31.35593",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CubemapFog",
+          "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
+          "Blur": 0,
+          "EndDistance": 1024,
+          "FalloffExponent": 2,
+          "HeightExponent": 1,
+          "HeightStart": 2002.133,
+          "HeightWidth": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Sky": "materials/skybox/light_test_default.vmat",
+          "StartDistance": 0,
+          "Tint": "0.02977,0.03064,0.03721,1"
+        }
+      ]
+    },
+    {
+      "__guid": "810dac88-b350-4d00-88da-39fa8574484b",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "-294.1047,1088.716,31.35593",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "0fdacd5c-f3f4-4084-9cc8-755ac8e21956",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": false,
+          "SkyMaterial": "materials/skybox/kloppenheim_02_puresky.vmat",
+          "Tint": "0.1249,0.12296,0.13023,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -587,6 +605,8 @@
   "ResourceVersion": 2,
   "Title": "minimal",
   "Description": null,
-  "__references": [],
+  "__references": [
+    "polyhaven.kloppenheim_02_puresky#24988"
+  ],
   "__version": 2
 }
