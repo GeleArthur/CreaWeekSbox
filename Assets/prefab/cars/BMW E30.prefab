@@ -225,8 +225,26 @@
         "_upgrades": [
           {
             "_type": "component",
-            "component_id": "6ee4733b-c2dd-428c-81fe-1d0b2cad0398",
-            "go": "d96abad6-0905-4cab-9e8a-0db3ecec62b1",
+            "component_id": "09b42009-4213-4f26-961b-a7a625cba866",
+            "go": "11204fef-0bf2-4724-9903-15d9f58a6e51",
+            "component_type": "CarUpgradeComponent"
+          },
+          {
+            "_type": "component",
+            "component_id": "23b84760-560d-4d55-be20-d16668a67514",
+            "go": "c89ebf13-e9ff-47a0-9209-945633007fc2",
+            "component_type": "CarUpgradeComponent"
+          },
+          {
+            "_type": "component",
+            "component_id": "9a14d6e1-f8cf-4e67-b679-885d905b3cf4",
+            "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f",
+            "component_type": "CarUpgradeComponent"
+          },
+          {
+            "_type": "component",
+            "component_id": "d7819a00-0b0d-4189-95ce-d1611ca32c40",
+            "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa",
             "component_type": "CarUpgradeComponent"
           }
         ],
@@ -1004,352 +1022,6 @@
         "Flags": 0,
         "Name": "Powertrain",
         "Enabled": true,
-        "Components": [
-          {
-            "__type": "CarUpgradeComponent",
-            "__guid": "6ee4733b-c2dd-428c-81fe-1d0b2cad0398",
-            "OnBreak": {
-              "__version": 9,
-              "__guid": "805cb35d-9784-4c32-a3f6-da5f85593922",
-              "__changeId": 14,
-              "UserData": {
-                "Title": "On Break",
-                "ReferencedComponentTypes": [
-                  "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                ]
-              },
-              "Variables": [],
-              "Nodes": [
-                {
-                  "Id": 0,
-                  "Type": "input",
-                  "UserData": {
-                    "Position": "228,72"
-                  }
-                },
-                {
-                  "Id": 4,
-                  "Type": "scene.ref",
-                  "UserData": {
-                    "Position": "-72,60"
-                  }
-                },
-                {
-                  "Id": 5,
-                  "Type": "scene.get",
-                  "Properties": {
-                    "T": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                  },
-                  "UserData": {
-                    "Position": "72,96"
-                  }
-                },
-                {
-                  "Id": 6,
-                  "Type": "call",
-                  "Properties": {
-                    "_isStatic": false,
-                    "_name": "SetNormalPower",
-                    "_type": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                  },
-                  "UserData": {
-                    "Position": "372,72"
-                  }
-                }
-              ],
-              "Links": [
-                {
-                  "SrcId": 4,
-                  "SrcName": "_result",
-                  "DstId": 5,
-                  "DstName": "_this"
-                },
-                {
-                  "SrcId": 0,
-                  "SrcName": "_signal",
-                  "DstId": 6,
-                  "DstName": "_signal"
-                },
-                {
-                  "SrcId": 5,
-                  "SrcName": "_result",
-                  "DstId": 6,
-                  "DstName": "_target"
-                }
-              ],
-              "Defaults": {
-                "$4.gameobject": {
-                  "_type": "gameobject",
-                  "go": "a950ca79-9519-4673-828a-ba9f1d704405"
-                }
-              }
-            },
-            "OnBuy": {
-              "__version": 9,
-              "__guid": "0c4fee77-cc28-42f4-8d45-a2e11767cc42",
-              "__changeId": 37,
-              "UserData": {
-                "Title": "On Buy",
-                "ReferencedComponentTypes": [
-                  "Meteor.VehicleTool.Vehicle.Powertrain.Engine",
-                  "CarUpgradeComponent"
-                ]
-              },
-              "Variables": [],
-              "Nodes": [
-                {
-                  "Id": 0,
-                  "Type": "input",
-                  "UserData": {
-                    "Position": "264,24"
-                  }
-                },
-                {
-                  "Id": 2,
-                  "Type": "scene.ref",
-                  "UserData": {
-                    "Position": "120,24"
-                  }
-                },
-                {
-                  "Id": 3,
-                  "Type": "scene.get",
-                  "Properties": {
-                    "T": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                  },
-                  "UserData": {
-                    "Position": "264,60"
-                  }
-                },
-                {
-                  "Id": 4,
-                  "Type": "call",
-                  "Properties": {
-                    "_isStatic": false,
-                    "_name": "SetUpgradedPower",
-                    "_type": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                  },
-                  "UserData": {
-                    "Position": "612,24"
-                  }
-                },
-                {
-                  "Id": 6,
-                  "Type": "scene.get",
-                  "Properties": {
-                    "T": "CarUpgradeComponent"
-                  },
-                  "UserData": {
-                    "Position": "-12,132"
-                  }
-                },
-                {
-                  "Id": 7,
-                  "Type": "property",
-                  "Properties": {
-                    "_name": "UpgradeInfo",
-                    "_type": "CarUpgradeComponent"
-                  },
-                  "UserData": {
-                    "Position": "252,132"
-                  }
-                },
-                {
-                  "Id": 8,
-                  "Type": "property",
-                  "Properties": {
-                    "_name": "visual",
-                    "_type": "UpgradeInfo"
-                  },
-                  "UserData": {
-                    "Position": "612,132"
-                  }
-                },
-                {
-                  "Id": 10,
-                  "Type": "property",
-                  "Properties": {
-                    "_name": "Enabled",
-                    "_type": "Sandbox.GameObject"
-                  },
-                  "UserData": {
-                    "Position": "948,24"
-                  }
-                },
-                {
-                  "Id": 14,
-                  "Type": "property",
-                  "Properties": {
-                    "_name": "isActive",
-                    "_type": "UpgradeInfo"
-                  },
-                  "UserData": {
-                    "Position": "612,168"
-                  }
-                }
-              ],
-              "Links": [
-                {
-                  "SrcId": 2,
-                  "SrcName": "_result",
-                  "DstId": 3,
-                  "DstName": "_this"
-                },
-                {
-                  "SrcId": 0,
-                  "SrcName": "_signal",
-                  "DstId": 4,
-                  "DstName": "_signal"
-                },
-                {
-                  "SrcId": 3,
-                  "SrcName": "_result",
-                  "DstId": 4,
-                  "DstName": "_target"
-                },
-                {
-                  "SrcId": 0,
-                  "SrcName": "_target",
-                  "DstId": 6,
-                  "DstName": "_this"
-                },
-                {
-                  "SrcId": 6,
-                  "SrcName": "_result",
-                  "DstId": 7,
-                  "DstName": "_target"
-                },
-                {
-                  "SrcId": 7,
-                  "SrcName": "_result",
-                  "DstId": 8,
-                  "DstName": "_target"
-                },
-                {
-                  "SrcId": 4,
-                  "SrcName": "_signal",
-                  "DstId": 10,
-                  "DstName": "_signal"
-                },
-                {
-                  "SrcId": 8,
-                  "SrcName": "_result",
-                  "DstId": 10,
-                  "DstName": "_target"
-                },
-                {
-                  "SrcId": 14,
-                  "SrcName": "_result",
-                  "DstId": 10,
-                  "DstName": "_value"
-                },
-                {
-                  "SrcId": 7,
-                  "SrcName": "_result",
-                  "DstId": 14,
-                  "DstName": "_target"
-                }
-              ],
-              "Defaults": {
-                "$2.gameobject": {
-                  "_type": "gameobject",
-                  "go": "a950ca79-9519-4673-828a-ba9f1d704405"
-                }
-              }
-            },
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "OnRepair": {
-              "__version": 9,
-              "__guid": "57d746d2-76c9-4172-b8d3-622f15e0dd2c",
-              "__changeId": 15,
-              "UserData": {
-                "Title": "On Repair",
-                "ReferencedComponentTypes": [
-                  "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                ]
-              },
-              "Variables": [],
-              "Nodes": [
-                {
-                  "Id": 0,
-                  "Type": "input",
-                  "UserData": {
-                    "Position": "288,60"
-                  }
-                },
-                {
-                  "Id": 2,
-                  "Type": "scene.ref",
-                  "UserData": {
-                    "Position": "24,48"
-                  }
-                },
-                {
-                  "Id": 3,
-                  "Type": "scene.get",
-                  "Properties": {
-                    "T": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                  },
-                  "UserData": {
-                    "Position": "144,84"
-                  }
-                },
-                {
-                  "Id": 4,
-                  "Type": "call",
-                  "Properties": {
-                    "_isStatic": false,
-                    "_name": "SetUpgradedPower",
-                    "_type": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
-                  },
-                  "UserData": {
-                    "Position": "444,60"
-                  }
-                }
-              ],
-              "Links": [
-                {
-                  "SrcId": 2,
-                  "SrcName": "_result",
-                  "DstId": 3,
-                  "DstName": "_this"
-                },
-                {
-                  "SrcId": 0,
-                  "SrcName": "_signal",
-                  "DstId": 4,
-                  "DstName": "_signal"
-                },
-                {
-                  "SrcId": 3,
-                  "SrcName": "_result",
-                  "DstId": 4,
-                  "DstName": "_target"
-                }
-              ],
-              "Defaults": {
-                "$2.gameobject": {
-                  "_type": "gameobject",
-                  "go": "a950ca79-9519-4673-828a-ba9f1d704405"
-                }
-              }
-            },
-            "UpgradeInfo": {
-              "Name": "Engine Upgrade",
-              "Description": "Increases the max speed",
-              "buyCost": 100,
-              "repairCost": 20,
-              "isActive": false,
-              "isBroken": false,
-              "visual": null
-            }
-          }
-        ],
         "Children": [
           {
             "__guid": "a950ca79-9519-4673-828a-ba9f1d704405",
@@ -2062,8 +1734,7 @@
       {
         "__guid": "11204fef-0bf2-4724-9903-15d9f58a6e51",
         "Flags": 0,
-        "Name": "ram1",
-        "Enabled": true,
+        "Name": "Ramp",
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
@@ -2087,107 +1758,38 @@
             },
             "RenderType": "On",
             "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "5a887d12-5159-4016-992c-4695c3947d3d",
-        "Flags": 0,
-        "Name": "gun1",
-        "Enabled": true,
-        "Components": [
+          },
           {
-            "__type": "Sandbox.ModelRenderer",
-            "__guid": "72fe6a24-bcc3-4e7a-af50-da5cf8e68ef2",
-            "BodyGroups": 18446744073709551615,
-            "CreateAttachments": false,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Model": "models/upgrades/new folder/gun1.vmdl",
+            "__type": "CarUpgradeComponent",
+            "__guid": "09b42009-4213-4f26-961b-a7a625cba866",
+            "OnBreak": null,
+            "OnBuy": null,
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "RenderType": "On",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "5df084a3-8898-4f37-9b9d-8b4798904ef9",
-        "Flags": 0,
-        "Name": "fuel2",
-        "Enabled": true,
-        "Components": [
-          {
-            "__type": "Sandbox.ModelRenderer",
-            "__guid": "dab2cb5b-9630-49a3-9d12-4b0d8664f2e9",
-            "BodyGroups": 18446744073709551615,
-            "CreateAttachments": false,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Model": "models/upgrades/new folder/fuel2.vmdl",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "RenderType": "On",
-            "Tint": "1,1,1,1"
-          }
-        ]
-      },
-      {
-        "__guid": "ad2ca26e-d424-4fc6-b74a-faff37a19b3f",
-        "Flags": 0,
-        "Name": "fuel1",
-        "Enabled": true,
-        "Components": [
-          {
-            "__type": "Sandbox.ModelRenderer",
-            "__guid": "48acb7eb-09e0-4c13-a8d3-09ef0019f202",
-            "BodyGroups": 18446744073709551615,
-            "CreateAttachments": false,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Model": "models/upgrades/new folder/fuel1.vmdl",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "RenderType": "On",
-            "Tint": "1,1,1,1"
+            "OnRepair": null,
+            "UpgradeInfo": {
+              "Name": "Ramp",
+              "Description": "Pushes zombies upward and reduces frontal damage taken.",
+              "buyCost": 0,
+              "repairCost": 0,
+              "isActive": false,
+              "isBroken": false,
+              "visual": {
+                "_type": "gameobject",
+                "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f"
+              }
+            }
           }
         ]
       },
       {
         "__guid": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f",
         "Flags": 0,
-        "Name": "boost1",
-        "Enabled": true,
+        "Name": "Boost",
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
@@ -2211,6 +1813,321 @@
             },
             "RenderType": "On",
             "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "CarUpgradeComponent",
+            "__guid": "9a14d6e1-f8cf-4e67-b679-885d905b3cf4",
+            "OnBreak": null,
+            "OnBuy": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnRepair": null,
+            "UpgradeInfo": {
+              "Name": "Boost",
+              "Description": "Use a boost.",
+              "buyCost": 0,
+              "repairCost": 0,
+              "isActive": false,
+              "isBroken": false,
+              "visual": {
+                "_type": "gameobject",
+                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa",
+        "Flags": 0,
+        "Name": "Fuel",
+        "Components": [
+          {
+            "__type": "CarUpgradeComponent",
+            "__guid": "d7819a00-0b0d-4189-95ce-d1611ca32c40",
+            "OnBreak": null,
+            "OnBuy": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnRepair": null,
+            "UpgradeInfo": {
+              "Name": "Fuel",
+              "Description": "You can hold more fuel.",
+              "buyCost": 0,
+              "repairCost": 0,
+              "isActive": false,
+              "isBroken": false,
+              "visual": {
+                "_type": "gameobject",
+                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
+              }
+            }
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "ad2ca26e-d424-4fc6-b74a-faff37a19b3f",
+            "Flags": 0,
+            "Name": "fuel1",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "48acb7eb-09e0-4c13-a8d3-09ef0019f202",
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/upgrades/new folder/fuel1.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "CarUpgradeComponent",
+                "__guid": "4f64dea1-4c5f-4f0c-bc94-ec99a023f815",
+                "OnBreak": null,
+                "OnBuy": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnRepair": null,
+                "UpgradeInfo": {
+                  "Name": "Ramp",
+                  "Description": "Pushes zombies upward and reduces frontal damage taken.",
+                  "buyCost": 0,
+                  "repairCost": 0,
+                  "isActive": false,
+                  "isBroken": false,
+                  "visual": null
+                }
+              }
+            ]
+          },
+          {
+            "__guid": "5df084a3-8898-4f37-9b9d-8b4798904ef9",
+            "Flags": 0,
+            "Name": "fuel2",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "dab2cb5b-9630-49a3-9d12-4b0d8664f2e9",
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/upgrades/new folder/fuel2.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "CarUpgradeComponent",
+                "__guid": "9d18ff41-1682-43a0-8ea6-5b8cd2bc0bf9",
+                "OnBreak": null,
+                "OnBuy": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnRepair": null,
+                "UpgradeInfo": {
+                  "Name": "Ramp",
+                  "Description": "Pushes zombies upward and reduces frontal damage taken.",
+                  "buyCost": 0,
+                  "repairCost": 0,
+                  "isActive": false,
+                  "isBroken": false,
+                  "visual": null
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "c89ebf13-e9ff-47a0-9209-945633007fc2",
+        "Flags": 0,
+        "Name": "Gun",
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "9cfed20a-ecd5-41a4-bd70-3986096b9db1",
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/upgrades/new folder/gun1p2.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "CarUpgradeComponent",
+            "__guid": "23b84760-560d-4d55-be20-d16668a67514",
+            "OnBreak": null,
+            "OnBuy": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnRepair": null,
+            "UpgradeInfo": {
+              "Name": "Turret",
+              "Description": "Attach a turret to the car.",
+              "buyCost": 1,
+              "repairCost": 1,
+              "isActive": false,
+              "isBroken": false,
+              "visual": {
+                "_type": "gameobject",
+                "go": "c89ebf13-e9ff-47a0-9209-945633007fc2"
+              }
+            }
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "d0863999-846d-4a24-8d83-f497901aafad",
+            "Flags": 0,
+            "Name": "gun1p1",
+            "Position": "-11.04109,0,91.53538",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "ee10dfd6-d2f6-4f93-ac87-a05066d5fde3",
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/upgrades/new folder/gun1p1.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TurretUpgrade",
+                "__guid": "d088e0d9-c437-40f5-a164-c0da2c58e04e",
+                "Bullet": {
+                  "_type": "gameobject",
+                  "prefab": "prefabs/bullet.prefab"
+                },
+                "ColliderComp": {
+                  "_type": "component",
+                  "component_id": "4a66424f-b7ae-4022-bd85-7036ad0a8646",
+                  "go": "d0863999-846d-4a24-8d83-f497901aafad",
+                  "component_type": "HullCollider"
+                },
+                "FireRate": 2,
+                "Nuzzle": {
+                  "_type": "gameobject",
+                  "go": "cbf84527-c621-4f6b-9e28-cccc468504d1"
+                },
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null
+              },
+              {
+                "__type": "Sandbox.HullCollider",
+                "__guid": "4a66424f-b7ae-4022-bd85-7036ad0a8646",
+                "BoxSize": "50,50,50",
+                "Center": "0,0,0",
+                "Friction": null,
+                "Height": 125,
+                "IsTrigger": true,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "Points": [],
+                "Radius": 250,
+                "Radius2": 0,
+                "Slices": 16,
+                "Static": false,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0",
+                "Type": "Cylinder"
+              }
+            ],
+            "Children": [
+              {
+                "__guid": "cbf84527-c621-4f6b-9e28-cccc468504d1",
+                "Flags": 0,
+                "Name": "Nuzzle",
+                "Position": "22.29723,0,-0.3283157",
+                "Enabled": true
+              }
+            ]
           }
         ]
       }
