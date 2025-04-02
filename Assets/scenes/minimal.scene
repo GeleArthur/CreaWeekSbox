@@ -385,7 +385,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 8,
+                "Id": 16,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -403,7 +403,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 9,
+                "Id": 17,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -493,7 +493,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 8,
+                "Id": 16,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -511,7 +511,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 9,
+                "Id": 17,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -554,6 +554,7 @@
       "Flags": 0,
       "Name": "Cubemap Fog",
       "Position": "-294.1047,1088.716,31.35593",
+      "Tags": "fog",
       "Enabled": true,
       "Components": [
         {
