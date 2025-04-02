@@ -27,21 +27,21 @@
       ]
     },
     {
-      "__guid": "f996072d-0f3c-466c-885f-fc5b41c64887",
+      "__guid": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
       "Flags": 0,
-      "Name": "Camera",
-      "Position": "-89.18378,38.72052,126.8282",
-      "Tags": "maincamera",
+      "Name": "MiniCam",
+      "Position": "-496.4984,-516.1906,571.6905",
+      "Rotation": "0,0.7071068,0,0.7071068",
       "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.CameraComponent",
-          "__guid": "5ac33fca-5f8f-4710-98e5-0039d0700618",
+          "__guid": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "FieldOfView": 60,
           "FovAxis": "Horizontal",
-          "IsMainCamera": true,
+          "IsMainCamera": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -50,7 +50,7 @@
           "OnComponentUpdate": null,
           "Orthographic": false,
           "OrthographicHeight": 1204,
-          "Priority": 2,
+          "Priority": 1,
           "RenderExcludeTags": "",
           "RenderTags": "",
           "TargetEye": "None",
@@ -59,53 +59,8 @@
           "ZNear": 10
         },
         {
-          "__type": "Sandbox.Bloom",
-          "__guid": "1af03a16-8ed4-4984-a73e-894f931d649c",
-          "__version": 1,
-          "Gamma": 2.2,
-          "Mode": "Additive",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Strength": 0.5,
-          "Threshold": 1.25,
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.Tonemapping",
-          "__guid": "586faca3-15ba-46c7-967e-516bc6b39b61",
-          "__version": 3,
-          "AutoExposureEnabled": true,
-          "ExposureCompensation": 0,
-          "ExposureMethod": "RGB",
-          "MaximumExposure": 2,
-          "MinimumExposure": 1,
-          "Mode": "HableFilmic",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Rate": 1
-        },
-        {
-          "__type": "Sandbox.Sharpen",
-          "__guid": "2490c71e-5ad8-49a1-8ca5-b5abb9117cd6",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Scale": 0.2
-        },
-        {
           "__type": "Sandbox.ScreenPanel",
-          "__guid": "fe4cab7a-b886-44fa-b795-5722286a0087",
+          "__guid": "249de02b-69c6-4fea-8f79-ecbb4854f101",
           "AutoScreenScale": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -115,30 +70,14 @@
           "OnComponentUpdate": null,
           "Opacity": 1,
           "Scale": 1,
-          "ScaleStrategy": "ConsistentHeight",
+          "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "5ac33fca-5f8f-4710-98e5-0039d0700618",
-            "go": "f996072d-0f3c-466c-885f-fc5b41c64887",
+            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
+            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
             "component_type": "CameraComponent"
           },
           "ZIndex": 100
-        },
-        {
-          "__type": "Sandbox.PlayerMedicineUI",
-          "__guid": "52d401af-cd65-4082-9429-7848a1eae74b",
-          "Economy": {
-            "_type": "component",
-            "component_id": "8f0470f8-4c35-4353-ae17-0f9d460d94e5",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "Economy"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
         }
       ]
     },
@@ -373,59 +312,14 @@
       "__PrefabVariables": {}
     },
     {
-      "__guid": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
+      "__guid": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
       "Flags": 0,
-      "Name": "MiniCam",
-      "Position": "-496.4984,-516.1906,571.6905",
-      "Rotation": "0,0.7071068,0,0.7071068",
+      "Name": "camera",
+      "Position": "-509.4208,-182.2725,1.809387",
+      "Tags": "maincamera",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.CameraComponent",
-          "__guid": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-          "BackgroundColor": "0.33333,0.46275,0.52157,1",
-          "ClearFlags": "All",
-          "FieldOfView": 60,
-          "FovAxis": "Horizontal",
-          "IsMainCamera": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Orthographic": false,
-          "OrthographicHeight": 1204,
-          "Priority": 1,
-          "RenderExcludeTags": "",
-          "RenderTags": "",
-          "TargetEye": "None",
-          "Viewport": "0,0,1,1",
-          "ZFar": 10000,
-          "ZNear": 10
-        },
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "249de02b-69c6-4fea-8f79-ecbb4854f101",
-          "AutoScreenScale": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "FollowDesktopScaling",
-          "TargetCamera": {
-            "_type": "component",
-            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
-            "component_type": "CameraComponent"
-          },
-          "ZIndex": 100
-        }
-      ]
+      "__Prefab": "prefabs/camera.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {

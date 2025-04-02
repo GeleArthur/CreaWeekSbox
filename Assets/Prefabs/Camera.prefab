@@ -3,6 +3,7 @@
     "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
     "Flags": 0,
     "Name": "camera",
+    "Tags": "maincamera",
     "Enabled": true,
     "Components": [
       {
@@ -73,6 +74,43 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "Scale": 0.2
+      },
+      {
+        "__type": "Sandbox.ScreenPanel",
+        "__guid": "2b46a08f-fca8-472b-9487-0134a889cb18",
+        "AutoScreenScale": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Opacity": 1,
+        "Scale": 1,
+        "ScaleStrategy": "ConsistentHeight",
+        "TargetCamera": {
+          "_type": "component",
+          "component_id": "cf3cbf96-22b6-4be4-a5d0-672a96c17f9f",
+          "go": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+          "component_type": "CameraComponent"
+        },
+        "ZIndex": 100
+      },
+      {
+        "__type": "Sandbox.PlayerMedicineUI",
+        "__guid": "273cef64-668d-46a4-8bb6-8d85cf6ce6eb",
+        "Economy": {
+          "_type": "component",
+          "component_id": "8f0470f8-4c35-4353-ae17-0f9d460d94e5",
+          "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+          "component_type": "Economy"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
       }
     ],
     "Children": [],
