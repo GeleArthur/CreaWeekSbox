@@ -79,12 +79,12 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 				Vector3 randomPos = Vector3.Random * Random.Shared.Float( 150, 300 ); ;
 				randomPos = Scene.NavMesh.GetClosestPoint( randomPos )!.Value;
 				_agent.MoveTo( LocalPosition + randomPos );
-				if( _agent.TargetPosition.HasValue )
+				if ( _agent.TargetPosition.HasValue )
 					TurnTowards( _agent.TargetPosition.Value );
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 			}
 		}
-		if(_agent.Velocity.LengthSquared > 5f )
+		if ( _agent.Velocity.LengthSquared > 5f )
 			_skinnedModelRenderer.AnimationGraph = AnimationGraph.Load( "../Citizen/models/citizen/citizen.vmdl" );
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 100 )
 		{
@@ -95,7 +95,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 			UnRagdoll();
 		}
 	}
-	private void TurnTowards(Vector3 point)
+	private void TurnTowards( Vector3 point )
 	{
 		var direction = point - WorldPosition;
 		direction = direction / direction.Length;
@@ -114,10 +114,14 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		// magic value 200f, can be replaced with a speed variable
 		if ( _agent.TargetPosition.HasValue )
 		{
-			Vector3 direction = new Vector3( _agent.TargetPosition.Value.x, _agent.TargetPosition.Value.y, 0);
-			Vector3 gravity = new Vector3( 0,0, _rigidbody.Velocity.z );
-			Vector3 localPos = new Vector3(_rigidbody.LocalPosition.x, _rigidbody.LocalPosition.y, 0 );
-			_rigidbody.Velocity = gravity + (direction - localPos).Normal * 200f;
+			if ( Vector3.DistanceBetweenSquared( _rigidbody.WorldPosition, _agent.TargetPosition.Value ) >= 2500 )
+			{
+
+				Vector3 direction = new Vector3( _agent.TargetPosition.Value.x, _agent.TargetPosition.Value.y, 0 );
+				Vector3 gravity = new Vector3( 0, 0, _rigidbody.Velocity.z );
+				Vector3 localPos = new Vector3( _rigidbody.LocalPosition.x, _rigidbody.LocalPosition.y, 0 );
+				_rigidbody.Velocity = gravity + (direction - localPos).Normal * 200f;
+			}
 		}
 	}
 }
