@@ -37,16 +37,6 @@
       "__PrefabVariables": {}
     },
     {
-      "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-      "Flags": 0,
-      "Name": "Player Controller",
-      "Position": "-2993.86,1687.046,14.3577",
-      "Tags": "player",
-      "Enabled": true,
-      "__Prefab": "prefabs/player controller.prefab",
-      "__PrefabVariables": {}
-    },
-    {
       "__guid": "1c1cfa5d-6400-40a0-a6b0-2eed6e8342e3",
       "Flags": 0,
       "Name": "Map",
@@ -168,6 +158,16 @@
       }
     },
     {
+      "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+      "Flags": 0,
+      "Name": "Player Controller",
+      "Position": "-2993.86,1687.046,14.3577",
+      "Tags": "player",
+      "Enabled": true,
+      "__Prefab": "prefabs/player controller.prefab",
+      "__PrefabVariables": {}
+    },
+    {
       "__guid": "ac1f5c1c-d5f7-42bd-8ab2-ee95d8113bf1",
       "Flags": 0,
       "Name": "SpawnerManager",
@@ -197,6 +197,86 @@
           "Enabled": true
         },
         {
+          "__guid": "a9d4a76b-8b6a-4b69-b9a0-0689de7d4720",
+          "Flags": 0,
+          "Name": "Spawn1 (10)",
+          "Position": "-1356.085,2131.396,45.19181",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4ba125d0-b3e5-4c7e-83bd-eccbf48e4f04",
+          "Flags": 0,
+          "Name": "Spawn1 (11)",
+          "Position": "-987.2759,2725.449,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c43e5f7d-fdeb-4c10-8a0f-0b485544389f",
+          "Flags": 0,
+          "Name": "Spawn1 (12)",
+          "Position": "-990.4451,4773.865,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "ba36a18e-019e-4582-93a8-42b31924a39a",
+          "Flags": 0,
+          "Name": "Spawn1 (13)",
+          "Position": "-2278.118,4990.941,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "d7ec8e7c-1ed3-4d2a-953e-83a9ef91a45c",
+          "Flags": 0,
+          "Name": "Spawn1 (14)",
+          "Position": "-2147.522,6074.699,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "84d3f2f9-616f-49fd-82a2-7886441f4e44",
+          "Flags": 0,
+          "Name": "Spawn1 (15)",
+          "Position": "-2251.213,7010.366,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "8b84f5ad-177e-4071-ae9c-dd49ab7c8535",
+          "Flags": 0,
+          "Name": "Spawn1 (16)",
+          "Position": "-2225.933,8347.282,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4aa38dc5-275a-44b9-9f0a-082500c8d3fa",
+          "Flags": 0,
+          "Name": "Spawn1 (17)",
+          "Position": "-2171.307,9702.638,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "2852b229-b8bc-4bd5-8fe6-b53447ef94a0",
+          "Flags": 0,
+          "Name": "Spawn1 (18)",
+          "Position": "-1199.844,10162.15,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "6a6230c1-67dc-4dc0-914f-5cd745035c34",
+          "Flags": 0,
+          "Name": "Spawn1 (19)",
+          "Position": "-2971.952,10029.04,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
           "__guid": "759c5f1d-cde9-453c-a4dd-149e73327957",
           "Flags": 0,
           "Name": "Spawn1 (1)",
@@ -209,6 +289,46 @@
           "Flags": 0,
           "Name": "Spawn1 (2)",
           "Position": "-6099.3,2174.698,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "cad37564-3189-4ac7-9cf8-2bc2f4d736cd",
+          "Flags": 0,
+          "Name": "Spawn1 (5)",
+          "Position": "-6936.147,2183.187,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "3d1fe7b3-0d72-4a39-aa8a-b6be8241c4e2",
+          "Flags": 0,
+          "Name": "Spawn1 (6)",
+          "Position": "-7565.905,2202.955,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "64fc8f1c-6ec9-4d13-aac0-785bc354e411",
+          "Flags": 0,
+          "Name": "Spawn1 (7)",
+          "Position": "-8395.484,2194.985,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "9b14402a-e6fc-4a94-9285-1eeffcbb604c",
+          "Flags": 0,
+          "Name": "Spawn1 (8)",
+          "Position": "-9326.422,2191.714,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "469a86bb-dd17-4cc2-85e5-b9dde50342e9",
+          "Flags": 0,
+          "Name": "Spawn1 (9)",
+          "Position": "-10286.24,2247.851,45.19189",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -385,7 +505,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 24,
+                "Id": 10,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -403,7 +523,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 25,
+                "Id": 11,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -493,7 +613,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 24,
+                "Id": 10,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -511,7 +631,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 25,
+                "Id": 11,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -560,11 +680,11 @@
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
-          "Blur": 0,
-          "EndDistance": 1024,
-          "FalloffExponent": 2,
+          "Blur": 0.42,
+          "EndDistance": 2966.5007,
+          "FalloffExponent": 14.2,
           "HeightExponent": 1,
-          "HeightStart": 2002.133,
+          "HeightStart": 713.3335,
           "HeightWidth": 0,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
