@@ -2375,8 +2375,158 @@
           {
             "__type": "CarUpgradeComponent",
             "__guid": "9a14d6e1-f8cf-4e67-b679-885d905b3cf4",
-            "OnBreak": null,
-            "OnBuy": null,
+            "OnBreak": {
+              "__version": 9,
+              "__guid": "270f321d-c07a-4242-8a13-f513b1efc530",
+              "__changeId": 10,
+              "UserData": {
+                "Title": "On Break",
+                "ReferencedComponentTypes": [
+                  "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                ]
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input",
+                  "UserData": {
+                    "Position": "60,48"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "scene.ref",
+                  "UserData": {
+                    "Position": "-192,36"
+                  }
+                },
+                {
+                  "Id": 3,
+                  "Type": "scene.get",
+                  "Properties": {
+                    "T": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                  },
+                  "UserData": {
+                    "Position": "-60,72"
+                  }
+                },
+                {
+                  "Id": 4,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "SetNormalPower",
+                    "_type": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                  },
+                  "UserData": {
+                    "Position": "204,48"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 3,
+                  "DstName": "_this"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 4,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 3,
+                  "SrcName": "_result",
+                  "DstId": 4,
+                  "DstName": "_target"
+                }
+              ],
+              "Defaults": {
+                "$2.gameobject": {
+                  "_type": "gameobject",
+                  "go": "a950ca79-9519-4673-828a-ba9f1d704405"
+                }
+              }
+            },
+            "OnBuy": {
+              "__version": 9,
+              "__guid": "72e50078-a8ea-4f05-9fd8-ba895eb666ef",
+              "__changeId": 18,
+              "UserData": {
+                "Title": "On Buy",
+                "ReferencedComponentTypes": [
+                  "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                ]
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input",
+                  "UserData": {
+                    "Position": "156,84"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "scene.ref",
+                  "UserData": {
+                    "Position": "-108,72"
+                  }
+                },
+                {
+                  "Id": 3,
+                  "Type": "scene.get",
+                  "Properties": {
+                    "T": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                  },
+                  "UserData": {
+                    "Position": "24,108"
+                  }
+                },
+                {
+                  "Id": 4,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "SetUpgradedPower",
+                    "_type": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                  },
+                  "UserData": {
+                    "Position": "288,84"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 3,
+                  "DstName": "_this"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 4,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 3,
+                  "SrcName": "_result",
+                  "DstId": 4,
+                  "DstName": "_target"
+                }
+              ],
+              "Defaults": {
+                "$2.gameobject": {
+                  "_type": "gameobject",
+                  "go": "a950ca79-9519-4673-828a-ba9f1d704405"
+                }
+              }
+            },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
