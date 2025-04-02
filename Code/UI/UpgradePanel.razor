@@ -50,7 +50,7 @@
 	{
 		Upgrades = Scene.GetAllComponents<CarUpgradeManager>().First();
 		PlayerEconomy = Scene.GetAllComponents<Economy>().First();
-		
+
 		foreach (var upgrade in Upgrades.UpgradeList)
 		{
 			upgrade.UpgradeInfo.visual.Enabled = false;
@@ -62,6 +62,7 @@
 		{
 			if(CanOpen)
 				IsOpen = !IsOpen;
+			Scene.TimeScale = IsOpen ? 0 : 1;
 		}
 	}
 
