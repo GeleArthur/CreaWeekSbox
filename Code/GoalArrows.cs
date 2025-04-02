@@ -16,7 +16,7 @@ public sealed class GoalArrows: Component
 		WorldPosition = new Vector3(playerPos.x, playerPos.y, playerPos.z + 1400);
 
 		GoalPos = 
-			Scene.Directory.FindByName( "GoalManager" ).First().GetComponent<GoalManager>().CurrentGoal.WorldPosition;
+			Scene.Directory.FindByName( "GoalManager" ).First().GetComponent<GoalManager>().CurrentSellingGoal.WorldPosition;
 	}
 
 	protected override void OnUpdate()
