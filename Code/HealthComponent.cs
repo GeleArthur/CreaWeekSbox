@@ -8,6 +8,7 @@ public sealed class HealthComponent : Component
 	private int _maxHealth { get; set; }
 
 	[Property] public Action OnDeath;
+	public bool IsDeath => _health <= 0;
 	private int _health;
 
 	public int Health
