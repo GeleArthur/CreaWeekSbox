@@ -30,7 +30,7 @@
       {
         "__type": "Sandbox.NavMeshAgent",
         "__guid": "4a0d6322-96c2-445d-aaa1-a0255cd92be4",
-        "Acceleration": 120,
+        "Acceleration": 174.60004,
         "AutoTraverseLinks": true,
         "Height": 64,
         "MaxSpeed": 120,
@@ -41,7 +41,7 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "Radius": 16,
-        "Separation": 0.25,
+        "Separation": 1,
         "UpdatePosition": false,
         "UpdateRotation": false
       },
@@ -126,7 +126,7 @@
           "Roll": true
         },
         "MassCenterOverride": "0,0,0",
-        "MassOverride": 0,
+        "MassOverride": 20.200005,
         "MotionEnabled": true,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -154,8 +154,8 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Radius": 16,
-        "Start": "0,0,15.71832",
+        "Radius": 2,
+        "Start": "0,0,0",
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"

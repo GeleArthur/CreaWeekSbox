@@ -6,7 +6,8 @@ public sealed class HealthComponent : Component
 	[Property]
 	private int _maxHealth { get; set; }
 
-	public Action OnDeath;
+	public event Action OnDeath;
+	public event Action<int> OnHealth;
 	private int _health;
 
 	public int Health
@@ -14,8 +15,10 @@ public sealed class HealthComponent : Component
 		get { return _health; }
 		private set
 		{
+			OnHealth?.Invoke( _health );
 			_health = value;
-			if ( _health <= 0 ) OnDeath?.Invoke();
+			if ( _health <= 0 ) 
+				OnDeath?.Invoke();
 		}
 	}
 
