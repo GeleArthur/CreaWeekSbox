@@ -80,9 +80,19 @@
         {
           "__type": "GoalManager",
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-          "EconomyComp": null,
+          "EconomyComp": {
+            "_type": "component",
+            "component_id": "d0b991b0-0f7f-4587-8b45-21add2623123",
+            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+            "component_type": "Economy"
+          },
           "FuelPerGoal": 0,
-          "FuelTankComp": null,
+          "FuelTankComp": {
+            "_type": "component",
+            "component_id": "ea8603d5-739d-4d34-93a5-e6f4a8544819",
+            "go": "11523d16-2bad-4c8b-9916-0ddaddebebf2",
+            "component_type": "FuelTank"
+          },
           "Goals": [
             {
               "_type": "gameobject",
@@ -110,7 +120,7 @@
           "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "-320.4931,365.358,-1721.465",
+          "Position": "-2085.99,1931.971,-1721.465",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -122,7 +132,7 @@
           "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "975.856,417.2682,-1721.465",
+          "Position": "-789.6408,1983.882,-1721.465",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -134,7 +144,7 @@
           "__guid": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "1263.856,1601.268,-1721.465",
+          "Position": "-501.6408,3167.881,-1721.465",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -505,7 +515,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 12,
+                "Id": 10,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -523,7 +533,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 13,
+                "Id": 11,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -613,7 +623,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 12,
+                "Id": 10,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -631,7 +641,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 13,
+                "Id": 11,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
