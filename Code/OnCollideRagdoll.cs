@@ -15,6 +15,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	private TimeUntil _damageTimer;
 	private TimeUntil _ragdollTimer;
 
+	private TimeUntil _zombiesKillEachOther;
+
 	protected override void OnStart()
 	{
 		_skinnedModelRenderer = GetComponent<SkinnedModelRenderer>();
@@ -25,12 +27,15 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		_ragdollPhysics.Enabled = false;
 		_rigidbody.Enabled = true;
 		_modelCollider.Enabled = true;
+		_zombiesKillEachOther = 0.5f;
 
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
 	public void OnCollisionStart( Collision collision )
 	{
-		if ( collision.Other.GameObject.Tags.Contains( "car" ) || collision.Other.GameObject.Tags.Contains( "zombie" ) )
+		if ( collision.Other.GameObject.Tags.Contains( "car" ) || 
+		     (collision.Other.GameObject.Tags.Contains( "zombie" ) && _zombiesKillEachOther )
+		     )
 		{
 			if ( collision.Contact.Speed.Length < 250 ) return;
 			Ragdoll();
