@@ -12,6 +12,8 @@ public sealed class ZombieManager : Component
 	[Property]
     private PrefabFile Zombie { get; set; }
 
+	public PlayerController Player;
+
 	private readonly List<OnCollideRagDoll> _activeZombies = [];
 	
 	protected override void OnAwake()
@@ -22,12 +24,17 @@ public sealed class ZombieManager : Component
 		}
 	}
 
+	protected override void OnStart()
+	{
+		Player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
+	}
+
 	protected override void OnUpdate()
 	{
 		
 		while ( _activeZombies.Count < ZombieAmount )
 		{
-			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 3;
+			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 400;
 			Vector3? pointOnNav = Scene.NavMesh.GetClosestPoint( spawnLocation );
 			
 			if ( pointOnNav.HasValue )

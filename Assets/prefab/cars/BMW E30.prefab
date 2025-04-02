@@ -208,8 +208,170 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "OnVehicleEnter": null,
-        "OnVehicleExit": null
+        "OnVehicleEnter": {
+          "__version": 9,
+          "__guid": "b7a17dbe-4d2a-4fd8-848b-ef3fc463c830",
+          "__changeId": 20,
+          "UserData": {
+            "Title": "On Vehicle Enter",
+            "ReferencedComponentTypes": [
+              "FuelTank"
+            ]
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input",
+              "UserData": {
+                "Position": "180,84"
+              }
+            },
+            {
+              "Id": 5,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-36,72"
+              }
+            },
+            {
+              "Id": 6,
+              "Type": "scene.get",
+              "Properties": {
+                "T": "FuelTank"
+              },
+              "UserData": {
+                "Position": "84,108"
+              }
+            },
+            {
+              "Id": 7,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "SetActive",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "360,84"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 5,
+              "SrcName": "_result",
+              "DstId": 6,
+              "DstName": "_this"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 7,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 6,
+              "SrcName": "_result",
+              "DstId": 7,
+              "DstName": "_target"
+            },
+            {
+              "Id": 8,
+              "Value": true,
+              "DstId": 7,
+              "DstName": "state"
+            }
+          ],
+          "Defaults": {
+            "$5.gameobject": {
+              "_type": "gameobject",
+              "go": "d96abad6-0905-4cab-9e8a-0db3ecec62b1"
+            }
+          }
+        },
+        "OnVehicleExit": {
+          "__version": 9,
+          "__guid": "a8fdae69-01b8-4f25-9fb4-748348308a32",
+          "__changeId": 17,
+          "UserData": {
+            "Title": "On Vehicle Exit",
+            "ReferencedComponentTypes": [
+              "FuelTank"
+            ]
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input",
+              "UserData": {
+                "Position": "216,96"
+              }
+            },
+            {
+              "Id": 2,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-12,84"
+              }
+            },
+            {
+              "Id": 3,
+              "Type": "scene.get",
+              "Properties": {
+                "T": "FuelTank"
+              },
+              "UserData": {
+                "Position": "108,120"
+              }
+            },
+            {
+              "Id": 4,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "SetActive",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "372,96"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 3,
+              "DstName": "_this"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 4,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 3,
+              "SrcName": "_result",
+              "DstId": 4,
+              "DstName": "_target"
+            },
+            {
+              "Id": 6,
+              "Value": false,
+              "DstId": 4,
+              "DstName": "state"
+            }
+          ],
+          "Defaults": {
+            "$2.gameobject": {
+              "_type": "gameobject",
+              "go": "d96abad6-0905-4cab-9e8a-0db3ecec62b1"
+            }
+          }
+        }
       },
       {
         "__type": "Meteor.VehicleTool.Vehicle.WheelManager",
@@ -271,12 +433,10 @@
         "OnDeath": {
           "__version": 9,
           "__guid": "516b91e6-ff24-42ef-ad3f-abd249755ac9",
-          "__changeId": 57,
+          "__changeId": 102,
           "UserData": {
             "Title": "On Death",
-            "ReferencedComponentTypes": [
-              "Meteor.VehicleTool.Vehicle.VehicleController"
-            ]
+            "ReferencedComponentTypes": []
           },
           "Variables": [],
           "Nodes": [
@@ -284,52 +444,68 @@
               "Id": 0,
               "Type": "input",
               "UserData": {
-                "Position": "852,84"
+                "Position": "1668,192"
               }
             },
             {
-              "Id": 2,
-              "Type": "scene.ref",
-              "UserData": {
-                "Position": "-48,108"
-              }
-            },
-            {
-              "Id": 3,
-              "Type": "scene.get",
-              "Properties": {
-                "T": "Meteor.VehicleTool.Vehicle.VehicleController"
-              },
-              "UserData": {
-                "Position": "84,144"
-              }
-            },
-            {
-              "Id": 4,
+              "Id": 9,
               "Type": "property",
               "Properties": {
-                "_name": "Player",
-                "_type": "Meteor.VehicleTool.Vehicle.VehicleController"
+                "_name": "Scene",
+                "_type": "Sandbox.GameObject"
               },
               "UserData": {
-                "Position": "432,144"
+                "Position": "780,252"
               }
             },
             {
-              "Id": 5,
+              "Id": 10,
               "Type": "call",
               "Properties": {
                 "_isStatic": false,
-                "_name": "TryGet",
+                "_name": "GetAllObjects",
+                "_type": "Sandbox.GameObject"
+              },
+              "UserData": {
+                "Position": "984,228"
+              }
+            },
+            {
+              "Id": 17,
+              "Type": "op.convert",
+              "Properties": {
+                "_type": "Sandbox.PlayerController"
+              },
+              "UserData": {
+                "Position": "1200,252"
+              }
+            },
+            {
+              "Id": 20,
+              "Type": "property",
+              "Properties": {
+                "_name": "GameObject",
+                "_type": "Sandbox.Component"
+              },
+              "UserData": {
+                "Position": "1296,252"
+              }
+            },
+            {
+              "Id": 21,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "Get",
                 "_type": "Sandbox.IComponentLister",
                 "T": "HealthComponent"
               },
               "UserData": {
-                "Position": "708,120"
+                "Position": "1560,228"
               }
             },
             {
-              "Id": 6,
+              "Id": 22,
               "Type": "call",
               "Properties": {
                 "_isStatic": false,
@@ -337,54 +513,66 @@
                 "_type": "HealthComponent"
               },
               "UserData": {
-                "Position": "1044,120"
+                "Position": "1860,228"
               }
             }
           ],
           "Links": [
             {
-              "SrcId": 2,
-              "SrcName": "_result",
-              "DstId": 3,
-              "DstName": "_this"
-            },
-            {
-              "SrcId": 3,
-              "SrcName": "_result",
-              "DstId": 4,
+              "SrcId": 0,
+              "SrcName": "_target",
+              "DstId": 9,
               "DstName": "_target"
             },
             {
-              "SrcId": 4,
+              "SrcId": 9,
               "SrcName": "_result",
-              "DstId": 5,
+              "DstId": 10,
+              "DstName": "_target"
+            },
+            {
+              "Id": 19,
+              "Value": true,
+              "DstId": 10,
+              "DstName": "enabled"
+            },
+            {
+              "SrcId": 10,
+              "SrcName": "_result",
+              "DstId": 17,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 17,
+              "SrcName": "_result",
+              "DstId": 20,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 20,
+              "SrcName": "_result",
+              "DstId": 21,
               "DstName": "_target"
             },
             {
               "SrcId": 0,
               "SrcName": "_signal",
-              "DstId": 6,
+              "DstId": 22,
               "DstName": "_signal"
             },
             {
-              "SrcId": 5,
-              "SrcName": "component",
-              "DstId": 6,
+              "SrcId": 21,
+              "SrcName": "_result",
+              "DstId": 22,
               "DstName": "_target"
             },
             {
-              "Id": 42,
-              "Value": 10000000,
-              "DstId": 6,
+              "Id": 30,
+              "Value": 1000000,
+              "DstId": 22,
               "DstName": "damage"
             }
-          ],
-          "Defaults": {
-            "$2.gameobject": {
-              "_type": "gameobject",
-              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a"
-            }
-          }
+          ]
         }
       }
     ],
@@ -2116,14 +2304,41 @@
             "UpgradeInfo": {
               "Name": "Ramp",
               "Description": "Pushes zombies upward and reduces frontal damage taken.",
-              "Image": null,
-              "buyCost": 0,
-              "repairCost": 0,
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/ramp.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": "textures/generated/imagefile/469a982c421e5f6a.vtex"
+              },
+              "buyCost": 5000,
+              "repairCost": 2500,
               "isActive": false,
               "isBroken": false,
               "visual": {
                 "_type": "gameobject",
-                "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f"
+                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
               }
             }
           }
@@ -2171,15 +2386,42 @@
             "OnRepair": null,
             "UpgradeInfo": {
               "Name": "Boost",
-              "Description": "Use a boost.",
-              "Image": null,
-              "buyCost": 0,
-              "repairCost": 0,
+              "Description": "Move faster! Kaaachow!",
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/boost.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": "textures/generated/imagefile/1c05ec2dffc5f2d6.vtex"
+              },
+              "buyCost": 5000,
+              "repairCost": 2500,
               "isActive": false,
               "isBroken": false,
               "visual": {
                 "_type": "gameobject",
-                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
+                "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f"
               }
             }
           }
@@ -2205,7 +2447,34 @@
             "UpgradeInfo": {
               "Name": "Fuel",
               "Description": "You can hold more fuel.",
-              "Image": null,
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/catbucks.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": "textures/generated/imagefile/e16000cd04364c37.vtex"
+              },
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -2371,7 +2640,34 @@
             "UpgradeInfo": {
               "Name": "Turret",
               "Description": "Attach a turret to the car.",
-              "Image": null,
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/turret.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": "textures/generated/imagefile/d1fba639561ad8bd.vtex"
+              },
               "buyCost": 1,
               "repairCost": 1,
               "isActive": false,
