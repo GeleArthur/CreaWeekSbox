@@ -6,7 +6,7 @@ public sealed class HealthComponent : Component
 	[Property]
 	private int _maxHealth { get; set; }
 
-	public Action OnDeath;
+	[Property] public Action OnDeath;
 	private int _health;
 
 	public int Health
