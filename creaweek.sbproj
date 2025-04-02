@@ -8,7 +8,7 @@
   "Resources": null,
   "PackageReferences": [],
   "EditorReferences": null,
-  "IsStandaloneOnly": false,
+  "IsStandaloneOnly": true,
   "Metadata": {
     "MaxPlayers": 64,
     "MinPlayers": 1,
@@ -22,11 +22,7 @@
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/minimal.scene",
-    "ControlModes": {
-      "Keyboard": false,
-      "VR": false,
-      "Gamepad": false
-    }
+    "StartupScene": "scenes/mainmenu.scene",
+    "LaunchMode": "Normal"
   }
 }
