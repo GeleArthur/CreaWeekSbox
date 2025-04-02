@@ -385,7 +385,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 16,
+                "Id": 24,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -403,7 +403,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 17,
+                "Id": 25,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -493,7 +493,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 16,
+                "Id": 24,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -511,7 +511,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 17,
+                "Id": 25,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -610,6 +610,32 @@
       "Enabled": true,
       "__Prefab": "prefabs/streetlights.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "13dd571a-b8ce-4d41-88de-d2228c139d9a",
+      "Flags": 0,
+      "Name": "Point Light",
+      "Position": "-4483.055,-4364.396,191.9258",
+      "Tags": "light_point,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.PointLight",
+          "__guid": "06955d26-835f-4077-b87e-7215db08d234",
+          "Attenuation": 0,
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Radius": 720.8003,
+          "Shadows": true
+        }
+      ]
     }
   ],
   "SceneProperties": {
