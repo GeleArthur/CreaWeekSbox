@@ -183,7 +183,7 @@
           "OnComponentUpdate": null,
           "SpawnAreas": [],
           "Zombie": "prefabs/zombie.prefab",
-          "ZombieAmount": 0
+          "ZombieAmount": 9
         }
       ],
       "Children": [
