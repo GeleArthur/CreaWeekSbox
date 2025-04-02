@@ -8,6 +8,7 @@
       {
         "__type": "Sandbox.SoundPointComponent",
         "__guid": "6b7402f3-5407-48d5-a6dc-73a979aae310",
+        "__enabled": false,
         "Distance": 50000,
         "DistanceAttenuation": true,
         "DistanceAttenuationOverride": true,
@@ -39,10 +40,59 @@
         "Repeat": true,
         "SoundEvent": "audio/background/game/backgroundgamemusic.sound",
         "SoundOverride": false,
-        "StopOnNew": true,
+        "StopOnNew": false,
         "TargetMixer": {
           "Name": "music",
           "Id": "2c5bfae9-a7e8-462e-a15b-f46ef883e27b"
+        },
+        "Volume": 1
+      },
+      {
+        "__type": "Sandbox.SoundBoxComponent",
+        "__guid": "d14409cc-5e0a-40ee-9487-cbfbe59f903d",
+        "Distance": 512,
+        "DistanceAttenuation": false,
+        "DistanceAttenuationOverride": false,
+        "Falloff": [
+          {
+            "x": 0,
+            "y": 1,
+            "in": 3.1415927,
+            "out": -3.1415927,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 1,
+            "y": 0,
+            "in": 0,
+            "out": 0,
+            "mode": "Mirrored"
+          }
+        ],
+        "Force2d": false,
+        "MaxRepeatTime": 1,
+        "MinRepeatTime": 1,
+        "Occlusion": false,
+        "OcclusionOverride": false,
+        "OcclusionRadius": 32,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Pitch": 1,
+        "PlayOnStart": true,
+        "ReflectionOverride": false,
+        "Reflections": false,
+        "Repeat": true,
+        "Scale": "1000000,1000000,1000000",
+        "SoundEvent": "audio/background/game/backgroundgamemusic.sound",
+        "SoundOverride": false,
+        "StopOnNew": false,
+        "TargetMixer": {
+          "Name": "unknown",
+          "Id": "00000000-0000-0000-0000-000000000000"
         },
         "Volume": 1
       }
