@@ -229,7 +229,12 @@
             "go": "11204fef-0bf2-4724-9903-15d9f58a6e51",
             "component_type": "CarUpgradeComponent"
           },
-          null,
+          {
+            "_type": "component",
+            "component_id": "23b84760-560d-4d55-be20-d16668a67514",
+            "go": "c89ebf13-e9ff-47a0-9209-945633007fc2",
+            "component_type": "CarUpgradeComponent"
+          },
           {
             "_type": "component",
             "component_id": "9a14d6e1-f8cf-4e67-b679-885d905b3cf4",
@@ -1982,7 +1987,7 @@
       {
         "__guid": "c89ebf13-e9ff-47a0-9209-945633007fc2",
         "Flags": 0,
-        "Name": "gun1p2",
+        "Name": "Gun",
         "Enabled": true,
         "Components": [
           {
@@ -2007,6 +2012,31 @@
             },
             "RenderType": "On",
             "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "CarUpgradeComponent",
+            "__guid": "23b84760-560d-4d55-be20-d16668a67514",
+            "OnBreak": null,
+            "OnBuy": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnRepair": null,
+            "UpgradeInfo": {
+              "Name": "Turret",
+              "Description": "Attach a turret to the car.",
+              "buyCost": 1,
+              "repairCost": 1,
+              "isActive": false,
+              "isBroken": false,
+              "visual": {
+                "_type": "gameobject",
+                "go": "c89ebf13-e9ff-47a0-9209-945633007fc2"
+              }
+            }
           }
         ],
         "Children": [

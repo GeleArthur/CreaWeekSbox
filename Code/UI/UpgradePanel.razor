@@ -13,16 +13,17 @@
 
 				@if (info.isBroken)
 				{
-					<div class="button" @onclick="() => RepairItem(upgrade)">
+					<div class="button" onclick="() => RepairItem(upgrade)">
 						Repair
 					</div>
 				}
 				else if (!info.isActive)
 				{
-					<div class="button" @onclick="() => BuyItem(upgrade)">
+					<div class="button" onclick="() => BuyItem(upgrade)">
 						Buy
 					</div>
 				}
+				<div class="tooltip">@(info.Description)</div>
 			</div>
 		}
 	</div>
@@ -39,6 +40,13 @@
 	/// </summary>
 	protected override int BuildHash() => System.HashCode.Combine( IsOpen );
 
+	protected override void OnStart()
+	{
+		foreach (var upgrade in Upgrades.UpgradeList)
+		{
+			upgrade.UpgradeInfo.visual.Enabled = false;
+		}
+	}
 	protected override void OnUpdate()
 	{
 		if (Input.Pressed("Use"))
@@ -48,8 +56,9 @@
 		}
 	}
 
-	private void RepairItem(CarUpgradeComponent upgrade)
+	public void RepairItem(CarUpgradeComponent upgrade)
 	{
+		Log.Info("RepairItem method called!");
 		if ( PlayerEconomy.TryBuy( upgrade.UpgradeInfo.repairCost ) )
 		{
 			upgrade.UpgradeInfo.isBroken = false;
@@ -57,11 +66,15 @@
 		}
 	}
 
-	private void BuyItem(CarUpgradeComponent upgrade)
+	public void BuyItem(CarUpgradeComponent upgrade)
 	{
+		Log.Info("BuyItem method called!");
 		if (PlayerEconomy.TryBuy(upgrade.UpgradeInfo.buyCost))
 		{
+			Log.Info("Bought");
+			upgrade.UpgradeInfo.visual.Enabled = true;
 			upgrade.UpgradeInfo.isBroken = false;
+			upgrade.UpgradeInfo.isActive = true;
 			upgrade.OnBuy.Invoke();
 		}
 

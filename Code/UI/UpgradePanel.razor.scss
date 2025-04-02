@@ -9,6 +9,8 @@ UpgradePanel {
 	justify-content: center;
 	align-items: center;
 	font-weight: bold;
+	font-family: Poppins;
+	font-size: 64px;
 
 
 	&.hide {
@@ -21,19 +23,42 @@ UpgradePanel {
 
 
 	.upgrades {
+		align-content: center;
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 30px;
 		position: absolute;
-		top: 20px;
-		left: 20px;
-		background-color: rgba(0, 0, 0, 0.8);
+		right: 20px;
 		padding: 15px;
 		border-radius: 8px;
-		width: 200px;
+		width: 75vw;
 	}
 
 	.upgrade {
+
+		.tooltip {
+			position: absolute;
+			bottom: 110%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 32px;
+			white-space: nowrap;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.2s ease-in-out, visibility 0.2s;
+			pointer-events: none;
+		}
+
+		&:hover .tooltip {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		background-color: rgba(0, 0, 0, 0.8);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -52,8 +77,9 @@ UpgradePanel {
 			padding: 5px 10px;
 			border-radius: 5px;
 			cursor: pointer;
-			font-size: 14px;
-			/*transition: background 0.2s ease-in-out;*/
+			transition: background 0.2s ease-in-out;
+			width: 200px;
+			justify-content: center;
 
 			&:hover {
 				background: #66bb6a;
