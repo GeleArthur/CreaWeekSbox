@@ -5,7 +5,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 {
 	private ModelPhysics _ragdollPhysics;
 	private Rigidbody _rigidbody;
-	private ModelCollider _modelCollider;
+	private CapsuleCollider _modelCollider;
+	private SkinnedModelRenderer _skinnedModelRenderer;
 
 	private NavMeshAgent _agent;
 	private PlayerController _player;
@@ -16,9 +17,10 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	protected override void OnStart()
 	{
+		_skinnedModelRenderer = GetComponent<SkinnedModelRenderer>();
 		_ragdollPhysics = GetComponent<ModelPhysics>();
 		_rigidbody = GetComponent<Rigidbody>();
-		_modelCollider = GetComponent<ModelCollider>();
+		_modelCollider = GetComponent<CapsuleCollider>();
 		_agent = GetComponent<NavMeshAgent>();
 		_ragdollPhysics.Enabled = false;
 		_rigidbody.Enabled = true;
@@ -82,6 +84,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 			}
 		}
+		if(_agent.Velocity.LengthSquared > 5f )
+			_skinnedModelRenderer.AnimationGraph = AnimationGraph.Load( "../Citizen/models/citizen/citizen.vmdl" );
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 100 )
 		{
 			GotHit();
@@ -107,7 +111,13 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	protected override void OnFixedUpdate()
 	{
+		// magic value 200f, can be replaced with a speed variable
 		if ( _agent.TargetPosition.HasValue )
-			_rigidbody.Velocity = _agent.TargetPosition.Value - _rigidbody.LocalPosition;
+		{
+			Vector3 direction = new Vector3( _agent.TargetPosition.Value.x, _agent.TargetPosition.Value.y, 0);
+			Vector3 gravity = new Vector3( 0,0, _rigidbody.Velocity.z );
+			Vector3 localPos = new Vector3(_rigidbody.LocalPosition.x, _rigidbody.LocalPosition.y, 0 );
+			_rigidbody.Velocity = gravity + (direction - localPos).Normal * 200f;
+		}
 	}
 }

@@ -139,11 +139,11 @@
         "StartAsleep": false
       },
       {
-        "__type": "Sandbox.ModelCollider",
-        "__guid": "35f724b0-11f4-45b9-a29f-5fc131860b6f",
+        "__type": "Sandbox.CapsuleCollider",
+        "__guid": "d004ffb4-b4d3-4286-924c-a0b91a080ad2",
+        "End": "0,0,55.40348",
         "Friction": null,
         "IsTrigger": false,
-        "Model": "models/zombiebetter.vmdl",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -154,6 +154,8 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
+        "Radius": 16,
+        "Start": "0,0,14.15812",
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
