@@ -13,10 +13,10 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	private TimeUntil _wanderTimer;
 	private TimeUntil _damageTimer;
 
+	private bool _touchingTips = false;
+
 	protected override void OnStart()
 	{
-		_damageTimer = 2;
-
 		_ragdollPhysics = GetComponent<ModelPhysics>();
 		_rigidbody = GetComponent<Rigidbody>();
 		_modelCollider = GetComponent<ModelCollider>();
@@ -27,11 +27,18 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
+	public void OnCollisionStop( Collision collision )
+	{
+		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
+		{
+			_touchingTips = false;
+		}
+	}
 	public void OnCollisionStart( Collision collision )
 	{
 		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
 		{
-			GotHit();
+			_touchingTips = true;
 		}
 		else if ( collision.Other.GameObject.Tags.Contains( "car" ) || collision.Other.GameObject.Tags.Contains( "zombie" ) )
 		{
@@ -73,6 +80,10 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 				_agent.MoveTo( LocalPosition + randomPos );
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 			}
+		}
+		if ( _touchingTips )
+		{
+			GotHit();
 		}
 	}
 }
