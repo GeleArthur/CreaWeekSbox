@@ -2,6 +2,9 @@ using Sandbox;
 
 public sealed class Bullet : Component
 {
+	[Property]
+	public int BulletDamage { get; set; }
+
 	private float _speed = 100f;
 	public float Speed
 	{
@@ -11,6 +14,20 @@ public sealed class Bullet : Component
 
 	private float _lifeTime = 3f;
 	private float _timeAlive = 0f;
+
+	protected override void OnAwake()
+	{
+		var ColliderComp = GetComponent<SphereCollider>();
+
+		ColliderComp.OnTriggerEnter = ( Collider other ) =>
+		{
+			if (other.Tags.Has("zombie"))
+			{
+				other.GetComponent<HealthComponent>()?.Damage( BulletDamage );
+			}
+		};
+
+	}
 
 	protected override void OnUpdate()
 	{

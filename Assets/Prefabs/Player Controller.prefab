@@ -7,26 +7,6 @@
     "Enabled": true,
     "Components": [
       {
-        "__type": "Slime",
-        "__guid": "d56bdbc5-5773-4bed-b657-d38b1df10923",
-        "HealthRegenration": 5,
-        "MaxHealth": 100,
-        "ModelRenderer": {
-          "_type": "component",
-          "component_id": "1f1bcbbe-0099-43f4-8020-0065eaf90ff6",
-          "go": "e80901d8-292a-4f55-bb8e-6231d83d5317",
-          "component_type": "SkinnedModelRenderer"
-        },
-        "Name": null,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "Team": "Player"
-      },
-      {
         "__type": "Sandbox.PlayerController",
         "__guid": "8d0b91b4-2700-483d-9bf0-8d7ffc34c2d1",
         "AccelerationTime": 0,
@@ -174,6 +154,17 @@
         "OnComponentUpdate": null,
         "StartMedicine": 100,
         "StartMoney": 0
+      },
+      {
+        "__type": "HealthComponent",
+        "__guid": "10e6fc35-e69c-4fee-96ea-3327d53e38cc",
+        "_maxHealth": 100,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
       }
     ],
     "Children": [
