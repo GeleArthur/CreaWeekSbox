@@ -1,4 +1,4 @@
-@using Sandbox;
+﻿@using Sandbox;
 @using Sandbox.UI;
 @inherits PanelComponent
 @namespace Sandbox
@@ -8,20 +8,24 @@
 		@foreach (var upgrade in Upgrades.UpgradeList)
 		{
 			var info = upgrade.UpgradeInfo;
-			<div class="upgrade">
+			<div class="upgradeclass">
 				<span>@info.Name</span>
 
 				@if (info.isBroken)
 				{
-					<div class="button" onclick="() => RepairItem(upgrade)">
+					<button class="button" @onclick=@(()=> RepairItem(upgrade))>
 						Repair
-					</div>
+					</button>
 				}
 				else if (!info.isActive)
 				{
-					<div class="button" onclick="() => BuyItem(upgrade)">
+					<button class="button" @onclick=@(() => BuyItem(upgrade))>
 						Buy
-					</div>
+					</button>
+				}
+				else
+				{
+					<button class="bought">✅</button>
 				}
 				<div class="tooltip">@(info.Description)</div>
 			</div>
@@ -38,7 +42,7 @@
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine( IsOpen );
+	protected override int BuildHash() => System.HashCode.Combine(IsOpen, Upgrades?.UpgradeList.Count ?? 0);
 
 	protected override void OnStart()
 	{
@@ -49,16 +53,15 @@
 	}
 	protected override void OnUpdate()
 	{
-		if (Input.Pressed("Use"))
+		if (Input.Pressed("Shop"))
 		{
-			Log.Info("I have been pressed");
 			IsOpen = !IsOpen;
 		}
 	}
 
 	public void RepairItem(CarUpgradeComponent upgrade)
 	{
-		Log.Info("RepairItem method called!");
+		if ( upgrade == null ) return;
 		if ( PlayerEconomy.TryBuy( upgrade.UpgradeInfo.repairCost ) )
 		{
 			upgrade.UpgradeInfo.isBroken = false;
@@ -68,10 +71,9 @@
 
 	public void BuyItem(CarUpgradeComponent upgrade)
 	{
-		Log.Info("BuyItem method called!");
+		if ( upgrade == null ) return;
 		if (PlayerEconomy.TryBuy(upgrade.UpgradeInfo.buyCost))
 		{
-			Log.Info("Bought");
 			upgrade.UpgradeInfo.visual.Enabled = true;
 			upgrade.UpgradeInfo.isBroken = false;
 			upgrade.UpgradeInfo.isActive = true;

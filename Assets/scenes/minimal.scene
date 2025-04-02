@@ -33,92 +33,8 @@
       "Position": "-496.4984,-516.1906,571.6905",
       "Rotation": "0,0.7071068,0,0.7071068",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.CameraComponent",
-          "__guid": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-          "BackgroundColor": "0.33333,0.46275,0.52157,1",
-          "ClearFlags": "All",
-          "FieldOfView": 60,
-          "FovAxis": "Horizontal",
-          "IsMainCamera": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Orthographic": false,
-          "OrthographicHeight": 1204,
-          "Priority": 1,
-          "RenderExcludeTags": "",
-          "RenderTags": "",
-          "TargetEye": "None",
-          "Viewport": "0,0,1,1",
-          "ZFar": 10000,
-          "ZNear": 10
-        },
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "249de02b-69c6-4fea-8f79-ecbb4854f101",
-          "AutoScreenScale": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "FollowDesktopScaling",
-          "TargetCamera": {
-            "_type": "component",
-            "component_id": "f7e5c08a-ecee-40af-9519-b283487f9764",
-            "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
-            "component_type": "CameraComponent"
-          },
-          "ZIndex": 100
-        },
-        {
-          "__type": "Sandbox.MiniMapHUD",
-          "__guid": "e2b2cb96-7a86-445a-9b7c-05e43c628b84",
-          "Camera": {
-            "_type": "component",
-            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
-            "component_type": "CameraComponent"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
-          "__type": "FollowPlayerCamera",
-          "__guid": "d07d86e6-c49d-4417-b7f4-daac23408024",
-          "HeightOffset": 2000,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PlayerController": {
-            "_type": "component",
-            "component_id": "80ad1c69-245f-40bb-8bb8-956f4c018d09",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "PlayerController"
-          },
-          "VehicleController": {
-            "_type": "component",
-            "component_id": "8e5b464a-9296-427a-8ba1-a49ba9fee0c6",
-            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
-            "component_type": "VehicleController"
-          }
-        }
-      ]
+      "__Prefab": "prefabs/minicam.prefab",
+      "__PrefabVariables": {}
     },
     {
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
@@ -177,7 +93,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "5c4daf13-74d1-4d15-a697-56b46b51ce91",
+            "component_id": "5c8d0d58-5665-4f0b-a74d-b65d23c77743",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -267,7 +183,7 @@
           "OnComponentUpdate": null,
           "SpawnAreas": [],
           "Zombie": "prefabs/zombie.prefab",
-          "ZombieAmount": 8
+          "ZombieAmount": 0
         }
       ],
       "Children": [
@@ -275,7 +191,7 @@
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
           "Flags": 0,
           "Name": "Spawn1",
-          "Position": "-271.1343,-2051.822,13.50365",
+          "Position": "-1.326904,-2044.364,16.07147",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -315,51 +231,8 @@
       "Name": "UpgradeUI",
       "Position": "177.2555,-648.5038,302.335",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "3b8bb2ed-475b-44e4-91cb-01bc8120ed16",
-          "AutoScreenScale": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "FollowDesktopScaling",
-          "TargetCamera": {
-            "_type": "component",
-            "component_id": "f7e5c08a-ecee-40af-9519-b283487f9764",
-            "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
-            "component_type": "CameraComponent"
-          },
-          "ZIndex": 491
-        },
-        {
-          "__type": "Sandbox.UpgradePanel",
-          "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PlayerEconomy": {
-            "_type": "component",
-            "component_id": "5c4daf13-74d1-4d15-a697-56b46b51ce91",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "Economy"
-          },
-          "Upgrades": {
-            "_type": "component",
-            "component_id": "cbd37ad5-41fb-4d16-8491-d9776ac13160",
-            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
-            "component_type": "CarUpgradeManager"
-          }
-        }
-      ]
+      "__Prefab": "prefabs/upgradeui.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {

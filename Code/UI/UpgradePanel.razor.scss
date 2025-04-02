@@ -34,7 +34,7 @@ UpgradePanel {
 		width: 75vw;
 	}
 
-	.upgrade {
+	.upgradeclass {
 
 		.tooltip {
 			position: absolute;
@@ -51,6 +51,9 @@ UpgradePanel {
 			visibility: hidden;
 			transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			pointer-events: none;
+		}
+		.bought {
+			
 		}
 
 		&:hover .tooltip {
@@ -72,6 +75,7 @@ UpgradePanel {
 		}
 
 		.button {
+			pointer-events: all;
 			background: #4caf50;
 			color: white;
 			padding: 5px 10px;
