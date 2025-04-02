@@ -11,10 +11,12 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	private PlayerController _player;
 
 	private TimeUntil _wanderTimer;
-
+	private TimeUntil _damageTimer;
 
 	protected override void OnStart()
 	{
+		_damageTimer = 2;
+
 		_ragdollPhysics = GetComponent<ModelPhysics>();
 		_rigidbody = GetComponent<Rigidbody>();
 		_modelCollider = GetComponent<ModelCollider>();
@@ -25,23 +27,32 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
-
 	public void OnCollisionStart( Collision collision )
 	{
-		Log.Info( "colliding" );
 		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
 		{
-			Log.Info( "colliding with player" );
-			_player.GetComponent<HealthComponent>().Damage( 10 );
+			GotHit();
 		}
 		else if ( collision.Other.GameObject.Tags.Contains( "car" ) || collision.Other.GameObject.Tags.Contains( "zombie" ) )
 		{
 			if ( collision.Contact.Speed.Length < 250 ) return;
-			_ragdollPhysics.Enabled = true;
-			_rigidbody.Enabled = false;
-			_modelCollider.Enabled = false;
+			Ragdoll();
 		}
 		// _ragdollPhysics.PhysicsGroup.Velocity = collision.Contact.Speed * 1.1f;
+	}
+	public void Ragdoll()
+	{
+		_ragdollPhysics.Enabled = true;
+		_rigidbody.Enabled = false;
+		_modelCollider.Enabled = false;
+	}
+	private void GotHit()
+	{
+		if ( _damageTimer )
+		{
+			_player.GetComponent<HealthComponent>().Damage( 10 );
+			_damageTimer = 2;
+		}
 	}
 
 	protected override void OnUpdate()
