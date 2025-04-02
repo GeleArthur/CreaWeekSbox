@@ -31,7 +31,7 @@
         "OnComponentUpdate": null,
         "OverrideMassCenter": false,
         "RigidbodyFlags": 0,
-        "StartAsleep": false
+        "StartAsleep": true
       }
     ],
     "Children": [
@@ -87,7 +87,7 @@
             "OnComponentUpdate": null,
             "OverrideMassCenter": false,
             "RigidbodyFlags": 0,
-            "StartAsleep": false
+            "StartAsleep": true
           },
           {
             "__type": "Sandbox.ModelRenderer",
@@ -145,6 +145,49 @@
             "OnComponentStart": null,
             "OnComponentUpdate": null,
             "StartBroken": false
+          },
+          {
+            "__type": "LampParticleHandler",
+            "__guid": "a8b94f7c-630e-4fc9-811d-90c4fc16f538",
+            "ColliderComponent": {
+              "_type": "component",
+              "component_id": "24575bf8-4b46-4155-813b-5876305e1617",
+              "go": "7eaef9da-16e0-48ea-9c18-4b610cefd04d",
+              "component_type": "BoxCollider"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "ParticleEmitter": {
+              "_type": "component",
+              "component_id": "e4941593-0bcc-43ad-a13f-aac7ebb62b68",
+              "go": "889e731a-7e76-4cd5-abf3-a170d3909d24",
+              "component_type": "ParticleSphereEmitter"
+            }
+          },
+          {
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "24575bf8-4b46-4155-813b-5876305e1617",
+            "Center": "0,0,100",
+            "Friction": null,
+            "IsTrigger": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "Scale": "30,30,200",
+            "Static": false,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
           }
         ],
         "Children": [
@@ -223,14 +266,24 @@
                 "Brightness": {
                   "Type": "Range",
                   "Evaluation": "Frame",
-                  "CurveA": {
-                    "rangex": "0,0",
-                    "rangey": "0,0"
-                  },
-                  "CurveB": {
-                    "rangex": "0,0",
-                    "rangey": "0,0"
-                  },
+                  "CurveA": [
+                    {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "in": 0,
+                      "out": 0,
+                      "mode": "Mirrored"
+                    }
+                  ],
+                  "CurveB": [
+                    {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "in": 0,
+                      "out": 0,
+                      "mode": "Mirrored"
+                    }
+                  ],
                   "Constants": "1,0.5,0,0"
                 },
                 "Bumpiness": 0,
@@ -449,11 +502,12 @@
               {
                 "__type": "Sandbox.ParticleSphereEmitter",
                 "__guid": "e4941593-0bcc-43ad-a13f-aac7ebb62b68",
+                "__enabled": false,
                 "Burst": 1000,
                 "Delay": 0,
                 "DestroyOnEnd": false,
                 "Duration": 5,
-                "Loop": true,
+                "Loop": false,
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
                 "OnComponentEnabled": null,
