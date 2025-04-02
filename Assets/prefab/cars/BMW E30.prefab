@@ -218,6 +218,24 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "Wheels": []
+      },
+      {
+        "__type": "CarUpgradeManager",
+        "__guid": "962fc0a7-2e77-4f01-8e9f-3a9ff16b3f50",
+        "_upgrades": [
+          {
+            "_type": "component",
+            "component_id": "6ee4733b-c2dd-428c-81fe-1d0b2cad0398",
+            "go": "d96abad6-0905-4cab-9e8a-0db3ecec62b1",
+            "component_type": "CarUpgradeComponent"
+          }
+        ],
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
       }
     ],
     "Children": [
