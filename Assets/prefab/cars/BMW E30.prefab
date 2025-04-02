@@ -1735,7 +1735,6 @@
         "__guid": "11204fef-0bf2-4724-9903-15d9f58a6e51",
         "Flags": 0,
         "Name": "Ramp",
-        "Enabled": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
@@ -1791,7 +1790,6 @@
         "__guid": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f",
         "Flags": 0,
         "Name": "Boost",
-        "Enabled": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
@@ -1847,7 +1845,6 @@
         "__guid": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa",
         "Flags": 0,
         "Name": "Fuel",
-        "Enabled": true,
         "Components": [
           {
             "__type": "CarUpgradeComponent",
@@ -1988,7 +1985,6 @@
         "__guid": "c89ebf13-e9ff-47a0-9209-945633007fc2",
         "Flags": 0,
         "Name": "Gun",
-        "Enabled": true,
         "Components": [
           {
             "__type": "Sandbox.ModelRenderer",
