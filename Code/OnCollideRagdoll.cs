@@ -52,7 +52,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	{
 		if ( _damageTimer )
 		{
-			_player.GetComponent<HealthComponent>().Damage( 10 );
+			_player.GetComponent<HealthComponent>()?.Damage( 10 );
 			_damageTimer = 2;
 		}
 	}
