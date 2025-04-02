@@ -40,7 +40,7 @@
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "-4307.542,-5502.997,14.35768",
+      "Position": "-2993.86,1687.046,14.3577",
       "Tags": "player",
       "Enabled": true,
       "__Prefab": "prefabs/player controller.prefab",
@@ -158,12 +158,14 @@
       "__guid": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "-3047.249,-312.9556,31.2123",
+      "Position": "-2954.416,1947.023,31.2123",
       "Rotation": "0,0,0.7071067,0.7071068",
       "Tags": "car",
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
-      "__PrefabVariables": {}
+      "__PrefabVariables": {
+        "Player": null
+      }
     },
     {
       "__guid": "ac1f5c1c-d5f7-42bd-8ab2-ee95d8113bf1",
@@ -182,7 +184,7 @@
           "OnComponentUpdate": null,
           "SpawnAreas": [],
           "Zombie": "prefabs/zombie.prefab",
-          "ZombieAmount": 9
+          "ZombieAmount": 20
         }
       ],
       "Children": [
@@ -190,21 +192,43 @@
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
           "Flags": 0,
           "Name": "Spawn1",
-          "Position": "-1.326904,-2044.364,16.07147",
+          "Position": "-2149.814,872.1088,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "759c5f1d-cde9-453c-a4dd-149e73327957",
+          "Flags": 0,
+          "Name": "Spawn1 (1)",
+          "Position": "-2380.697,4761.786,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "f2349903-d9ee-4256-a123-dec018cf11a7",
+          "Flags": 0,
+          "Name": "Spawn1 (2)",
+          "Position": "-6099.3,2174.698,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "1724bb00-b747-4aca-93fd-2bc90ae388d5",
+          "Flags": 0,
+          "Name": "Spawn1 (3)",
+          "Position": "-7188.203,10173.9,45.19189",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4dfc1be0-460e-46fc-a5da-04c528c5cf56",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-2199.542,10156.08,45.19189",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
       ]
-    },
-    {
-      "__guid": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
-      "Flags": 0,
-      "Name": "zombie",
-      "Position": "-3125.529,2032.934,14.03492",
-      "Tags": "zombie",
-      "Enabled": true,
-      "__Prefab": "prefabs/zombie.prefab",
-      "__PrefabVariables": {}
     },
     {
       "__guid": "0f9dee97-57a4-4bfb-90c1-0befdcb8a827",

@@ -42,11 +42,7 @@ public sealed class GoalManager : Component
 			}
 			else if (isFuelGoal)
 			{
-<<<<<<< Updated upstream
 				FuelTankComp.AddFual(150);
-=======
-
->>>>>>> Stashed changes
 			}
 			else
 			{
