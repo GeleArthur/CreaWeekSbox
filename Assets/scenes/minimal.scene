@@ -71,7 +71,12 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "FollowDesktopScaling",
-          "TargetCamera": null,
+          "TargetCamera": {
+            "_type": "component",
+            "component_id": "54d8cb08-6fa3-481f-93fb-4673c7040627",
+            "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
+            "component_type": "CameraComponent"
+          },
           "ZIndex": 100
         },
         {
@@ -102,13 +107,13 @@
           "OnComponentUpdate": null,
           "PlayerController": {
             "_type": "component",
-            "component_id": "7a8a5493-9796-4536-831e-ea96c51abc1d",
+            "component_id": "e1fe8a13-3d9d-4f1c-ac20-b74a01d8c582",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "PlayerController"
           },
           "VehicleController": {
             "_type": "component",
-            "component_id": "584c2041-f285-490f-bd2f-54e9b32da114",
+            "component_id": "a0f4f96a-57b3-4f3e-aeb8-27df4551e99d",
             "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
             "component_type": "VehicleController"
           }
@@ -172,7 +177,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "54826555-bebb-4e2f-aaf9-b615338807a2",
+            "component_id": "451b9256-8f30-4e19-a758-b3f172816801",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -250,20 +255,6 @@
       "Flags": 0,
       "Name": "SpawnerManager",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "ZombieSpawnComponent",
-          "__guid": "7cc58dba-49cf-4aa7-904f-ade39e9bdc56",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "SpawnArea": [],
-          "Zombie": null
-        }
-      ],
       "Children": [
         {
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
@@ -351,16 +342,6 @@
       "Enabled": true,
       "Components": [
         {
-          "__type": "Sandbox.UpgradePanel",
-          "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
           "__type": "Sandbox.ScreenPanel",
           "__guid": "3b8bb2ed-475b-44e4-91cb-01bc8120ed16",
           "AutoScreenScale": true,
@@ -375,11 +356,33 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "66e6f5d0-f201-442e-ae0d-65e52979fe54",
+            "component_id": "54d8cb08-6fa3-481f-93fb-4673c7040627",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
-          "ZIndex": 1
+          "ZIndex": 491
+        },
+        {
+          "__type": "Sandbox.UpgradePanel",
+          "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerEconomy": {
+            "_type": "component",
+            "component_id": "451b9256-8f30-4e19-a758-b3f172816801",
+            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+            "component_type": "Economy"
+          },
+          "Upgrades": {
+            "_type": "component",
+            "component_id": "03e5cd9d-6235-46d7-a588-d3e93a5b23be",
+            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
+            "component_type": "CarUpgradeManager"
+          }
         }
       ]
     }

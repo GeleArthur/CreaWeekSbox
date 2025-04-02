@@ -10,21 +10,21 @@ public class CarUpgradeComponent : Component
 
 	//! DEBUG
 	[Button( icon: "💸" )]
-	public void Buy()
+	private void Buy()
 	{
 		OnBuy.Invoke();
 	}
 
 	[Button( icon: "💥" )]
-	public void Break()
+	private void Break()
 	{
-		OnBuy.Invoke();
+		OnBreak.Invoke();
 	}
 
 	[Button( icon: "🔧" )]
-	public void Repair()
+	private void Repair()
 	{
-		OnBuy.Invoke();
+		OnRepair.Invoke();
 	}
 }
 
@@ -45,6 +45,7 @@ public class UpgradeInfo
 public sealed class CarUpgradeManager : Component
 {
 	[Property] private List<CarUpgradeComponent> _upgrades;
+	public List<CarUpgradeComponent> UpgradeList => _upgrades;
 
 	// General methods
 	public int GetCost(int upgrade)
