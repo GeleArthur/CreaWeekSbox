@@ -1,4 +1,4 @@
-@using Sandbox;
+﻿@using Sandbox;
 @using Sandbox.UI;
 @inherits PanelComponent
 @namespace Sandbox
@@ -23,6 +23,10 @@
 						Buy
 					</button>
 				}
+				else
+				{
+					<button class="bought">✅</button>
+				}
 				<div class="tooltip">@(info.Description)</div>
 			</div>
 		}
@@ -42,6 +46,9 @@
 
 	protected override void OnStart()
 	{
+		Upgrades = Scene.GetAllComponents<CarUpgradeManager>().First();
+		PlayerEconomy = Scene.GetAllComponents<Economy>().First();
+		
 		foreach (var upgrade in Upgrades.UpgradeList)
 		{
 			upgrade.UpgradeInfo.visual.Enabled = false;

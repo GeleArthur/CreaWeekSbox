@@ -4,7 +4,7 @@ using System;
 public sealed class ZombieManager : Component
 {
 	[Property] 
-	private int _zombieAmount { get; set; }
+	private int ZombieAmount { get; set; }
 	
 	[Property]
 	public List<GameObject> SpawnAreas { get; set; }
@@ -12,7 +12,7 @@ public sealed class ZombieManager : Component
 	[Property]
     private PrefabFile Zombie { get; set; }
 
-	private List<OnCollideRagDoll> _activeZombies = new List<OnCollideRagDoll>();
+	private readonly List<OnCollideRagDoll> _activeZombies = [];
 	
 	protected override void OnAwake()
 	{
@@ -24,16 +24,23 @@ public sealed class ZombieManager : Component
 
 	protected override void OnUpdate()
 	{
-		while ( _activeZombies.Count < _zombieAmount )
+		
+		while ( _activeZombies.Count < ZombieAmount )
 		{
-			GameObject spawnLocation = Random.Shared.FromList( SpawnAreas );
-			var pointOnNav = Scene.NavMesh.GetClosestPoint( spawnLocation.WorldPosition );
-
+			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 3;
+			Vector3? pointOnNav = Scene.NavMesh.GetClosestPoint( spawnLocation );
+			
 			if ( pointOnNav.HasValue )
 			{
-				GameObject newZombie = GameObject.Clone( Zombie, new Transform(pointOnNav.Value, Rotation.Identity) );
-				_activeZombies.Add( newZombie.GetComponent<OnCollideRagDoll>() );
-
+				SceneTraceResult result = Scene.Trace.Ray( pointOnNav.Value, pointOnNav.Value + Vector3.Down * 3 ).Run();
+				if ( result.Hit )
+				{
+					GameObject newZombie = GameObject.Clone( Zombie, new Transform(result.EndPosition, Rotation.Identity) );
+					_activeZombies.Add( newZombie.GetComponent<OnCollideRagDoll>() );
+					
+				}
+				
+				
 			}
 			
 		}

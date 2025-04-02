@@ -33,92 +33,8 @@
       "Position": "-496.4984,-516.1906,571.6905",
       "Rotation": "0,0.7071068,0,0.7071068",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.CameraComponent",
-          "__guid": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-          "BackgroundColor": "0.33333,0.46275,0.52157,1",
-          "ClearFlags": "All",
-          "FieldOfView": 60,
-          "FovAxis": "Horizontal",
-          "IsMainCamera": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Orthographic": false,
-          "OrthographicHeight": 1204,
-          "Priority": 1,
-          "RenderExcludeTags": "",
-          "RenderTags": "",
-          "TargetEye": "None",
-          "Viewport": "0,0,1,1",
-          "ZFar": 10000,
-          "ZNear": 10
-        },
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "249de02b-69c6-4fea-8f79-ecbb4854f101",
-          "AutoScreenScale": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "FollowDesktopScaling",
-          "TargetCamera": {
-            "_type": "component",
-            "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
-            "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
-            "component_type": "CameraComponent"
-          },
-          "ZIndex": 100
-        },
-        {
-          "__type": "Sandbox.MiniMapHUD",
-          "__guid": "e2b2cb96-7a86-445a-9b7c-05e43c628b84",
-          "Camera": {
-            "_type": "component",
-            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
-            "component_type": "CameraComponent"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
-          "__type": "FollowPlayerCamera",
-          "__guid": "d07d86e6-c49d-4417-b7f4-daac23408024",
-          "HeightOffset": 2000,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PlayerController": {
-            "_type": "component",
-            "component_id": "37b2b8c9-eb1d-46b5-ba7a-cb54b9448672",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "PlayerController"
-          },
-          "VehicleController": {
-            "_type": "component",
-            "component_id": "1b2ab52c-638a-4360-9411-27329696b610",
-            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
-            "component_type": "VehicleController"
-          }
-        }
-      ]
+      "__Prefab": "prefabs/minicam.prefab",
+      "__PrefabVariables": {}
     },
     {
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
@@ -177,7 +93,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "437c533f-14fd-41b6-be33-9421bc1e3c8f",
+            "component_id": "5c8d0d58-5665-4f0b-a74d-b65d23c77743",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -259,7 +175,6 @@
         {
           "__type": "ZombieManager",
           "__guid": "8261a96e-f38c-489e-9028-92bb1ab7798a",
-          "_zombieAmount": 3,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -267,7 +182,8 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "SpawnAreas": [],
-          "Zombie": "prefabs/zombie.prefab"
+          "Zombie": "prefabs/zombie.prefab",
+          "ZombieAmount": 9
         }
       ],
       "Children": [
@@ -275,47 +191,7 @@
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
           "Flags": 0,
           "Name": "Spawn1",
-          "Position": "-2150.849,-120.4948,16.07139",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "976c66e7-4eaa-45ee-83ba-399c019bf48f",
-          "Flags": 0,
-          "Name": "Spawn2",
-          "Position": "-646.4313,-224.3948,16.07116",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "2b864451-9e80-48b7-add4-cf2501b0bf39",
-          "Flags": 0,
-          "Name": "Spawn3",
-          "Position": "-2245.937,-956.7822,16.07076",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "691f70ac-855b-46ba-b093-e74ea8c26d7b",
-          "Flags": 0,
-          "Name": "Spawn4",
-          "Position": "-1788.059,137.1984,16.0703",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "65d7b246-145f-47d4-a58e-4a28b1a11e64",
-          "Flags": 0,
-          "Name": "Spawn5",
-          "Position": "19.38324,-554.9811,16.07083",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "fafe4cab-7ad3-44c1-a0a8-3fddd226f0ea",
-          "Flags": 0,
-          "Name": "Spawn6",
-          "Position": "-1508.622,1125.36,16.07067",
+          "Position": "-1.326904,-2044.364,16.07147",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -355,51 +231,8 @@
       "Name": "UpgradeUI",
       "Position": "177.2555,-648.5038,302.335",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "3b8bb2ed-475b-44e4-91cb-01bc8120ed16",
-          "AutoScreenScale": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "FollowDesktopScaling",
-          "TargetCamera": {
-            "_type": "component",
-            "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
-            "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
-            "component_type": "CameraComponent"
-          },
-          "ZIndex": 491
-        },
-        {
-          "__type": "Sandbox.UpgradePanel",
-          "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PlayerEconomy": {
-            "_type": "component",
-            "component_id": "437c533f-14fd-41b6-be33-9421bc1e3c8f",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "Economy"
-          },
-          "Upgrades": {
-            "_type": "component",
-            "component_id": "6ab12f6f-1d4c-4ab5-affe-6a62a05d790d",
-            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
-            "component_type": "CarUpgradeManager"
-          }
-        }
-      ]
+      "__Prefab": "prefabs/upgradeui.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {

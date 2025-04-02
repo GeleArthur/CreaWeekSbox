@@ -46,7 +46,7 @@
         "ScaleStrategy": "FollowDesktopScaling",
         "TargetCamera": {
           "_type": "component",
-          "component_id": "54d8cb08-6fa3-481f-93fb-4673c7040627",
+          "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
           "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
           "component_type": "CameraComponent"
         },
@@ -80,7 +80,7 @@
         "OnComponentUpdate": null,
         "PlayerController": {
           "_type": "component",
-          "component_id": "e1fe8a13-3d9d-4f1c-ac20-b74a01d8c582",
+          "component_id": "37b2b8c9-eb1d-46b5-ba7a-cb54b9448672",
           "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
           "component_type": "PlayerController"
         },

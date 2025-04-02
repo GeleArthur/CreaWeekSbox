@@ -21,7 +21,7 @@
         "ScaleStrategy": "FollowDesktopScaling",
         "TargetCamera": {
           "_type": "component",
-          "component_id": "54d8cb08-6fa3-481f-93fb-4673c7040627",
+          "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
           "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
           "component_type": "CameraComponent"
         },
@@ -38,7 +38,7 @@
         "OnComponentUpdate": null,
         "PlayerEconomy": {
           "_type": "component",
-          "component_id": "451b9256-8f30-4e19-a758-b3f172816801",
+          "component_id": "437c533f-14fd-41b6-be33-9421bc1e3c8f",
           "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
           "component_type": "Economy"
         },
