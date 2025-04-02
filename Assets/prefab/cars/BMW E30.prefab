@@ -373,7 +373,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 42,
+              "Id": 8,
               "Value": 10000000,
               "DstId": 6,
               "DstName": "damage"
@@ -2116,14 +2116,41 @@
             "UpgradeInfo": {
               "Name": "Ramp",
               "Description": "Pushes zombies upward and reduces frontal damage taken.",
-              "Image": null,
-              "buyCost": 0,
-              "repairCost": 0,
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/ramp.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": null
+              },
+              "buyCost": 5000,
+              "repairCost": 2500,
               "isActive": false,
               "isBroken": false,
               "visual": {
                 "_type": "gameobject",
-                "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f"
+                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
               }
             }
           }
@@ -2171,15 +2198,42 @@
             "OnRepair": null,
             "UpgradeInfo": {
               "Name": "Boost",
-              "Description": "Use a boost.",
-              "Image": null,
-              "buyCost": 0,
-              "repairCost": 0,
+              "Description": "Move faster! Kaaachow!",
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/boost.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": null
+              },
+              "buyCost": 5000,
+              "repairCost": 2500,
               "isActive": false,
               "isBroken": false,
               "visual": {
                 "_type": "gameobject",
-                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
+                "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f"
               }
             }
           }
@@ -2205,7 +2259,34 @@
             "UpgradeInfo": {
               "Name": "Fuel",
               "Description": "You can hold more fuel.",
-              "Image": null,
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/catbucks.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": null
+              },
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -2371,7 +2452,34 @@
             "UpgradeInfo": {
               "Name": "Turret",
               "Description": "Attach a turret to the car.",
-              "Image": null,
+              "Image": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "icons/turret.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": null
+              },
               "buyCost": 1,
               "repairCost": 1,
               "isActive": false,
