@@ -32,6 +32,7 @@ public class UpgradeInfo
 {
 	public string Name { get; set; }
 	public string Description { get; set; }
+	public Texture Image { get; set; }
 
 	public int buyCost { get; set; }
 	public int repairCost { get; set; }

@@ -164,6 +164,17 @@
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnDeath": null
+      },
+      {
+        "__type": "PlayerDeath",
+        "__guid": "fe78d424-1c2b-453f-8705-8b3dcd152177",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
         "OnComponentUpdate": null
       }
     ],

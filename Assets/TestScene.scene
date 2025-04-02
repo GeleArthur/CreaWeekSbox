@@ -277,6 +277,7 @@
       "Flags": 0,
       "Name": "Camera",
       "Position": "-3043.479,103.0496,-25.36825",
+      "Rotation": "0.01032256,-0.02395068,0.3956622,0.9180257",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
@@ -303,6 +304,178 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Vignette",
+          "__guid": "0c1c87f7-4fba-4417-bada-b52eacb8695e",
+          "Center": "0.5,0.5",
+          "Color": "0,0,0,1",
+          "Intensity": 0.35,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Roundness": 1,
+          "Smoothness": 1
+        },
+        {
+          "__type": "Sandbox.Tonemapping",
+          "__guid": "485ffb97-9cc9-438c-b937-26130e568b77",
+          "__version": 3,
+          "AutoExposureEnabled": false,
+          "ExposureCompensation": 0,
+          "ExposureMethod": "RGB",
+          "MaximumExposure": 3,
+          "MinimumExposure": 1,
+          "Mode": "ACES",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Rate": 1
+        },
+        {
+          "__type": "Sandbox.ColorGrading",
+          "__guid": "584ff20d-4e03-4f68-ab3d-84162e11823b",
+          "BlendFactor": 1,
+          "BlueCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "ColorSpace": "None",
+          "ColorTempK": 8569.08,
+          "GradingMethod": "TemperatureControl",
+          "GreenCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "HueCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "LookupTexture": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RedCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "SaturationCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ],
+          "ValueCurve": [
+            {
+              "x": 0,
+              "y": 0.5,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "905a7cbc-d5ec-4263-aadf-5de67e49f3f8",
+      "Flags": 0,
+      "Name": "Gradient Fog",
+      "Position": "0,0,5000",
+      "Rotation": "0,0.7933533,0,0.6087615",
+      "Scale": "3.24,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.GradientFog",
+          "__guid": "1251f2f5-5753-4fa6-97d7-10a25b7a1c6e",
+          "__enabled": false,
+          "Color": "0.00822,0.00901,0.0093,1",
+          "EndDistance": 3000,
+          "FalloffExponent": 1,
+          "Height": 128,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "StartDistance": 20,
+          "VerticalFalloffExponent": 2
         }
       ]
     },
@@ -310,7 +483,7 @@
       "__guid": "ac99798f-24f7-48ff-8e06-f80c2e56f259",
       "Flags": 0,
       "Name": "Sun",
-      "Position": "3.795113,130.6243,5.239494",
+      "Position": "0,0,5000",
       "Rotation": "0,0.7933533,0,0.6087615",
       "Scale": "3.24,1,1",
       "Tags": "light_directional,light",
@@ -319,10 +492,9 @@
         {
           "__type": "Sandbox.DirectionalLight",
           "__guid": "cba6d54c-ea7a-4c16-b976-3e218752c479",
-          "__enabled": false,
           "FogMode": "Enabled",
           "FogStrength": 1,
-          "LightColor": "0.91373,0.98039,1,1",
+          "LightColor": "0.42326,0.42326,0.42326,1",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -331,6 +503,34 @@
           "OnComponentUpdate": null,
           "Shadows": true,
           "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "6ea0e3fa-c863-413b-9896-4e9b0fd3f5f3",
+      "Flags": 0,
+      "Name": "Cubemap Fog",
+      "Position": "-294.1047,1088.716,31.35593",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CubemapFog",
+          "__guid": "335a7179-b48b-4dde-8fa8-7db34cfd4365",
+          "Blur": 0,
+          "EndDistance": 1024,
+          "FalloffExponent": 2,
+          "HeightExponent": 1,
+          "HeightStart": 2002.133,
+          "HeightWidth": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Sky": "materials/skybox/light_test_default.vmat",
+          "StartDistance": 0,
+          "Tint": "0.02977,0.03064,0.03721,1"
         }
       ]
     },
@@ -351,9 +551,9 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null,
-          "SkyIndirectLighting": true,
-          "SkyMaterial": "materials/skybox/skybox_workshop.vmat",
-          "Tint": "1,1,1,1"
+          "SkyIndirectLighting": false,
+          "SkyMaterial": "materials/skybox/kloppenheim_02_puresky.vmat",
+          "Tint": "0.1249,0.12296,0.13023,1"
         }
       ]
     },
@@ -625,6 +825,8 @@
   "ResourceVersion": 2,
   "Title": null,
   "Description": null,
-  "__references": [],
+  "__references": [
+    "polyhaven.kloppenheim_02_puresky#24988"
+  ],
   "__version": 2
 }

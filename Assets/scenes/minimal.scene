@@ -40,7 +40,7 @@
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "-1824,-896,14.35739",
+      "Position": "-4307.542,-5502.997,14.35768",
       "Tags": "player",
       "Enabled": true,
       "__Prefab": "prefabs/player controller.prefab",
@@ -50,7 +50,6 @@
       "__guid": "1c1cfa5d-6400-40a0-a6b0-2eed6e8342e3",
       "Flags": 0,
       "Name": "Map",
-      "Position": "0,0,11135.81",
       "Enabled": true,
       "Components": [
         {
@@ -58,7 +57,7 @@
           "__guid": "c377cf82-9d8b-4ff3-84f8-d6145ee01020",
           "__version": 1,
           "EnableCollision": true,
-          "MapName": "softsplit.gm_bigcity",
+          "MapName": "themap.vmap",
           "NoOrigin": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -91,12 +90,9 @@
         {
           "__type": "GoalManager",
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
-          "EconomyComp": {
-            "_type": "component",
-            "component_id": "5c8d0d58-5665-4f0b-a74d-b65d23c77743",
-            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
-            "component_type": "Economy"
-          },
+          "EconomyComp": null,
+          "FuelPerGoal": 0,
+          "FuelTankComp": null,
           "Goals": [
             {
               "_type": "gameobject",
@@ -128,7 +124,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true
+            "Selling Goal": true,
+            "Fuel Goal": false
           }
         },
         {
@@ -139,7 +136,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true
+            "Selling Goal": true,
+            "Fuel Goal": false
           }
         },
         {
@@ -150,7 +148,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true
+            "Selling Goal": true,
+            "Fuel Goal": false
           }
         }
       ]
@@ -159,7 +158,7 @@
       "__guid": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "-1721.277,-312.9556,31.2123",
+      "Position": "-3047.249,-312.9556,31.2123",
       "Rotation": "0,0,0.7071067,0.7071068",
       "Tags": "car",
       "Enabled": true,
@@ -191,7 +190,7 @@
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
           "Flags": 0,
           "Name": "Spawn1",
-          "Position": "-1.326904,-2044.364,16.07147",
+          "Position": "-2364.894,1274.145,16.07147",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -201,7 +200,7 @@
       "__guid": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
       "Flags": 0,
       "Name": "zombie",
-      "Position": "-1376.249,-235.8673,14.03492",
+      "Position": "-3125.529,2032.934,14.03492",
       "Tags": "zombie",
       "Enabled": true,
       "__Prefab": "prefabs/zombie.prefab",
@@ -233,6 +232,349 @@
       "Enabled": true,
       "__Prefab": "prefabs/upgradeui.prefab",
       "__PrefabVariables": {}
+    },
+    {
+      "__guid": "f0788a2f-211f-40ac-acf4-0603c8fcc0d3",
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "-778.1642,-170.1847,2120.029",
+      "Rotation": "-0.09904577,0.3696438,0.2391176,0.8923991",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "1bebf836-3f3b-47d2-9425-c1c25d9c7acc",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "356cdac6-9514-48f1-ad7e-c29fdfba0af2",
+      "Flags": 0,
+      "Name": "Garage",
+      "Position": "-4493.288,-4323.238,237.0237",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "775f674f-604e-4acb-9190-5efff1be8c99",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": {
+            "__version": 9,
+            "__guid": "15e209ea-8590-47fb-9a79-91cfef9aa9f7",
+            "__changeId": 29,
+            "UserData": {
+              "Title": "On Collider Enter",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input",
+                "UserData": {
+                  "Position": "0,48"
+                }
+              },
+              {
+                "Id": 2,
+                "Type": "scene.ref",
+                "UserData": {
+                  "Position": "48,156"
+                }
+              },
+              {
+                "Id": 3,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "Get",
+                  "_type": "Sandbox.IComponentLister",
+                  "T": "Sandbox.UpgradePanel"
+                },
+                "UserData": {
+                  "Position": "192,216"
+                }
+              },
+              {
+                "Id": 5,
+                "Type": "property",
+                "Properties": {
+                  "_name": "CanOpen",
+                  "_type": "Sandbox.UpgradePanel"
+                },
+                "UserData": {
+                  "Position": "516,120"
+                }
+              },
+              {
+                "Id": 7,
+                "Type": "property",
+                "Properties": {
+                  "_name": "IsOpen",
+                  "_type": "Sandbox.UpgradePanel"
+                },
+                "UserData": {
+                  "Position": "792,288"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 5,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_result",
+                "DstId": 5,
+                "DstName": "_target"
+              },
+              {
+                "Id": 8,
+                "Value": true,
+                "DstId": 5,
+                "DstName": "_value"
+              },
+              {
+                "SrcId": 5,
+                "SrcName": "_signal",
+                "DstId": 7,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_result",
+                "DstId": 7,
+                "DstName": "_target"
+              },
+              {
+                "Id": 9,
+                "Value": false,
+                "DstId": 7,
+                "DstName": "_value"
+              }
+            ],
+            "Defaults": {
+              "$2.gameobject": {
+                "_type": "gameobject",
+                "go": "20d20adf-145c-4067-9ad7-5f90890c1fbe"
+              }
+            }
+          },
+          "OnTriggerExit": {
+            "__version": 9,
+            "__guid": "76c087a2-c4a4-493f-9ea4-53a8280e26e8",
+            "__changeId": 15,
+            "UserData": {
+              "Title": "On Collider Exit",
+              "ReferencedComponentTypes": []
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input"
+              },
+              {
+                "Id": 1,
+                "Type": "scene.ref",
+                "UserData": {
+                  "Position": "-36,180"
+                }
+              },
+              {
+                "Id": 2,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "Get",
+                  "_type": "Sandbox.IComponentLister",
+                  "T": "Sandbox.UpgradePanel"
+                },
+                "UserData": {
+                  "Position": "108,240"
+                }
+              },
+              {
+                "Id": 3,
+                "Type": "property",
+                "Properties": {
+                  "_name": "CanOpen",
+                  "_type": "Sandbox.UpgradePanel"
+                },
+                "UserData": {
+                  "Position": "432,144"
+                }
+              },
+              {
+                "Id": 7,
+                "Type": "property",
+                "Properties": {
+                  "_name": "IsOpen",
+                  "_type": "Sandbox.UpgradePanel"
+                },
+                "UserData": {
+                  "Position": "708,288"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 1,
+                "SrcName": "_result",
+                "DstId": 2,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 3,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "_target"
+              },
+              {
+                "Id": 8,
+                "Value": false,
+                "DstId": 3,
+                "DstName": "_value"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_signal",
+                "DstId": 7,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 7,
+                "DstName": "_target"
+              },
+              {
+                "Id": 9,
+                "Value": false,
+                "DstId": 7,
+                "DstName": "_value"
+              }
+            ],
+            "Defaults": {
+              "$1.gameobject": {
+                "_type": "gameobject",
+                "go": "20d20adf-145c-4067-9ad7-5f90890c1fbe"
+              }
+            }
+          },
+          "Scale": "1304.266,827.2003,795.1332",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "1eda56d7-ed6a-4203-b651-930d3c29b392",
+      "Flags": 0,
+      "Name": "PlayerRespawnPoint",
+      "Position": "-5781.043,-6181.688,68.25169",
+      "Enabled": true,
+      "__Prefab": "prefabs/playerrespawnpoint.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "03817b3d-baeb-4481-be85-50adb9ca3bf0",
+      "Flags": 0,
+      "Name": "CarSpawnPoint",
+      "Position": "-5781.043,-5903.628,68.25169",
+      "Enabled": true,
+      "__Prefab": "prefabs/carspawnpoint.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "4f6a3ec3-23c1-4976-afa3-a0add5e9de4c",
+      "Flags": 0,
+      "Name": "Cubemap Fog",
+      "Position": "-294.1047,1088.716,31.35593",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CubemapFog",
+          "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
+          "Blur": 0,
+          "EndDistance": 1024,
+          "FalloffExponent": 2,
+          "HeightExponent": 1,
+          "HeightStart": 2002.133,
+          "HeightWidth": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Sky": "materials/skybox/light_test_default.vmat",
+          "StartDistance": 0,
+          "Tint": "0.02977,0.03064,0.03721,1"
+        }
+      ]
+    },
+    {
+      "__guid": "810dac88-b350-4d00-88da-39fa8574484b",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "-294.1047,1088.716,31.35593",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "0fdacd5c-f3f4-4084-9cc8-755ac8e21956",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": false,
+          "SkyMaterial": "materials/skybox/kloppenheim_02_puresky.vmat",
+          "Tint": "0.1249,0.12296,0.13023,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -263,6 +605,8 @@
   "ResourceVersion": 2,
   "Title": "minimal",
   "Description": null,
-  "__references": [],
+  "__references": [
+    "polyhaven.kloppenheim_02_puresky#24988"
+  ],
   "__version": 2
 }

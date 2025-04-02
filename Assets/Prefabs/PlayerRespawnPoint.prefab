@@ -1,0 +1,16 @@
+{
+  "RootObject": {
+    "__guid": "1eda56d7-ed6a-4203-b651-930d3c29b392",
+    "Flags": 0,
+    "Name": "PlayerRespawnPoint",
+    "Position": "-5781.043,-6181.688,68.25169",
+    "Enabled": true
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

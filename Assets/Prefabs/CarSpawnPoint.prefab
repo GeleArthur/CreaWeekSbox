@@ -1,0 +1,16 @@
+{
+  "RootObject": {
+    "__guid": "03817b3d-baeb-4481-be85-50adb9ca3bf0",
+    "Flags": 0,
+    "Name": "CarSpawnPoint",
+    "Position": "-5781.043,-5903.628,68.25169",
+    "Enabled": true
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

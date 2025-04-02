@@ -121,6 +121,7 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "Player": null,
         "ShowRigidbodyComponent": false,
         "SoundMixer": {
           "Name": "game",
@@ -206,7 +207,9 @@
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
-        "OnComponentUpdate": null
+        "OnComponentUpdate": null,
+        "OnVehicleEnter": null,
+        "OnVehicleExit": null
       },
       {
         "__type": "Meteor.VehicleTool.Vehicle.WheelManager",
@@ -254,13 +257,142 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null
+      },
+      {
+        "__type": "HealthComponent",
+        "__guid": "0c1ab2dd-ae6b-46e2-a448-383b045e7699",
+        "_maxHealth": 500,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnDeath": {
+          "__version": 9,
+          "__guid": "516b91e6-ff24-42ef-ad3f-abd249755ac9",
+          "__changeId": 57,
+          "UserData": {
+            "Title": "On Death",
+            "ReferencedComponentTypes": [
+              "Meteor.VehicleTool.Vehicle.VehicleController"
+            ]
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input",
+              "UserData": {
+                "Position": "852,84"
+              }
+            },
+            {
+              "Id": 2,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-48,108"
+              }
+            },
+            {
+              "Id": 3,
+              "Type": "scene.get",
+              "Properties": {
+                "T": "Meteor.VehicleTool.Vehicle.VehicleController"
+              },
+              "UserData": {
+                "Position": "84,144"
+              }
+            },
+            {
+              "Id": 4,
+              "Type": "property",
+              "Properties": {
+                "_name": "Player",
+                "_type": "Meteor.VehicleTool.Vehicle.VehicleController"
+              },
+              "UserData": {
+                "Position": "432,144"
+              }
+            },
+            {
+              "Id": 5,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "TryGet",
+                "_type": "Sandbox.IComponentLister",
+                "T": "HealthComponent"
+              },
+              "UserData": {
+                "Position": "708,120"
+              }
+            },
+            {
+              "Id": 6,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "Damage",
+                "_type": "HealthComponent"
+              },
+              "UserData": {
+                "Position": "1044,120"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 3,
+              "DstName": "_this"
+            },
+            {
+              "SrcId": 3,
+              "SrcName": "_result",
+              "DstId": 4,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 4,
+              "SrcName": "_result",
+              "DstId": 5,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 6,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 5,
+              "SrcName": "component",
+              "DstId": 6,
+              "DstName": "_target"
+            },
+            {
+              "Id": 42,
+              "Value": 10000000,
+              "DstId": 6,
+              "DstName": "damage"
+            }
+          ],
+          "Defaults": {
+            "$2.gameobject": {
+              "_type": "gameobject",
+              "go": "44de0aeb-2863-4485-a5eb-1d0d21ae3d0a"
+            }
+          }
+        }
       }
     ],
     "Children": [
       {
         "__guid": "b614d8f6-68f8-4580-a4e1-103b7a81d615",
         "Flags": 0,
-        "Name": "Body",
+        "Name": "TaillightL (3)",
         "Enabled": true,
         "Components": [
           {
@@ -305,6 +437,126 @@
             "Static": false,
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "bcded289-e08d-4c13-b34b-67622fb3aeb4",
+            "Flags": 0,
+            "Name": "HeadlightL",
+            "Position": "99.15121,32.74229,34.90013",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "1bfd2b72-7eb2-454e-8166-178deaae78a8",
+                "Attenuation": 0.88,
+                "ConeInner": 37.08,
+                "ConeOuter": 50.39,
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "123.02,102.4209,45.77488,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 10000,
+                "Shadows": true
+              }
+            ]
+          },
+          {
+            "__guid": "ff57c8ed-75bf-4517-a933-46413d240aec",
+            "Flags": 0,
+            "Name": "HeadlightL (1)",
+            "Position": "99.15121,-30.86734,34.90013",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "5ad1ac4d-49eb-45ef-bd1e-a2d87ce88b78",
+                "Attenuation": 0.88,
+                "ConeInner": 37.08,
+                "ConeOuter": 50.39,
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "123.02,102.4209,45.77488,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 10000,
+                "Shadows": true
+              }
+            ]
+          },
+          {
+            "__guid": "158d13a5-5a2a-487d-8169-c872233d1c36",
+            "Flags": 0,
+            "Name": "TaillightL (3)",
+            "Position": "-117.2512,-30.86734,34.90013",
+            "Rotation": "-0.1305262,0.00000002541439,0.9914449,0.0000001930414",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "823fd10b-4a30-4143-a10d-359f23de1152",
+                "Attenuation": 7.08,
+                "ConeInner": 12.99,
+                "ConeOuter": 53.56,
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "11.9,0,0,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 500,
+                "Shadows": true
+              }
+            ]
+          },
+          {
+            "__guid": "6be187bb-3820-4b08-88f1-48d0d10906af",
+            "Flags": 0,
+            "Name": "TaillightL (3)",
+            "Position": "-117.2511,32.74229,34.90013",
+            "Rotation": "-0.1305262,0.00000002541439,0.9914449,0.0000001930414",
+            "Tags": "light_spot,light",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.SpotLight",
+                "__guid": "a6c05dd4-6927-4825-b1c7-378d57939052",
+                "Attenuation": 7.08,
+                "ConeInner": 12.99,
+                "ConeOuter": 53.56,
+                "Cookie": null,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "11.9,0,0,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 500,
+                "Shadows": true
+              }
+            ]
           }
         ]
       },
@@ -1022,6 +1274,96 @@
         "Flags": 0,
         "Name": "Powertrain",
         "Enabled": true,
+        "Components": [
+          {
+            "__type": "FuelTank",
+            "__guid": "ec277215-eb29-47ca-8ec1-7ac7d5c36bba",
+            "_currentFuel": 0,
+            "_defaultCapacity": 500,
+            "_fuelUsagePerSecond": 1,
+            "_maxCapacity": 0,
+            "_OnOutOfFuel": {
+              "__version": 9,
+              "__guid": "2fe8abaa-7b84-4736-9afe-6046cc7439bc",
+              "__changeId": 11,
+              "UserData": {
+                "Title": "On Out Of Fuel",
+                "ReferencedComponentTypes": [
+                  "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                ]
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 2,
+                  "Type": "scene.ref",
+                  "UserData": {
+                    "Position": "-324,72"
+                  }
+                },
+                {
+                  "Id": 3,
+                  "Type": "scene.get",
+                  "Properties": {
+                    "T": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                  },
+                  "UserData": {
+                    "Position": "-36,72"
+                  }
+                },
+                {
+                  "Id": 4,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "StopEngine",
+                    "_type": "Meteor.VehicleTool.Vehicle.Powertrain.Engine"
+                  },
+                  "UserData": {
+                    "Position": "300,24"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 3,
+                  "DstName": "_this"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 4,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 3,
+                  "SrcName": "_result",
+                  "DstId": 4,
+                  "DstName": "_target"
+                }
+              ],
+              "Defaults": {
+                "$2.gameobject": {
+                  "_type": "gameobject",
+                  "go": "a950ca79-9519-4673-828a-ba9f1d704405"
+                }
+              }
+            },
+            "_upgradedCapacity": 1250,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
         "Children": [
           {
             "__guid": "a950ca79-9519-4673-828a-ba9f1d704405",
@@ -1774,6 +2116,7 @@
             "UpgradeInfo": {
               "Name": "Ramp",
               "Description": "Pushes zombies upward and reduces frontal damage taken.",
+              "Image": null,
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -1829,6 +2172,7 @@
             "UpgradeInfo": {
               "Name": "Boost",
               "Description": "Use a boost.",
+              "Image": null,
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -1861,6 +2205,7 @@
             "UpgradeInfo": {
               "Name": "Fuel",
               "Description": "You can hold more fuel.",
+              "Image": null,
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -1917,6 +2262,7 @@
                 "UpgradeInfo": {
                   "Name": "Ramp",
                   "Description": "Pushes zombies upward and reduces frontal damage taken.",
+                  "Image": null,
                   "buyCost": 0,
                   "repairCost": 0,
                   "isActive": false,
@@ -1970,6 +2316,7 @@
                 "UpgradeInfo": {
                   "Name": "Ramp",
                   "Description": "Pushes zombies upward and reduces frontal damage taken.",
+                  "Image": null,
                   "buyCost": 0,
                   "repairCost": 0,
                   "isActive": false,
@@ -2024,6 +2371,7 @@
             "UpgradeInfo": {
               "Name": "Turret",
               "Description": "Attach a turret to the car.",
+              "Image": null,
               "buyCost": 1,
               "repairCost": 1,
               "isActive": false,
@@ -2132,7 +2480,21 @@
         ]
       }
     ],
-    "__variables": [],
+    "__variables": [
+      {
+        "Id": "Player",
+        "Title": "Player",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "f8656763-8ba5-4b20-a502-c8124a183f6d",
+            "Property": "Player"
+          }
+        ]
+      }
+    ],
     "__properties": {
       "FixedUpdateFrequency": 50,
       "MaxFixedUpdates": 5,
