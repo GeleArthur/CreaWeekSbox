@@ -3,7 +3,7 @@
 @inherits PanelComponent
 @namespace Sandbox
 
-<root class="@(!IsOpen ? "hide" : "show")">
+<root class="@( CanOpen ? (IsOpen ? "show" : "hide") : "hide")">
 	<div class="upgrades">
 		@foreach (var upgrade in Upgrades.UpgradeList)
 		{
@@ -39,11 +39,12 @@
 	[Property] public CarUpgradeManager Upgrades;
 	[Property] public Economy PlayerEconomy;
 	public bool IsOpen { get; set; } = false;
+	public bool CanOpen { get; set; } = false;
 
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine(IsOpen, Upgrades?.UpgradeList.Count ?? 0);
+	protected override int BuildHash() => System.HashCode.Combine(CanOpen, IsOpen, Upgrades?.UpgradeList.Count ?? 0);
 
 	protected override void OnStart()
 	{
@@ -59,7 +60,8 @@
 	{
 		if (Input.Pressed("Shop"))
 		{
-			IsOpen = !IsOpen;
+			if(CanOpen)
+				IsOpen = !IsOpen;
 		}
 	}
 
