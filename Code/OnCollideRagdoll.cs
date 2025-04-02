@@ -8,6 +8,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	private Rigidbody _rigidbody;
 	private CapsuleCollider _modelCollider;
 	private SkinnedModelRenderer _skinnedModelRenderer;
+	
+	
 
 	private NavMeshAgent _agent;
 	private PlayerController _player;
@@ -31,6 +33,9 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		_rigidbody.Enabled = true;
 		_modelCollider.Enabled = true;
 		_zombiesKillEachOther = 0.5f;
+
+		
+		_agent.MoveTo( WorldPosition );
 
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
@@ -70,56 +75,42 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	protected override void OnUpdate()
 	{
 		if ( !_agent.IsValid || !_rigidbody.IsValid ) return;
-		//doesnt work yet, wait till enter and exit car event are done
-		if ( _player != null )
+
+		bool success = false;
+		
+		if ( _player.GameObject.Active )
 		{
 			if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
 			{
+				success = true;
+				_wanderTimer = 0;
 				_agent.MoveTo( _player.WorldPosition );
-				if ( _agent.TargetPosition.HasValue )
-				{
-					TurnTowards( _agent.TargetPosition.Value );
-				}
-			}
-			else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 500 )
-			{
-				_agent.MoveTo( _car.WorldPosition );
-				if ( _agent.TargetPosition.HasValue )
-				{
-					TurnTowards( _agent.TargetPosition.Value );
-				}
 			}
 		}
-		else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 1500 )
+		else if( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 500 )
 		{
+			success = true;
+			_wanderTimer = 0;
 			_agent.MoveTo( _car.WorldPosition );
-			if ( _agent.TargetPosition.HasValue )
-			{
-				TurnTowards( _agent.TargetPosition.Value );
-			}
 		}
 
-		else
+		if ( !success && _wanderTimer )
 		{
-			if ( _wanderTimer )
-			{
-				Vector3 randomPos = Vector3.Random * Random.Shared.Float( 150, 300 ); ;
-				randomPos = Scene.NavMesh.GetClosestPoint( randomPos )!.Value;
-				_agent.MoveTo( LocalPosition + randomPos );
-				if ( _agent.TargetPosition.HasValue )
-					TurnTowards( _agent.TargetPosition.Value );
-				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
-			}
+			// Vector3 randomPos = Vector3.Random * Random.Shared.Float( 150, 300 ); ;
+			// randomPos = Scene.NavMesh.GetClosestPoint( randomPos )!.Value;
+			// _agent.MoveTo( LocalPosition + randomPos );
+			// _wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 		}
-		//if ( _agent.Velocity.LengthSquared > 5f )
-		//_skinnedModelRenderer.AnimationGraph = AnimationGraph.Load( "../Citizen/models/citizen/citizen.vmdl" );
+
+		TurnTowards();
+
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 100 )
 		{
 			HitHealth( _player.GetComponent<HealthComponent>() );
 		}
 		else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 100 )
 		{
-			var health = _car.GetComponent<HealthComponent>();
+			HealthComponent health = _car.GetComponent<HealthComponent>();
 			if ( health != null )
 				HitHealth( _car.GetComponent<HealthComponent>() );
 		}
@@ -127,34 +118,41 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		{
 			UnRagdoll();
 		}
-	}
-	private void TurnTowards( Vector3 point )
-	{
-		var direction = point - WorldPosition;
-		direction = direction / direction.Length;
-		var angle = Math.Atan2( direction.y, direction.x );
-		angle = angle / double.Pi * 180;
 
-		Rotation rotation = _agent.WorldRotation;
-		var angles = rotation.Angles();
-		angles.yaw = (float)angle;
-		var delta = Time.Delta;
-		_rigidbody.LocalRotation = angles;
+	}
+	private void TurnTowards()
+	{
+		if ( _agent.TargetPosition.HasValue )
+		{
+			var direction = _agent.TargetPosition.Value - WorldPosition;
+			direction = direction / direction.Length;
+			var angle = Math.Atan2( direction.y, direction.x );
+			angle = angle / double.Pi * 180;
+
+			Rotation rotation = _agent.WorldRotation;
+			var angles = rotation.Angles();
+			angles.yaw = (float)angle;
+			var delta = Time.Delta;
+			_rigidbody.LocalRotation = angles;
+		}
+		
+
 	}
 
 	protected override void OnFixedUpdate()
 	{
+		_agent.SetAgentPosition( WorldPosition );
+		_rigidbody.Velocity = _agent.Velocity;
 		// magic value 200f, can be replaced with a speed variable
-		if ( _agent.TargetPosition.HasValue )
-		{
-			if ( Vector3.DistanceBetweenSquared( _rigidbody.WorldPosition, _agent.TargetPosition.Value ) >= 2500 )
-			{
-
-				Vector3 direction = new Vector3( _agent.TargetPosition.Value.x, _agent.TargetPosition.Value.y, 0 );
-				Vector3 gravity = new Vector3( 0, 0, _rigidbody.Velocity.z );
-				Vector3 localPos = new Vector3( _rigidbody.LocalPosition.x, _rigidbody.LocalPosition.y, 0 );
-				_rigidbody.Velocity = gravity + (direction - localPos).Normal * 200f;
-			}
-		}
+		// if ( _agent.TargetPosition.HasValue )
+		// {
+		// 	if ( Vector3.DistanceBetweenSquared( _rigidbody.WorldPosition, _agent.TargetPosition.Value ) >= 2500 )
+		// 	{
+		// 		Vector3 direction = new Vector3( _agent.TargetPosition.Value.x, _agent.TargetPosition.Value.y, 0 );
+		// 		Vector3 gravity = new Vector3( 0, 0, _rigidbody.Velocity.z );
+		// 		Vector3 localPos = new Vector3( _rigidbody.LocalPosition.x, _rigidbody.LocalPosition.y, 0 );
+		// 		_rigidbody.Velocity = gravity + (direction - localPos).Normal * 200f;
+		// 	}
+		// }
 	}
 }

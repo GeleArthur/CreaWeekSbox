@@ -39,10 +39,12 @@ public sealed class ZombieManager : Component
 					_activeZombies.Add( newZombie.GetComponent<OnCollideRagDoll>() );
 					
 				}
-				
-				
 			}
-			
 		}
+	}
+
+	public void RemoveZombie(OnCollideRagDoll zombies)
+	{
+		_activeZombies.Remove( zombies );
 	}
 }
