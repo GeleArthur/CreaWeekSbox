@@ -73,7 +73,7 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "133c1652-ffb3-43fa-b516-a9548bf8e6bb",
+            "component_id": "f7e5c08a-ecee-40af-9519-b283487f9764",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
@@ -107,13 +107,13 @@
           "OnComponentUpdate": null,
           "PlayerController": {
             "_type": "component",
-            "component_id": "01f2c9ea-ee78-4d92-b798-dc3ed4722043",
+            "component_id": "80ad1c69-245f-40bb-8bb8-956f4c018d09",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "PlayerController"
           },
           "VehicleController": {
             "_type": "component",
-            "component_id": "7351d9ec-e850-4913-a2f7-f32f342d9cbf",
+            "component_id": "8e5b464a-9296-427a-8ba1-a49ba9fee0c6",
             "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
             "component_type": "VehicleController"
           }
@@ -177,7 +177,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "3e91b8a9-db82-43ba-8a3c-3964dc347ab4",
+            "component_id": "5c4daf13-74d1-4d15-a697-56b46b51ce91",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -259,7 +259,6 @@
         {
           "__type": "ZombieManager",
           "__guid": "8261a96e-f38c-489e-9028-92bb1ab7798a",
-          "_zombieAmount": 3,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -267,7 +266,8 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "SpawnAreas": [],
-          "Zombie": "prefabs/zombie.prefab"
+          "Zombie": "prefabs/zombie.prefab",
+          "ZombieAmount": 8
         }
       ],
       "Children": [
@@ -275,47 +275,7 @@
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
           "Flags": 0,
           "Name": "Spawn1",
-          "Position": "-2150.849,-120.4948,16.07139",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "976c66e7-4eaa-45ee-83ba-399c019bf48f",
-          "Flags": 0,
-          "Name": "Spawn2",
-          "Position": "-646.4313,-224.3948,16.07116",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "2b864451-9e80-48b7-add4-cf2501b0bf39",
-          "Flags": 0,
-          "Name": "Spawn3",
-          "Position": "-2245.937,-956.7822,16.07076",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "691f70ac-855b-46ba-b093-e74ea8c26d7b",
-          "Flags": 0,
-          "Name": "Spawn4",
-          "Position": "-1788.059,137.1984,16.0703",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "65d7b246-145f-47d4-a58e-4a28b1a11e64",
-          "Flags": 0,
-          "Name": "Spawn5",
-          "Position": "19.38324,-554.9811,16.07083",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "fafe4cab-7ad3-44c1-a0a8-3fddd226f0ea",
-          "Flags": 0,
-          "Name": "Spawn6",
-          "Position": "-1508.622,1125.36,16.07067",
+          "Position": "-271.1343,-2051.822,13.50365",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -371,7 +331,7 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "133c1652-ffb3-43fa-b516-a9548bf8e6bb",
+            "component_id": "f7e5c08a-ecee-40af-9519-b283487f9764",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
@@ -388,13 +348,13 @@
           "OnComponentUpdate": null,
           "PlayerEconomy": {
             "_type": "component",
-            "component_id": "3e91b8a9-db82-43ba-8a3c-3964dc347ab4",
+            "component_id": "5c4daf13-74d1-4d15-a697-56b46b51ce91",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
           "Upgrades": {
             "_type": "component",
-            "component_id": "a9df36ad-1efa-40d9-baa5-f62a9cdeea5c",
+            "component_id": "cbd37ad5-41fb-4d16-8491-d9776ac13160",
             "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
             "component_type": "CarUpgradeManager"
           }
