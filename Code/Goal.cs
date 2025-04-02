@@ -8,6 +8,9 @@ public sealed class Goal : Component
 	[Property]
 	public bool SellingGoal { get; set; }
 	[Property]
+	public bool fuelGoal { get; set; }
+
+	[Property]
 	public TextRenderer TextRendererComp { get; set; }
 
 	private Collider _collider;
@@ -28,6 +31,7 @@ public sealed class Goal : Component
 
 	protected override void OnStart()
 	{
+		if ( SellingGoal && fuelGoal ) { Log.Warning( "both selling and fuelin goal are true" ); }
 		_player = Scene.Directory.FindByName( "Player Controller" ).First();
 
 		Collider = GetComponent<Collider>();
@@ -39,13 +43,18 @@ public sealed class Goal : Component
 				{
 					GoalManager = Scene.Directory.FindByName( "GoalManager" ).First().GetComponent<GoalManager>();
 				}
-				GoalManager.Notify( this.GameObject , SellingGoal);
+				GoalManager.Notify( this.GameObject , SellingGoal, fuelGoal);
 			}
 		};
 		if ( SellingGoal )
 		{ 
 			Model.Tint = new Color( 0f, 1f, 0f, 0.4f );
 			TextRendererComp.Text = "🤑";
+		}
+		else if(fuelGoal)
+		{
+			Model.Tint = new Color( 1f, 0f, 0f, 0.4f );
+			TextRendererComp.Text = "⛽";
 		}
 		else
 		{
