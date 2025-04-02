@@ -155,8 +155,8 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Radius": 2,
-        "Start": "0,0,0",
+        "Radius": 4.099999,
+        "Start": "0,0,4.099999",
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"

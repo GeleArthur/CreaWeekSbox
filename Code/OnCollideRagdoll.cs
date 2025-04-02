@@ -83,6 +83,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 			return;
 		}
 		
+		if(_health.IsDeath) return;
+		
 		if ( _agent.IsValid && _rigidbody.IsValid )
 		{
 			bool success = false;
