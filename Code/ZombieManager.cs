@@ -12,6 +12,8 @@ public sealed class ZombieManager : Component
 	[Property]
     private PrefabFile Zombie { get; set; }
 
+	public PlayerController Player;
+
 	private readonly List<OnCollideRagDoll> _activeZombies = [];
 	
 	protected override void OnAwake()
@@ -20,6 +22,11 @@ public sealed class ZombieManager : Component
 		{
 			SpawnAreas.Add( child );
 		}
+	}
+
+	protected override void OnStart()
+	{
+		Player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
 
 	protected override void OnUpdate()

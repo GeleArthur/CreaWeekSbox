@@ -36,7 +36,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		_agent.MaxSpeed = 200;
 		_agent.Acceleration = 2000;
 		
-		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
+		_player = Game.ActiveScene.GetAllComponents<ZombieManager>().First().Player;
 		_health.OnDeath += OnDeath;
 	}
 
@@ -77,7 +77,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	{
 		if ( _health.IsDeath && _ragdollTimer )
 		{
-			Destroy();
+			GameObject.Destroy();
 			Game.ActiveScene.GetAllComponents<ZombieManager>().First().RemoveZombie( this );
 			
 			return;
