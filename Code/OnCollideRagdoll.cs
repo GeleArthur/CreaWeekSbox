@@ -11,36 +11,44 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	private PlayerController _player;
 
 	private TimeUntil _wanderTimer;
-	
-	
+
+
 	protected override void OnStart()
 	{
-		_ragdollPhysics =  GetComponent<ModelPhysics>();
+		_ragdollPhysics = GetComponent<ModelPhysics>();
 		_rigidbody = GetComponent<Rigidbody>();
 		_modelCollider = GetComponent<ModelCollider>();
 		_agent = GetComponent<NavMeshAgent>();
 		_ragdollPhysics.Enabled = false;
 		_rigidbody.Enabled = true;
 		_modelCollider.Enabled = true;
-		
+
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 	}
 
 	public void OnCollisionStart( Collision collision )
 	{
-		if(collision.Contact.Speed.Length < 250) return;
-		
-		_ragdollPhysics.Enabled = true;
-		_rigidbody.Enabled = false;
-		_modelCollider.Enabled = false;
+		Log.Info( "colliding" );
+		if ( collision.Other.GameObject.Tags.Contains( "player" ) )
+		{
+			Log.Info( "colliding with player" );
+			_player.GetComponent<HealthComponent>().Damage( 10 );
+		}
+		else if ( collision.Other.GameObject.Tags.Contains( "car" ) || collision.Other.GameObject.Tags.Contains( "zombie" ) )
+		{
+			if ( collision.Contact.Speed.Length < 250 ) return;
+			_ragdollPhysics.Enabled = true;
+			_rigidbody.Enabled = false;
+			_modelCollider.Enabled = false;
+		}
 		// _ragdollPhysics.PhysicsGroup.Velocity = collision.Contact.Speed * 1.1f;
 	}
 
 	protected override void OnUpdate()
 	{
-		if(!_agent.IsValid || !_rigidbody.IsValid) return;
+		if ( !_agent.IsValid || !_rigidbody.IsValid ) return;
 		_rigidbody.Velocity = _agent.Velocity;
-		
+
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
 		{
 			_agent.MoveTo( _player.WorldPosition );
@@ -49,7 +57,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		{
 			if ( _wanderTimer )
 			{
-				Vector3 randomPos = Vector3.Random * Random.Shared.Float( 1, 20 );;
+				Vector3 randomPos = Vector3.Random * Random.Shared.Float( 1, 20 ); ;
 				randomPos = Scene.NavMesh.GetClosestPoint( randomPos )!.Value;
 				_agent.MoveTo( LocalPosition + randomPos );
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
