@@ -1,0 +1,213 @@
+{
+  "RootObject": {
+    "__guid": "4b517b42-db18-492d-92a5-03f3fbf3f263",
+    "Flags": 0,
+    "Name": "lamp",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "8bd07cb2-2adc-43f2-ad32-6af6bad93d15",
+        "__enabled": false,
+        "AngularDamping": 0,
+        "Gravity": false,
+        "LinearDamping": 0,
+        "Locking": {
+          "X": false,
+          "Y": false,
+          "Z": false,
+          "Pitch": false,
+          "Yaw": false,
+          "Roll": false
+        },
+        "MassCenterOverride": "0,0,0",
+        "MassOverride": 0,
+        "MotionEnabled": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OverrideMassCenter": false,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "7eaef9da-16e0-48ea-9c18-4b610cefd04d",
+        "Flags": 0,
+        "Name": "Object",
+        "Tags": "light_point,light",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelCollider",
+            "__guid": "640e7758-e4cb-4fc6-97e6-ab2b992c8728",
+            "Friction": null,
+            "IsTrigger": false,
+            "Model": "models/r_k_street_lamp_01.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "Static": false,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          },
+          {
+            "__type": "Sandbox.Rigidbody",
+            "__guid": "93f3091f-6c42-4c21-9853-c67b6ff2bd6b",
+            "AngularDamping": 0,
+            "Gravity": true,
+            "LinearDamping": 0,
+            "Locking": {
+              "X": false,
+              "Y": false,
+              "Z": false,
+              "Pitch": false,
+              "Yaw": false,
+              "Roll": false
+            },
+            "MassCenterOverride": "0,0,0",
+            "MassOverride": 1000,
+            "MotionEnabled": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OverrideMassCenter": false,
+            "RigidbodyFlags": 0,
+            "StartAsleep": false
+          },
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "97e9ce97-351f-4ba3-9651-a989fea4610a",
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/r_k_street_lamp_01.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "Off",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__type": "Sandbox.FixedJoint",
+            "__guid": "9e8e0d8e-6139-4baf-8d73-919d2ac52038",
+            "AngularDamping": 1,
+            "AngularFrequency": 10,
+            "Attachment": "Auto",
+            "Body": {
+              "_type": "gameobject",
+              "go": "4b517b42-db18-492d-92a5-03f3fbf3f263"
+            },
+            "BreakForce": 4000,
+            "BreakTorque": 10000000,
+            "EnableCollision": false,
+            "LinearDamping": 1,
+            "LinearFrequency": 10,
+            "LocalFrame1": {
+              "Position": "0,0,0",
+              "Scale": "0,0,0",
+              "Rotation": "0,0,0,0"
+            },
+            "LocalFrame2": {
+              "Position": "0,0,0",
+              "Scale": "0,0,0",
+              "Rotation": "0,0,0,0"
+            },
+            "OnBreak": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "StartBroken": false
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "e9506fe7-8d1e-4788-9422-7080020086aa",
+            "Flags": 0,
+            "Name": "Object",
+            "Position": "0,0,239.1919",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "68ef4bc4-1e67-453a-94ac-c3da21f9c1a7",
+                "Attenuation": 0.6,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0.97674,0.94547,0.70871,1",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Radius": 800,
+                "Shadows": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "randkassets.r_k_street_light01#20889"
+  ],
+  "__version": 1
+}
