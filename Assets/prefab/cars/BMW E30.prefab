@@ -229,12 +229,7 @@
             "go": "11204fef-0bf2-4724-9903-15d9f58a6e51",
             "component_type": "CarUpgradeComponent"
           },
-          {
-            "_type": "component",
-            "component_id": "49a97c14-7ff7-4caa-92f8-7339b02e534e",
-            "go": "5a887d12-5159-4016-992c-4695c3947d3d",
-            "component_type": "CarUpgradeComponent"
-          },
+          null,
           {
             "_type": "component",
             "component_id": "9a14d6e1-f8cf-4e67-b679-885d905b3cf4",
@@ -1788,62 +1783,6 @@
         ]
       },
       {
-        "__guid": "5a887d12-5159-4016-992c-4695c3947d3d",
-        "Flags": 0,
-        "Name": "Gun",
-        "Enabled": true,
-        "Components": [
-          {
-            "__type": "Sandbox.ModelRenderer",
-            "__guid": "72fe6a24-bcc3-4e7a-af50-da5cf8e68ef2",
-            "BodyGroups": 18446744073709551615,
-            "CreateAttachments": false,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Model": "models/upgrades/new folder/gun1.vmdl",
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "RenderType": "On",
-            "Tint": "1,1,1,1"
-          },
-          {
-            "__type": "CarUpgradeComponent",
-            "__guid": "49a97c14-7ff7-4caa-92f8-7339b02e534e",
-            "OnBreak": null,
-            "OnBuy": null,
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "OnRepair": null,
-            "UpgradeInfo": {
-              "Name": "Gun",
-              "Description": "Attach a turret to the car.",
-              "buyCost": 0,
-              "repairCost": 0,
-              "isActive": false,
-              "isBroken": false,
-              "visual": {
-                "_type": "gameobject",
-                "go": "5a887d12-5159-4016-992c-4695c3947d3d"
-              }
-            }
-          }
-        ]
-      },
-      {
         "__guid": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f",
         "Flags": 0,
         "Name": "Boost",
@@ -2035,6 +1974,132 @@
                   "isBroken": false,
                   "visual": null
                 }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "c89ebf13-e9ff-47a0-9209-945633007fc2",
+        "Flags": 0,
+        "Name": "gun1p2",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "9cfed20a-ecd5-41a4-bd70-3986096b9db1",
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/upgrades/new folder/gun1p2.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "d0863999-846d-4a24-8d83-f497901aafad",
+            "Flags": 0,
+            "Name": "gun1p1",
+            "Position": "-11.04109,0,91.53538",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "ee10dfd6-d2f6-4f93-ac87-a05066d5fde3",
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/upgrades/new folder/gun1p1.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TurretUpgrade",
+                "__guid": "d088e0d9-c437-40f5-a164-c0da2c58e04e",
+                "Bullet": {
+                  "_type": "gameobject",
+                  "prefab": "prefabs/bullet.prefab"
+                },
+                "ColliderComp": {
+                  "_type": "component",
+                  "component_id": "4a66424f-b7ae-4022-bd85-7036ad0a8646",
+                  "go": "d0863999-846d-4a24-8d83-f497901aafad",
+                  "component_type": "HullCollider"
+                },
+                "FireRate": 2,
+                "Nuzzle": {
+                  "_type": "gameobject",
+                  "go": "cbf84527-c621-4f6b-9e28-cccc468504d1"
+                },
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null
+              },
+              {
+                "__type": "Sandbox.HullCollider",
+                "__guid": "4a66424f-b7ae-4022-bd85-7036ad0a8646",
+                "BoxSize": "50,50,50",
+                "Center": "0,0,0",
+                "Friction": null,
+                "Height": 125,
+                "IsTrigger": true,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "Points": [],
+                "Radius": 250,
+                "Radius2": 0,
+                "Slices": 16,
+                "Static": false,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0",
+                "Type": "Cylinder"
+              }
+            ],
+            "Children": [
+              {
+                "__guid": "cbf84527-c621-4f6b-9e28-cccc468504d1",
+                "Flags": 0,
+                "Name": "Nuzzle",
+                "Position": "22.29723,0,-0.3283157",
+                "Enabled": true
               }
             ]
           }
