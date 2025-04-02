@@ -149,7 +149,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "c33c1ed9-3296-4c88-82c1-e09f63f05014",
+            "component_id": "94ce5d54-fe09-49e2-aca8-2d4711f60556",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -309,8 +309,70 @@
       "Flags": 0,
       "Name": "SpawnerManager",
       "Enabled": true,
-      "__Prefab": "prefabs/spawnermanager.prefab",
-      "__PrefabVariables": {}
+      "Components": [
+        {
+          "__type": "ZombieSpawnComponent",
+          "__guid": "7cc58dba-49cf-4aa7-904f-ade39e9bdc56",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SpawnArea": [],
+          "Zombie": null
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
+          "Flags": 0,
+          "Name": "Spawn1",
+          "Position": "-2150.849,-120.4948,16.07139",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "976c66e7-4eaa-45ee-83ba-399c019bf48f",
+          "Flags": 0,
+          "Name": "Spawn2",
+          "Position": "-646.4313,-224.3948,16.07116",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "2b864451-9e80-48b7-add4-cf2501b0bf39",
+          "Flags": 0,
+          "Name": "Spawn3",
+          "Position": "-2245.937,-956.7822,16.07076",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "691f70ac-855b-46ba-b093-e74ea8c26d7b",
+          "Flags": 0,
+          "Name": "Spawn4",
+          "Position": "-1788.059,137.1984,16.0703",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "65d7b246-145f-47d4-a58e-4a28b1a11e64",
+          "Flags": 0,
+          "Name": "Spawn5",
+          "Position": "19.38324,-554.9811,16.07083",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "fafe4cab-7ad3-44c1-a0a8-3fddd226f0ea",
+          "Flags": 0,
+          "Name": "Spawn6",
+          "Position": "-1508.622,1125.36,16.07067",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        }
+      ]
     },
     {
       "__guid": "7ef9ba8e-30a0-47c0-a394-83336a8ac1de",
