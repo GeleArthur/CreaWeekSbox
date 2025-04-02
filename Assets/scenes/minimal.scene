@@ -78,6 +78,23 @@
             "component_type": "CameraComponent"
           },
           "ZIndex": 100
+        },
+        {
+          "__type": "Sandbox.MiniMapHUD",
+          "__guid": "e2b2cb96-7a86-445a-9b7c-05e43c628b84",
+          "Camera": null,
+          "CameraPos": {
+            "_type": "component",
+            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
+            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
+            "component_type": "CameraComponent"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     },
