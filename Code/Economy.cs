@@ -22,12 +22,6 @@ public sealed class Economy : Component
 		_medicine = StartMedicine;
 	}
 
-	protected override void OnUpdate()
-	{
-		DebugOverlay.Text( WorldPosition + Vector3.Up * 100f, $"Medicine: [{Medicine}]" );
-		DebugOverlay.Text( WorldPosition + Vector3.Up * 120f, $"Money: [{Money}]" );
-	}
-
 	public void AddMedicine( int amount )
 	{
 		_medicine += amount;
