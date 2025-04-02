@@ -4,35 +4,47 @@
 @namespace Sandbox
 
 <root>
-	<div class="Minimap">
-
+	<div class="minimap">
+		@* Actual minimap RenderTarget *@
+		<Image Texture="@_renderTarget"/>
 	</div>
+
 </root>
 
 @code
 {
-
-	[Property] public SceneCamera Camera { get; set; } = null;
+	[Property] public CameraComponent Camera { get; set; } = null;
 	private Texture _renderTarget;
 
-	protected override void OnUpdate()
+	public void SetupRenderTarget()
 	{
-
-		// Camera.RenderTags.Add( "minimap" );
-
-		// _renderTarget = Texture.CreateRenderTarget()
-		// 	.WithSize( 1000 )
-		// 	.WithScreenFormat()
-		// 	.Create();
+		_renderTarget = Texture.CreateRenderTarget()
+			.WithSize(512, 512)
+			.WithScreenFormat()
+			.Create();
+		Camera.RenderTarget = _renderTarget;
+		Camera.RenderToTexture(_renderTarget);
 	}
 
-	// public override void DrawBaackground()
-	// {
-	// 	Graphics.RenderToTexture( Camera, _renderTarget );
-	// }
+	protected override void OnStart()
+	{
+		GetComponent<ScreenPanel>().AutoScreenScale = true;
+	}
+	protected override void OnUpdate()
+	{
+		if (_renderTarget == null)
+		{
+			Log.Warning("Render target is null in OnStart! Trying to recreate...");
+			SetupRenderTarget();
+		}
+
+		Camera.Enabled = true;
+		Camera.Priority = 100;
+		Camera.RenderToTexture(_renderTarget);
+	}
 
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine(Camera);
+	protected override int BuildHash() => System.HashCode.Combine(_renderTarget);
 }
