@@ -31,7 +31,7 @@
       "__guid": "0db3f88d-fe55-4e10-8250-d303c2c1a818",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "3437.023,3605.136,56.16095",
+      "Position": "389.7482,3865.203,56.16168",
       "Enabled": true,
       "Components": [
         {
@@ -276,7 +276,7 @@
       "__guid": "48b79763-e727-4ee0-a75b-6f2f9c8b7bb3",
       "Flags": 0,
       "Name": "Camera",
-      "Position": "3.795113,130.6243,-25.36898",
+      "Position": "-3043.479,103.0496,-25.36825",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
@@ -319,6 +319,7 @@
         {
           "__type": "Sandbox.DirectionalLight",
           "__guid": "cba6d54c-ea7a-4c16-b976-3e218752c479",
+          "__enabled": false,
           "FogMode": "Enabled",
           "FogStrength": 1,
           "LightColor": "0.91373,0.98039,1,1",
@@ -351,7 +352,7 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "SkyIndirectLighting": true,
-          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "SkyMaterial": "materials/skybox/skybox_workshop.vmat",
           "Tint": "1,1,1,1"
         }
       ]
@@ -360,9 +361,171 @@
       "__guid": "a6cd8eef-a576-4a5b-9b68-6b594953b0a8",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "3453.005,4043.406,34.71759",
+      "Position": "405.7302,4015.831,34.71832",
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "4b517b42-db18-492d-92a5-03f3fbf3f263",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01",
+      "Position": "377.2653,3713.91,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "63cc8811-a47f-4334-91ee-79e99821e1d7",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (11)",
+      "Position": "377.2653,4291.929,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "09319059-f040-4ce1-aeb5-b01015a49caf",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (1)",
+      "Position": "1027.675,3713.91,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "bfa3b957-37d7-4ed8-ba9a-41d20f33c8d4",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (10)",
+      "Position": "1027.675,4291.929,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "cbef8ab8-0027-490e-8daf-e82ef3eb1307",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (2)",
+      "Position": "1757.843,3713.91,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "9abd1854-a67c-4c71-a1f7-614cf38cf31f",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (9)",
+      "Position": "1757.843,4291.929,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "aa26c215-dc80-4ff1-ab23-a862960e5488",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (3)",
+      "Position": "2388.16,3713.91,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "bdd87271-634b-41e0-b8b5-938feda24651",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (8)",
+      "Position": "1992.446,4291.929,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "145e7a86-7b12-4a37-b4cb-e2f5ecd6bd91",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (12)",
+      "Position": "2835.14,4291.929,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "ca73a2fb-89e3-4bc8-926a-35e5aa2ca42a",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (4)",
+      "Position": "3152.28,3713.91,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "25e2076c-a928-4ecc-825f-e3140e4bdf98",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (7)",
+      "Position": "4085.184,4306.759,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "8a699632-44be-4213-a5e3-32257890b063",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (5)",
+      "Position": "4441.437,3713.91,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "689546c3-2185-4451-b247-2c006459da8c",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (14)",
+      "Position": "4441.437,2124.576,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "cdbf844d-ae2f-4720-98ae-7f0a8408924b",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (16)",
+      "Position": "4441.437,1320.089,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "c6bf47c2-b311-47d5-92bc-98b100cbe070",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (17)",
+      "Position": "4441.437,518.5505,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "7656d2d6-7bf8-4c93-ab9c-e79ec2934f79",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (15)",
+      "Position": "4441.437,2970.885,23.24886",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "6954e3c1-d754-4ba8-85ec-138208265a78",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (6)",
+      "Position": "4743.086,4330.535,23.24893",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "a4764b83-5b37-43ce-a4b3-822a73e31f3d",
+      "Flags": 0,
+      "Name": "r_k_street_lamp_01 (13)",
+      "Position": "5101.584,4334.297,23.24893",
+      "Enabled": true,
+      "__Prefab": "prefab/lamp.prefab",
       "__PrefabVariables": {}
     }
   ],

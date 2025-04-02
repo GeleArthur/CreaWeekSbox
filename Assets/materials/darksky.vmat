@@ -1,0 +1,12 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/sky.shader"
+
+	//---- Format ----
+	F_TEXTURE_FORMAT2 6 // BC6H (HDR compressed - recommended)
+
+	//---- Texture ----
+	SkyTexture "Materials/NightSkyHDRI003_8K-HDR.exr"
+}
