@@ -60,6 +60,91 @@
           "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
           "component_type": "Economy"
         },
+        "Fuel": null,
+        "FuelTexture": {
+          "$compiler": "texture",
+          "$source": "imagefile",
+          "data": {
+            "FilePath": "icons/fuel.png",
+            "MaxSize": 4096,
+            "ConvertHeightToNormals": false,
+            "NormalScale": 1,
+            "Rotate": 0,
+            "FlipVertical": false,
+            "FlipHorizontal": false,
+            "Padding": {
+              "Size": "0,0",
+              "EdgeSize": "0,0"
+            },
+            "Sharpen": 0,
+            "InvertColor": false,
+            "Blur": 0,
+            "Brightness": 1,
+            "Contrast": 1,
+            "Saturation": 1,
+            "Hue": 0,
+            "Colorize": false,
+            "TargetColor": "0,1,0,1",
+            "CacheToDisk": true
+          },
+          "compiled": "textures/generated/imagefile/7f5927a2443ff6fe.vtex"
+        },
+        "MedicineTexture": {
+          "$compiler": "texture",
+          "$source": "imagefile",
+          "data": {
+            "FilePath": "icons/syringe.png",
+            "MaxSize": 4096,
+            "ConvertHeightToNormals": false,
+            "NormalScale": 1,
+            "Rotate": 0,
+            "FlipVertical": false,
+            "FlipHorizontal": false,
+            "Padding": {
+              "Size": "0,0",
+              "EdgeSize": "0,0"
+            },
+            "Sharpen": 0,
+            "InvertColor": false,
+            "Blur": 0,
+            "Brightness": 1,
+            "Contrast": 1,
+            "Saturation": 1,
+            "Hue": 0,
+            "Colorize": false,
+            "TargetColor": "0,1,0,1",
+            "CacheToDisk": true
+          },
+          "compiled": null
+        },
+        "MoneyTexture": {
+          "$compiler": "texture",
+          "$source": "imagefile",
+          "data": {
+            "FilePath": "icons/catbucks.png",
+            "MaxSize": 4096,
+            "ConvertHeightToNormals": false,
+            "NormalScale": 1,
+            "Rotate": 0,
+            "FlipVertical": false,
+            "FlipHorizontal": false,
+            "Padding": {
+              "Size": "0,0",
+              "EdgeSize": "0,0"
+            },
+            "Sharpen": 0,
+            "InvertColor": false,
+            "Blur": 0,
+            "Brightness": 1,
+            "Contrast": 1,
+            "Saturation": 1,
+            "Hue": 0,
+            "Colorize": false,
+            "TargetColor": "0,1,0,1",
+            "CacheToDisk": true
+          },
+          "compiled": null
+        },
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,

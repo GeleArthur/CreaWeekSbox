@@ -48,6 +48,7 @@
         "tfassets.security_fence_section01#20778",
         "titanovsky.explosivebarrel#54541"
       ],
+      "Mounts": null,
       "IsStandaloneOnly": false,
       "Metadata": {
         "SingleAssetSource": "themap.vmap"

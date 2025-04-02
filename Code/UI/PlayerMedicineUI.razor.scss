@@ -17,6 +17,12 @@ PlayerMedicineUI {
 		top: 32px;
 		left: 32px;
 		font-size: 64px;
+
+		> .image {
+			width: 25%;
+			height: auto;
+			object-fit: contain;
+		}
 	}
 
 	> .Money {
@@ -27,5 +33,27 @@ PlayerMedicineUI {
 		top: 150px;
 		left: 32px;
 		font-size: 64px;
+
+		> .image {
+			width: 25%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	> .Fuel {
+		background-color: gray;
+		width: 20vw;
+		border-radius: 8px;
+		position: absolute;
+		top: 268px;
+		left: 32px;
+		font-size: 64px;
+
+		> .image {
+			width: 25%;
+			height: auto;
+			object-fit: contain;
+		}
 	}
 }

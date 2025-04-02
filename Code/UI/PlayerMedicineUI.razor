@@ -5,10 +5,16 @@
 
 <root>
 	<div class="Medicine">
-		<p>💊 @Economy.Medicine</p>
+		<Image class="image" Texture="@MedicineTexture"></Image>
+		<p>@Economy.Medicine</p>
 	</div>
 	<div class="Money">
-		<p>🤑 $@Economy.Money</p>
+		<Image class="image" Texture="@MoneyTexture"></Image>
+		<p>$@Economy.Money</p>
+	</div>
+	<div class="Fuel">
+		<Image class="image" Texture="@FuelTexture"></Image>
+		<p>@( (Fuel.CurrentFuel / Fuel.MaxFuel * 100).ToString("F2") )%</p>
 	</div>
 </root>
 
@@ -16,9 +22,19 @@
 {
 
 	[Property] public Economy Economy { get; set; } = null;
+	[Property] public FuelTank Fuel { get; set; } = null;
+	[Property] public Texture FuelTexture;
+	[Property] public Texture MoneyTexture;
+	[Property] public Texture MedicineTexture;
+
+	protected override void OnStart()
+	{
+		Economy = Scene.GetAllComponents<Economy>().First();
+		Fuel = Scene.GetAllComponents<FuelTank>().First();
+	}
 
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine( Economy.Medicine );
+	protected override int BuildHash() => System.HashCode.Combine( Economy, Fuel.CurrentFuel );
 }
