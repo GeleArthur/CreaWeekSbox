@@ -23,7 +23,7 @@
         "__guid": "afed314a-c9f4-40e6-804e-81cd2d2c3291",
         "Flags": 0,
         "Name": "gun1p1",
-        "Position": "95.99998,0,4.609282",
+        "Position": "90,0,0",
         "Enabled": true,
         "Components": [
           {
