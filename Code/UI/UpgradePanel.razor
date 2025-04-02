@@ -3,18 +3,67 @@
 @inherits PanelComponent
 @namespace Sandbox
 
-<root>
-	<div class="Menu">
+<root class="@(!IsOpen ? "hide" : "show")">
+	<div class="upgrades">
+		@foreach (var upgrade in Upgrades.UpgradeList)
+		{
+			var info = upgrade.UpgradeInfo;
+			<div class="upgrade">
+				<span>@info.Name</span>
 
+				@if (info.isBroken)
+				{
+					<div class="button" @onclick="() => RepairItem(upgrade)">
+						Repair
+					</div>
+				}
+				else if (!info.isActive)
+				{
+					<div class="button" @onclick="() => BuyItem(upgrade)">
+						Buy
+					</div>
+				}
+			</div>
+		}
 	</div>
 </root>
 
 @code
 {
-
+	[Property] public CarUpgradeManager Upgrades;
+	[Property] public Economy PlayerEconomy;
+	public bool IsOpen { get; set; } = false;
 
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine( "" );
+	protected override int BuildHash() => System.HashCode.Combine( IsOpen );
+
+	protected override void OnUpdate()
+	{
+		if (Input.Pressed("Use"))
+		{
+			Log.Info("I have been pressed");
+			IsOpen = !IsOpen;
+		}
+	}
+
+	private void RepairItem(CarUpgradeComponent upgrade)
+	{
+		if ( PlayerEconomy.TryBuy( upgrade.UpgradeInfo.repairCost ) )
+		{
+			upgrade.UpgradeInfo.isBroken = false;
+			upgrade.OnRepair.Invoke();
+		}
+	}
+
+	private void BuyItem(CarUpgradeComponent upgrade)
+	{
+		if (PlayerEconomy.TryBuy(upgrade.UpgradeInfo.buyCost))
+		{
+			upgrade.UpgradeInfo.isBroken = false;
+			upgrade.OnBuy.Invoke();
+		}
+
+	}
 }
