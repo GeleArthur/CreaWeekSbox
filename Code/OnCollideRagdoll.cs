@@ -64,27 +64,21 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
 		{
-			var direction = _player.WorldPosition - WorldPosition;
-			direction = direction / direction.Length;
-			var angle = Math.Atan2( direction.y, direction.x );
-			angle = angle / double.Pi * 180;
-
 			_agent.MoveTo( _player.WorldPosition );
-			Rotation rotation = _agent.WorldRotation;
-			var angles = rotation.Angles();
-			angles.yaw = (float)angle;
-			var delta = Time.Delta;
-			//_rigidbody.ApplyTorque( new Vector3(0, 10, 0) );
-			_rigidbody.LocalRotation = angles;
-			//_rigidbody.SmoothRotate( in rotation, 0.5f, delta );
+			if ( _agent.TargetPosition.HasValue )
+			{
+				TurnTowards( _agent.TargetPosition.Value );
+			}
 		}
 		else
 		{
 			if ( _wanderTimer )
 			{
-				Vector3 randomPos = Vector3.Random * Random.Shared.Float( 1, 20 ); ;
+				Vector3 randomPos = Vector3.Random * Random.Shared.Float( 150, 300 ); ;
 				randomPos = Scene.NavMesh.GetClosestPoint( randomPos )!.Value;
 				_agent.MoveTo( LocalPosition + randomPos );
+				if( _agent.TargetPosition.HasValue )
+					TurnTowards( _agent.TargetPosition.Value );
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 			}
 		}
@@ -97,8 +91,23 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 			UnRagdoll();
 		}
 	}
+	private void TurnTowards(Vector3 point)
+	{
+		var direction = point - WorldPosition;
+		direction = direction / direction.Length;
+		var angle = Math.Atan2( direction.y, direction.x );
+		angle = angle / double.Pi * 180;
+
+		Rotation rotation = _agent.WorldRotation;
+		var angles = rotation.Angles();
+		angles.yaw = (float)angle;
+		var delta = Time.Delta;
+		_rigidbody.LocalRotation = angles;
+	}
+
 	protected override void OnFixedUpdate()
 	{
-		_rigidbody.Velocity = (Vector3)_agent.TargetPosition - _rigidbody.LocalPosition;
+		if ( _agent.TargetPosition.HasValue )
+			_rigidbody.Velocity = _agent.TargetPosition.Value - _rigidbody.LocalPosition;
 	}
 }
