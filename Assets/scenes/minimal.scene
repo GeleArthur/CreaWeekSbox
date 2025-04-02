@@ -385,7 +385,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 24,
+                "Id": 10,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -403,7 +403,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 25,
+                "Id": 11,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -493,7 +493,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 24,
+                "Id": 10,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -511,7 +511,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 25,
+                "Id": 11,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -560,11 +560,11 @@
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
-          "Blur": 0,
-          "EndDistance": 1024,
-          "FalloffExponent": 2,
+          "Blur": 0.42,
+          "EndDistance": 2966.5007,
+          "FalloffExponent": 14.2,
           "HeightExponent": 1,
-          "HeightStart": 2002.133,
+          "HeightStart": 713.3335,
           "HeightWidth": 0,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
