@@ -1,0 +1,38 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="Minimap">
+
+	</div>
+</root>
+
+@code
+{
+
+	[Property] public SceneCamera Camera { get; set; } = null;
+	private Texture _renderTarget;
+
+	protected override void OnUpdate()
+	{
+
+		// Camera.RenderTags.Add( "minimap" );
+
+		// _renderTarget = Texture.CreateRenderTarget()
+		// 	.WithSize( 1000 )
+		// 	.WithScreenFormat()
+		// 	.Create();
+	}
+
+	// public override void DrawBaackground()
+	// {
+	// 	Graphics.RenderToTexture( Camera, _renderTarget );
+	// }
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine(Camera);
+}
