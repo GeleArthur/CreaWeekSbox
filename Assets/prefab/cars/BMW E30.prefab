@@ -1419,7 +1419,7 @@
             "OnComponentStart": null,
             "OnComponentUpdate": null,
             "PopChance": 0.1,
-            "PopSounds": null,
+            "PopSounds": "prefab/cars/s13/sound/sfx/pops/popsounds.sound",
             "Renderer": {
               "_type": "component",
               "component_id": "706950c7-efde-48d5-bb18-c9904d45a8cb",
