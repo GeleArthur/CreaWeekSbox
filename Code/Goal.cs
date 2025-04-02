@@ -43,7 +43,7 @@ public sealed class Goal : Component
 				{
 					GoalManager = Scene.Directory.FindByName( "GoalManager" ).First().GetComponent<GoalManager>();
 				}
-				GoalManager.Notify( this.GameObject , SellingGoal, fuelGoal);
+				GoalManager.Notify( this , SellingGoal, fuelGoal);
 			}
 		};
 		if ( SellingGoal )

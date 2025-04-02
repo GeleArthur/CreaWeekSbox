@@ -5,7 +5,7 @@ public sealed class GoalManager : Component
 {
 
 	[Property]
-	public GameObject[] Goals { get; set; }
+	public Goal[] Goals { get; set; }
 	[Property]
 	public Economy EconomyComp { get; set; }
 	[Property]
@@ -13,9 +13,9 @@ public sealed class GoalManager : Component
 	[Property]
 	public int FuelPerGoal {  get; set; }
 
-	private GameObject _currentGoal;
+	private Goal _currentGoal;
 
-	public GameObject CurrentGoal
+	public Goal CurrentGoal
 	{
 		get { return _currentGoal; }
 		private set { _currentGoal = value; }
@@ -25,16 +25,16 @@ public sealed class GoalManager : Component
 	{
 		SetNewGoal();
 
-		foreach( GameObject goal in Goals)
+		foreach( var goal in Goals)
 		{
-			goal.GetComponent<Goal>().GoalManager = this;
+			goal.GoalManager = this;
 		}
 
 	}
 	
-	public void Notify(GameObject goal, bool isSellingGoal, bool isFuelGoal)
+	public void Notify(Goal goal, bool isSellingGoal, bool isFuelGoal)
 	{
-		if (goal == CurrentGoal)
+		if ( goal == CurrentGoal )
 		{
 			if(isSellingGoal)
 			{
