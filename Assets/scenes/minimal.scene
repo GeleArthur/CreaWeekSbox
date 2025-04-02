@@ -111,7 +111,12 @@
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "PlayerController"
           },
-          "VehicleController": null
+          "VehicleController": {
+            "_type": "component",
+            "component_id": "a0f4f96a-57b3-4f3e-aeb8-27df4551e99d",
+            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
+            "component_type": "VehicleController"
+          }
         }
       ]
     },
