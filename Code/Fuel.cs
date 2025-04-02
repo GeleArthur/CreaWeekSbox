@@ -14,15 +14,16 @@ public sealed class FuelTank : Component
 
 	private float _fuelUsagePerSecond;
 
+	protected override void OnAwake()
+	{
+		_maxCapacity = _defaultCapacity;
+	}
+
 	protected override void OnUpdate()
 	{
 		if(!_isDriving) { return; }
 		_currentFuel = float.Clamp( _currentFuel - Time.Delta * (1 -_efficiency) * _fuelUsagePerSecond, 0, _maxCapacity );
-	}
-
-	protected override void OnAwake()
-	{
-		_maxCapacity = _defaultCapacity;
+		DebugOverlay.Text( WorldPosition + Vector3.Up * 90f, $"Fuel:{_currentFuel} / {_maxCapacity}" );
 	}
 
 	public void SetActive( bool state )
