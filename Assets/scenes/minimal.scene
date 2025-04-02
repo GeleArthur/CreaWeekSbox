@@ -82,31 +82,13 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "d0b991b0-0f7f-4587-8b45-21add2623123",
+            "component_id": "4e9678e5-1afd-4773-8c3d-f9c71a29d528",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
           "FuelPerGoal": 0,
-          "FuelTankComp": {
-            "_type": "component",
-            "component_id": "ea8603d5-739d-4d34-93a5-e6f4a8544819",
-            "go": "11523d16-2bad-4c8b-9916-0ddaddebebf2",
-            "component_type": "FuelTank"
-          },
-          "Goals": [
-            {
-              "_type": "gameobject",
-              "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71"
-            },
-            {
-              "_type": "gameobject",
-              "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1"
-            },
-            {
-              "_type": "gameobject",
-              "go": "57707bd7-a728-48a2-a6f5-0e447503f0d1"
-            }
-          ],
+          "FuelTankComp": null,
+          "Goals": null,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -515,7 +497,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 14,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -533,7 +515,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 15,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -623,7 +605,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 14,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -641,7 +623,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 15,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
