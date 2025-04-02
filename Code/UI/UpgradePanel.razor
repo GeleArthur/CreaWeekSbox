@@ -1,4 +1,4 @@
-@using Sandbox;
+﻿@using Sandbox;
 @using Sandbox.UI;
 @inherits PanelComponent
 @namespace Sandbox
@@ -22,6 +22,10 @@
 					<button class="button" @onclick=@(() => BuyItem(upgrade))>
 						Buy
 					</button>
+				}
+				else
+				{
+					<button class="bought">✅</button>
 				}
 				<div class="tooltip">@(info.Description)</div>
 			</div>
