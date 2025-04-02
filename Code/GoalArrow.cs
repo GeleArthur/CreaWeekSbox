@@ -1,4 +1,5 @@
-namespace Sandbox;
+using Sandbox;
+
 public enum GoalTypes
 {
 	MedicineGoal,
@@ -6,7 +7,7 @@ public enum GoalTypes
 	SellingGoal
 }
 
-public sealed class GoalArrows: Component
+public sealed class GoalArrow : Component
 {
 	[Property]
 	public GoalTypes GoalType { get; set; }
@@ -21,33 +22,34 @@ public sealed class GoalArrows: Component
 		PlayerToCircle = Scene.GetAllComponents<PlayerController>().First().GameObject;
 		if ( PlayerToCircle == null )
 		{
-			Log.Info("Player To Circle null"  );
+			Log.Info( "Player To Circle null" );
 		}
-		var playerPos = PlayerToCircle.WorldPosition;
 
-		var goals = 
-			Scene.Directory.FindByName( "GoalManager" ).First().
-				GetComponent<GoalManager>().Goals;
+		var goals =
+			Scene.GetAllComponents<GoalManager>().First().Goals;
 
-		Log.Info( "Amount of goals: " + goals.Length);
+		Log.Info( "Amount of goals: " + goals.Length );
 
 		foreach ( var goal in goals )
 		{
 			if ( goal.SellingGoal && GoalType == GoalTypes.SellingGoal )
 			{
 				GoalPos = goal.WorldPosition;
+				//GoalPos = new Vector3( 500, 500, 0 );
 				break;
 			}
 
 			if ( goal.fuelGoal && GoalType == GoalTypes.FuelGoal )
 			{
 				GoalPos = goal.WorldPosition;
+				//GoalPos = new Vector3( 100, 500, 0 );
 				break;
 			}
 
 			if ( goal.SellingGoal == false && goal.fuelGoal == false && GoalType == GoalTypes.MedicineGoal )
 			{
 				GoalPos = goal.WorldPosition;
+				//GoalPos = new Vector3( -200, -100, 0 );
 				break;
 			}
 		}
@@ -56,7 +58,7 @@ public sealed class GoalArrows: Component
 	protected override void OnUpdate()
 	{
 		var playerPos = PlayerToCircle.WorldPosition;
-		var worldPos = new Vector3(playerPos.x,playerPos.y,playerPos.z + 1800);
+		var worldPos = new Vector3( playerPos.x, playerPos.y, playerPos.z + 1800 );
 		Vector3 VectorToGoal = new Vector3( GoalPos - WorldPosition );
 
 		var rotation = Rotation.LookAt( VectorToGoal );

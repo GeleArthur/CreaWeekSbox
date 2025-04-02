@@ -82,13 +82,32 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "4e9678e5-1afd-4773-8c3d-f9c71a29d528",
+            "component_id": "7f2fa366-2978-4028-b4c4-caba1234a4cc",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
           "FuelPerGoal": 0,
           "FuelTankComp": null,
-          "Goals": null,
+          "Goals": [
+            {
+              "_type": "component",
+              "component_id": "c854dec8-579b-44ee-80c0-b7a4a1464620",
+              "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
+              "component_type": "Goal"
+            },
+            {
+              "_type": "component",
+              "component_id": "90b249d2-6a6b-45af-99bd-b232c9810cd9",
+              "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
+              "component_type": "Goal"
+            },
+            {
+              "_type": "component",
+              "component_id": "09f481ec-7958-40eb-8660-38fd76843147",
+              "go": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
+              "component_type": "Goal"
+            }
+          ],
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -106,7 +125,7 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true,
+            "Selling Goal": false,
             "Fuel Goal": false
           }
         },
@@ -130,8 +149,8 @@
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true,
-            "Fuel Goal": false
+            "Selling Goal": false,
+            "Fuel Goal": true
           }
         }
       ]
@@ -497,7 +516,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 14,
+                "Id": 8,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -515,7 +534,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 15,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -605,7 +624,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 14,
+                "Id": 8,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -623,7 +642,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 15,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -748,6 +767,37 @@
           "Shadows": true
         }
       ]
+    },
+    {
+      "__guid": "db38a502-76ec-414b-8f39-7843cad08532",
+      "Flags": 0,
+      "Name": "goalarrows",
+      "Position": "-2814.099,2233.238,22.50525",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {
+        "Goal Type": "FuelGoal",
+        "Arrow Color": "0.33953,0.13581,0,1",
+        "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
+      }
+    },
+    {
+      "__guid": "6083b0fc-468d-4cc0-acf3-0eb3f85f54d7",
+      "Flags": 0,
+      "Name": "goalarrows (1)",
+      "Position": "-2716.732,2173.611,22.50525",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "1efd4118-fab0-43ec-a84b-e000646ed4de",
+      "Flags": 0,
+      "Name": "goalarrows (2)",
+      "Position": "-2759.76,2117.122,22.50526",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
