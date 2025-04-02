@@ -50,7 +50,9 @@ public sealed class TurretUpgrade : Component
 			angle2 = -angle2;
 		}
 
-		this.LocalTransform = new Transform( this.LocalPosition, new Angles( -(float)angle2, (float)angle, 0 ) );
+		angle2 = angle2.Clamp( -25, 25 );
+
+		this.WorldTransform = new Transform( this.WorldPosition, new Angles( -(float)angle2, (float)angle, 0 ) );
 
 		//shooting
 		_elapsedSec = _elapsedSec + Time.Delta;
