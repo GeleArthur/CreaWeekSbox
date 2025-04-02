@@ -7,6 +7,13 @@ public sealed class FollowPlayerCamera : Component
 	[Property] public float HeightOffset = 100f;
 	[Property] public PlayerController PlayerController = null;
 	[Property] public VehicleController VehicleController = null;
+
+	protected override void OnStart()
+	{
+		PlayerController = Scene.GetAllComponents<PlayerController>().First();
+		VehicleController = Scene.GetAllComponents<VehicleController>().First();
+	}
+
 	protected override void OnUpdate()
 	{
 		if ( PlayerController.GameObject.Enabled )
