@@ -23,7 +23,7 @@ public sealed class Bullet : Component
 		{
 			if (other.Tags.Has("zombie"))
 			{
-				other.GetComponent<OnCollideRagDoll>().Ragdoll();
+				other.GetComponent<HealthComponent>()?.Damage( BulletDamage );
 			}
 		};
 
