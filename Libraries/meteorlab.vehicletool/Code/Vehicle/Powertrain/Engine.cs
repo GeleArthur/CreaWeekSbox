@@ -58,6 +58,9 @@ public class Engine : PowertrainComponent, IScenePhysicsEvents
 	///     Maximum engine power in [kW].
 	/// </summary>
 	[Property, Group( "Power" )] public float MaxPower { get; set; } = 120;
+	[Property, Group( "Power" )] public float normalPower { get; set; } = 120;
+	[Property, Group( "Power" )] public float upgradedPower { get; set; } = 300;
+
 
 	/// <summary>
 	/// Loss power (pumping, friction losses) is calculated as the percentage of maxPower.
@@ -504,6 +507,16 @@ public class Engine : PowertrainComponent, IScenePhysicsEvents
 
 		peakPower = maxY * MaxPower;
 		peakPowerRpm = maxX * RevLimiterRPM;
+	}
+
+	public void SetUpgradedPower()
+	{
+		MaxPower = upgradedPower;
+	}
+
+	public void SetNormalPower()
+	{
+		MaxPower = normalPower;
 	}
 
 }
