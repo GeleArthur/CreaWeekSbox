@@ -33,7 +33,7 @@ public sealed class FuelTank : Component
 		}
 
 		_currentFuel = float.Clamp( _currentFuel - (Time.Delta * (1 - _efficiency) * _fuelUsagePerSecond), 0, _maxCapacity );
-		DebugOverlay.Text( WorldPosition + Vector3.Up * 90f, $"Fuel:{_currentFuel:F1} / {_maxCapacity}" );
+		DebugOverlay.Text( WorldPosition + Vector3.Up * 120f, $"Fuel:{_currentFuel:F1} / {_maxCapacity}" );
 	}
 
 	public void SetActive( bool state )
