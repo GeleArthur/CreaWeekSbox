@@ -2,9 +2,7 @@
   "RootObject": {
     "__guid": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
     "Flags": 0,
-    "Name": "MiniCam",
-    "Position": "-496.4984,-516.1906,571.6905",
-    "Rotation": "0,0.7071068,0,0.7071068",
+    "Name": "minicam",
     "Enabled": true,
     "Components": [
       {
@@ -24,7 +22,7 @@
         "Orthographic": false,
         "OrthographicHeight": 1204,
         "Priority": 1,
-        "RenderExcludeTags": "",
+        "RenderExcludeTags": "fog",
         "RenderTags": "",
         "TargetEye": "None",
         "Viewport": "0,0,1,1",
@@ -44,12 +42,7 @@
         "Opacity": 1,
         "Scale": 1,
         "ScaleStrategy": "FollowDesktopScaling",
-        "TargetCamera": {
-          "_type": "component",
-          "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
-          "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
-          "component_type": "CameraComponent"
-        },
+        "TargetCamera": null,
         "ZIndex": 100
       },
       {
@@ -80,13 +73,38 @@
         "OnComponentUpdate": null,
         "PlayerController": {
           "_type": "component",
-          "component_id": "37b2b8c9-eb1d-46b5-ba7a-cb54b9448672",
+          "component_id": "8d0b91b4-2700-483d-9bf0-8d7ffc34c2d1",
           "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
           "component_type": "PlayerController"
         },
         "VehicleController": null
       }
-    ]
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
   },
   "ShowInMenu": false,
   "MenuPath": null,

@@ -151,24 +151,24 @@
           {
             "__guid": "e9506fe7-8d1e-4788-9422-7080020086aa",
             "Flags": 0,
-            "Name": "Object",
+            "Name": "Light",
             "Position": "0,0,239.1919",
             "Enabled": true,
             "Components": [
               {
                 "__type": "Sandbox.PointLight",
                 "__guid": "68ef4bc4-1e67-453a-94ac-c3da21f9c1a7",
-                "Attenuation": 0.6,
+                "Attenuation": 4.49,
                 "FogMode": "Enabled",
                 "FogStrength": 1,
-                "LightColor": "0.97674,0.94547,0.70871,1",
+                "LightColor": "43.65,41.04454,21.31744,1",
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
                 "OnComponentEnabled": null,
                 "OnComponentFixedUpdate": null,
                 "OnComponentStart": null,
                 "OnComponentUpdate": null,
-                "Radius": 800,
+                "Radius": 1000,
                 "Shadows": true
               }
             ]
