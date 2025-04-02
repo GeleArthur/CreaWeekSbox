@@ -33,7 +33,9 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		_zombiesKillEachOther = 0.5f;
 		
 		_agent.MoveTo( WorldPosition );
-
+		_agent.MaxSpeed = 200;
+		_agent.Acceleration = 2000;
+		
 		_player = Game.ActiveScene.GetAllComponents<PlayerController>().First();
 		_health.OnDeath += OnDeath;
 	}
@@ -45,7 +47,6 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	public void OnCollisionStart( Collision collision )
 	{
-		Log.Info( _zombiesKillEachOther );
 		if( collision.Other.GameObject.Tags.Contains( "car" ) || 
 		     (collision.Other.GameObject.Tags.Contains( "zombie" ) && _zombiesKillEachOther )
 		     )
@@ -77,7 +78,9 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		if ( _health.IsDeath && _ragdollTimer )
 		{
 			Destroy();
-			Scene.GetAllComponents<ZombieManager>().First().RemoveZombie( this );
+			Game.ActiveScene.GetAllComponents<ZombieManager>().First().RemoveZombie( this );
+			
+			return;
 		}
 		
 		if ( _agent.IsValid && _rigidbody.IsValid )
@@ -86,14 +89,14 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 			if ( _player.GameObject.Active )
 			{
-				if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
+				if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 5000 )
 				{
 					success = true;
 					_wanderTimer = 0;
 					_agent.MoveTo( _player.WorldPosition );
 				}
 			}
-			else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 500 )
+			else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 5000 )
 			{
 				success = true;
 				_wanderTimer = 0;
