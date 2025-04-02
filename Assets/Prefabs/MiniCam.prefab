@@ -1,0 +1,98 @@
+{
+  "RootObject": {
+    "__guid": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
+    "Flags": 0,
+    "Name": "MiniCam",
+    "Position": "-496.4984,-516.1906,571.6905",
+    "Rotation": "0,0.7071068,0,0.7071068",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.CameraComponent",
+        "__guid": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
+        "BackgroundColor": "0.33333,0.46275,0.52157,1",
+        "ClearFlags": "All",
+        "FieldOfView": 60,
+        "FovAxis": "Horizontal",
+        "IsMainCamera": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Orthographic": false,
+        "OrthographicHeight": 1204,
+        "Priority": 1,
+        "RenderExcludeTags": "",
+        "RenderTags": "",
+        "TargetEye": "None",
+        "Viewport": "0,0,1,1",
+        "ZFar": 10000,
+        "ZNear": 10
+      },
+      {
+        "__type": "Sandbox.ScreenPanel",
+        "__guid": "249de02b-69c6-4fea-8f79-ecbb4854f101",
+        "AutoScreenScale": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Opacity": 1,
+        "Scale": 1,
+        "ScaleStrategy": "FollowDesktopScaling",
+        "TargetCamera": {
+          "_type": "component",
+          "component_id": "54d8cb08-6fa3-481f-93fb-4673c7040627",
+          "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
+          "component_type": "CameraComponent"
+        },
+        "ZIndex": 100
+      },
+      {
+        "__type": "Sandbox.MiniMapHUD",
+        "__guid": "e2b2cb96-7a86-445a-9b7c-05e43c628b84",
+        "Camera": {
+          "_type": "component",
+          "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
+          "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
+          "component_type": "CameraComponent"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
+        "__type": "FollowPlayerCamera",
+        "__guid": "d07d86e6-c49d-4417-b7f4-daac23408024",
+        "HeightOffset": 2000,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PlayerController": {
+          "_type": "component",
+          "component_id": "e1fe8a13-3d9d-4f1c-ac20-b74a01d8c582",
+          "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+          "component_type": "PlayerController"
+        },
+        "VehicleController": null
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

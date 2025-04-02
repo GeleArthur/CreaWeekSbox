@@ -73,7 +73,7 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "133c1652-ffb3-43fa-b516-a9548bf8e6bb",
+            "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
@@ -107,13 +107,13 @@
           "OnComponentUpdate": null,
           "PlayerController": {
             "_type": "component",
-            "component_id": "01f2c9ea-ee78-4d92-b798-dc3ed4722043",
+            "component_id": "37b2b8c9-eb1d-46b5-ba7a-cb54b9448672",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "PlayerController"
           },
           "VehicleController": {
             "_type": "component",
-            "component_id": "7351d9ec-e850-4913-a2f7-f32f342d9cbf",
+            "component_id": "1b2ab52c-638a-4360-9411-27329696b610",
             "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
             "component_type": "VehicleController"
           }
@@ -177,7 +177,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "3e91b8a9-db82-43ba-8a3c-3964dc347ab4",
+            "component_id": "437c533f-14fd-41b6-be33-9421bc1e3c8f",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -371,7 +371,7 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "133c1652-ffb3-43fa-b516-a9548bf8e6bb",
+            "component_id": "bb42f170-4bf6-4a0d-8d3c-a9197cf81750",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
@@ -388,13 +388,13 @@
           "OnComponentUpdate": null,
           "PlayerEconomy": {
             "_type": "component",
-            "component_id": "3e91b8a9-db82-43ba-8a3c-3964dc347ab4",
+            "component_id": "437c533f-14fd-41b6-be33-9421bc1e3c8f",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
           "Upgrades": {
             "_type": "component",
-            "component_id": "a9df36ad-1efa-40d9-baa5-f62a9cdeea5c",
+            "component_id": "6ab12f6f-1d4c-4ab5-affe-6a62a05d790d",
             "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
             "component_type": "CarUpgradeManager"
           }
