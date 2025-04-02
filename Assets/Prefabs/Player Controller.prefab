@@ -164,7 +164,372 @@
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
-        "OnComponentUpdate": null
+        "OnComponentUpdate": null,
+        "OnDeath": {
+          "__version": 9,
+          "__guid": "47f4a5bf-e5ba-46eb-8fab-b6ef90aac02f",
+          "__changeId": 124,
+          "UserData": {
+            "Title": "On Death",
+            "ReferencedComponentTypes": [
+              "CarUpgradeManager"
+            ]
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            },
+            {
+              "Id": 4,
+              "Type": "property",
+              "Properties": {
+                "_name": "WorldPosition",
+                "_type": "Sandbox.GameObject"
+              },
+              "UserData": {
+                "Position": "180,36"
+              }
+            },
+            {
+              "Id": 8,
+              "Type": "property",
+              "Properties": {
+                "_name": "WorldPosition",
+                "_type": "Sandbox.GameObject"
+              },
+              "UserData": {
+                "Position": "-24,216"
+              }
+            },
+            {
+              "Id": 11,
+              "Type": "property",
+              "Properties": {
+                "_name": "WorldPosition",
+                "_type": "Sandbox.GameObject"
+              },
+              "UserData": {
+                "Position": "492,204"
+              }
+            },
+            {
+              "Id": 13,
+              "Type": "property",
+              "Properties": {
+                "_name": "WorldPosition",
+                "_type": "Sandbox.GameObject"
+              },
+              "UserData": {
+                "Position": "108,420"
+              }
+            },
+            {
+              "Id": 16,
+              "Type": "scene.get",
+              "Properties": {
+                "T": "CarUpgradeManager"
+              },
+              "UserData": {
+                "Position": "108,540"
+              }
+            },
+            {
+              "Id": 17,
+              "Type": "property",
+              "Properties": {
+                "_name": "UpgradeList",
+                "_type": "CarUpgradeManager"
+              },
+              "UserData": {
+                "Position": "456,528"
+              }
+            },
+            {
+              "Id": 20,
+              "Type": "random.int",
+              "UserData": {
+                "Position": "696,348"
+              }
+            },
+            {
+              "Id": 21,
+              "Type": "property",
+              "Properties": {
+                "_name": "Count",
+                "_type": "System.Collections.Generic.List`1"
+              },
+              "UserData": {
+                "Position": "540,444"
+              }
+            },
+            {
+              "Id": 24,
+              "Type": "if",
+              "UserData": {
+                "Position": "1176,480"
+              }
+            },
+            {
+              "Id": 25,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": true,
+                "_name": "ReferenceEquals",
+                "_type": "System.Object"
+              },
+              "UserData": {
+                "Position": "1116,588"
+              }
+            },
+            {
+              "Id": 26,
+              "Type": "foreach",
+              "UserData": {
+                "Position": "840,564"
+              }
+            },
+            {
+              "Id": 28,
+              "Type": "property",
+              "Properties": {
+                "_name": "UpgradeInfo",
+                "_type": "CarUpgradeComponent"
+              },
+              "UserData": {
+                "Position": "984,780"
+              }
+            },
+            {
+              "Id": 29,
+              "Type": "property",
+              "Properties": {
+                "_name": "isBroken",
+                "_type": "UpgradeInfo"
+              },
+              "UserData": {
+                "Position": "1608,576"
+              }
+            },
+            {
+              "Id": 31,
+              "Type": "property",
+              "Properties": {
+                "_name": "isActive",
+                "_type": "UpgradeInfo"
+              },
+              "UserData": {
+                "Position": "1260,636"
+              }
+            },
+            {
+              "Id": 32,
+              "Type": "if",
+              "UserData": {
+                "Position": "1344,528"
+              }
+            },
+            {
+              "Id": 38,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-168,84"
+              }
+            },
+            {
+              "Id": 40,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "252,264"
+              }
+            },
+            {
+              "Id": 42,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-204,288"
+              }
+            },
+            {
+              "Id": 44,
+              "Type": "scene.ref",
+              "UserData": {
+                "Position": "-120,528"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 4,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 38,
+              "SrcName": "_result",
+              "DstId": 4,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 8,
+              "SrcName": "_result",
+              "DstId": 4,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 42,
+              "SrcName": "_result",
+              "DstId": 8,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 4,
+              "SrcName": "_signal",
+              "DstId": 11,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 40,
+              "SrcName": "_result",
+              "DstId": 11,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 13,
+              "SrcName": "_result",
+              "DstId": 11,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 44,
+              "SrcName": "_result",
+              "DstId": 13,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 44,
+              "SrcName": "_result",
+              "DstId": 16,
+              "DstName": "_this"
+            },
+            {
+              "SrcId": 16,
+              "SrcName": "_result",
+              "DstId": 17,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 21,
+              "SrcName": "_result",
+              "DstId": 20,
+              "DstName": "max"
+            },
+            {
+              "SrcId": 17,
+              "SrcName": "_result",
+              "DstId": 21,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 26,
+              "SrcName": "body",
+              "DstId": 24,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 25,
+              "SrcName": "_result",
+              "DstId": 24,
+              "DstName": "condition"
+            },
+            {
+              "SrcId": 26,
+              "SrcName": "body.index",
+              "DstId": 25,
+              "DstName": "objA"
+            },
+            {
+              "SrcId": 20,
+              "SrcName": "_result",
+              "DstId": 25,
+              "DstName": "objB"
+            },
+            {
+              "SrcId": 11,
+              "SrcName": "_signal",
+              "DstId": 26,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 17,
+              "SrcName": "_result",
+              "DstId": 26,
+              "DstName": "enumerable"
+            },
+            {
+              "SrcId": 26,
+              "SrcName": "body.value",
+              "DstId": 28,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 32,
+              "SrcName": "true",
+              "DstId": 29,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 28,
+              "SrcName": "_result",
+              "DstId": 29,
+              "DstName": "_target"
+            },
+            {
+              "Id": 34,
+              "Value": true,
+              "DstId": 29,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 28,
+              "SrcName": "_result",
+              "DstId": 31,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 24,
+              "SrcName": "true",
+              "DstId": 32,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 31,
+              "SrcName": "_result",
+              "DstId": 32,
+              "DstName": "condition"
+            }
+          ],
+          "Defaults": {
+            "$42.gameobject": {
+              "_type": "gameobject",
+              "prefab": "prefabs/player controller.prefab"
+            },
+            "$44.gameobject": {
+              "_type": "gameobject",
+              "prefab": "prefab/cars/bmw e30.prefab"
+            },
+            "$40.gameobject": {
+              "_type": "gameobject",
+              "prefab": "prefabs/carspawnpoint.prefab"
+            },
+            "$38.gameobject": {
+              "_type": "gameobject",
+              "prefab": "prefabs/playerrespawnpoint.prefab"
+            }
+          }
+        }
       }
     ],
     "Children": [

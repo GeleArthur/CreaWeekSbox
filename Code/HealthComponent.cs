@@ -1,4 +1,5 @@
 using System;
+using Meteor.VehicleTool.Vehicle;
 using Sandbox;
 
 public sealed class HealthComponent : Component
@@ -6,8 +7,7 @@ public sealed class HealthComponent : Component
 	[Property]
 	private int _maxHealth { get; set; }
 
-	public event Action OnDeath;
-	public event Action<int> OnHealth;
+	[Property] public Action OnDeath;
 	private int _health;
 
 	public int Health
@@ -15,10 +15,12 @@ public sealed class HealthComponent : Component
 		get { return _health; }
 		private set
 		{
-			OnHealth?.Invoke( _health );
 			_health = value;
-			if ( _health <= 0 ) 
+			if ( _health <= 0 )
+			{
+				PlayerDies();
 				OnDeath?.Invoke();
+			}
 		}
 	}
 
@@ -32,6 +34,11 @@ public sealed class HealthComponent : Component
 		Health = int.Clamp( _health + healing, 0, _maxHealth );
 	}
 
+	[Button]
+	void DamageLol()
+	{
+		Damage(10);
+	}
 
 	protected override void OnStart()
 	{
@@ -43,4 +50,21 @@ public sealed class HealthComponent : Component
 		DebugOverlay.Text( WorldPosition + Vector3.Up * 90f, $"[{_health}/{_maxHealth}]" );
 	}
 
+	private void PlayerDies()
+	{
+		var player = GameObject.GetComponent<PlayerController>();
+		if ( player == null ) return;
+		var vehicle = Scene.GetAllComponents<VehicleController>().First();
+
+		Damage(-_maxHealth);
+		var vhHealth = vehicle.GetComponent<HealthComponent>();
+		vhHealth.Damage( -vhHealth._maxHealth );
+
+		vehicle.GameObject.WorldPosition = Scene.GetAllObjects( false ).Where( ( obj ) => obj.Name == "CarSpawnPoint" )
+			.ToList().First().WorldPosition;
+		vehicle.GameObject.WorldRotation = Scene.GetAllObjects( false ).Where( ( obj ) => obj.Name == "CarSpawnPoint" )
+			.ToList().First().WorldRotation;
+		player.GameObject.WorldPosition = Scene.GetAllObjects( false ).Where( ( obj ) => obj.Name == "PlayerRespawnPoint" )
+			.ToList().First().WorldPosition;
+	}
 }

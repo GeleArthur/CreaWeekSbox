@@ -46,6 +46,10 @@ public sealed class FuelTank : Component
 		return _currentFuel;
 	}
 
+    public void AddFual(float amount)
+    {
+        _currentFuel = float.Clamp( _currentFuel + amount, 0, _maxCapacity );
+	}
 	public void SetEfficiency( float efficiency )
 	{
 		_efficiency = efficiency;

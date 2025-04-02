@@ -379,7 +379,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 6,
+                "Id": 8,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -397,7 +397,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -487,7 +487,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 6,
+                "Id": 8,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -505,7 +505,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -524,6 +524,24 @@
           "SurfaceVelocity": "0,0,0"
         }
       ]
+    },
+    {
+      "__guid": "1eda56d7-ed6a-4203-b651-930d3c29b392",
+      "Flags": 0,
+      "Name": "PlayerRespawnPoint",
+      "Position": "-5781.043,-6181.688,68.25169",
+      "Enabled": true,
+      "__Prefab": "prefabs/playerrespawnpoint.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "03817b3d-baeb-4481-be85-50adb9ca3bf0",
+      "Flags": 0,
+      "Name": "CarSpawnPoint",
+      "Position": "-5781.043,-5903.628,68.25169",
+      "Enabled": true,
+      "__Prefab": "prefabs/carspawnpoint.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
