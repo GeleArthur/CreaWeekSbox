@@ -13,12 +13,12 @@ public sealed class GoalManager : Component
 	[Property]
 	public int FuelPerGoal {  get; set; }
 
-	GameObject _currentGoal;
+	private GameObject _currentGoal;
 
-	GameObject CurrentGoal
+	public GameObject CurrentGoal
 	{
 		get { return _currentGoal; }
-		set { _currentGoal = value; }
+		private set { _currentGoal = value; }
 	}
 	
 	protected override void OnStart()
