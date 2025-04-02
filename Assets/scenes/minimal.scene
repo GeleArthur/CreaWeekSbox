@@ -61,7 +61,7 @@
         {
           "__type": "Sandbox.ScreenPanel",
           "__guid": "249de02b-69c6-4fea-8f79-ecbb4854f101",
-          "AutoScreenScale": true,
+          "AutoScreenScale": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -73,8 +73,8 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
-            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
+            "component_id": "5ccb6c85-a2cd-4f8f-a8c0-758c8ff79b17",
+            "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
           "ZIndex": 100
@@ -82,13 +82,41 @@
         {
           "__type": "Sandbox.MiniMapHUD",
           "__guid": "e2b2cb96-7a86-445a-9b7c-05e43c628b84",
-          "Camera": null,
+          "Camera": {
+            "_type": "component",
+            "component_id": "c0a42cbf-c1f5-438f-a98c-b40fda53a8e6",
+            "go": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
+            "component_type": "CameraComponent"
+          },
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "FollowPlayerCamera",
+          "__guid": "d07d86e6-c49d-4417-b7f4-daac23408024",
+          "HeightOffset": 2000,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerController": {
+            "_type": "component",
+            "component_id": "7a8a5493-9796-4536-831e-ea96c51abc1d",
+            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+            "component_type": "PlayerController"
+          },
+          "VehicleController": {
+            "_type": "component",
+            "component_id": "584c2041-f285-490f-bd2f-54e9b32da114",
+            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
+            "component_type": "VehicleController"
+          }
         }
       ]
     },
@@ -149,7 +177,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "94ce5d54-fe09-49e2-aca8-2d4711f60556",
+            "component_id": "54826555-bebb-4e2f-aaf9-b615338807a2",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -252,7 +280,8 @@
               "OnComponentFixedUpdate": null,
               "OnComponentStart": null,
               "OnComponentUpdate": null,
-              "SellingGoal": false
+              "SellingGoal": false,
+              "TextRendererComp": null
             }
           ],
           "Children": [
