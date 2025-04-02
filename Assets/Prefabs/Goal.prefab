@@ -41,7 +41,13 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "SellingGoal": true
+        "SellingGoal": true,
+        "TextRendererComp": {
+          "_type": "component",
+          "component_id": "a375a323-bcff-49c6-a529-4ebbfec093b5",
+          "go": "4137d0d9-ce90-4b04-b8e6-a19459cbdddf",
+          "component_type": "TextRenderer"
+        }
       }
     ],
     "Children": [
@@ -75,6 +81,69 @@
             },
             "RenderType": "On",
             "Tint": "0.92093,0.91308,0.44976,0.43"
+          }
+        ]
+      },
+      {
+        "__guid": "4137d0d9-ce90-4b04-b8e6-a19459cbdddf",
+        "Flags": 0,
+        "Name": "Text",
+        "Position": "0,0,130.2617",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "a375a323-bcff-49c6-a529-4ebbfec093b5",
+            "__version": 1,
+            "__enabled": false,
+            "BlendMode": "Normal",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Scale": 1,
+            "TextAlignment": "Center",
+            "TextScope": {
+              "Text": "Hello! ❤",
+              "TextColor": "1,1,1,1",
+              "FontName": "Poppins",
+              "FontSize": 32,
+              "FontWeight": 400,
+              "FontItalic": false,
+              "LineHeight": 1,
+              "LetterSpacing": 0,
+              "WordSpacing": 0,
+              "Outline": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,1,1"
+              },
+              "Shadow": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              },
+              "OutlineUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,1,0,1"
+              },
+              "ShadowUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              }
+            }
           }
         ]
       }
