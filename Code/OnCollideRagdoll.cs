@@ -1,3 +1,4 @@
+using Meteor.VehicleTool.Vehicle;
 using Sandbox;
 using System;
 
@@ -10,6 +11,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	private NavMeshAgent _agent;
 	private PlayerController _player;
+	private VehicleController _car;
 
 	private TimeUntil _wanderTimer;
 	private TimeUntil _damageTimer;
@@ -19,6 +21,7 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	protected override void OnStart()
 	{
+		_car = Game.ActiveScene.GetAllComponents<VehicleController>().First();
 		_skinnedModelRenderer = GetComponent<SkinnedModelRenderer>();
 		_ragdollPhysics = GetComponent<ModelPhysics>();
 		_rigidbody = GetComponent<Rigidbody>();
@@ -55,11 +58,11 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		_rigidbody.Enabled = true;
 		_modelCollider.Enabled = true;
 	}
-	private void GotHit()
+	private void HitHealth( HealthComponent health )
 	{
 		if ( _damageTimer )
 		{
-			_player.GetComponent<HealthComponent>()?.Damage( 10 );
+			health.Damage( 10 );
 			_damageTimer = 2;
 		}
 	}
@@ -67,16 +70,35 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	protected override void OnUpdate()
 	{
 		if ( !_agent.IsValid || !_rigidbody.IsValid ) return;
-		//_rigidbody.ApplyForce(_agent.WishVelocity);
-
-		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
+		//doesnt work yet, wait till enter and exit car event are done
+		if ( _player != null )
 		{
-			_agent.MoveTo( _player.WorldPosition );
+			if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 500 )
+			{
+				_agent.MoveTo( _player.WorldPosition );
+				if ( _agent.TargetPosition.HasValue )
+				{
+					TurnTowards( _agent.TargetPosition.Value );
+				}
+			}
+			else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 500 )
+			{
+				_agent.MoveTo( _car.WorldPosition );
+				if ( _agent.TargetPosition.HasValue )
+				{
+					TurnTowards( _agent.TargetPosition.Value );
+				}
+			}
+		}
+		else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 1500 )
+		{
+			_agent.MoveTo( _car.WorldPosition );
 			if ( _agent.TargetPosition.HasValue )
 			{
 				TurnTowards( _agent.TargetPosition.Value );
 			}
 		}
+
 		else
 		{
 			if ( _wanderTimer )
@@ -89,11 +111,17 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 				_wanderTimer = 5 + Random.Shared.Float( 0, 3 );
 			}
 		}
-		if ( _agent.Velocity.LengthSquared > 5f )
-			_skinnedModelRenderer.AnimationGraph = AnimationGraph.Load( "../Citizen/models/citizen/citizen.vmdl" );
+		//if ( _agent.Velocity.LengthSquared > 5f )
+		//_skinnedModelRenderer.AnimationGraph = AnimationGraph.Load( "../Citizen/models/citizen/citizen.vmdl" );
 		if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 100 )
 		{
-			GotHit();
+			HitHealth( _player.GetComponent<HealthComponent>() );
+		}
+		else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 100 )
+		{
+			var health = _car.GetComponent<HealthComponent>();
+			if ( health != null )
+				HitHealth( _car.GetComponent<HealthComponent>() );
 		}
 		if ( _ragdollTimer )
 		{
