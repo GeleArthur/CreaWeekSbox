@@ -276,7 +276,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 6,
+              "Id": 5,
               "Value": true,
               "DstId": 4,
               "DstName": "state"
@@ -358,7 +358,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 6,
+              "Id": 5,
               "Value": false,
               "DstId": 4,
               "DstName": "state"
@@ -412,6 +412,17 @@
             "component_type": "CarUpgradeComponent"
           }
         ],
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
+        "__type": "HealthComponent",
+        "__guid": "15e3e739-c28e-4dca-8c3a-46d5549fdae5",
+        "_maxHealth": 500,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -2028,6 +2039,7 @@
             "UpgradeInfo": {
               "Name": "Ramp",
               "Description": "Pushes zombies upward and reduces frontal damage taken.",
+              "Image": null,
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -2083,6 +2095,7 @@
             "UpgradeInfo": {
               "Name": "Boost",
               "Description": "Use a boost.",
+              "Image": null,
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -2115,6 +2128,7 @@
             "UpgradeInfo": {
               "Name": "Fuel",
               "Description": "You can hold more fuel.",
+              "Image": null,
               "buyCost": 0,
               "repairCost": 0,
               "isActive": false,
@@ -2171,6 +2185,7 @@
                 "UpgradeInfo": {
                   "Name": "Ramp",
                   "Description": "Pushes zombies upward and reduces frontal damage taken.",
+                  "Image": null,
                   "buyCost": 0,
                   "repairCost": 0,
                   "isActive": false,
@@ -2224,6 +2239,7 @@
                 "UpgradeInfo": {
                   "Name": "Ramp",
                   "Description": "Pushes zombies upward and reduces frontal damage taken.",
+                  "Image": null,
                   "buyCost": 0,
                   "repairCost": 0,
                   "isActive": false,
@@ -2278,6 +2294,7 @@
             "UpgradeInfo": {
               "Name": "Turret",
               "Description": "Attach a turret to the car.",
+              "Image": null,
               "buyCost": 1,
               "repairCost": 1,
               "isActive": false,
