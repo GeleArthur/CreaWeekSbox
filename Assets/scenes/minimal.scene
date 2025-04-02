@@ -681,7 +681,7 @@
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
           "Blur": 0.42,
-          "EndDistance": 2966.5007,
+          "EndDistance": 5000,
           "FalloffExponent": 14.2,
           "HeightExponent": 1,
           "HeightStart": 713.3335,
@@ -693,7 +693,7 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "Sky": "materials/skybox/light_test_default.vmat",
-          "StartDistance": 0,
+          "StartDistance": 1000,
           "Tint": "0.02977,0.03064,0.03721,1"
         }
       ]
