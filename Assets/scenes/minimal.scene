@@ -106,12 +106,7 @@
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "PlayerController"
           },
-          "VehicleController": {
-            "_type": "component",
-            "component_id": "584c2041-f285-490f-bd2f-54e9b32da114",
-            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
-            "component_type": "VehicleController"
-          }
+          "VehicleController": null
         }
       ]
     },
@@ -250,20 +245,6 @@
       "Flags": 0,
       "Name": "SpawnerManager",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "ZombieSpawnComponent",
-          "__guid": "7cc58dba-49cf-4aa7-904f-ade39e9bdc56",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "SpawnArea": [],
-          "Zombie": null
-        }
-      ],
       "Children": [
         {
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
@@ -351,16 +332,6 @@
       "Enabled": true,
       "Components": [
         {
-          "__type": "Sandbox.UpgradePanel",
-          "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
-        },
-        {
           "__type": "Sandbox.ScreenPanel",
           "__guid": "3b8bb2ed-475b-44e4-91cb-01bc8120ed16",
           "AutoScreenScale": true,
@@ -375,11 +346,33 @@
           "ScaleStrategy": "FollowDesktopScaling",
           "TargetCamera": {
             "_type": "component",
-            "component_id": "66e6f5d0-f201-442e-ae0d-65e52979fe54",
+            "component_id": "c5b56bf3-bd63-41d4-a6ee-a6c968916a71",
             "go": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
             "component_type": "CameraComponent"
           },
-          "ZIndex": 1
+          "ZIndex": 491
+        },
+        {
+          "__type": "Sandbox.UpgradePanel",
+          "__guid": "e9493e98-d9a4-490f-b839-618ae0b9565b",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PlayerEconomy": {
+            "_type": "component",
+            "component_id": "54826555-bebb-4e2f-aaf9-b615338807a2",
+            "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
+            "component_type": "Economy"
+          },
+          "Upgrades": {
+            "_type": "component",
+            "component_id": "7edb2bea-ba4f-420b-93a6-cf6817783c5e",
+            "go": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
+            "component_type": "CarUpgradeManager"
+          }
         }
       ]
     }
