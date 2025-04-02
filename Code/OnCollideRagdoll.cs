@@ -29,7 +29,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 	public void OnCollisionStart( Collision collision )
 	{
 		if(collision.Contact.Speed.Length < 250) return;
-		
+
+		Log.Info( $"YES" );
 		_ragdollPhysics.Enabled = true;
 		_rigidbody.Enabled = false;
 		_modelCollider.Enabled = false;
