@@ -1,7 +1,10 @@
 using Meteor.VehicleTool.Vehicle;
+using System;
 
 public sealed class SuitableVehicle : Component, Component.IPressable, Component.INetworkListener, IGameObjectNetworkEvents
 {
+	[Property] private Action OnVehicleEnter;
+	[Property] private Action OnVehicleExit;
 
 	[Sync] public VehicleController Vehicle { get; private set; }
 	[Sync] public PlayerController User { get; private set; }
@@ -39,6 +42,7 @@ public sealed class SuitableVehicle : Component, Component.IPressable, Component
 			Vehicle.UseCameraControls = true;
 			Vehicle.UseLookControls = true;
 			Input.Clear( "use" );
+			OnVehicleEnter?.Invoke();
 			return true;
 		}
 		return false;
@@ -76,5 +80,6 @@ public sealed class SuitableVehicle : Component, Component.IPressable, Component
 		User = null;
 
 		Network.DropOwnership();
+		OnVehicleExit?.Invoke();
 	}
 }
