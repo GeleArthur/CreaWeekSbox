@@ -505,7 +505,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 12,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -523,7 +523,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 13,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -613,7 +613,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 12,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -631,7 +631,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 13,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -725,7 +725,7 @@
       "__guid": "a425189b-03cc-4e7a-93d8-728522188f4a",
       "Flags": 0,
       "Name": "streetlights",
-      "Position": "5808.403,10939.05,-0",
+      "Position": "5817.404,10958.18,-0",
       "Rotation": "0,0,-1,0.0000001947072",
       "Enabled": true,
       "__Prefab": "prefabs/streetlights.prefab",
