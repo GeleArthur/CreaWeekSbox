@@ -4,6 +4,7 @@ using Sandbox;
 
 public sealed class HealthComponent : Component
 {
+	public int MaxHealth => _maxHealth;
 	[Property]
 	private int _maxHealth { get; set; }
 
