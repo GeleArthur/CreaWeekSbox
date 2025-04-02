@@ -190,7 +190,7 @@
           "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
           "Flags": 0,
           "Name": "Spawn1",
-          "Position": "-2364.894,1274.145,16.07147",
+          "Position": "-1.326904,-2044.364,16.07147",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -535,6 +535,7 @@
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
+          "__enabled": false,
           "Blur": 0,
           "EndDistance": 1024,
           "FalloffExponent": 2,
@@ -575,6 +576,16 @@
           "Tint": "0.1249,0.12296,0.13023,1"
         }
       ]
+    },
+    {
+      "__guid": "a425189b-03cc-4e7a-93d8-728522188f4a",
+      "Flags": 0,
+      "Name": "streetlights",
+      "Position": "5808.403,10939.05,-0.002778053",
+      "Rotation": "0,0,-1,0.0000001947072",
+      "Enabled": true,
+      "__Prefab": "prefabs/streetlights.prefab",
+      "__PrefabVariables": {}
     }
   ],
   "SceneProperties": {
