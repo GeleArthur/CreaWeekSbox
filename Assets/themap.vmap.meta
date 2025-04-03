@@ -51,7 +51,8 @@
       "Mounts": null,
       "IsStandaloneOnly": false,
       "Metadata": {
-        "SingleAssetSource": "themap.vmap"
+        "SingleAssetSource": "themap.vmap",
+        "ParentPackage": "creaweekdae.creaweek"
       }
     }
   }
