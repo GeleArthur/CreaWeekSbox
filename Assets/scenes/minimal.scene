@@ -27,16 +27,6 @@
       ]
     },
     {
-      "__guid": "1368c425-fcb0-468e-b057-1a0dcffa9c02",
-      "Flags": 0,
-      "Name": "MiniCam",
-      "Position": "-496.4984,-516.1906,571.6905",
-      "Rotation": "0,0.7071068,0,0.7071068",
-      "Enabled": true,
-      "__Prefab": "prefabs/minicam.prefab",
-      "__PrefabVariables": {}
-    },
-    {
       "__guid": "1c1cfa5d-6400-40a0-a6b0-2eed6e8342e3",
       "Flags": 0,
       "Name": "Map",
@@ -269,7 +259,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "47eadb7f-751f-4917-9e5e-c8792ed97673",
+            "component_id": "848559e2-b5db-4311-adfb-a2cd4165d59b",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -278,19 +268,19 @@
           "Goals": [
             {
               "_type": "component",
-              "component_id": "d49ebd84-8621-4330-bfa1-aa0703fbd162",
+              "component_id": "ebe31fed-2249-436f-a442-1bc641a04df0",
               "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "0e4556c5-c560-4215-aed8-6a264f7bd3fa",
+              "component_id": "19e73390-59ef-4ae9-9b03-7c456a7110c6",
               "go": "82145a93-416d-47cd-8d94-23924f579a0d",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "6f13b99a-c1db-44a0-8b13-c2eae0cf8882",
+              "component_id": "837514ae-1275-4185-a11a-873da007264b",
               "go": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
               "component_type": "Goal"
             }
@@ -308,7 +298,7 @@
           "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "9118.626,8073.614,-1721.463",
+          "Position": "5609.11,11695.74,-1721.463",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -320,7 +310,7 @@
           "__guid": "82145a93-416d-47cd-8d94-23924f579a0d",
           "Flags": 0,
           "Name": "Goal1 (1)",
-          "Position": "6012.286,758.7916,-1721.464",
+          "Position": "-1185.058,3611.447,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -332,7 +322,7 @@
           "__guid": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
           "Flags": 0,
           "Name": "Goal1 (2)",
-          "Position": "3899.162,6896.417,-1721.464",
+          "Position": "-10146.32,-6327.544,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -1764,16 +1754,6 @@
           "__PrefabVariables": {}
         },
         {
-          "__guid": "1f11135c-3b09-4e7e-a3fb-e12f4374ceb6",
-          "Flags": 0,
-          "Name": "r_k_street_lamp_01 (2)",
-          "Position": "7737.335,11743.59,21.8",
-          "Rotation": "0,0,-0.7071067,0.7071068",
-          "Enabled": true,
-          "__Prefab": "prefab/lamp.prefab",
-          "__PrefabVariables": {}
-        },
-        {
           "__guid": "2f9eefd7-b3d4-4222-9e84-367cab4b4492",
           "Flags": 0,
           "Name": "r_k_street_lamp_01 (2)",
@@ -2396,26 +2376,6 @@
           "__PrefabVariables": {}
         },
         {
-          "__guid": "b7bd10b5-8289-431d-97e6-1c4cc1578b8b",
-          "Flags": 0,
-          "Name": "r_k_street_lamp_01 (3)",
-          "Position": "7737.335,11237.57,21.8",
-          "Rotation": "0,0,-0.7071067,0.7071068",
-          "Enabled": true,
-          "__Prefab": "prefab/lamp.prefab",
-          "__PrefabVariables": {}
-        },
-        {
-          "__guid": "a58483f6-78fd-4607-8f7d-129c91c823c1",
-          "Flags": 0,
-          "Name": "r_k_street_lamp_01 (3)",
-          "Position": "8238.409,11237.57,21.8",
-          "Rotation": "0,0,-0.7071067,0.7071068",
-          "Enabled": true,
-          "__Prefab": "prefab/lamp.prefab",
-          "__PrefabVariables": {}
-        },
-        {
           "__guid": "dbefedf2-2e4f-4495-822c-054527251fa5",
           "Flags": 0,
           "Name": "r_k_street_lamp_01 (3)",
@@ -2608,7 +2568,7 @@
           "__guid": "ea3e2f0c-d966-4428-b48a-6563731510f5",
           "Flags": 0,
           "Name": "r_k_street_lamp_01 (3)",
-          "Position": "9120.296,7674.535,21.8",
+          "Position": "9299.261,7674.537,21.8",
           "Enabled": true,
           "__Prefab": "prefab/lamp.prefab",
           "__PrefabVariables": {}
@@ -3150,15 +3110,6 @@
           "__PrefabVariables": {}
         },
         {
-          "__guid": "a28217d8-551b-4bd4-8037-a7f09fe27a48",
-          "Flags": 0,
-          "Name": "r_k_street_lamp_01 (4)",
-          "Position": "9682.188,7160.362,21.8",
-          "Enabled": true,
-          "__Prefab": "prefab/lamp.prefab",
-          "__PrefabVariables": {}
-        },
-        {
           "__guid": "72510bfe-678c-40a8-8f6f-6451e03a1128",
           "Flags": 0,
           "Name": "r_k_street_lamp_01 (4)",
@@ -3456,15 +3407,6 @@
           "Name": "r_k_street_lamp_01 (4)",
           "Position": "10447.17,11160.91,21.8",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Enabled": true,
-          "__Prefab": "prefab/lamp.prefab",
-          "__PrefabVariables": {}
-        },
-        {
-          "__guid": "2df094dc-9830-43c2-a576-9564cac05b12",
-          "Flags": 0,
-          "Name": "r_k_street_lamp_01 (4)",
-          "Position": "9682.188,7674.535,21.8",
           "Enabled": true,
           "__Prefab": "prefab/lamp.prefab",
           "__PrefabVariables": {}
