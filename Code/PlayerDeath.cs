@@ -15,6 +15,7 @@ public sealed class PlayerDeath : Component
 		var playerHeal = GameObject.GetComponent<HealthComponent>();
 		if ( player == null ) return;
 		var vehicle = Scene.GetAllComponents<VehicleController>().First();
+		var fual = Scene.GetAllComponents<FuelTank>().First();
 		var upgrades = vehicle.GameObject.GetComponent<CarUpgradeManager>();
 
 		int randIdx = RandomNumberGenerator.GetInt32(0, upgrades.UpgradeList.Count);
@@ -22,13 +23,20 @@ public sealed class PlayerDeath : Component
 		{
 			if ( randIdx == index )
 			{
-				if ( upgrades.UpgradeList[index].UpgradeInfo.isActive )
+				if ( upgrades.UpgradeList[index].UpgradeInfo.isActive && !upgrades.UpgradeList[index].UpgradeInfo.isBroken )
 				{
 					upgrades.UpgradeList[index].UpgradeInfo.isBroken = true;
 					upgrades.UpgradeList[index].UpgradeInfo.visual.Enabled = false;
 				}
+				else
+				{
+					randIdx = RandomNumberGenerator.GetInt32( 0, upgrades.UpgradeList.Count );
+					index = 0;
+				}
 			}
 		}
+
+		fual.AddFual( fual.MaxFuel);
 
 		playerHeal.Damage( -playerHeal.MaxHealth );
 		var vhHealth = vehicle.GameObject.GetComponent<HealthComponent>();
