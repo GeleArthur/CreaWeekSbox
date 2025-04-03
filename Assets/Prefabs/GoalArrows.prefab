@@ -6,7 +6,7 @@
     "Enabled": true,
     "Components": [
       {
-        "__type": "Sandbox.GoalArrows",
+        "__type": "GoalArrow",
         "__guid": "24aeb327-8c8c-4d12-b167-5bc538a2c7eb",
         "GoalType": "MedicineGoal",
         "OnComponentDestroy": null,
@@ -23,7 +23,7 @@
         "__guid": "afed314a-c9f4-40e6-804e-81cd2d2c3291",
         "Flags": 0,
         "Name": "gun1p1",
-        "Position": "95.99998,0,4.609282",
+        "Position": "90,0,0",
         "Enabled": true,
         "Components": [
           {
@@ -52,7 +52,47 @@
         ]
       }
     ],
-    "__variables": [],
+    "__variables": [
+      {
+        "Id": "Goal Type",
+        "Title": "Goal Type",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "24aeb327-8c8c-4d12-b167-5bc538a2c7eb",
+            "Property": "GoalType"
+          }
+        ]
+      },
+      {
+        "Id": "Arrow Color",
+        "Title": "Arrow Color",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "f40e5a8e-2155-4e2a-b71f-e175d9bdf972",
+            "Property": "Tint"
+          }
+        ]
+      },
+      {
+        "Id": "Arrow Model",
+        "Title": "Arrow Model",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "f40e5a8e-2155-4e2a-b71f-e175d9bdf972",
+            "Property": "Model"
+          }
+        ]
+      }
+    ],
     "__properties": {
       "FixedUpdateFrequency": 50,
       "MaxFixedUpdates": 5,

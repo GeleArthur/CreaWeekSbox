@@ -49,7 +49,7 @@ public sealed class GoalManager : Component
 				EconomyComp.AddMedicine(FuelPerGoal);
 			}
 			
-			CurrentGoal.GetComponent<Goal>().EnableModel( false );
+			CurrentGoal.EnableModel( false );
 			SetNewGoal();
 		}
 	}
@@ -57,12 +57,14 @@ public sealed class GoalManager : Component
 	{
 		var prevGoal = CurrentGoal;
 		base.OnStart();
-		Random rnd = new Random();
+		var rnd = new Random();
 		while ( prevGoal == CurrentGoal )
 		{
+			if ( Goals.Length == 0 ) break;
+			
 			CurrentGoal = Goals[rnd.Int( 0, Goals.Length-1 )];
 		}
-		CurrentGoal.GetComponent<Goal>().EnableModel(true);
-
+		CurrentGoal.EnableModel(true);
+		
 	}
 }
