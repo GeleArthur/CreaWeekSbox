@@ -517,7 +517,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "b43a4930-2758-46f2-8fef-1c2fdd95217d",
+            "component_id": "a34c76fd-b4e8-4641-a6fc-f34dbce57f03",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -526,19 +526,19 @@
           "Goals": [
             {
               "_type": "component",
-              "component_id": "3e05cfe8-379e-4549-a541-3bb4f93ad302",
+              "component_id": "95ea6d26-0128-4c29-a00b-de68d8797ff4",
               "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "de388a00-974d-4e68-8771-42e13c5cd552",
+              "component_id": "05a4f17f-c7aa-4f28-b43a-831db8dbb8b1",
               "go": "82145a93-416d-47cd-8d94-23924f579a0d",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "63907f57-5bbd-4a30-aa66-fada4e017c4c",
+              "component_id": "1ce478d4-c1c9-43e3-8861-cb39385d5455",
               "go": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
               "component_type": "Goal"
             }
@@ -1270,7 +1270,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 8,
+                "Id": 12,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -1288,7 +1288,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 9,
+                "Id": 13,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -1378,7 +1378,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 8,
+                "Id": 12,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -1396,7 +1396,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 9,
+                "Id": 13,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
