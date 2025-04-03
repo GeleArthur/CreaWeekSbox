@@ -580,7 +580,7 @@
           "__guid": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
           "Flags": 0,
           "Name": "Goal1 (2)",
-          "Position": "3899.162,6698.255,-1721.464",
+          "Position": "3899.162,6896.417,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
