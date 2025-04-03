@@ -1,17 +1,18 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using Sandbox;
 
 public sealed class FuelTank : Component
 {
 	[Property] private float _defaultCapacity = 500;
-	[Property] private float _upgradedCapacity = 1250;
+	[Property] public float _upgradedCapacity = 1250;
 
 	[Property, ReadOnly] private float _maxCapacity;
 	public float CurrentFuel => _currentFuel;
-	public float MaxFuel => _maxCapacity;
+	public float MaxFuel { get { return _maxCapacity;} set { _maxCapacity = value; } }
 	[Property, ReadOnly] private float _currentFuel;
 
-	[Range(0f, 0.9f, 0.01f)]private float _efficiency = 0f;
+	[Sandbox.Range(0f, 0.9f, 0.01f)]private float _efficiency = 0f;
 	private bool _isDriving;
 
 	[Property] private float _fuelUsagePerSecond = 1f;
