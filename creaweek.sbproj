@@ -1,7 +1,7 @@
 {
   "Title": "CreaWeek",
   "Type": "game",
-  "Org": "local",
+  "Org": "creaweekdae",
   "Ident": "creaweek",
   "Schema": 1,
   "IncludeSourceFiles": false,
@@ -9,7 +9,7 @@
   "PackageReferences": [],
   "EditorReferences": null,
   "Mounts": null,
-  "IsStandaloneOnly": true,
+  "IsStandaloneOnly": false,
   "Metadata": {
     "MaxPlayers": 64,
     "MinPlayers": 1,
