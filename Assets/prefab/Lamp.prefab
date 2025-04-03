@@ -4,36 +4,6 @@
     "Flags": 0,
     "Name": "lamp",
     "Enabled": true,
-    "Components": [
-      {
-        "__type": "Sandbox.Rigidbody",
-        "__guid": "8bd07cb2-2adc-43f2-ad32-6af6bad93d15",
-        "__enabled": false,
-        "AngularDamping": 0,
-        "Gravity": false,
-        "LinearDamping": 0,
-        "Locking": {
-          "X": false,
-          "Y": false,
-          "Z": false,
-          "Pitch": false,
-          "Yaw": false,
-          "Roll": false
-        },
-        "MassCenterOverride": "0,0,0",
-        "MassOverride": 0,
-        "MotionEnabled": false,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
-        "StartAsleep": true
-      }
-    ],
     "Children": [
       {
         "__guid": "7eaef9da-16e0-48ea-9c18-4b610cefd04d",
@@ -154,6 +124,12 @@
               "component_id": "24575bf8-4b46-4155-813b-5876305e1617",
               "go": "7eaef9da-16e0-48ea-9c18-4b610cefd04d",
               "component_type": "BoxCollider"
+            },
+            "Light": {
+              "_type": "component",
+              "component_id": "68ef4bc4-1e67-453a-94ac-c3da21f9c1a7",
+              "go": "e9506fe7-8d1e-4788-9422-7080020086aa",
+              "component_type": "PointLight"
             },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -628,7 +604,8 @@
   "DontBreakAsTemplate": false,
   "ResourceVersion": 1,
   "__references": [
-    "randkassets.r_k_street_light01#20889"
+    "randkassets.r_k_street_light01#20889",
+    "vidya.shape-circle#45503"
   ],
   "__version": 1
 }
