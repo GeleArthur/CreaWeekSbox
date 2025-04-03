@@ -34,7 +34,7 @@ public sealed class ZombieManager : Component
 		
 		while ( _activeZombies.Count < ZombieAmount )
 		{
-			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 400;
+			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 100;
 			Vector3? pointOnNav = Scene.NavMesh.GetClosestPoint( spawnLocation );
 			
 			if ( pointOnNav.HasValue )
