@@ -176,31 +176,15 @@
           "OnComponentUpdate": null,
           "SpawnAreas": [],
           "Zombie": "prefabs/zombie.prefab",
-          "ZombieAmount": 20
+          "ZombieAmount": 100
         }
       ],
       "Children": [
         {
-          "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
-          "Flags": 0,
-          "Name": "Spawn1",
-          "Position": "-2149.814,872.1088,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
           "__guid": "a9d4a76b-8b6a-4b69-b9a0-0689de7d4720",
           "Flags": 0,
           "Name": "Spawn1 (10)",
-          "Position": "-1356.085,2131.396,45.19181",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "4ba125d0-b3e5-4c7e-83bd-eccbf48e4f04",
-          "Flags": 0,
-          "Name": "Spawn1 (11)",
-          "Position": "-987.2759,2725.449,45.19196",
+          "Position": "-1279.528,2835.711,45.19181",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -208,7 +192,15 @@
           "__guid": "c43e5f7d-fdeb-4c10-8a0f-0b485544389f",
           "Flags": 0,
           "Name": "Spawn1 (12)",
-          "Position": "-990.4451,4773.865,45.19196",
+          "Position": "-1026.366,4742.437,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "e5e6e931-7d73-4351-ae2d-9b2f95ebeb1a",
+          "Flags": 0,
+          "Name": "Spawn1 (1)",
+          "Position": "-3127.631,4814.275,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -216,7 +208,7 @@
           "__guid": "ba36a18e-019e-4582-93a8-42b31924a39a",
           "Flags": 0,
           "Name": "Spawn1 (13)",
-          "Position": "-2278.118,4990.941,45.19196",
+          "Position": "-2257.031,5792.278,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -224,15 +216,7 @@
           "__guid": "d7ec8e7c-1ed3-4d2a-953e-83a9ef91a45c",
           "Flags": 0,
           "Name": "Spawn1 (14)",
-          "Position": "-2147.522,6074.699,45.19196",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "84d3f2f9-616f-49fd-82a2-7886441f4e44",
-          "Flags": 0,
-          "Name": "Spawn1 (15)",
-          "Position": "-2251.213,7010.366,45.19196",
+          "Position": "-2212.285,7370.042,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -261,18 +245,402 @@
           "Enabled": true
         },
         {
-          "__guid": "6a6230c1-67dc-4dc0-914f-5cd745035c34",
+          "__guid": "b6e9c9b2-0d05-4c64-9b65-51c051086098",
           "Flags": 0,
-          "Name": "Spawn1 (19)",
-          "Position": "-2971.952,10029.04,45.19196",
+          "Name": "Spawn1 (3)",
+          "Position": "35.70972,10157.17,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
         {
-          "__guid": "759c5f1d-cde9-453c-a4dd-149e73327957",
+          "__guid": "dfbbb56f-46b5-44f4-80dd-9904e3468cf6",
           "Flags": 0,
-          "Name": "Spawn1 (1)",
-          "Position": "-2380.697,4761.786,45.19189",
+          "Name": "Spawn1 (4)",
+          "Position": "2088.331,10132.26,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "88499c4e-140a-4b7a-a9fe-14fe8f29b8d7",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "3657.687,10142.22,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "6300fda4-2cd8-489c-8b6e-442ccd7f6b70",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "5616.286,10151.64,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "2347a4c1-c412-4d86-afe9-f83177d4c150",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "7188.811,10161.06,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "bbad6630-66ff-415d-a769-b03c27c19ca0",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "8883.747,10161.06,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "b2e38007-e35b-4efb-a0cd-4557e00108b5",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "10616.35,10151.64,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "d9b9dfa2-949f-4f5b-9bef-4130e9cce7c0",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "10578.69,9016.975,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "d654bf5d-77a5-4843-a890-37d68c9345c6",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "10559.85,7985.888,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "bd3b1d53-4385-4b88-9906-7eec75c83a7e",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "10526.9,6818.265,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c01fc440-59db-4d53-a1ec-d214d0151a08",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "7838.536,7133.711,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "496f2f3f-d4b2-450d-bc32-176f290059fc",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "7730.248,4501.851,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "57802d04-2f4a-4f2f-b7fd-4eeaa3eb1e89",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "9105.367,3204.202,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "a7409dbd-05a6-440b-9be3-d2906f210ca4",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "10557.96,3159.01,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "f36d7986-f96a-4c0e-aecf-287e08fad251",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "10002.75,1654.772,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "7a80f656-3945-40a7-827f-e4d049203ec0",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "7743.163,1402.989,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "ddd2cd8a-628e-475c-ba48-fb1aa6370224",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "6658.561,1196.398,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "06ede681-657b-47db-b239-59152dee5eaf",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "5125.312,3597.026,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "a5a0ee37-3612-42c5-bd7a-5a309face5ad",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "2163.946,145.0269,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "068c1a00-dea7-480a-ad9b-faa9924118a5",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "2149.97,-2824.739,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "3a669cfb-db30-493f-8ffe-b24d438e21f1",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "5063.834,-2887.628,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "63c374ca-8bca-4be2-b1d5-c5f70066ced8",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "6349.562,-351.0981,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c43f9b1a-d7a4-4186-943b-5a24be3ee5ad",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-204.8894,-4201.311,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4f92d1ba-32aa-4689-8f83-9939480fdcbd",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-358.6208,-6633.024,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "18452e44-602f-41b8-962c-61a37e585eb2",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "2289.712,-6626.037,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c8e41064-b6b2-40dc-a41e-72a0fe7a0a91",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "4672.511,-6507.246,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "59f1eba6-c6f9-4b5e-b34e-114f507e6dce",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-2343.122,-5787.515,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "3939ff2f-b51d-480f-a77e-cfa705497d99",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-3244.536,-4180.349,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "66f5eb49-6617-4f4a-807f-49c97b7349a0",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-5068.319,-5934.257,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "43b363c0-2809-4f35-9cab-9a5a188c04b9",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-8240.73,-5822.454,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4d7c855a-b008-45f7-951a-d1cf398edbf4",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-10736.84,-5888.489,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "65633694-ce3c-4ef1-9e1d-9d91378f2399",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-11284.93,-8444.036,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "07718de1-cc66-4294-9535-5fb12ca4c9d5",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9224.649,-8503.468,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "0f9e7fed-9985-4a13-8e27-011130f0d527",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9085.979,-6654.493,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "ef9ff1d7-5030-4ea2-ae7f-d8a62150ea33",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-5982.35,-4019.704,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "db635a32-17e1-4a8f-9064-2eb1a01d949e",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-6074.798,-1087.759,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "995670ee-d6f5-410e-900c-3f6b96adea5b",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-6094.614,265.9541,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "a7600841-697a-4764-9b7a-eb34489e24d3",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-6080.554,2032.898,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "42c81d3e-ad7c-4bf5-8020-ba14d657a179",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-7660.022,2107.887,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "9b0b3373-3850-4e8d-b74b-84c71690f1e7",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9628.5,2234.432,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "9145211b-b0cb-4061-88bc-daea47c2d207",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-10884.58,2271.927,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "79588462-5778-4619-908f-941018783162",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-10871.29,3799.986,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "1ae935c2-f23e-4055-bfb6-7a2e8ed50617",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9320.793,4706.342,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "29fe9df7-c56e-4ae6-9340-f78c148849bc",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9007.279,4501.129,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c002c1a7-e3c8-4beb-874a-0b87007a8b08",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-8955.975,4649.339,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "99d754b3-e3ce-4f95-807d-4b20cc31f3bc",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-6476.331,4552.433,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c1408866-bb93-4813-9b8e-00addeabc3e4",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-5262.159,6496.254,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "0faf7ee4-cf26-4e35-ae25-efa8bc805f20",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9098.054,7287.083,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "2a2ba944-b4e8-4d8b-8de1-9809ed741da5",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-10820.14,9519.146,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "e8e96fa9-b63f-49c0-a45d-8594d8a9e4a8",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-8063.326,10132.59,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -321,22 +689,6 @@
           "Flags": 0,
           "Name": "Spawn1 (9)",
           "Position": "-10286.24,2247.851,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "1724bb00-b747-4aca-93fd-2bc90ae388d5",
-          "Flags": 0,
-          "Name": "Spawn1 (3)",
-          "Position": "-7188.203,10173.9,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "4dfc1be0-460e-46fc-a5da-04c528c5cf56",
-          "Flags": 0,
-          "Name": "Spawn1 (4)",
-          "Position": "-2199.542,10156.08,45.19189",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -497,7 +849,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 14,
+                "Id": 16,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -515,7 +867,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 15,
+                "Id": 17,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -605,7 +957,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 14,
+                "Id": 16,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -623,7 +975,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 15,
+                "Id": 17,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -672,8 +1024,9 @@
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
+          "__enabled": false,
           "Blur": 0.42,
-          "EndDistance": 5000,
+          "EndDistance": 9183.512,
           "FalloffExponent": 14.2,
           "HeightExponent": 1,
           "HeightStart": 713.3335,
