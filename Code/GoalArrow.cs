@@ -70,7 +70,7 @@ public sealed class GoalArrow : Component
 		}
 		else
 		{
-			active = mygoal.GameObject.Enabled;
+			active = mygoal.Model.Enabled;
 		}
 
 	}

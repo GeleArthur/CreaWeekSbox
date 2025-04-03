@@ -526,20 +526,20 @@
           "Goals": [
             {
               "_type": "component",
-              "component_id": "329be2d3-af84-4e09-bdab-fe0ea27feae1",
-              "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
-              "component_type": "Goal"
-            },
-            {
-              "_type": "component",
               "component_id": "8befc133-95f3-41be-8db5-5e63f6b40ad7",
               "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "34672579-b899-4cca-a3d2-7d1298e6721e",
-              "go": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
+              "component_id": "07ef912e-4ad9-45f0-88ce-bb1c370f90d2",
+              "go": "82145a93-416d-47cd-8d94-23924f579a0d",
+              "component_type": "Goal"
+            },
+            {
+              "_type": "component",
+              "component_id": "763537ae-a3ec-4fd1-b4d4-c50f6797012e",
+              "go": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
               "component_type": "Goal"
             }
           ],
@@ -553,22 +553,10 @@
       ],
       "Children": [
         {
-          "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
-          "Flags": 0,
-          "Name": "Goal1",
-          "Position": "6105.143,-2512.357,-1721.462",
-          "Enabled": true,
-          "__Prefab": "prefabs/goal.prefab",
-          "__PrefabVariables": {
-            "Selling Goal": false,
-            "Fuel Goal": false
-          }
-        },
-        {
           "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "6301.859,13780.89,-1721.464",
+          "Position": "9118.626,8073.614,-1721.463",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -577,15 +565,27 @@
           }
         },
         {
-          "__guid": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
+          "__guid": "82145a93-416d-47cd-8d94-23924f579a0d",
           "Flags": 0,
-          "Name": "Goal1",
-          "Position": "-1351.549,3147.116,-1721.464",
+          "Name": "Goal1 (1)",
+          "Position": "6012.286,758.7916,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
             "Selling Goal": false,
             "Fuel Goal": true
+          }
+        },
+        {
+          "__guid": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
+          "Flags": 0,
+          "Name": "Goal1 (2)",
+          "Position": "3899.162,6698.255,-1721.464",
+          "Enabled": true,
+          "__Prefab": "prefabs/goal.prefab",
+          "__PrefabVariables": {
+            "Selling Goal": false,
+            "Fuel Goal": false
           }
         }
       ]
