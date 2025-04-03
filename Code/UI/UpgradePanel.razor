@@ -46,11 +46,14 @@
 	/// </summary>
 	protected override int BuildHash() => System.HashCode.Combine(CanOpen, IsOpen, Upgrades?.UpgradeList);
 
-	protected override void OnStart()
+	protected override void OnAwake()
 	{
 		Upgrades = Scene.GetAllComponents<CarUpgradeManager>().First();
 		PlayerEconomy = Scene.GetAllComponents<Economy>().First();
+	}
 
+	protected override void OnStart()
+	{
 		foreach (var upgrade in Upgrades.UpgradeList)
 		{
 			upgrade.UpgradeInfo.visual.Enabled = false;

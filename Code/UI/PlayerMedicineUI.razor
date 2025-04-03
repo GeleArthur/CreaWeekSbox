@@ -27,7 +27,7 @@
 	[Property] public Texture MoneyTexture;
 	[Property] public Texture MedicineTexture;
 
-	protected override void OnStart()
+	protected override void OnAwake()
 	{
 		Economy = Scene.GetAllComponents<Economy>().First();
 		Fuel = Scene.GetAllComponents<FuelTank>().First();

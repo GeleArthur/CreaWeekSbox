@@ -23,6 +23,8 @@ public sealed class GoalManager : Component
 	
 	protected override void OnStart()
 	{
+		FuelTankComp = Game.ActiveScene.GetAllComponents<FuelTank>().First();
+		EconomyComp = Game.ActiveScene.GetAllComponents<Economy>().First();
 		SetNewGoal();
 
 		foreach( var goal in Goals)

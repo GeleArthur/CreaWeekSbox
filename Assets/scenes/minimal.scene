@@ -599,7 +599,9 @@
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
       "__PrefabVariables": {
-        "Player": null
+        "Player": null,
+        "On Repair": null,
+        "On Buy": null
       }
     },
     {

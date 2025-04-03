@@ -8,9 +8,9 @@
 		@* Actual minimap RenderTarget *@
 		<Image Texture="@_renderTarget"></Image>
 		
-		@foreach (var arrow in _arrows)
-		{
-		}
+		@* @foreach (var arrow in _arrows) *@
+		@* { *@
+		@* } *@
 	</div>
 </root>
 
@@ -50,7 +50,8 @@
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine(_renderTarget, _arrows.Count
-		//, _arrows.Select(a => System.HashCode.Combine(a.LookAt.y, a.Icon)).Aggregate(0, System.HashCode.Combine)
-		);
+	protected override int BuildHash()
+	{
+		return System.HashCode.Combine( _renderTarget );
+	}
 }
