@@ -556,7 +556,7 @@
           "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "-2085.99,1931.971,-1721.465",
+          "Position": "6105.143,-2512.357,-1721.462",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -568,7 +568,7 @@
           "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "-789.6408,1983.882,-1721.465",
+          "Position": "6301.859,13780.89,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -580,7 +580,7 @@
           "__guid": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "-501.6408,3167.881,-1721.465",
+          "Position": "-1351.549,3147.116,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -3473,7 +3473,7 @@
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
         "Goal Type": "FuelGoal",
-        "Arrow Color": "0.33953,0.13581,0,1",
+        "Arrow Color": "1,0,0,1",
         "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
       }
     },
@@ -3486,7 +3486,7 @@
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
         "Goal Type": "MedicineGoal",
-        "Arrow Color": "1,1,1,1",
+        "Arrow Color": "0,1,0.4,1",
         "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
       }
     },
@@ -3499,7 +3499,7 @@
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
         "Goal Type": "MedicineGoal",
-        "Arrow Color": "1,1,1,1",
+        "Arrow Color": "0,1,0.65,1",
         "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
       }
     }

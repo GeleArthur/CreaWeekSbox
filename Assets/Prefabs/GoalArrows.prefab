@@ -14,8 +14,7 @@
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "PlayerToCircle": null
+        "OnComponentUpdate": null
       }
     ],
     "Children": [
@@ -32,7 +31,7 @@
             "BodyGroups": 18446744073709551615,
             "CreateAttachments": false,
             "MaterialGroup": null,
-            "MaterialOverride": null,
+            "MaterialOverride": "materials/effects/unlit_nofog01.vmat",
             "Model": "models/upgrades/models/gun1p1.vmdl",
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,

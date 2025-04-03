@@ -13,8 +13,8 @@ public sealed class ZombieManager : Component
     private PrefabFile Zombie { get; set; }
 
 	public PlayerController Player;
-
 	private readonly List<OnCollideRagDoll> _activeZombies = [];
+	private TimeUntil _spawnInBetween;
 	
 	protected override void OnAwake()
 	{
@@ -31,9 +31,9 @@ public sealed class ZombieManager : Component
 
 	protected override void OnUpdate()
 	{
-		
-		while ( _activeZombies.Count < ZombieAmount )
+		while ( _activeZombies.Count < ZombieAmount && _spawnInBetween )
 		{
+			_spawnInBetween = 0.2f;
 			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 100;
 			Vector3? pointOnNav = Scene.NavMesh.GetClosestPoint( spawnLocation );
 			

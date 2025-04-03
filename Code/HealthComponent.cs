@@ -49,7 +49,7 @@ public sealed class HealthComponent : Component
 
 	protected override void OnUpdate()
 	{
-		DebugOverlay.Text( WorldPosition + Vector3.Up * 90f, $"[{_health}/{_maxHealth}]" );
+		// DebugOverlay.Text( WorldPosition + Vector3.Up * 90f, $"[{_health}/{_maxHealth}]" );
 	}
 
 	private void PlayerDies()

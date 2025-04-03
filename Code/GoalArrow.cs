@@ -1,3 +1,4 @@
+using Meteor.VehicleTool.Vehicle;
 using Sandbox;
 
 public enum GoalTypes
@@ -12,24 +13,16 @@ public sealed class GoalArrow : Component
 	[Property]
 	public GoalTypes GoalType { get; set; }
 
-	[Property]
-	public GameObject PlayerToCircle { get; set; }
+	private GameObject _carLocation;
 
 	private Vector3 GoalPos;
 
 	protected override void OnStart()
 	{
-		PlayerToCircle = Scene.GetAllComponents<PlayerController>().First().GameObject;
-		if ( PlayerToCircle == null )
-		{
-			Log.Info( "Player To Circle null" );
-		}
+		_carLocation = Scene.GetAllComponents<VehicleController>().First().GameObject;
 
-		var goals =
-			Scene.GetAllComponents<GoalManager>().First().Goals;
-
-		Log.Info( "Amount of goals: " + goals.Length );
-
+		var goals = Scene.GetAllComponents<GoalManager>().First().Goals;
+		
 		foreach ( var goal in goals )
 		{
 			if ( goal.SellingGoal && GoalType == GoalTypes.SellingGoal )
@@ -55,13 +48,13 @@ public sealed class GoalArrow : Component
 		}
 	}
 
-	protected override void OnUpdate()
+	protected override void OnPreRender()
 	{
-		var playerPos = PlayerToCircle.WorldPosition;
-		var worldPos = new Vector3( playerPos.x, playerPos.y, playerPos.z + 1800 );
-		Vector3 VectorToGoal = new Vector3( GoalPos - WorldPosition );
+		Vector3 playerPos = _carLocation.WorldPosition;
+		Vector3 worldPos = new Vector3( playerPos.x, playerPos.y, playerPos.z + 1700 );
+		Vector3 vectorToGoal = new Vector3( GoalPos - WorldPosition );
 
-		var rotation = Rotation.LookAt( VectorToGoal );
-		this.WorldTransform = new Transform( worldPos, new Angles( 0, rotation.Yaw(), 0 ) );
+		Rotation rotation = Rotation.LookAt( vectorToGoal );
+		WorldTransform = new Transform( worldPos, new Angles( 0, rotation.Yaw(), 0 ) );
 	}
 }
