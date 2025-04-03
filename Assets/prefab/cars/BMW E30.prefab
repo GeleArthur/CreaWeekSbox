@@ -277,7 +277,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 8,
+              "Id": 9,
               "Value": true,
               "DstId": 7,
               "DstName": "state"
@@ -531,7 +531,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 19,
+              "Id": 25,
               "Value": true,
               "DstId": 10,
               "DstName": "enabled"
@@ -567,7 +567,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 30,
+              "Id": 26,
               "Value": 1000000,
               "DstId": 22,
               "DstName": "damage"
@@ -2586,14 +2586,276 @@
             "__type": "CarUpgradeComponent",
             "__guid": "d7819a00-0b0d-4189-95ce-d1611ca32c40",
             "OnBreak": null,
-            "OnBuy": null,
+            "OnBuy": {
+              "__version": 9,
+              "__guid": "d1f39f5f-7950-495a-ba7b-21387098575a",
+              "__changeId": 23,
+              "UserData": {
+                "Title": "On Buy",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "MaxFuel",
+                    "_type": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "648,0"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "_upgradedCapacity",
+                    "_type": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "480,168"
+                  }
+                },
+                {
+                  "Id": 5,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "AddFual",
+                    "_type": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "888,120"
+                  }
+                },
+                {
+                  "Id": 6,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "GetAll",
+                    "_type": "Sandbox.IComponentLister",
+                    "T": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "-0,108"
+                  }
+                },
+                {
+                  "Id": 7,
+                  "Type": "foreach",
+                  "UserData": {
+                    "Position": "288,60"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 7,
+                  "SrcName": "body",
+                  "DstId": 1,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 7,
+                  "SrcName": "body.value",
+                  "DstId": 1,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 1,
+                  "DstName": "_value"
+                },
+                {
+                  "SrcId": 7,
+                  "SrcName": "body.value",
+                  "DstId": 2,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 1,
+                  "SrcName": "_signal",
+                  "DstId": 5,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 7,
+                  "SrcName": "body.value",
+                  "DstId": 5,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 5,
+                  "DstName": "amount"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 6,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 7,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 6,
+                  "SrcName": "_result",
+                  "DstId": 7,
+                  "DstName": "enumerable"
+                }
+              ]
+            },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "OnRepair": null,
+            "OnRepair": {
+              "__version": 9,
+              "__guid": "05d57233-ce30-415d-a4dc-019b8bd55c41",
+              "__changeId": 45,
+              "UserData": {
+                "Title": "On Repair",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 11,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "MaxFuel",
+                    "_type": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "648,0"
+                  }
+                },
+                {
+                  "Id": 12,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "_upgradedCapacity",
+                    "_type": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "480,168"
+                  }
+                },
+                {
+                  "Id": 13,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "AddFual",
+                    "_type": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "888,120"
+                  }
+                },
+                {
+                  "Id": 14,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "GetAll",
+                    "_type": "Sandbox.IComponentLister",
+                    "T": "FuelTank"
+                  },
+                  "UserData": {
+                    "Position": "-0,108"
+                  }
+                },
+                {
+                  "Id": 15,
+                  "Type": "foreach",
+                  "UserData": {
+                    "Position": "288,60"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 15,
+                  "SrcName": "body",
+                  "DstId": 11,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 15,
+                  "SrcName": "body.value",
+                  "DstId": 11,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 12,
+                  "SrcName": "_result",
+                  "DstId": 11,
+                  "DstName": "_value"
+                },
+                {
+                  "SrcId": 15,
+                  "SrcName": "body.value",
+                  "DstId": 12,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 11,
+                  "SrcName": "_signal",
+                  "DstId": 13,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 15,
+                  "SrcName": "body.value",
+                  "DstId": 13,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 12,
+                  "SrcName": "_result",
+                  "DstId": 13,
+                  "DstName": "amount"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 14,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 15,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 14,
+                  "SrcName": "_result",
+                  "DstId": 15,
+                  "DstName": "enumerable"
+                }
+              ]
+            },
             "UpgradeInfo": {
               "Name": "Fuel",
               "Description": "You can hold more fuel.",
@@ -2665,29 +2927,6 @@
                 },
                 "RenderType": "On",
                 "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "CarUpgradeComponent",
-                "__guid": "4f64dea1-4c5f-4f0c-bc94-ec99a023f815",
-                "OnBreak": null,
-                "OnBuy": null,
-                "OnComponentDestroy": null,
-                "OnComponentDisabled": null,
-                "OnComponentEnabled": null,
-                "OnComponentFixedUpdate": null,
-                "OnComponentStart": null,
-                "OnComponentUpdate": null,
-                "OnRepair": null,
-                "UpgradeInfo": {
-                  "Name": "Ramp",
-                  "Description": "Pushes zombies upward and reduces frontal damage taken.",
-                  "Image": null,
-                  "buyCost": 0,
-                  "repairCost": 0,
-                  "isActive": false,
-                  "isBroken": false,
-                  "visual": null
-                }
               }
             ]
           },
@@ -2719,29 +2958,6 @@
                 },
                 "RenderType": "On",
                 "Tint": "1,1,1,1"
-              },
-              {
-                "__type": "CarUpgradeComponent",
-                "__guid": "9d18ff41-1682-43a0-8ea6-5b8cd2bc0bf9",
-                "OnBreak": null,
-                "OnBuy": null,
-                "OnComponentDestroy": null,
-                "OnComponentDisabled": null,
-                "OnComponentEnabled": null,
-                "OnComponentFixedUpdate": null,
-                "OnComponentStart": null,
-                "OnComponentUpdate": null,
-                "OnRepair": null,
-                "UpgradeInfo": {
-                  "Name": "Ramp",
-                  "Description": "Pushes zombies upward and reduces frontal damage taken.",
-                  "Image": null,
-                  "buyCost": 0,
-                  "repairCost": 0,
-                  "isActive": false,
-                  "isBroken": false,
-                  "visual": null
-                }
               }
             ]
           }
@@ -2937,6 +3153,32 @@
           {
             "Id": "f8656763-8ba5-4b20-a502-c8124a183f6d",
             "Property": "Player"
+          }
+        ]
+      },
+      {
+        "Id": "On Repair",
+        "Title": "On Repair",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "d7819a00-0b0d-4189-95ce-d1611ca32c40",
+            "Property": "OnRepair"
+          }
+        ]
+      },
+      {
+        "Id": "On Buy",
+        "Title": "On Buy",
+        "Description": null,
+        "Group": null,
+        "Order": 0,
+        "Targets": [
+          {
+            "Id": "d7819a00-0b0d-4189-95ce-d1611ca32c40",
+            "Property": "OnBuy"
           }
         ]
       }

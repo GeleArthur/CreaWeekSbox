@@ -14,13 +14,13 @@
 				@if (info.isBroken)
 				{
 					<button class="button" @onclick=@(()=> RepairItem(upgrade))>
-						Repair
+						Repair for @info.repairCost
 					</button>
 				}
 				else if (!info.isActive)
 				{
 					<button class="button" @onclick=@(() => BuyItem(upgrade))>
-						Buy
+						Buy for @info.buyCost
 					</button>
 				}
 				else
@@ -46,11 +46,14 @@
 	/// </summary>
 	protected override int BuildHash() => System.HashCode.Combine(CanOpen, IsOpen, Upgrades?.UpgradeList);
 
-	protected override void OnStart()
+	protected override void OnAwake()
 	{
 		Upgrades = Scene.GetAllComponents<CarUpgradeManager>().First();
 		PlayerEconomy = Scene.GetAllComponents<Economy>().First();
+	}
 
+	protected override void OnStart()
+	{
 		foreach (var upgrade in Upgrades.UpgradeList)
 		{
 			upgrade.UpgradeInfo.visual.Enabled = false;
@@ -72,7 +75,15 @@
 		if ( PlayerEconomy.TryBuy( upgrade.UpgradeInfo.repairCost ) )
 		{
 			upgrade.UpgradeInfo.isBroken = false;
+			upgrade.UpgradeInfo.visual.Enabled = true;
 			upgrade.OnRepair.Invoke();
+
+			if ( upgrade.UpgradeInfo.Name == "Fuel" )
+			{
+				var fual = Scene.GetAllComponents<FuelTank>().First();
+				fual.AddFual(fual.MaxFuel);
+			}
+
 		}
 	}
 
@@ -85,6 +96,13 @@
 			upgrade.UpgradeInfo.isBroken = false;
 			upgrade.UpgradeInfo.isActive = true;
 			upgrade.OnBuy.Invoke();
+
+			if ( upgrade.UpgradeInfo.Name == "Fuel" )
+			{
+				var fual = Scene.GetAllComponents<FuelTank>().First();
+				fual.MaxFuel = fual._upgradedCapacity;
+				fual.AddFual(fual.MaxFuel);
+			}
 		}
 
 	}

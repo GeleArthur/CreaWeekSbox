@@ -5,8 +5,8 @@
       "__guid": "98ccac69-a8cd-4e9a-a370-9de360af1b30",
       "Flags": 0,
       "Name": "Camera",
-      "Position": "-767.7366,4581.469,746.8995",
-      "Rotation": "0.1133657,0.08451316,-0.7936762,0.5916787",
+      "Position": "-3085.507,1078.142,973.9826",
+      "Rotation": "0.06899296,-0.123427,-0.4830213,-0.8641157",
       "Tags": "maincamera,skybox",
       "Enabled": true,
       "Components": [
@@ -182,7 +182,7 @@
           "__guid": "b3112d7b-e112-4227-bcfa-ef46462d7ef4",
           "__version": 1,
           "EnableCollision": true,
-          "MapName": "workshop.rockford_v1",
+          "MapName": "themap.vmap",
           "NoOrigin": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -201,8 +201,8 @@
       "__guid": "d776fb58-92fa-4bb0-a5da-4151631d61e6",
       "Flags": 0,
       "Name": "freddy",
-      "Position": "-867.6808,4013.854,1203.165",
-      "Rotation": "-0.07493074,0.05098664,0.8233508,0.5602493",
+      "Position": "-2530.557,1527.785,1307.654",
+      "Rotation": "-0.02840786,0.08606537,0.31215,0.9456999",
       "Enabled": true,
       "Components": [
         {
@@ -225,6 +225,18 @@
           "Tint": "1,1,1,1"
         }
       ]
+    },
+    {
+      "__guid": "2fa2f459-1905-4869-9430-dcabc5dccf97",
+      "Flags": 0,
+      "Name": "bmw e30",
+      "Position": "-2209.56,2786.017,40.34521",
+      "Rotation": "0,0,0.1305262,0.9914449",
+      "Enabled": true,
+      "__Prefab": "prefab/cars/bmw e30.prefab",
+      "__PrefabVariables": {
+        "Player": null
+      }
     }
   ],
   "SceneProperties": {

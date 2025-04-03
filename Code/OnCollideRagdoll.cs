@@ -79,7 +79,6 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 		{
 			GameObject.Destroy();
 			Game.ActiveScene.GetAllComponents<ZombieManager>().First().RemoveZombie( this );
-			
 			return;
 		}
 		
@@ -91,14 +90,14 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 			if ( _player.GameObject.Active )
 			{
-				if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 5000 )
+				// if ( Vector3.DistanceBetween( WorldPosition, _player.WorldPosition ) < 5000 )
 				{
 					success = true;
 					_wanderTimer = 0;
 					_agent.MoveTo( _player.WorldPosition );
 				}
 			}
-			else if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 5000 )
+			else //if ( Vector3.DistanceBetween( WorldPosition, _car.WorldPosition ) < 5000 )
 			{
 				success = true;
 				_wanderTimer = 0;

@@ -67,6 +67,441 @@
           "Name": "NavMeshCollider",
           "Position": "-455.6361,-580.5172,-11149.36",
           "Enabled": true
+        },
+        {
+          "__guid": "7abae5e5-c0d6-4825-adc2-15c9d74f7d2c",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-6457.266,-2290.028,23.54801",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "8e0eb214-da3c-427b-9d11-93b11907f43b",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/rust_structures/fences_walls/chainlink_fence_3x3.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "fb46ebcc-92d6-44ed-bb5e-48b46981b27b",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-6419.73,-1314.12,23.54801",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "fa2fd653-c8cb-496d-829b-b648200aa130",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/rust_structures/fences_walls/chainlink_fence_3x3.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e0d0fe9f-4870-4fed-9b78-78dad2bb63d1",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-6466.648,-403.8974,23.54801",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "538dc268-8177-4f3f-865a-c7022200b588",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/rust_structures/fences_walls/chainlink_fence_3x3.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "dcf454cc-b35e-47b1-9fe1-74b6e15f521b",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-6466.65,562.6274,23.54801",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "bac183a0-b5c7-4dab-b1dc-8bd022d07064",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/rust_structures/fences_walls/chainlink_fence_3x3.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "4d18d248-805c-4ea6-860c-55fbfc648459",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-6440.048,1484.877,23.54801",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "6c27cf39-4bd4-45ad-8551-32624c28265d",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/rust_structures/fences_walls/chainlink_fence_3x3.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "d53da26d-a25a-4aed-9060-d852adc90b20",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "2805.528,1773.767,80.4218",
+          "Rotation": "0,0,-0.9659258,0.2588187",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "51cc8932-c818-4815-8f88-86faa40f232d",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e49286af-364d-44fb-9f95-78898f9e4c0f",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "5066.997,-2617.821,80.4218",
+          "Rotation": "0,0,-0.7933535,0.6087611",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "e7f97ae4-b699-4a18-b2df-9cb6ff0ecf35",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "f008dfc8-4505-4788-9bdd-a27b4a6726e9",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "6324.435,9665.487,80.4218",
+          "Rotation": "0,0,-0.9659257,-0.2588193",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "daea7e20-8e84-46d1-b882-f937b89504d4",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "96e7d5db-38eb-4196-87af-f1e8c4f66341",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "5264.071,7816.892,80.4218",
+          "Rotation": "0,0,-0.8660252,-0.5000002",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "1c4060bb-cc76-4b69-a860-be59eb04b2ff",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e43ecfe8-64f4-4024-be68-3e374f3391cf",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "515.8959,6446.867,80.4218",
+          "Rotation": "0,0,-0.7071066,-0.7071069",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "d6ef32d3-a614-4295-a5a0-3297bddcf18a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "4f76712d-0f5e-4102-8382-94cf7698c138",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-3378.354,9243.221,80.4218",
+          "Rotation": "0,0,0.00000008940697,-0.9999999",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "405c5051-e4ed-455c-ab06-66ba6bb9af75",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "573cc082-ed43-4777-a732-6d4f1601f907",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-4495.024,10538.18,80.4218",
+          "Rotation": "0,0,0.00000008940697,-0.9999999",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "843bd853-d449-425b-bc5e-de23a60847fe",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "3f2a3420-2da1-40b3-a3e7-0c7ef2b31261",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "-6420.69,2394.738,80.4218",
+          "Rotation": "0,0,0.2588191,-0.9659257",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "1f9fd834-096f-4065-8812-70699cd79b7a",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "ae9d49ea-5ef2-4812-81d1-8f2cf2abf916",
+          "Flags": 0,
+          "Name": "prop_physics",
+          "Position": "1231.498,7423.635,80.42172",
+          "Rotation": "0,0,-0.9999999,-0.0000002980232",
+          "Scale": "0.3,0.3,0.3",
+          "Enabled": true,
+          "NetworkOrphaned": 3,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.Prop",
+              "__guid": "2604fa7d-2186-4e27-ae60-21fa00a25d45",
+              "BodyGroups": 18446744073709551615,
+              "Health": 0,
+              "IsStatic": false,
+              "MaterialGroup": null,
+              "Model": "models/house.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnPropBreak": null,
+              "OnPropTakeDamage": null,
+              "StartAsleep": false,
+              "Tint": "1,1,1,1"
+            }
+          ]
         }
       ]
     },
@@ -82,29 +517,30 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "d0b991b0-0f7f-4587-8b45-21add2623123",
+            "component_id": "879e3ae5-8aa5-47a0-8cfb-8479adcd5538",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
           "FuelPerGoal": 0,
-          "FuelTankComp": {
-            "_type": "component",
-            "component_id": "ea8603d5-739d-4d34-93a5-e6f4a8544819",
-            "go": "11523d16-2bad-4c8b-9916-0ddaddebebf2",
-            "component_type": "FuelTank"
-          },
+          "FuelTankComp": null,
           "Goals": [
             {
-              "_type": "gameobject",
-              "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71"
+              "_type": "component",
+              "component_id": "8befc133-95f3-41be-8db5-5e63f6b40ad7",
+              "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
+              "component_type": "Goal"
             },
             {
-              "_type": "gameobject",
-              "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1"
+              "_type": "component",
+              "component_id": "07ef912e-4ad9-45f0-88ce-bb1c370f90d2",
+              "go": "82145a93-416d-47cd-8d94-23924f579a0d",
+              "component_type": "Goal"
             },
             {
-              "_type": "gameobject",
-              "go": "57707bd7-a728-48a2-a6f5-0e447503f0d1"
+              "_type": "component",
+              "component_id": "763537ae-a3ec-4fd1-b4d4-c50f6797012e",
+              "go": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
+              "component_type": "Goal"
             }
           ],
           "OnComponentDestroy": null,
@@ -117,22 +553,10 @@
       ],
       "Children": [
         {
-          "__guid": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
-          "Flags": 0,
-          "Name": "Goal1",
-          "Position": "-2085.99,1931.971,-1721.465",
-          "Enabled": true,
-          "__Prefab": "prefabs/goal.prefab",
-          "__PrefabVariables": {
-            "Selling Goal": true,
-            "Fuel Goal": false
-          }
-        },
-        {
           "__guid": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
           "Flags": 0,
           "Name": "Goal1",
-          "Position": "-789.6408,1983.882,-1721.465",
+          "Position": "9118.626,8073.614,-1721.463",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
@@ -141,14 +565,26 @@
           }
         },
         {
-          "__guid": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
+          "__guid": "82145a93-416d-47cd-8d94-23924f579a0d",
           "Flags": 0,
-          "Name": "Goal1",
-          "Position": "-501.6408,3167.881,-1721.465",
+          "Name": "Goal1 (1)",
+          "Position": "6012.286,758.7916,-1721.464",
           "Enabled": true,
           "__Prefab": "prefabs/goal.prefab",
           "__PrefabVariables": {
-            "Selling Goal": true,
+            "Selling Goal": false,
+            "Fuel Goal": true
+          }
+        },
+        {
+          "__guid": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
+          "Flags": 0,
+          "Name": "Goal1 (2)",
+          "Position": "3899.162,6896.417,-1721.464",
+          "Enabled": true,
+          "__Prefab": "prefabs/goal.prefab",
+          "__PrefabVariables": {
+            "Selling Goal": false,
             "Fuel Goal": false
           }
         }
@@ -158,20 +594,284 @@
       "__guid": "195115cc-e8f3-4aaf-9bb6-61ed28f98023",
       "Flags": 0,
       "Name": "bmw e30",
-      "Position": "-2954.416,1947.023,31.2123",
-      "Rotation": "0,0,0.7071067,0.7071068",
+      "Position": "-5788.311,-5894.726,31.2123",
       "Tags": "car",
       "Enabled": true,
       "__Prefab": "prefab/cars/bmw e30.prefab",
       "__PrefabVariables": {
-        "Player": null
+        "Player": null,
+        "On Repair": {
+          "__version": 9,
+          "__guid": "05d57233-ce30-415d-a4dc-019b8bd55c41",
+          "__changeId": 45,
+          "UserData": {
+            "Title": "On Repair",
+            "ReferencedComponentTypes": []
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            },
+            {
+              "Id": 11,
+              "Type": "property",
+              "Properties": {
+                "_name": "MaxFuel",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "648,0"
+              }
+            },
+            {
+              "Id": 12,
+              "Type": "property",
+              "Properties": {
+                "_name": "_upgradedCapacity",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "480,168"
+              }
+            },
+            {
+              "Id": 13,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "AddFual",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "888,120"
+              }
+            },
+            {
+              "Id": 14,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "GetAll",
+                "_type": "Sandbox.IComponentLister",
+                "T": "FuelTank"
+              },
+              "UserData": {
+                "Position": "-0,108"
+              }
+            },
+            {
+              "Id": 15,
+              "Type": "foreach",
+              "UserData": {
+                "Position": "288,60"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 15,
+              "SrcName": "body",
+              "DstId": 11,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 15,
+              "SrcName": "body.value",
+              "DstId": 11,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 12,
+              "SrcName": "_result",
+              "DstId": 11,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 15,
+              "SrcName": "body.value",
+              "DstId": 12,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 11,
+              "SrcName": "_signal",
+              "DstId": 13,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 15,
+              "SrcName": "body.value",
+              "DstId": 13,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 12,
+              "SrcName": "_result",
+              "DstId": 13,
+              "DstName": "amount"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_target",
+              "DstId": 14,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 15,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 14,
+              "SrcName": "_result",
+              "DstId": 15,
+              "DstName": "enumerable"
+            }
+          ]
+        },
+        "On Buy": {
+          "__version": 9,
+          "__guid": "d1f39f5f-7950-495a-ba7b-21387098575a",
+          "__changeId": 23,
+          "UserData": {
+            "Title": "On Buy",
+            "ReferencedComponentTypes": []
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            },
+            {
+              "Id": 1,
+              "Type": "property",
+              "Properties": {
+                "_name": "MaxFuel",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "648,0"
+              }
+            },
+            {
+              "Id": 2,
+              "Type": "property",
+              "Properties": {
+                "_name": "_upgradedCapacity",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "480,168"
+              }
+            },
+            {
+              "Id": 5,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "AddFual",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "888,120"
+              }
+            },
+            {
+              "Id": 6,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "GetAll",
+                "_type": "Sandbox.IComponentLister",
+                "T": "FuelTank"
+              },
+              "UserData": {
+                "Position": "-0,108"
+              }
+            },
+            {
+              "Id": 7,
+              "Type": "foreach",
+              "UserData": {
+                "Position": "288,60"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 7,
+              "SrcName": "body",
+              "DstId": 1,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 7,
+              "SrcName": "body.value",
+              "DstId": 1,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 1,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 7,
+              "SrcName": "body.value",
+              "DstId": 2,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 1,
+              "SrcName": "_signal",
+              "DstId": 5,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 7,
+              "SrcName": "body.value",
+              "DstId": 5,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 5,
+              "DstName": "amount"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_target",
+              "DstId": 6,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 7,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 6,
+              "SrcName": "_result",
+              "DstId": 7,
+              "DstName": "enumerable"
+            }
+          ]
+        }
       }
     },
     {
       "__guid": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "-2993.86,1687.046,14.3577",
+      "Position": "-5808.984,-6129.605,14.3577",
+      "Rotation": "0,0,0.7071067,0.7071068",
       "Tags": "player",
       "Enabled": true,
       "__Prefab": "prefabs/player controller.prefab",
@@ -194,31 +894,15 @@
           "OnComponentUpdate": null,
           "SpawnAreas": [],
           "Zombie": "prefabs/zombie.prefab",
-          "ZombieAmount": 20
+          "ZombieAmount": 100
         }
       ],
       "Children": [
         {
-          "__guid": "f60480f3-c65f-48a7-a26d-350d8ffc6e9d",
-          "Flags": 0,
-          "Name": "Spawn1",
-          "Position": "-2149.814,872.1088,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
           "__guid": "a9d4a76b-8b6a-4b69-b9a0-0689de7d4720",
           "Flags": 0,
           "Name": "Spawn1 (10)",
-          "Position": "-1356.085,2131.396,45.19181",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "4ba125d0-b3e5-4c7e-83bd-eccbf48e4f04",
-          "Flags": 0,
-          "Name": "Spawn1 (11)",
-          "Position": "-987.2759,2725.449,45.19196",
+          "Position": "-1279.528,2835.711,45.19181",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -226,7 +910,15 @@
           "__guid": "c43e5f7d-fdeb-4c10-8a0f-0b485544389f",
           "Flags": 0,
           "Name": "Spawn1 (12)",
-          "Position": "-990.4451,4773.865,45.19196",
+          "Position": "-1026.366,4742.437,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "e5e6e931-7d73-4351-ae2d-9b2f95ebeb1a",
+          "Flags": 0,
+          "Name": "Spawn1 (1)",
+          "Position": "-3127.631,4814.275,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -234,7 +926,7 @@
           "__guid": "ba36a18e-019e-4582-93a8-42b31924a39a",
           "Flags": 0,
           "Name": "Spawn1 (13)",
-          "Position": "-2278.118,4990.941,45.19196",
+          "Position": "-2257.031,5792.278,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -242,15 +934,7 @@
           "__guid": "d7ec8e7c-1ed3-4d2a-953e-83a9ef91a45c",
           "Flags": 0,
           "Name": "Spawn1 (14)",
-          "Position": "-2147.522,6074.699,45.19196",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "84d3f2f9-616f-49fd-82a2-7886441f4e44",
-          "Flags": 0,
-          "Name": "Spawn1 (15)",
-          "Position": "-2251.213,7010.366,45.19196",
+          "Position": "-2212.285,7370.042,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
@@ -279,82 +963,154 @@
           "Enabled": true
         },
         {
-          "__guid": "6a6230c1-67dc-4dc0-914f-5cd745035c34",
-          "Flags": 0,
-          "Name": "Spawn1 (19)",
-          "Position": "-2971.952,10029.04,45.19196",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "759c5f1d-cde9-453c-a4dd-149e73327957",
-          "Flags": 0,
-          "Name": "Spawn1 (1)",
-          "Position": "-2380.697,4761.786,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "f2349903-d9ee-4256-a123-dec018cf11a7",
-          "Flags": 0,
-          "Name": "Spawn1 (2)",
-          "Position": "-6099.3,2174.698,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "cad37564-3189-4ac7-9cf8-2bc2f4d736cd",
-          "Flags": 0,
-          "Name": "Spawn1 (5)",
-          "Position": "-6936.147,2183.187,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "3d1fe7b3-0d72-4a39-aa8a-b6be8241c4e2",
-          "Flags": 0,
-          "Name": "Spawn1 (6)",
-          "Position": "-7565.905,2202.955,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "64fc8f1c-6ec9-4d13-aac0-785bc354e411",
-          "Flags": 0,
-          "Name": "Spawn1 (7)",
-          "Position": "-8395.484,2194.985,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "9b14402a-e6fc-4a94-9285-1eeffcbb604c",
-          "Flags": 0,
-          "Name": "Spawn1 (8)",
-          "Position": "-9326.422,2191.714,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "469a86bb-dd17-4cc2-85e5-b9dde50342e9",
-          "Flags": 0,
-          "Name": "Spawn1 (9)",
-          "Position": "-10286.24,2247.851,45.19189",
-          "Scale": "28.6522,18.34294,1",
-          "Enabled": true
-        },
-        {
-          "__guid": "1724bb00-b747-4aca-93fd-2bc90ae388d5",
+          "__guid": "b6e9c9b2-0d05-4c64-9b65-51c051086098",
           "Flags": 0,
           "Name": "Spawn1 (3)",
-          "Position": "-7188.203,10173.9,45.19189",
+          "Position": "35.70972,10157.17,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         },
         {
-          "__guid": "4dfc1be0-460e-46fc-a5da-04c528c5cf56",
+          "__guid": "dfbbb56f-46b5-44f4-80dd-9904e3468cf6",
           "Flags": 0,
           "Name": "Spawn1 (4)",
-          "Position": "-2199.542,10156.08,45.19189",
+          "Position": "2088.331,10132.26,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "88499c4e-140a-4b7a-a9fe-14fe8f29b8d7",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "3657.687,10142.22,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "6300fda4-2cd8-489c-8b6e-442ccd7f6b70",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "5616.286,10151.64,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "a5a0ee37-3612-42c5-bd7a-5a309face5ad",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "2163.946,145.0269,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "068c1a00-dea7-480a-ad9b-faa9924118a5",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "2149.97,-2824.739,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c43f9b1a-d7a4-4186-943b-5a24be3ee5ad",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "95.39282,-4464.056,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4f92d1ba-32aa-4689-8f83-9939480fdcbd",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "129.3353,-6145.07,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "18452e44-602f-41b8-962c-61a37e585eb2",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "2327.246,-6372.676,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "c8e41064-b6b2-40dc-a41e-72a0fe7a0a91",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "4672.511,-6507.246,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "59f1eba6-c6f9-4b5e-b34e-114f507e6dce",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-2343.122,-5787.515,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "3939ff2f-b51d-480f-a77e-cfa705497d99",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-3244.536,-4180.349,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "4d7c855a-b008-45f7-951a-d1cf398edbf4",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-10736.84,-5888.489,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "65633694-ce3c-4ef1-9e1d-9d91378f2399",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-10881.43,-8143.756,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "07718de1-cc66-4294-9535-5fb12ca4c9d5",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9402.94,-8221.955,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "0f9e7fed-9985-4a13-8e27-011130f0d527",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-9405.027,-6532.505,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "db635a32-17e1-4a8f-9064-2eb1a01d949e",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-6046.647,-2307.645,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "995670ee-d6f5-410e-900c-3f6b96adea5b",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-6094.614,265.9541,45.19196",
+          "Scale": "28.6522,18.34294,1",
+          "Enabled": true
+        },
+        {
+          "__guid": "a7600841-697a-4764-9b7a-eb34489e24d3",
+          "Flags": 0,
+          "Name": "Spawn1 (4)",
+          "Position": "-5433.074,2154.886,45.19196",
           "Scale": "28.6522,18.34294,1",
           "Enabled": true
         }
@@ -372,7 +1128,6 @@
       "__guid": "6902c60d-3ac4-49cf-abc0-c563a3e9268a",
       "Flags": 0,
       "Name": "camera",
-      "Position": "-509.4208,-182.2725,1.809387",
       "Tags": "maincamera",
       "Enabled": true,
       "__Prefab": "prefabs/camera.prefab",
@@ -515,7 +1270,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 8,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -533,7 +1288,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -623,7 +1378,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 10,
+                "Id": 8,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -641,7 +1396,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 11,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -658,6 +1413,26 @@
           "Static": false,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "38d0233c-a12b-4609-920a-272dd1fb7183",
+      "Flags": 0,
+      "Name": "GaragePos",
+      "Position": "-4399.044,-4419.396,190.9873",
+      "Tags": "garage",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "GarageComp",
+          "__guid": "bd888665-2f15-439a-8ffb-868532e2723f",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     },
@@ -690,8 +1465,9 @@
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
+          "__enabled": false,
           "Blur": 0.42,
-          "EndDistance": 5000,
+          "EndDistance": 9183.512,
           "FalloffExponent": 14.2,
           "HeightExponent": 1,
           "HeightStart": 713.3335,
@@ -738,14 +1514,2217 @@
       "Position": "5817.404,10958.18,-0",
       "Rotation": "0,0,-1,0.0000001947072",
       "Enabled": true,
-      "__Prefab": "prefabs/streetlights.prefab",
-      "__PrefabVariables": {}
+      "Children": [
+        {
+          "__guid": "495c552c-b35b-42d5-acce-a966194f7618",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "13232.57,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0dc79251-fa3d-4753-84b1-85b8916b6459",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "12142.96,14570.41,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3b00db73-4260-4055-a12e-322fc02c26ed",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "952.5281,15604.94,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bc50a468-cb4f-4e2b-8bf1-275155d4fe52",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "460.2552,17190.18,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "51c36136-3e22-4a9c-8c85-11695d9b600b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "979.1302,17190.18,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f4ef67a9-2d23-40a0-9a1c-6f4392a31d6e",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "17307.49,19180.34,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "18c4aa7a-d20b-4ff7-847e-9312a95e8439",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "17307.49,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9039d0de-a588-4f52-b47d-9fede42daf85",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "14365.31,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "887965dd-e4f6-48a6-8d16-b6d2f53c119b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11624.08,13840.24,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "207479b6-8a0d-4a34-8d19-a621dc6c8b78",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11605.31,13174,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d54494ac-23b7-4fe0-a653-bf214d7a9a29",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11567.78,12198.09,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "4622c316-7798-4604-ad8f-1f8cd822b031",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11614.7,11287.86,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "46972f63-be92-443e-b153-2a37057091ac",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11614.7,10321.34,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a524c1e3-5a53-45b1-8639-b7a5eb07c3ab",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11588.09,9399.09,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "b0b5749f-a6b0-4c56-bb65-e6b8bbf61fec",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "11426.55,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "861e95f8-75a8-4072-90f6-e52f3aa75fa5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "9249.654,15192.14,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "571767f6-f176-4996-93ee-db7f0b9a965c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "8609.129,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2d7f52fc-3c14-45f3-971d-3c5e5d2084cd",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "9249.652,12380.69,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a58e1777-753d-4e4a-8bfa-1f4b017a4c70",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "6300.131,16466.93,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "beb29491-736c-4d9c-a91b-d135216afd33",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "4061.347,14673.88,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "13b1bab6-cca6-4913-81ff-d23b514ae27f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (10)",
+          "Position": "455.8147,14409.71,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "42203d60-4026-44ab-a27e-78443b61198c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "17307.5,19699.22,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "71ecbbea-673b-4273-a8e4-2bfe4b07d2b1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "17307.5,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "cdf12499-7fe2-432c-b03c-10c841e569b1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "14365.31,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dc97c454-01e4-4e0c-95ce-277414470610",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "12142.96,13840.23,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a9d88a2e-5366-405c-9fa0-da31d9265675",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "12124.19,13173.99,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7dee6e4b-c920-4174-9ac1-3c896d58b208",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "12086.66,12198.08,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7cd338ec-36a9-47c2-a954-90f818a59e0a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "12133.58,11287.85,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1230b09e-c8d2-44f9-9795-4e0a34a228b1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "12133.58,10321.33,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e3720b1b-40b6-4bfe-8db4-86df8057a484",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "12106.97,9399.08,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c83f85d4-deda-4a48-b6aa-e1fa367f779a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "11426.55,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f9daa1c8-c168-4e4c-8f78-23e9d37590b7",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "8730.777,15192.14,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "99c531e4-ead1-44c4-9c10-0081e4a4d967",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "8609.132,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0ffd2433-d1cd-452d-8b1d-c0e7dd3e27be",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "8730.776,12380.7,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bad5df07-8af9-42d9-a495-0cc3961ddeab",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "6310.813,17007.18,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1e617669-b9b1-4a43-bb0b-39b2c249134b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "4095.062,17777.74,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c8d46bba-7afd-466c-99cc-ef1f49a98e6c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "974.6907,14409.71,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9295c21c-390c-423c-8791-38030d65c651",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "16577.32,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f21fbd04-fcf9-4b77-a216-6b6a9f3554b4",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "16577.32,15590.43,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "12393e17-4791-4f49-81d0-ee078c605e5a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "15158.59,15590.43,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dd178559-fa50-499d-ae0d-4b842bb7fd3c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "16577.33,19699.22,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "92d882fd-5063-4c51-a506-ea692a443b40",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "2381.145,1029.977,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "fe53fdb9-464f-4ece-829b-e4a4341cf941",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "5674.726,1029.977,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a062ca1c-5c0f-4e80-a9d1-ba62d8209f99",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8506.325,1029.977,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7b96c10a-481d-443c-aae1-b0e39f2669ef",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7725.585,1325.725,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "93b0c8f6-03c9-4bbc-a291-18e63b2555a6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7725.586,3890.909,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "5caaa1b8-4fdc-4bc5-a07e-883a4c019c42",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "5612.341,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bfce6979-7f39-47f0-b1b3-eb89ddc0d2f6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8287.75,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3045ac42-6740-43c4-b3ac-64f00a211435",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7744.723,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dda13176-a714-4242-910a-4c333fd82908",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7737.334,10296.41,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1f11135c-3b09-4e7e-a3fb-e12f4374ceb6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7737.335,11743.59,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2f9eefd7-b3d4-4222-9e84-367cab4b4492",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8287.75,7160.362,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "65b16545-84bc-4a44-9acf-fc8cbf21f070",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "1866.973,1029.977,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3e8761c8-1492-4733-baff-84731c2e4f43",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "4461.469,1029.977,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "b350db86-d74e-478d-8b2c-5960c4d89ee4",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7755.05,1029.977,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d0e20bde-4771-44ee-966e-23b99bb0f664",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "10845.43,8531.475,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1a833063-38c4-42a6-9975-746cab2cdd9e",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "-350.5615,-873.9214,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "fded926f-34fd-4114-a280-94663ae4dc91",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "5612.341,9043.681,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "62e71be4-408c-4b3b-a903-819f35bfe586",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8287.75,9043.681,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ae4fa8ac-e989-42f5-ae71-9e194029d579",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8251.506,10296.41,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a4573070-1034-464d-8af9-6473993ee8f6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8713.019,11743.59,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "80a1f6dd-5d60-469a-842e-957b952a9c88",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "9221.46,11743.59,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e0370dd7-b19c-4769-a9ec-2f134aaca47a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "9961.028,11743.59,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9165c96d-ea96-4f21-af70-988a73e397e8",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "8287.75,7674.535,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "03c04746-14cb-4bd7-8fc8-0295958c4b48",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (2)",
+          "Position": "7744.723,7674.535,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0225e186-6bbe-49ea-89f1-68d5a4a7a505",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "433.6526,15604.94,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "08d443f5-f70f-4df2-a3f7-8d96b4c0ab2d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "11624.08,14570.41,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "237bcb7c-1e90-4b98-8a8a-fbcecea58525",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "13232.57,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2ce3faf7-5bcc-4b11-8702-61df1be7abd3",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "16577.32,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6c128ec9-813d-4877-9cc4-964a508c1bbf",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "16577.32,15071.55,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2ab404be-41d8-4672-9c27-4a5190f12bac",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "15158.59,15071.55,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0557d55e-2820-4e1a-842e-1ad1e5c2b5ab",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (9)",
+          "Position": "16577.33,19180.34,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3c5437f1-ed1c-41bc-8424-9c4e7d26f904",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "2749.405,14141.69,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ae76c0c3-095c-49ec-af5e-fcae6bfcaf54",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "3255.07,13359.6,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "04fedd12-310f-466e-a203-ec780e5d146a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "3874.396,13143.77,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f1c97629-74d3-435c-87a2-2fc0c77fa658",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "3921.315,11614.22,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "23f25075-68d7-4b13-a97a-03485e9cffc4",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "3883.777,9962.687,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "55001620-134a-4a30-b244-f45a3eec56ee",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5576.766,17777.74,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2f422ddb-66dd-4de8-9740-8e6df45ea11f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "4068.415,17143.6,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "83ac4ecb-16d3-4377-b6d3-f83f1a34c430",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4786,17143.6,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "8f6514e7-0612-4eab-b495-e9edeb9f50cb",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5550.119,17143.6,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a6e56d7e-9a7a-44bd-b11b-e65b2d3ff10b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "4057.76,15342.42,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "473fc7bf-42a6-4158-8ee8-4817057a0eb0",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "3221.118,15299.79,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "90e5e27f-3114-4528-a109-70652dae290a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "3226.452,17058.34,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "487f877c-de23-49bb-a9bb-4c7b14e33cf0",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (1)",
+          "Position": "2253.745,17248.65,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "94661830-5c0f-44fc-9145-e18e729c7a5a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4775.345,15342.42,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f0fcd34f-173b-4091-8986-ae4026e3705f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5539.465,15342.42,21.8",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d2a8fdc2-536f-45ba-bca2-fd5eec8a800b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "7248.644,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "fdc29be1-a473-4790-8fbe-8d10da3e9eb5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8730.777,13831.65,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "66ca105e-f2b8-4080-a507-98730fa651e5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "10066.06,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a81d665f-3904-41f7-810f-1a7079c1663d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "15947.01,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "8138b437-94cb-41ce-b089-41a4684a56f5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "15947.01,15590.43,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "472609b9-7587-422e-bd4e-0d8672227f9a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "14528.27,15590.43,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "70a9d84f-25ae-41f0-ae9b-779e679a1c20",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "15947.01,19699.22,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "944f8392-162e-4b9c-b3f5-3fec90374b2c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "17276.99,17815.57,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3a0f93dd-a8b2-4457-b435-67ff196bad84",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "15100.74,17815.57,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "fb508fe4-3ed4-4c66-9587-bb6649e732c6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5313.273,501.605,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "83bc8d5d-a755-4e79-8674-149df6c5009b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "2381.144,-2189.5,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "108a35b9-25d2-4e77-868d-70abfbb4f599",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5313.276,4106.41,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "24ba15a4-d432-4be7-ae96-7c4780fda433",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5313.273,2358.946,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c6cc10eb-f0f5-4863-b918-e3e11b06bfeb",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "2381.143,-243.6035,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0818ebd3-e9c4-4395-8e45-adc98b37dc99",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "2381.145,1898.342,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c1cc2564-2978-46c6-bcd3-807c3ae3df37",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "3976.142,521.7974,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "901dad89-39dc-40ff-be37-a6ff75815ca9",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "7269.723,521.7974,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "950c1780-686c-4bfe-8ae3-617d20dc58c2",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8233.766,2920.722,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dbd70a25-4ff9-4009-8d7c-9918dd8ed918",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8233.766,5485.906,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "860a0107-3e2b-44e0-8425-b5b0672ec45d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8233.766,6412.379,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0b3845fa-8631-4476-a9ae-291e055fd324",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "11330.76,9039.654,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6fda5c82-8823-4f21-91e2-6dc2ef8e5677",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "1384.483,-2924.321,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "61d67185-fd19-4c85-8efc-0957cdfc1072",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "6242.659,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ab9a7f72-eb13-4627-b0e6-ddbc33d26408",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "9120.296,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3c24c089-c801-487a-b9d2-da1acfe1ff07",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "7737.334,9463.86,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9e7226c3-cd5c-4ee0-a5ab-f0858f96045f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "9120.296,9030.583,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6261ecae-025d-455d-ae70-06cfaa35cb63",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8238.408,9463.86,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "b7bd10b5-8289-431d-97e6-1c4cc1578b8b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "7737.335,11237.57,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a58483f6-78fd-4607-8f7d-129c91c823c1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8238.409,11237.57,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dbefedf2-2e4f-4495-822c-054527251fa5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8699.921,11237.57,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c20d4026-427e-4f72-8ce1-ea4c370ce232",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "9208.362,11237.57,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "07494434-529e-4e17-b4d1-facc5703e791",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "9947.931,11237.57,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2836aef0-ac12-4da6-81a7-f7b0cf4ed856",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "4799.101,501.605,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ae6bdd49-35e0-40c8-a1cd-e6a35425169d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "4833.619,4091.614,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "172eeb5c-5e2c-4e88-96ab-df22d85471f6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "4799.101,2358.947,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1537669f-993a-47ed-b3c0-1093fc673a8e",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "1866.971,-243.6035,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "195e34f5-6c7a-47ba-abc0-7a05375d060a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "1866.973,1898.342,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "39a81827-a2bf-4ac2-b42e-b2f9c045f10d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "983.8154,1898.342,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "cfdf3665-a70a-4c29-a622-616bab335f04",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "983.8164,521.7979,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "297d4e95-f54f-44b9-a415-3554ffff926b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "6546.154,521.7974,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "daf89801-ecb8-4214-a93b-1cd04ff88456",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8233.766,4762.337,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "55e1dc1f-86c6-4eb8-81f0-acf874a7de35",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "436.1562,521.7988,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3a99b40c-73b5-46f3-bf6f-0eae57645b13",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "3172.093,521.7988,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "cc885ed5-39df-4b1c-a772-e0dfde794071",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "5998.493,521.7983,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "abe677b4-12fe-4465-8c70-813a10c2d316",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "8233.764,2040.796,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "71baf6d3-4464-472c-882e-a7d005ceed8f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "436.1572,1891.301,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "02e38e27-2b31-4c0e-8f0c-9e17e3daa539",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "870.3115,-2924.321,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "4174fa72-34d1-47de-8d6f-82c0fe474ee5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "6242.659,9043.681,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ea3e2f0c-d966-4428-b48a-6563731510f5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (3)",
+          "Position": "9120.296,7674.535,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "296b42da-8bf1-46f4-b4f1-294704bfba08",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "5527.104,14673.88,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "58dff29a-813d-436d-891f-e1f8d0ce1376",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "7232.694,16477.62,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dae2a155-ae4d-4b01-be7b-8d467923a2b5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "9249.652,13815.7,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "268aa44b-2e6d-4e1f-b456-eb642426ad14",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "10050.11,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d35a978b-9981-4522-b816-3945d9de88f1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "15931.06,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "420f27b7-3a5c-4a07-b9e5-696ae42b927e",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "15931.06,15071.55,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "fbd9021a-a37d-4146-a33c-161b31ac5b1c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "14512.32,15071.55,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6f4eadcf-a16f-40a4-a91e-f4eeee8187df",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "15931.06,19180.35,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f7dc975c-a0cc-4dd0-b578-e2aa39a33852",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "16758.11,17831.52,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2327aff7-ea8d-4b6c-b85d-694c0a1c0706",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "14581.87,17831.52,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7e52d0f0-0779-4e51-8b7b-8614c41159bc",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (8)",
+          "Position": "14581.87,19200.3,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7694e910-8c87-41c8-b464-186f2317378a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "4738.677,14673.88,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e923a58b-95d2-4be6-bf3b-58614f76f9f5",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "9261.684,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f9d81e5d-d058-464f-9a7a-d8611f424442",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "11624.09,16005.1,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e2d09638-9fc7-4cd5-a136-879c8ea3ad9a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "12200.44,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d8ec9d82-b8bc-4525-bbd1-82d5d305d26f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "15142.63,16477.61,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "087a2d8f-784f-4a9b-86ad-9a41517e4c2d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "15142.63,19180.35,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "964d8805-2466-4359-8b43-a8ca2c45966e",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "16758.11,18619.94,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9ca3408e-0433-4c7c-b1e9-42554fd80b19",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "14581.87,18619.95,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "263a50b2-d934-48b1-863b-643f2c92ec67",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (12)",
+          "Position": "14581.87,19692.87,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "8abbb51c-249c-40ac-aeaf-65729c02c1dd",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4812.646,17777.74,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "37ded16e-c9f2-4e0b-95e2-04880c378a3f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9301.941,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e0a97236-429b-459f-9ce5-76c2f2549730",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "12142.96,15964.84,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "5fa9a4cf-2b83-4cab-bd49-839c83360f42",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "12240.7,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "57298db5-7198-4b39-96d5-8b33a3807629",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "15143.09,16996.49,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "8006d4f0-dfdd-498a-8032-cb95ba8454e4",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "15182.89,19699.22,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e88e7edf-2135-4a04-bfad-a95bd9673bfe",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "17276.99,18579.69,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "42d088eb-e2bd-4f64-9820-810127f428af",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "15100.74,18579.69,21.8",
+          "Rotation": "0,0,0.7071066,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2d02898d-f1c8-401f-8b36-092c958e15a7",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "5313.272,3432.387,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "37894ed8-a24d-4136-bb4e-b7cbbbf73aca",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "5313.273,1265.725,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bdbb32fa-db4f-4871-870b-ba8f46971dd9",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "163.6104,-1673.848,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "cda33c70-46f9-4e9c-a23c-63eb83fc5bf4",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "803.0615,-1673.848,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bd024a4a-f09d-412b-b7fe-70516be8f33d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "1429.133,-1673.848,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "cdac92ac-3941-46f3-ae2d-cfaddc4e6d03",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "2381.144,-1246.903,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1efdd7a1-5ec8-4032-9435-6bad788df10a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "163.6123,-866.1235,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "789d40ae-da7d-4aa2-ab22-28d8a484d99f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4646.936,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "8a8cf488-4d4e-46df-b6f3-baef83d77334",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "2381.143,520.5166,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "494ca8b5-51d7-4fee-bb60-0c610f42342b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "5674.724,520.5166,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "b1379560-fbcd-4d49-a866-15dbde197e32",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "8506.323,520.5166,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "91120374-32fe-43e8-a0db-c8a4d43a0d07",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "8235.046,1325.723,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "619130a9-7bd9-46a7-8b2d-ea5e7a4a7d9f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "8235.047,3890.907,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a8ae943a-4dc0-490b-9e6d-f0d0aa9403fc",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "2381.145,2400.919,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "39f32108-8708-48f8-a740-5ad117807111",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "3976.142,1024.375,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "b7d19df8-2268-4eb1-9156-38877dbb1dc1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7269.723,1024.375,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "35b1baec-422f-4829-85e1-5d5f6115c383",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7731.188,2920.722,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e0653b0a-e6af-4eff-bf4a-6b50fbd05be6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7731.189,5485.906,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e7ace379-d310-4522-bfde-a34a0191ec9a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7731.189,6412.379,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d006754d-97ff-41b0-9771-b24cbd02aa89",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "11330.76,8537.077,21.8",
+          "Rotation": "0,0,0.7071069,-0.7071065",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e6034557-a81b-4fc7-bb47-fb91e944ef5f",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7731.189,7260.354,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e94eac0d-fe37-4e8f-8be0-8cd62f8f8a18",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "163.6104,520.5171,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "895a21b4-4ac3-47de-9173-ae59b88b7fa8",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "1384.483,-2160.201,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a439c4cc-37c9-487e-80e4-2ce83773ded3",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7006.779,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d9115ca1-a7c4-47b2-aa41-321ca0efd0ed",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9682.188,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "453c2811-a288-4b26-a892-f28854e8539b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "10435.39,8529.508,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a28217d8-551b-4bd4-8037-a7f09fe27a48",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9682.188,7160.362,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "72510bfe-678c-40a8-8f6f-6451e03a1128",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4799.101,3432.387,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d4781fa7-b121-43db-9dc3-861353ba9e53",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4799.101,1265.725,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "922ff96a-b746-4bd7-bbda-8149c3c12e45",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "1866.971,-1673.849,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "87225c76-640b-4467-a326-85c885b51c3d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "-350.5615,-1673.848,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e62e63a5-3b66-4cec-b6d3-8e621172423c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "1866.972,-1246.903,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ce63e59f-7502-434b-aa0e-697fce27853b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4646.936,9043.68,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c5170917-ebb2-4d4a-8c9a-43058f94fc8a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "1866.971,520.5166,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9762ae64-ccc1-46b3-b1eb-4e4d2126d958",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "4461.467,520.5161,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "43bd3e4a-278a-46ec-9bc9-f61abfbd8f3d",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7755.048,520.5161,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1e3e2d11-42e7-4764-8a94-cd77a660ed44",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "1866.973,2400.919,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6d56b05b-f950-4cf6-84c4-dc5662b245bf",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "983.8154,2400.919,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2e15e021-44ee-4096-9935-aa802946606e",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "983.8164,1024.375,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bd4c3641-08de-48ed-8cca-8341fed4bf2a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "6546.154,1024.375,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7a9d37c5-fa73-4862-8f5f-1b4a0123c8c1",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7731.188,4762.337,21.8",
+          "Rotation": "0,0,0.9999999,0.0000001490116",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bf279a2e-de05-4f89-a057-04fd1c07accd",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "436.1562,1024.376,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6b29bd59-934f-4dc5-bd58-c04a9c017551",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "3172.093,1024.376,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0895de74-cb29-40e7-bc4d-34ab5c2c9819",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "5998.493,1024.375,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1ce57660-7b27-48f2-9356-215add32816b",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "436.1572,2393.878,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f9ad2671-6189-4c41-b91a-26d2b46c1bc6",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "-350.5615,520.5171,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9f5b8716-5a40-4d4f-bee0-2ab3f78cc485",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "870.3115,-2160.201,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "cd94a25d-3f06-438c-8e43-f6aa129666d3",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "150.1465,-2160.2,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "66cfb40d-2530-43b3-9a2e-66ef400ab55c",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "-350.5283,-2160.199,21.8",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "0e1a8a4f-3408-450c-9f04-6c1b9278b0e3",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "7006.779,9043.681,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6e9c4663-2ecc-469b-945a-079473678109",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9919.74,9043.681,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "63893671-c507-40e3-8602-21ecd0b18764",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9919.74,9432.372,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "35a618fd-0209-4dba-9a66-b0cc8528a560",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9919.74,10445.73,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7486b4d3-ddcd-42ae-9d56-0111269aabfc",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "10447.17,11676.57,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9dd3c8ee-6a41-414b-abe9-d9dc354cea1a",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "10435.39,9043.68,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2fccbe8e-a856-4084-bafe-e1bc9677b389",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "10435.39,9432.372,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d701a2ea-70c7-46c0-b62f-09fdfb4e7830",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "10435.39,10445.73,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "a0e883aa-7464-499a-8d0d-a19d2c068634",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "10447.17,11160.91,21.8",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2df094dc-9830-43c2-a576-9564cac05b12",
+          "Flags": 0,
+          "Name": "r_k_street_lamp_01 (4)",
+          "Position": "9682.188,7674.535,21.8",
+          "Enabled": true,
+          "__Prefab": "prefab/lamp.prefab",
+          "__PrefabVariables": {}
+        }
+      ]
     },
     {
       "__guid": "13dd571a-b8ce-4d41-88de-d2228c139d9a",
       "Flags": 0,
       "Name": "Point Light",
-      "Position": "-4483.055,-4364.396,191.9258",
+      "Position": "-4483.055,-4364.396,21.8",
       "Tags": "light_point,light",
       "Enabled": true,
       "Components": [
@@ -766,6 +3745,57 @@
           "Shadows": true
         }
       ]
+    },
+    {
+      "__guid": "db38a502-76ec-414b-8f39-7843cad08532",
+      "Flags": 0,
+      "Name": "goalarrows",
+      "Position": "-2814.099,2233.238,22.50525",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {
+        "Goal Type": "FuelGoal",
+        "Arrow Color": "1,0,0,1",
+        "Arrow Model": "models/arrow.vmdl"
+      }
+    },
+    {
+      "__guid": "6083b0fc-468d-4cc0-acf3-0eb3f85f54d7",
+      "Flags": 0,
+      "Name": "goalarrows (1)",
+      "Position": "-2716.732,2173.611,22.50525",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {
+        "Goal Type": "MedicineGoal",
+        "Arrow Color": "0,0.55,1,1",
+        "Arrow Model": "models/arrow.vmdl"
+      }
+    },
+    {
+      "__guid": "1efd4118-fab0-43ec-a84b-e000646ed4de",
+      "Flags": 0,
+      "Name": "goalarrows (2)",
+      "Position": "-2759.76,2117.122,22.50526",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {
+        "Goal Type": "SellingGoal",
+        "Arrow Color": "0,1,0.01667,1",
+        "Arrow Model": "models/arrow.vmdl"
+      }
+    },
+    {
+      "__guid": "163166a9-244c-409c-9c85-64c7745a1420",
+      "Flags": 0,
+      "Name": "goalarrows (3)",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {
+        "Goal Type": "Garage",
+        "Arrow Color": "1,0,0.83333,1",
+        "Arrow Model": "models/arrow.vmdl"
+      }
     }
   ],
   "SceneProperties": {
@@ -797,7 +3827,9 @@
   "Title": "minimal",
   "Description": null,
   "__references": [
-    "polyhaven.kloppenheim_02_puresky#24988"
+    "mapperskai.house#23447",
+    "polyhaven.kloppenheim_02_puresky#24988",
+    "rust.chainlink_fence_3x3#25361"
   ],
   "__version": 2
 }

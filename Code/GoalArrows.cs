@@ -29,6 +29,8 @@ public sealed class GoalArrows: Component
 			Scene.Directory.FindByName( "GoalManager" ).First().
 				GetComponent<GoalManager>().Goals;
 
+		Log.Info( "Amount of goals: " + goals.Length);
+
 		foreach ( var goal in goals )
 		{
 			if ( goal.SellingGoal && GoalType == GoalTypes.SellingGoal )
@@ -54,16 +56,10 @@ public sealed class GoalArrows: Component
 	protected override void OnUpdate()
 	{
 		var playerPos = PlayerToCircle.WorldPosition;
-		GameObject.WorldPosition = new Vector3(playerPos.x,playerPos.y,playerPos.z + 100);
-		Log.Info( "Player X: " + GameObject.WorldPosition.x + 
-		          "Player Y: " + GameObject.WorldPosition.y +
-				  "Player Z: " + GameObject.WorldPosition.z );
-		Vector2 VectorToGoal = new Vector2( GoalPos - WorldPosition );
+		var worldPos = new Vector3(playerPos.x,playerPos.y,playerPos.z + 1800);
+		Vector3 VectorToGoal = new Vector3( GoalPos - WorldPosition );
 
-		//Vector2 dotOfToGoal = Vector2.Dot( VectorToGoal, Vector2.Left );
-
-		var angle = VectorToGoal.Degrees;
-
-		GameObject.LocalRotation = new Rotation(new Vector3(0,0.3f,0),0);
+		var rotation = Rotation.LookAt( VectorToGoal );
+		this.WorldTransform = new Transform( worldPos, new Angles( 0, rotation.Yaw(), 0 ) );
 	}
 }
