@@ -517,7 +517,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "a34c76fd-b4e8-4641-a6fc-f34dbce57f03",
+            "component_id": "d1f16513-7b92-4751-9ca0-0479eea3f89c",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -526,19 +526,19 @@
           "Goals": [
             {
               "_type": "component",
-              "component_id": "95ea6d26-0128-4c29-a00b-de68d8797ff4",
+              "component_id": "a63e9460-e892-4b52-b0ed-84a0432de26e",
               "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "05a4f17f-c7aa-4f28-b43a-831db8dbb8b1",
+              "component_id": "a4d7df6f-7246-484d-8210-6a997e25d0d9",
               "go": "82145a93-416d-47cd-8d94-23924f579a0d",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "1ce478d4-c1c9-43e3-8861-cb39385d5455",
+              "component_id": "157e147d-cc7c-4a2a-aa3b-2c53056495b4",
               "go": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
               "component_type": "Goal"
             }
@@ -1270,7 +1270,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 12,
+                "Id": 8,
                 "Value": true,
                 "DstId": 5,
                 "DstName": "_value"
@@ -1288,7 +1288,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 13,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -1378,7 +1378,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 12,
+                "Id": 8,
                 "Value": false,
                 "DstId": 3,
                 "DstName": "_value"
@@ -1396,7 +1396,7 @@
                 "DstName": "_target"
               },
               {
-                "Id": 13,
+                "Id": 9,
                 "Value": false,
                 "DstId": 7,
                 "DstName": "_value"
@@ -1465,12 +1465,11 @@
         {
           "__type": "Sandbox.CubemapFog",
           "__guid": "a284aefc-4415-463b-a7e4-7870cdb20cdb",
-          "__enabled": false,
           "Blur": 0.42,
-          "EndDistance": 9183.512,
-          "FalloffExponent": 14.2,
+          "EndDistance": 2500,
+          "FalloffExponent": 1,
           "HeightExponent": 1,
-          "HeightStart": 713.3335,
+          "HeightStart": 700,
           "HeightWidth": 0,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
