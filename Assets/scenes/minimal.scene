@@ -517,7 +517,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "879e3ae5-8aa5-47a0-8cfb-8479adcd5538",
+            "component_id": "b43a4930-2758-46f2-8fef-1c2fdd95217d",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -526,19 +526,19 @@
           "Goals": [
             {
               "_type": "component",
-              "component_id": "8befc133-95f3-41be-8db5-5e63f6b40ad7",
+              "component_id": "3e05cfe8-379e-4549-a541-3bb4f93ad302",
               "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "07ef912e-4ad9-45f0-88ce-bb1c370f90d2",
+              "component_id": "de388a00-974d-4e68-8771-42e13c5cd552",
               "go": "82145a93-416d-47cd-8d94-23924f579a0d",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "763537ae-a3ec-4fd1-b4d4-c50f6797012e",
+              "component_id": "63907f57-5bbd-4a30-aa66-fada4e017c4c",
               "go": "dd20199e-2de3-4c3b-a483-9fe91db7f1e2",
               "component_type": "Goal"
             }
@@ -3750,7 +3750,7 @@
       "__guid": "db38a502-76ec-414b-8f39-7843cad08532",
       "Flags": 0,
       "Name": "goalarrows",
-      "Position": "-2814.099,2233.238,22.50525",
+      "Position": "-2814.099,2233.238,-47.22809",
       "Enabled": true,
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
@@ -3763,7 +3763,7 @@
       "__guid": "6083b0fc-468d-4cc0-acf3-0eb3f85f54d7",
       "Flags": 0,
       "Name": "goalarrows (1)",
-      "Position": "-2716.732,2173.611,22.50525",
+      "Position": "-2716.732,2173.611,-47.22809",
       "Enabled": true,
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
@@ -3776,7 +3776,7 @@
       "__guid": "1efd4118-fab0-43ec-a84b-e000646ed4de",
       "Flags": 0,
       "Name": "goalarrows (2)",
-      "Position": "-2759.76,2117.122,22.50526",
+      "Position": "-2759.76,2117.122,-47.22809",
       "Enabled": true,
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
@@ -3789,6 +3789,7 @@
       "__guid": "163166a9-244c-409c-9c85-64c7745a1420",
       "Flags": 0,
       "Name": "goalarrows (3)",
+      "Position": "0,0,-47.22809",
       "Enabled": true,
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
