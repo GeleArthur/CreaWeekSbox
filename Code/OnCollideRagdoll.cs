@@ -19,6 +19,8 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	private TimeUntil _zombiesKillEachOther;
 
+	[Property] private float _killDistance = 5000000f;
+
 	protected override void OnStart()
 	{
 		_car = Game.ActiveScene.GetAllComponents<VehicleController>().First();
@@ -75,6 +77,12 @@ public sealed class OnCollideRagDoll : Component, Component.ICollisionListener
 
 	protected override void OnUpdate()
 	{
+		if ( Vector3.DistanceBetween( _car.WorldPosition, this.WorldPosition ) > _killDistance )
+		{
+			this.GameObject.Destroy();
+			return;
+		}
+
 		if ( _health.IsDeath && _ragdollTimer )
 		{
 			GameObject.Destroy();

@@ -27,7 +27,7 @@ public sealed class LampParticleHandler : Component
 
 	protected override void OnUpdate()
 	{
-		if ( (_playerController.WorldPosition - WorldPosition).LengthSquared > 7000*7000 )
+		if ( (_playerController.WorldPosition - WorldPosition).LengthSquared > 5000000 )
 		{
 			Light.Enabled = false;
 		}

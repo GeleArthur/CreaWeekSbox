@@ -1,3 +1,4 @@
+using Meteor.VehicleTool.Vehicle;
 using Sandbox;
 
 
@@ -41,7 +42,7 @@ public sealed class ZombieSpawner : Component
 	}
 	protected override void OnUpdate()
 	{
-		if(_canSpawn)
+		if (_canSpawn)
 		{
 			_deltaTime += Time.Delta;
 			if ( _deltaTime > SpawnTimer )

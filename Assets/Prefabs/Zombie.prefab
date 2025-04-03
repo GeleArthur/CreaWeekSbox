@@ -9,6 +9,7 @@
       {
         "__type": "OnCollideRagDoll",
         "__guid": "6581ed51-d1cf-4f22-a66e-7a7dfbb1b6ed",
+        "_killDistance": 4000000,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,

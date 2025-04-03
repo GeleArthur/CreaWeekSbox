@@ -1,3 +1,4 @@
+using Meteor.VehicleTool.Vehicle;
 using Sandbox;
 using System;
 
@@ -15,9 +16,13 @@ public sealed class ZombieManager : Component
 	public PlayerController Player;
 	private readonly List<OnCollideRagDoll> _activeZombies = [];
 	private TimeUntil _spawnInBetween;
-	
+
+	private VehicleController _car;
+
 	protected override void OnAwake()
 	{
+		_car = Game.ActiveScene.GetAllComponents<VehicleController>().First();
+
 		foreach ( GameObject child in GameObject.Children )
 		{
 			SpawnAreas.Add( child );
@@ -31,10 +36,15 @@ public sealed class ZombieManager : Component
 
 	protected override void OnUpdate()
 	{
+		var orderedSpawnAreas = SpawnAreas.OrderBy( ( area1 ) => Vector3.DistanceBetween( area1.WorldPosition, _car.WorldPosition ) );
+		//SpawnAreas.Sort(
+		//	( x, y ) => Vector3.Distance( m_PC.transform.position, x.transform.position )
+		//		.CompareTo( Vector3.Distance( m_PC.transform.position, y.transform.position ) )
+		//);
 		while ( _activeZombies.Count < ZombieAmount && _spawnInBetween )
 		{
-			_spawnInBetween = 0.2f;
-			Vector3 spawnLocation = Random.Shared.FromList( SpawnAreas ).WorldPosition + Vector3.Random * 100;
+			_spawnInBetween = 0.01f;
+			Vector3 spawnLocation = orderedSpawnAreas.First().WorldPosition + Vector3.Random * 100;
 			Vector3? pointOnNav = Scene.NavMesh.GetClosestPoint( spawnLocation );
 			
 			if ( pointOnNav.HasValue )
