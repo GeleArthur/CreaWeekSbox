@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+using System;
 using Meteor.VehicleTool.Vehicle;
 using Sandbox;
 
@@ -18,7 +18,7 @@ public sealed class PlayerDeath : Component
 		var fual = Scene.GetAllComponents<FuelTank>().First();
 		var upgrades = vehicle.GameObject.GetComponent<CarUpgradeManager>();
 
-		int randIdx = RandomNumberGenerator.GetInt32(0, upgrades.UpgradeList.Count);
+		int randIdx = Random.Shared.Int(0, upgrades.UpgradeList.Count );
 		for ( int index = 0; index < upgrades.UpgradeList.Count; ++index )
 		{
 			if ( randIdx == index )
@@ -30,7 +30,7 @@ public sealed class PlayerDeath : Component
 				}
 				else
 				{
-					randIdx = RandomNumberGenerator.GetInt32( 0, upgrades.UpgradeList.Count );
+					randIdx = Random.Shared.Int( 0, upgrades.UpgradeList.Count );
 					index = 0;
 				}
 			}
