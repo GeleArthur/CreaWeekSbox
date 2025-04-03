@@ -277,7 +277,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 9,
+              "Id": 10,
               "Value": true,
               "DstId": 7,
               "DstName": "state"
@@ -359,7 +359,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 6,
+              "Id": 7,
               "Value": false,
               "DstId": 4,
               "DstName": "state"
@@ -531,7 +531,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 25,
+              "Id": 27,
               "Value": true,
               "DstId": 10,
               "DstName": "enabled"
@@ -567,7 +567,7 @@
               "DstName": "_target"
             },
             {
-              "Id": 26,
+              "Id": 28,
               "Value": 1000000,
               "DstId": 22,
               "DstName": "damage"
@@ -2303,7 +2303,7 @@
             "OnRepair": null,
             "UpgradeInfo": {
               "Name": "Ramp",
-              "Description": "Pushes zombies upward and reduces frontal damage taken.",
+              "Description": "Add style!!! \uD83D\uDE0E",
               "Image": {
                 "$compiler": "texture",
                 "$source": "imagefile",
@@ -2332,13 +2332,13 @@
                 },
                 "compiled": "textures/generated/imagefile/469a982c421e5f6a.vtex"
               },
-              "buyCost": 5000,
-              "repairCost": 2500,
+              "buyCost": 500,
+              "repairCost": 1000,
               "isActive": false,
               "isBroken": false,
               "visual": {
                 "_type": "gameobject",
-                "go": "fc58876c-ca7f-4e54-b634-5fcd565fdcaa"
+                "go": "06d0cd2c-ceee-48d1-af67-c28e41b2b71f"
               }
             }
           }
@@ -2887,8 +2887,8 @@
                 },
                 "compiled": "textures/generated/imagefile/e16000cd04364c37.vtex"
               },
-              "buyCost": 0,
-              "repairCost": 0,
+              "buyCost": 2500,
+              "repairCost": 1000,
               "isActive": false,
               "isBroken": false,
               "visual": {
@@ -3034,8 +3034,8 @@
                 },
                 "compiled": "textures/generated/imagefile/d1fba639561ad8bd.vtex"
               },
-              "buyCost": 1,
-              "repairCost": 1,
+              "buyCost": 1500,
+              "repairCost": 1000,
               "isActive": false,
               "isBroken": false,
               "visual": {
