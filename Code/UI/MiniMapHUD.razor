@@ -6,15 +6,19 @@
 <root>
 	<div class="minimap">
 		@* Actual minimap RenderTarget *@
-		<Image Texture="@_renderTarget"/>
+		<Image Texture="@_renderTarget"></Image>
+		
+		@foreach (var arrow in _arrows)
+		{
+		}
 	</div>
-
 </root>
 
 @code
 {
 	[Property] public CameraComponent Camera { get; set; } = null;
 	private Texture _renderTarget;
+	private List<GoalArrows> _arrows;
 
 	public void SetupRenderTarget()
 	{
@@ -28,13 +32,13 @@
 
 	protected override void OnStart()
 	{
+		_arrows = Scene.GetAllComponents<GoalArrows>().ToList();
 		GetComponent<ScreenPanel>().AutoScreenScale = true;
 	}
 	protected override void OnUpdate()
 	{
 		if (_renderTarget == null)
 		{
-			Log.Warning("Render target is null in OnStart! Trying to recreate...");
 			SetupRenderTarget();
 		}
 
@@ -46,5 +50,7 @@
 	/// <summary>
 	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
 	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine(_renderTarget);
+	protected override int BuildHash() => System.HashCode.Combine(_renderTarget, _arrows.Count
+		//, _arrows.Select(a => System.HashCode.Combine(a.LookAt.y, a.Icon)).Aggregate(0, System.HashCode.Combine)
+		);
 }
