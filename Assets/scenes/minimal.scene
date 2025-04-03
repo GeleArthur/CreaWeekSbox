@@ -517,7 +517,7 @@
           "__guid": "f4d31043-959d-426f-9bbc-3b7efa1c4f40",
           "EconomyComp": {
             "_type": "component",
-            "component_id": "6d3bd665-d697-449f-b046-a34470622a9b",
+            "component_id": "879e3ae5-8aa5-47a0-8cfb-8479adcd5538",
             "go": "04902ce9-b931-4cab-a8b7-d49d66aa804e",
             "component_type": "Economy"
           },
@@ -526,19 +526,19 @@
           "Goals": [
             {
               "_type": "component",
-              "component_id": "b1fc9e33-ed77-4a74-9bea-1d7d4ccbef76",
+              "component_id": "329be2d3-af84-4e09-bdab-fe0ea27feae1",
               "go": "4dec9876-9cfd-48e1-9fb2-effe7f9f6c71",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "fe226386-5552-4225-8d0a-3eeaa5bd6dd7",
+              "component_id": "8befc133-95f3-41be-8db5-5e63f6b40ad7",
               "go": "0a74d3a4-2442-4189-83d3-cc6922bd67e1",
               "component_type": "Goal"
             },
             {
               "_type": "component",
-              "component_id": "d1ae0dbf-d102-4883-b59d-7e9bcd5b4f7f",
+              "component_id": "34672579-b899-4cca-a3d2-7d1298e6721e",
               "go": "57707bd7-a728-48a2-a6f5-0e447503f0d1",
               "component_type": "Goal"
             }
@@ -600,8 +600,270 @@
       "__Prefab": "prefab/cars/bmw e30.prefab",
       "__PrefabVariables": {
         "Player": null,
-        "On Repair": null,
-        "On Buy": null
+        "On Repair": {
+          "__version": 9,
+          "__guid": "05d57233-ce30-415d-a4dc-019b8bd55c41",
+          "__changeId": 45,
+          "UserData": {
+            "Title": "On Repair",
+            "ReferencedComponentTypes": []
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            },
+            {
+              "Id": 11,
+              "Type": "property",
+              "Properties": {
+                "_name": "MaxFuel",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "648,0"
+              }
+            },
+            {
+              "Id": 12,
+              "Type": "property",
+              "Properties": {
+                "_name": "_upgradedCapacity",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "480,168"
+              }
+            },
+            {
+              "Id": 13,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "AddFual",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "888,120"
+              }
+            },
+            {
+              "Id": 14,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "GetAll",
+                "_type": "Sandbox.IComponentLister",
+                "T": "FuelTank"
+              },
+              "UserData": {
+                "Position": "-0,108"
+              }
+            },
+            {
+              "Id": 15,
+              "Type": "foreach",
+              "UserData": {
+                "Position": "288,60"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 15,
+              "SrcName": "body",
+              "DstId": 11,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 15,
+              "SrcName": "body.value",
+              "DstId": 11,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 12,
+              "SrcName": "_result",
+              "DstId": 11,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 15,
+              "SrcName": "body.value",
+              "DstId": 12,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 11,
+              "SrcName": "_signal",
+              "DstId": 13,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 15,
+              "SrcName": "body.value",
+              "DstId": 13,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 12,
+              "SrcName": "_result",
+              "DstId": 13,
+              "DstName": "amount"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_target",
+              "DstId": 14,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 15,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 14,
+              "SrcName": "_result",
+              "DstId": 15,
+              "DstName": "enumerable"
+            }
+          ]
+        },
+        "On Buy": {
+          "__version": 9,
+          "__guid": "d1f39f5f-7950-495a-ba7b-21387098575a",
+          "__changeId": 23,
+          "UserData": {
+            "Title": "On Buy",
+            "ReferencedComponentTypes": []
+          },
+          "Variables": [],
+          "Nodes": [
+            {
+              "Id": 0,
+              "Type": "input"
+            },
+            {
+              "Id": 1,
+              "Type": "property",
+              "Properties": {
+                "_name": "MaxFuel",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "648,0"
+              }
+            },
+            {
+              "Id": 2,
+              "Type": "property",
+              "Properties": {
+                "_name": "_upgradedCapacity",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "480,168"
+              }
+            },
+            {
+              "Id": 5,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "AddFual",
+                "_type": "FuelTank"
+              },
+              "UserData": {
+                "Position": "888,120"
+              }
+            },
+            {
+              "Id": 6,
+              "Type": "call",
+              "Properties": {
+                "_isStatic": false,
+                "_name": "GetAll",
+                "_type": "Sandbox.IComponentLister",
+                "T": "FuelTank"
+              },
+              "UserData": {
+                "Position": "-0,108"
+              }
+            },
+            {
+              "Id": 7,
+              "Type": "foreach",
+              "UserData": {
+                "Position": "288,60"
+              }
+            }
+          ],
+          "Links": [
+            {
+              "SrcId": 7,
+              "SrcName": "body",
+              "DstId": 1,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 7,
+              "SrcName": "body.value",
+              "DstId": 1,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 1,
+              "DstName": "_value"
+            },
+            {
+              "SrcId": 7,
+              "SrcName": "body.value",
+              "DstId": 2,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 1,
+              "SrcName": "_signal",
+              "DstId": 5,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 7,
+              "SrcName": "body.value",
+              "DstId": 5,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 2,
+              "SrcName": "_result",
+              "DstId": 5,
+              "DstName": "amount"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_target",
+              "DstId": 6,
+              "DstName": "_target"
+            },
+            {
+              "SrcId": 0,
+              "SrcName": "_signal",
+              "DstId": 7,
+              "DstName": "_signal"
+            },
+            {
+              "SrcId": 6,
+              "SrcName": "_result",
+              "DstId": 7,
+              "DstName": "enumerable"
+            }
+          ]
+        }
       }
     },
     {
@@ -1151,6 +1413,26 @@
           "Static": false,
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "38d0233c-a12b-4609-920a-272dd1fb7183",
+      "Flags": 0,
+      "Name": "GaragePos",
+      "Position": "-4399.044,-4419.396,190.9873",
+      "Tags": "garage",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "GarageComp",
+          "__guid": "bd888665-2f15-439a-8ffb-868532e2723f",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ]
     },
@@ -3474,7 +3756,7 @@
       "__PrefabVariables": {
         "Goal Type": "FuelGoal",
         "Arrow Color": "1,0,0,1",
-        "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
+        "Arrow Model": "models/arrow.vmdl"
       }
     },
     {
@@ -3486,8 +3768,8 @@
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
         "Goal Type": "MedicineGoal",
-        "Arrow Color": "0,1,0.4,1",
-        "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
+        "Arrow Color": "0,0.55,1,1",
+        "Arrow Model": "models/arrow.vmdl"
       }
     },
     {
@@ -3498,9 +3780,21 @@
       "Enabled": true,
       "__Prefab": "prefabs/goalarrows.prefab",
       "__PrefabVariables": {
-        "Goal Type": "MedicineGoal",
-        "Arrow Color": "0,1,0.65,1",
-        "Arrow Model": "models/upgrades/models/gun1p1.vmdl"
+        "Goal Type": "SellingGoal",
+        "Arrow Color": "0,1,0.01667,1",
+        "Arrow Model": "models/arrow.vmdl"
+      }
+    },
+    {
+      "__guid": "163166a9-244c-409c-9c85-64c7745a1420",
+      "Flags": 0,
+      "Name": "goalarrows (3)",
+      "Enabled": true,
+      "__Prefab": "prefabs/goalarrows.prefab",
+      "__PrefabVariables": {
+        "Goal Type": "Garage",
+        "Arrow Color": "1,0,0.83333,1",
+        "Arrow Model": "models/arrow.vmdl"
       }
     }
   ],

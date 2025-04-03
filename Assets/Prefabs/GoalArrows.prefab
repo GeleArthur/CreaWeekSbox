@@ -23,6 +23,7 @@
         "Flags": 0,
         "Name": "gun1p1",
         "Position": "90,0,0",
+        "Rotation": "0,0.7071068,0,0.7071068",
         "Enabled": true,
         "Components": [
           {
@@ -32,7 +33,7 @@
             "CreateAttachments": false,
             "MaterialGroup": null,
             "MaterialOverride": "materials/effects/unlit_nofog01.vmat",
-            "Model": "models/upgrades/models/gun1p1.vmdl",
+            "Model": "models/arrow.vmdl",
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
